@@ -31,53 +31,88 @@
         }
 
         .container {
-            max-width: 600px;
+            max-width: 700px;
             width: 100%;
-            text-align: center;
-            padding: 30px 0;
+            text-align: right;
+            padding: 30px 10px;
         }
 
         h1 {
             font-family: 'Dancing Script', cursive;
             font-size: 3rem;
             color: #000;
-            margin-bottom: 20px;
+            text-align: center;
+            margin-bottom: 30px;
         }
 
-        /* تصميم الأقسام (الأساسيات، قواعد...) */
         .section-box {
             background-color: var(--pink-mid);
             color: #000;
-            padding: 15px 25px;
-            margin: 20px 0 10px 0;
+            padding: 12px 25px;
+            margin: 25px 0 15px 0;
             border-radius: 20px;
             font-weight: bold;
-            font-size: 1.3rem;
-            display: inline-block;
+            font-size: 1.4rem;
+            text-align: center;
+            display: block;
         }
 
-        /* صندوق المحتوى أو الدرس */
         .content-card {
             background-color: #fff;
             border: 2px solid var(--grey);
             padding: 20px;
             border-radius: 15px;
             margin-bottom: 20px;
-            text-align: right;
+            line-height: 1.8;
         }
 
         .content-card h3 {
+            color: var(--pink-dark);
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
             margin-top: 0;
-            color: var(--grey);
+            text-align: center;
         }
 
-        /* زر العودة للرئيسية */
+        ul {
+            padding-right: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* زر الاستماع الصوتي */
+        .speak-btn {
+            background-color: var(--pink-light);
+            border: 1px solid var(--grey);
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 14px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            transition: 0.2s;
+        }
+
+        .speak-btn:hover {
+            background-color: var(--pink-dark);
+            color: #fff;
+        }
+
+        .back-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
         .back-btn {
             display: inline-block;
-            margin-top: 30px;
             background-color: var(--pink-light);
             border: 2px solid var(--grey);
-            padding: 10px 20px;
+            padding: 10px 25px;
             border-radius: 12px;
             color: var(--grey);
             text-decoration: none;
@@ -91,25 +126,123 @@
     <h1>Español</h1>
 
     <!-- القسم الأول: الأساسيات -->
-    <div>
-        <div class="section-box">القسم الأول: الأساسيات</div>
-        <div class="content-card">
-            <h3>الدرس الأول: (اكتبي عنوان درسك هنا)</h3>
-            <p>هنا تضعين محتوى الدرس الأول الخاص بكِ باللغة الإسبانية... (شرح، كلمات، ملاحظات)</p>
-        </div>
+    <div class="section-box">القسم الأول: الأساسيات / Capítulo 1: Fundamentos y Pronunciación</div>
+    
+    <div class="content-card">
+        <h3>مقدمة الأبجدية / Alfabeto</h3>
+        <p>تتكون اللغة الإسبانية من 27 حرفًا، والأبجدية الإسبانية تشبه الإنجليزية تمامًا، باستثناء حرف واحد إضافي مُميز جدًا وهو حرف <strong>(Ñ)</strong>.</p>
+        
+        <p><strong>الأبجدية الإسبانية:</strong></p>
+        <ul>
+            <li>Aa (آ) <button class="speak-btn" onclick="speak('a')">🔊</button></li>
+            <li>Bb (بي) <button class="speak-btn" onclick="speak('be')">🔊</button></li>
+            <li>Cc (ثي أو سي) <button class="speak-btn" onclick="speak('ce')">🔊</button></li>
+            <li>Dd (دي) <button class="speak-btn" onclick="speak('de')">🔊</button></li>
+            <li>Ee (إي) <button class="speak-btn" onclick="speak('e')">🔊</button></li>
+            <li>Ff (إف) <button class="speak-btn" onclick="speak('efe')">🔊</button></li>
+            <li>Gg (خِي) <button class="speak-btn" onclick="speak('ge')">🔊</button></li>
+            <li>Hh (إيتشي) <button class="speak-btn" onclick="speak('hache')">🔊</button></li>
+            <li>Ii (إي) <button class="speak-btn" onclick="speak('i')">🔊</button></li>
+            <li>Jj (خوتا) <button class="speak-btn" onclick="speak('jota')">🔊</button></li>
+            <li>Kk (كا) <button class="speak-btn" onclick="speak('ka')">🔊</button></li>
+            <li>Ll (إيلي) <button class="speak-btn" onclick="speak('ele')">🔊</button></li>
+            <li>Mm (إيمي) <button class="speak-btn" onclick="speak('eme')">🔊</button></li>
+            <li>Nn (إيني) <button class="speak-btn" onclick="speak('ene')">🔊</button></li>
+            <li>Ññ (إيني - بنفخة هوائية) <button class="speak-btn" onclick="speak('eñe')">🔊</button></li>
+            <li>Oo (أو) <button class="speak-btn" onclick="speak('o')">🔊</button></li>
+            <li>Pp (بي) <button class="speak-btn" onclick="speak('pe')">🔊</button></li>
+            <li>Qq (كو) <button class="speak-btn" onclick="speak('cu')">🔊</button></li>
+            <li>Rr (إيري) <button class="speak-btn" onclick="speak('erre')">🔊</button></li>
+            <li>Ss (إيسي) <button class="speak-btn" onclick="speak('ese')">🔊</button></li>
+            <li>Tt (تِي) <button class="speak-btn" onclick="speak('te')">🔊</button></li>
+            <li>Uu (وو) <button class="speak-btn" onclick="speak('u')">🔊</button></li>
+            <li>Vv (أوبيه) <button class="speak-btn" onclick="speak('uve')">🔊</button></li>
+            <li>Ww (أوبيه دوبل) <button class="speak-btn" onclick="speak('uve doble')">🔊</button></li>
+            <li>Xx (إيكس) <button class="speak-btn" onclick="speak('equis')">🔊</button></li>
+            <li>Yy (إي غريغا) <button class="speak-btn" onclick="speak('يpsilon')">🔊</button></li>
+            <li>Zz (ثيتا أو سيتا) <button class="speak-btn" onclick="speak('zeta')">🔊</button></li>
+        </ul>
     </div>
 
-    <!-- القسم الثاني: قواعد -->
-    <div>
-        <div class="section-box">القسم الثاني: قواعد</div>
-        <div class="content-card">
-            <p style="text-align: center; color: #777;">قريباً سيتم إضافة دروس القواعد هنا...</p>
-        </div>
+    <div class="content-card">
+        <h3>أحرف العلة / Las Vocales</h3>
+        <p>في الإسبانية، أحرف العلة هي المُحرك الأساسي للغة، وتضم 5 أحرف أساسية (U, O, I, E, A) تتقسم إلى قسمين لتسهيل فهم قاعدة نطق الأحرف:</p>
+        <ul>
+            <li><strong>أحرف علة ضعيفة (مُغلقة):</strong> U, I (كالضمة والكسرة في العربية).</li>
+            <li><strong>أحرف علة قوية (مفتوحة):</strong> A, O, E (كالفتحة في العربية).</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>ملاحظات نطق مُهمة / Notas de Pronunciación</h3>
+        <p><strong>حرف C:</strong></p>
+        <ul>
+            <li>يُنطق (ث) إذا جاء بعده (E, I) مثل: <span dir="ltr">Gracias</span> <button class="speak-btn" onclick="speak('Gracias')">🔊</button> - <span dir="ltr">Cero</span> <button class="speak-btn" onclick="speak('Cero')">🔊</button>.</li>
+            <li>يُنطق (ك) إذا جاء بعده (A, O, U) أو في نهاية الكلمة مثل: <span dir="ltr">Casa</span> <button class="speak-btn" onclick="speak('Casa')">🔊</button> - <span dir="ltr">Coche</span> <button class="speak-btn" onclick="speak('Coche')">🔊</button>.</li>
+            <li>يُنطق (كث) إذا تكرر (cc) مثل: <span dir="ltr">Acción</span> <button class="speak-btn" onclick="speak('Acción')">🔊</button>.</li>
+        </ul>
+
+        <p><strong>حرف G:</strong></p>
+        <ul>
+            <li>يُنطق (خ) إذا جاء بعده (E, I) مثل: <span dir="ltr">Gente</span> <button class="speak-btn" onclick="speak('Gente')">🔊</button> - <span dir="ltr">Gimnasio</span> <button class="speak-btn" onclick="speak('Gimnasio')">🔊</button>.</li>
+            <li>يُنطق (گ) إذا جاء بعده (A, O, U) مثل: <span dir="ltr">Gato</span> <button class="speak-btn" onclick="speak('Gato')">🔊</button> - <span dir="ltr">Gol</span> <button class="speak-btn" onclick="speak('Gol')">🔊</button>.</li>
+            <li>إذا جاء التركيب (Gü) قبل (e, i) فإن (u) لا يُنطق، وظيفته حماية نطق الـ (گ) مثل: <span dir="ltr">Guerra</span> <button class="speak-btn" onclick="speak('Guerra')">🔊</button> - <span dir="ltr">Guitarra</span> <button class="speak-btn" onclick="speak('Guitarra')">🔊</button>.</li>
+        </ul>
+
+        <p><strong>حرف H:</strong></p>
+        <ul>
+            <li>حرف صامت 100% لا يُلفظ أبداً مثل: <span dir="ltr">Hotel</span> <button class="speak-btn" onclick="speak('Hotel')">🔊</button> - <span dir="ltr">Hola</span> <button class="speak-btn" onclick="speak('Hola')">🔊</button>.</li>
+            <li>استثناء: إذا سبقه حرف C ليصبح (ch) يُنطق (تش) مثل: <span dir="ltr">Leche</span> <button class="speak-btn" onclick="speak('Leche')">🔊</button> - <span dir="ltr">Chico</span> <button class="speak-btn" onclick="speak('Chico')">🔊</button>.</li>
+        </ul>
+
+        <p><strong>حرف Q:</strong></p>
+        <ul>
+            <li>لا يأتي بمفرده أبداً، بل يتبوعه U ثم (E أو I) ويكون الصوت (ك) مثل: <span dir="ltr">¿Qué?</span> <button class="speak-btn" onclick="speak('¿Qué?')">🔊</button> - <span dir="ltr">Quiero</span> <button class="speak-btn" onclick="speak('Quiero')">🔊</button>.</li>
+        </ul>
+
+        <p><strong>حرف Ñ والحروف الأخرى:</strong></p>
+        <ul>
+            <li><strong>Ñ:</strong> يُنطق (ني) مُدمجة مثل: <span dir="ltr">Niño</span> <button class="speak-btn" onclick="speak('Niño')">🔊</button>.</li>
+            <li><strong>LL:</strong> يُنطق (ي) مثل: <span dir="ltr">Calle</span> <button class="speak-btn" onclick="speak('Calle')">🔊</button>.</li>
+            <li><strong>V:</strong> يُنطق كالباء الخفيفة مثل: <span dir="ltr">Vida</span> <button class="speak-btn" onclick="speak('Vida')">🔊</button> - <span dir="ltr">Vino</span> <button class="speak-btn" onclick="speak('Vino')">🔊</button>.</li>
+            <li><strong>D:</strong> يُنطق (د) مشددة في البداية مثل <span dir="ltr">Día</span> <button class="speak-btn" onclick="speak('Día')">🔊</button>، ومخففة كالـ (ذ) بين الحرف المتحركة مثل <span dir="ltr">Ciudad</span> <button class="speak-btn" onclick="speak('Ciudad')">🔊</button>.</li>
+            <li><strong>RR:</strong> راء مشددة قوية مثل: <span dir="ltr">Perro</span> <button class="speak-btn" onclick="speak('Perro')">🔊</button>.</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h3>النبرة أو الشدة الذكية - الأكسنت / El Acento Tilde</h3>
+        <p>هي الخط الصغير الذي يوضع فوق أحرف العلة فقط (<span dir="ltr">á, é, í, ó, ú</span>)، وتفيد في الضغط بنبرة الصوت على الحرف. أحياناً تغير معنى الكلمة تماماً:</p>
+        <ul>
+            <li><strong>Sí</strong> <button class="speak-btn" onclick="speak('Sí')">🔊</button> (مع أكسنت): تعني (نعم).</li>
+            <li><strong>Si</strong> <button class="speak-btn" onclick="speak('Si')">🔊</button> (بدون أكسنت): تعني (إذا / لو).</li>
+        </ul>
+    </div>
+
+    <!-- القسم الثاني: قواعد (تجهيز مستقبلي) -->
+    <div class="section-box">القسم الثاني: قواعد / Gramática</div>
+    <div class="content-card" style="text-align: center;">
+        <p style="color: #777;">قريباً سيتم إضافة دروس القواعد هنا...</p>
     </div>
 
     <!-- زر الرجوع -->
-    <a href="index.html" class="back-btn">العودة للرئيسية 🏠</a>
+    <div class="back-container">
+        <a href="index.html" class="back-btn">العودة للرئيسية 🏠</a>
+    </div>
 </div>
+
+<!-- سكريبت التشغيل الصوتي للإسبانية -->
+<script>
+    function speak(text) {
+        if ('speechSynthesis' in window) {
+            let utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'es-ES'; // تحديد اللفظ باللغة الإسبانية حصراً
+            window.speechSynthesis.speak(utterance);
+        } else {
+            alert('متصفحك لا يدعم النطق الصوتي');
+        }
+    }
+</script>
 
 </body>
 </html>
