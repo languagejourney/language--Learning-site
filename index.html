@@ -1,92 +1,181 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Viaje de Idiomas | رحلتي اللغوية</title>
+    <title>My Language Journey - Tagreed Ali</title>
+    <!-- استيراد خطوط Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Cairo:wght@400;600;700&family=Satisfy&display=swap" rel="stylesheet">
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f6f8;
-            color: #333333;
+            background-color: #F8E7F1; /* لون الخلفية الوردي الباهت */
+            font-family: 'Cairo', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            margin: 0;
-            padding: 20px;
+            padding: 20px 0;
         }
-        .container {
-            max-width: 650px;
+
+        .welcome-container {
+            position: relative;
             width: 100%;
-            background: #ffffff;
-            padding: 45px 35px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-            border-top: 6px solid #e0a3b8;
-            text-align: left;
+            max-width: 450px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 20px;
+            box-shadow: 0 8px 25px rgba(233, 114, 168, 0.15);
+            border: 2px solid #E972A8;
         }
-        h1 {
-            color: #2c2c2c;
-            margin-bottom: 5px;
-            font-size: 26px;
+
+        /* حبل الأعلام في الأعلى */
+        .flags-banner {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
         }
-        .subtitle {
-            color: #d188a3;
-            font-size: 15px;
-            font-weight: 600;
-            margin-bottom: 25px;
-            letter-spacing: 0.5px;
+
+        .flags-banner img {
+            max-width: 200px;
+            height: auto;
         }
-        p {
-            font-size: 17px;
-            line-height: 1.8;
-            color: #4f4f4f;
+
+        /* عنوان Welcome المزخرف مع الظل */
+        .welcome-title {
+            font-family: 'Pacifico', cursive;
+            font-size: 46px;
+            color: #E972A8;
+            text-shadow: 3px 3px 0px #A84187;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        /* قسم التوضيح والرحلة (المصادر والبداية) */
+        .intro-box {
+            width: 100%;
+            background-color: #FAF0F5;
+            border-radius: 15px;
+            padding: 18px;
             margin-bottom: 20px;
-        }
-        .ar-text {
-            direction: rtl;
             text-align: right;
-            color: #666666;
-            margin-top: 15px;
-            padding-top: 15px;
-            border-top: 1px dashed #e5d9de;
+            border-right: 4px solid #E972A8;
         }
-        .badge-box {
-            margin-top: 30px;
+
+        .intro-box p {
+            font-size: 15px;
+            color: #333333;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .intro-box .arabic-text {
+            font-size: 14px;
+            color: #555555;
+            border-top: 1px dashed #E972A8;
+            padding-top: 8px;
+            margin-top: 8px;
+        }
+
+        /* خانات ولغات الموقع والأزرار */
+        .buttons-section {
             display: flex;
             gap: 10px;
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 25px;
             flex-wrap: wrap;
         }
-        .tag {
-            background: #f1eaed;
-            color: #6e5560;
-            padding: 6px 14px;
-            border-radius: 8px;
-            font-size: 13px;
-            font-weight: 500;
+
+        .lang-btn {
+            background-color: #F4D1E2;
+            color: #A84187;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .lang-btn:hover {
+            background-color: #E972A8;
+            color: #ffffff;
+        }
+
+        /* التوقيع والأيقونات في الأسفل */
+        .footer-section {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #F4D1E2;
+            padding-top: 15px;
+        }
+
+        .footer-icon img {
+            width: 35px;
+            height: 35px;
+            object-fit: contain;
+        }
+
+        .signature {
+            font-family: 'Satisfy', cursive;
+            font-size: 22px;
+            color: #000000;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>¡Bienvenido a mi espacio!</h1>
-        <div class="subtitle">My Language Journey • رحلتي اللغوية</div>
+    <div class="welcome-container">
         
-        <p>
-            Este es mi rincón personal para compartir notas, errores comunes y mi propia forma de aprender español y otros idiomas paso a paso.
-        </p>
-        
-        <p class="ar-text">
-            هذه هي مساحتي الشخصية لمشاركة الملاحظات، الأخطاء الشائعة، وطريقتي الخاصة في تعلم الإسبانية ولغات أخرى خطوة بخطوة.
-        </p>
-
-        <div class="badge-box">
-            <a href="fundamentos.html" class="tag" style="text-decoration: none;">Español</a>
-            <span class="tag">English</span>
-            <span class="tag">Notes</span>
+        <!-- أعلام الدول -->
+        <div class="flags-banner">
+            <img src="flags-string.png" alt="Flags Bunting">
         </div>
+
+        <!-- العنوان الرئيسي -->
+        <div class="welcome-title">Welcome</div>
+
+        <!-- خانة التوضيح (المصادر والقصة والبداية) -->
+        <div class="intro-box">
+            <p><strong>My Language Journey • رحلتي اللغوية</strong></p>
+            <p>Este es mi rincón personal para compartir notas, errores comunes y mi propia forma de aprender español y otros idiomas paso a paso usando mis propias fuentes.</p>
+            <div class="arabic-text">
+                هذه مساحتي الشخصية لمشاركة الملاحظات، الأخطاء الشائعة، وكيفية بدايتي والمصادر التي أعتمد عليها في تعلم الإسبانية ولغات أخرى خطوة بخطوة.
+            </div>
+        </div>
+
+        <!-- أزرار اللغات والخانات -->
+        <div class="buttons-section">
+            <a href="spanish.html" class="lang-btn">Español</a>
+            <a href="english.html" class="lang-btn">English</a>
+            <a href="notes.html" class="lang-btn">Notes & Sources</a>
+        </div>
+
+        <!-- التوقيع والأيقونات في الأسفل -->
+        <div class="footer-section">
+            <div class="footer-icon">
+                <img src="globe-plane.png" alt="Globe">
+            </div>
+            <div class="signature">
+                By : Tagreed Ali
+            </div>
+            <div class="footer-icon">
+                <img src="book-bulb.png" alt="Book and Bulb">
+            </div>
+        </div>
+
     </div>
 
 </body>
