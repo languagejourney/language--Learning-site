@@ -194,12 +194,12 @@
         - <strong>Si</strong> (بدون أكسنت) تعني (إذا / لو).</p>
     </div>
 
-    <!-- قسم المساعد الذكي لممارسة النطق بالمايكروفون -->
+    <!-- قسم المساعد الذكي الناطق والمتفاعل -->
     <div class="assistant-box">
-        <h3 style="margin-top: 0; border: none;">🤖 المساعد الذكي لممارسة النطق</h3>
-        <p>اضغط على الزر أدناه وانطق بصوت واضح بإحدى كلمات الدرس (مثل: Hola, Gracias, Sí, Perro)</p>
+        <h3 style="margin-top: 0; border: none;">🤖 المساعد الذكي الناطق والمتفاعل</h3>
+        <p>اضغط على الزر، انطق الكلمة، والبوت راح يسمعك **ويجاوبك بصوته**!</p>
         
-        <button id="start-btn">🎤 اضغط للتحدث</button>
+        <button id="start-btn">🎤 اضغط وتحدث</button>
         <p id="result">بانتظار نطقك...</p>
     </div>
 </div>
@@ -208,11 +208,21 @@
     const startBtn = document.getElementById('start-btn');
     const resultText = document.getElementById('result');
 
+    // دالة لجعل المتصفح ينطق النص بصوت حقيقي
+    function speakText(text) {
+        if ('speechSynthesis' in window) {
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'es-ES'; // نطق بصوت إسباني
+            utterance.rate = 0.9; // سرعة هادئة وواضحة
+            window.speechSynthesis.speak(utterance);
+        }
+    }
+
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     
     if (SpeechRecognition) {
         const recognition = new SpeechRecognition();
-        recognition.lang = 'es-ES'; // تحديد اللغة إلى الإسبانية
+        recognition.lang = 'es-ES'; 
 
         startBtn.onclick = () => {
             recognition.start();
@@ -222,23 +232,27 @@
 
         recognition.onresult = (event) => {
             const transcript = event.results[0][0].transcript.toLowerCase();
-            // التحقق من النطق ومطابقته للكلمات
+            
             if(transcript.includes('hola') || transcript.includes('gracias') || transcript.includes('si') || transcript.includes('perro') || transcript.includes('casa')) {
-                resultText.innerText = `¡Excelente! نطقك صحيح: "${transcript}" 🌟`;
+                const reply = "¡Excelente! نطقك ممتاز جداً!";
+                resultText.innerText = `🌟 ${reply} (سمعت: "${transcript}")`;
                 resultText.style.color = "#2e7d32";
+                speakText("¡Excelente! Muy bien."); // البوت ينطق بصوت حقيقي
             } else {
-                resultText.innerText = `حاول مرة أخرى! سمعت: "${transcript}" (تأكد من النطق الإسباني الصحيح)`;
+                const reply = "حاول مرة أخرى!";
+                resultText.innerText = `❌ ${reply} سمعت: "${transcript}"`;
                 resultText.style.color = "#c62828";
+                speakText("Inténtalo de nuevo."); // البوت ينطق بصوت حقيقي
             }
         };
 
         recognition.onerror = () => {
-            resultText.innerText = "عذراً، لم أسمع الصوت بوضوح أو تم رفض الإذن. حاول مجدداً.";
+            resultText.innerText = "عذراً، لم أسمع الصوت بوضوح. حاول مجدداً.";
             resultText.style.color = "#c62828";
         };
     } else {
         startBtn.style.display = "none";
-        resultText.innerText = "متصفحك لا يدعم ميزة التعرف على الصوت، جرب فتحه من متصفح كروم أو سفاري حديث.";
+        resultText.innerText = "متصفحك لا يدعم خاصية التفاعل الصوتي.";
     }
 </script>
 
