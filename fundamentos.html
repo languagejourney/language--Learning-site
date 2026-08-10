@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأساسيات - Español</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;700&display=swap');
+
+        :root {
+            --grey: #545454;
+            --pink-dark: #F168BC;
+            --pink-mid: #EF8BC8;
+            --pink-light: #FDBBE3;
+            --bg-color: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--bg-color);
+            background-image: radial-gradient(circle at 15% 20%, var(--pink-light) 0%, transparent 25%),
+                              radial-gradient(circle at 85% 80%, var(--pink-light) 0%, transparent 25%);
+            border: 15px solid var(--grey);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            color: #000;
+            margin-bottom: 30px;
+        }
+
+        .lesson-link {
+            display: block;
+            background-color: var(--pink-light);
+            color: #000;
+            padding: 15px;
+            margin: 15px auto;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 1.3jp;
+            text-decoration: none;
+            border: 2px solid var(--grey);
+            width: 80%;
+            transition: 0.2s;
+        }
+
+        .lesson-link:hover {
+            background-color: var(--pink-mid);
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 40px;
+            background-color: var(--pink-light);
+            border: 2px solid var(--grey);
+            padding: 10px 25px;
+            border-radius: 12px;
+            color: var(--grey);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>القسم الأول: الأساسيات</h1>
+
+    <!-- الضغط هنا ينقل لصفحة الدرس الأول -->
+    <a href="lesson1.html" class="lesson-link">الدرس الأول: الأبجدية والنطق الصحيح</a>
+    
+    <a href="#" class="lesson-link" style="opacity: 0.7;">الدرس الثاني (قريباً)</a>
+    <a href="#" class="lesson-link" style="opacity: 0.7;">الدرس الثالث (قريباً)</a>
+
+    <div style="margin-top: 30px;">
+        <a href="espanol.html" class="back-btn">العودة لقسم الإسباني 🔙</a>
+    </div>
+</div>
+
+</body>
+</html>
