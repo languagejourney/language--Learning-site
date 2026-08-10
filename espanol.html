@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Español - My Language Journal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;700&display=swap');
+
+        :root {
+            --grey: #545454;
+            --pink-dark: #F168BC;
+            --pink-mid: #EF8BC8;
+            --pink-light: #FDBBE3;
+            --bg-color: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--bg-color);
+            background-image: radial-gradient(circle at 15% 20%, var(--pink-light) 0%, transparent 25%),
+                              radial-gradient(circle at 85% 80%, var(--pink-light) 0%, transparent 25%);
+            border: 15px solid var(--grey);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        /* تصميم الأقسام (الأساسيات، قواعد...) */
+        .section-box {
+            background-color: var(--pink-mid);
+            color: #000;
+            padding: 15px 25px;
+            margin: 20px 0 10px 0;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1.3rem;
+            display: inline-block;
+        }
+
+        /* صندوق المحتوى أو الدرس */
+        .content-card {
+            background-color: #fff;
+            border: 2px solid var(--grey);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            text-align: right;
+        }
+
+        .content-card h3 {
+            margin-top: 0;
+            color: var(--grey);
+        }
+
+        /* زر العودة للرئيسية */
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            background-color: var(--pink-light);
+            border: 2px solid var(--grey);
+            padding: 10px 20px;
+            border-radius: 12px;
+            color: var(--grey);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Español</h1>
+
+    <!-- القسم الأول: الأساسيات -->
+    <div>
+        <div class="section-box">القسم الأول: الأساسيات</div>
+        <div class="content-card">
+            <h3>الدرس الأول: (اكتبي عنوان درسك هنا)</h3>
+            <p>هنا تضعين محتوى الدرس الأول الخاص بكِ باللغة الإسبانية... (شرح، كلمات، ملاحظات)</p>
+        </div>
+    </div>
+
+    <!-- القسم الثاني: قواعد -->
+    <div>
+        <div class="section-box">القسم الثاني: قواعد</div>
+        <div class="content-card">
+            <p style="text-align: center; color: #777;">قريباً سيتم إضافة دروس القواعد هنا...</p>
+        </div>
+    </div>
+
+    <!-- زر الرجوع -->
+    <a href="index.html" class="back-btn">العودة للرئيسية 🏠</a>
+</div>
+
+</body>
+</html>
