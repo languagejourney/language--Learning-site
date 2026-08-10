@@ -3,235 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الأساسيات - Capítulo 1: Fundamentos y Pronunciación</title>
+    <title>الأساسيات - الدرس الأول</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #fdfbfb;
             color: #333;
-            line-height: 1.8;
-            margin: 0;
             padding: 20px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
         }
         .container {
-            max-width: 850px;
-            margin: auto;
+            max-width: 650px;
+            width: 100%;
+            text-align: right;
             background: #ffffff;
-            padding: 35px;
-            border-radius: 14px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-            border-top: 6px solid #d4a5a5;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
         }
-        h1, h2, h3 {
-            color: #b87d7d;
-        }
-        .badge {
+        .badge-category {
             background-color: #fce4e4;
             color: #b87d7d;
-            padding: 5px 12px;
+            padding: 6px 14px;
             border-radius: 20px;
             font-size: 0.9em;
+            display: inline-block;
+            margin-bottom: 15px;
             font-weight: bold;
         }
-        .section {
-            margin-bottom: 35px;
-            border-bottom: 1px solid #f0f0f0;
-            padding-bottom: 25px;
+        h1 {
+            color: #b87d7d;
+            font-size: 1.6em;
+            margin-bottom: 5px;
+        }
+        .subtitle-es {
+            color: #888;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: #b87d7d;
+            margin-top: 25px;
+            border-bottom: 2px dashed #fce4e4;
+            padding-bottom: 5px;
+        }
+        p, li {
+            line-height: 1.8;
+            color: #555;
+            font-size: 1.02em;
         }
         ul {
-            list-style-type: none;
-            padding: 0;
+            padding-right: 20px;
         }
-        li {
-            background: #fdf8f8;
-            margin: 8px 0;
-            padding: 12px 16px;
-            border-radius: 8px;
+        .card {
+            background: #faf8f8;
+            padding: 12px 18px;
+            border-radius: 10px;
+            margin-bottom: 10px;
             border-right: 4px solid #d4a5a5;
         }
-        .bot-box {
-            background: #f4f8f6;
-            border: 1px solid #c8e6c9;
+        .assistant-box {
+            background: #ffffff;
             padding: 25px;
-            border-radius: 12px;
-            margin-top: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            border: 2px dashed #d4a5a5;
+            text-align: center;
+            margin-top: 35px;
         }
-        .bot-box input[type="text"] {
-            width: 70%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            font-size: 1em;
-        }
-        .bot-box button {
-            padding: 12px 22px;
-            background-color: #81c784;
+        button {
+            background: #b87d7d;
             color: white;
             border: none;
-            border-radius: 8px;
-            font-size: 1em;
+            padding: 10px 22px;
+            border-radius: 20px;
             cursor: pointer;
+            font-size: 1em;
             font-weight: bold;
+            margin-top: 15px;
+            transition: 0.3s;
         }
-        .bot-box button:hover {
-            background-color: #66bb6a;
+        button:hover {
+            background: #a36b6b;
         }
-        #botReply {
+        #result {
             margin-top: 15px;
             font-weight: bold;
-            color: #2e7d32;
-            background: #e8f5e9;
-            padding: 12px;
-            border-radius: 6px;
-            display: inline-block;
+            font-size: 1.05em;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <span class="badge">قسم الأساسيات (Fundamentos)</span>
+    <div class="badge-category">قسم الأساسيات</div>
     
     <h1>الدرس الأول: الأبجدية والنطق الصحيح</h1>
-    <h2>Capítulo 1: Fundamentos y Pronunciación</h2>
-    <p>تتكون اللغة الإسبانية من 27 حرفًا، والأبجدية الإسبانية تشبه الإنجليزية تمامًا، باستثناء حرف واحد إضافي مُميز جدًا وهو حرف (Ñ).</p>
+    <div class="subtitle-es">Capítulo 1: Fundamentos y Pronunciación</div>
+    
+    <p>تكون اللغة الإسبانية من 27 حرفًا، والأبجدية الإسبانية تشبه الأنجليزية تمامًا، باستثناء حرف واحد إضافي مُميز جدًا وهو حرف (Ñ).</p>
 
-    <!-- الأبجدية الإسبانية -->
-    <div class="section">
-        <h3>الأبجدية الإسبانية:</h3>
-        <ul>
-            <li>Aa (آ) | Bb (بي) | Cc (ثي أو سي) | Dd (دي) | Ee (إي) | Ff (إف) | Gg (خِي) | Hh (إيتشي)</li>
-            <li>Ii (إي) | Jj (خوتا) | Kk (كا) | Ll (إي) | Mm (إيمي) | Nn (إيني) | Ññ (إيني - بنفخة هوائية)</li>
-            <li>Oo (أو) | Pp (بي - مع نفخة هوائية قوية) | Qq (كو) | Rr (إيري) | Ss (إيسي) | Tt (تِي) | Uu (وو)</li>
-            <li>Vv (أوبيه) | Ww (أوبيه دوبل) | Xx (إيكس) | Yy (إي غريغا) | Zz (ثيتا أو سيتا)</li>
-        </ul>
+    <h3>الأبجدية الإسبانية:</h3>
+    <div class="card">
+        <p>
+            Aa (آ) | Bb (بي) | Cc (ثي أو سي) | Dd (دي) | Ee (إي) | Ff (إف) | Gg (خِي) | Hh (إيتشي)<br>
+            Ii (إي) | Jj (خوتا) | Kk (كا) | Ll (إي) | Mm (إيمي) | Nn (إيني) | Ññ (إيني - بنفخة هوائية)<br>
+            Oo (أو) | Pp (بي-مع نفخة هوائية قوية) | Qq (كو) | Rr (إيري) | Ss (إيسي) | Tt (تِي)<br>
+            Uu (وو) | Vv (أوبيه) | Ww (أوبيه دوبل) | Xx (إيكس) | Yy (إي غريغا) | Zz (ثيتا أو سيتا)
+        </p>
     </div>
 
-    <!-- أحرف العلة -->
-    <div class="section">
-        <h3>أحرف العلة:</h3>
-        <h3>Las Vocales:</h3>
-        <p>في الإسبانية، أحرف العلة هيَ المُحرك الأساسي للغة، وتضم 5 أحرف أساسية (U, O, I, E, A) تتقسم إلى قسمين لتسهيل فهم قاعدة نطق الأحرف:</p>
-        <ul>
-            <li><strong>أحرف علة ضعيفة (مُغلقة):</strong> U, I (مغلقة - كالضمة والكسرة في اللغة العربية).</li>
-            <li><strong>أحرف علة قوية (مفتوحة):</strong> A, O, E (مفتوحة - كالفتحة في اللغة العربية).</li>
-        </ul>
+    <h3>أحرف العلة (Las Vocales):</h3>
+    <p>في الإسبانية، أحرف العلة هيَ المُحرك الأساسي للغة، وتضم 5 أحرف أساسية (U, O, I, E, A) تتقسم إلى قسمين لتسهيل فهم قاعدة نطق الأحرف:</p>
+    <ul>
+        <li><strong>أحرف علة ضعيفة (مُغلقة):</strong> U, I <span style="color:#777;">(مغلقة - كالضمة والكسرة في اللغة العربية)</span>.</li>
+        <li><strong>أحرف علة قوية (مفتوحة):</strong> A, O, E <span style="color:#777;">(مفتوحة - كالفتحة في اللغة العربية)</span>.</li>
+    </ul>
+
+    <h3>مُلاحظات نطق مُهمة (Notas):</h3>
+    
+    <div class="card">
+        <p><strong>حرف C:</strong><br>
+        - يُنطق (ث) إذا جاء بعدهُ أحد أحرف العلة (E, I). مثل: شكرًا <em>Gracias</em> - صفر <em>Cero</em>.<br>
+        - يُنطق (ك) إذا جاء بعده أحرف العلة (A, O, U) أو جاء في نهاية الكلمة. مثل: بيت <em>Casa</em> - سيارة <em>Coche</em>.<br>
+        - يُنطق (كث) إذا تكرر (cc). مثل: اكشن/حدث <em>Acción</em>.</p>
     </div>
 
-    <!-- ملاحظات نطق مهمة -->
-    <div class="section">
-        <h3>ملاحظات نطق مُهمة:</h3>
-        <h3>Notas:</h3>
-
-        <p><strong>C حرف</strong></p>
-        <ul>
-            <li>يُنطق (ث) إذا جاء بعدهُ أحد احرف العلة (E, I). مثل: شكرًا <em>Gracias</em> - صفر <em>Cero</em>.</li>
-            <li>يُنطق (ك) إذا جاء بعده أحرف العلة (A, O, U) أو جاء في نهاية الكلمة. مثل: بيت <em>Casa</em> - سيارة <em>Coche</em>.</li>
-            <li>يُنطق (كث) إذا تكرر (cc). مثل: اكشن/ حدث <em>Acción</em>.</li>
-        </ul>
-
-        <p><strong>G حرف</strong></p>
-        <ul>
-            <li>يُنطق (خ) إذا جاء بعدهُ أحد الحرفان (E, I). مثل: ناس <em>Gente</em> - جيم <em>Gimnasio</em>.</li>
-            <li>يُنطق (گ) إذا جاء بعده أحرف العلة (A, O, U). مثل: قط <em>Gato</em> - هدف <em>Gol</em>.</li>
-            <li><strong>مُلاحظة مُهمة:</strong> إذا جاء التركيب (Gü) قبل (e, i) فإن حرف (u) لا يُنطق، وظيفته فقط حماية حرف G ليبقى ناطقًا بالصوت (گ). مثل: حرب <em>Guerra</em> - جيتار <em>Guitarra</em>.</li>
-        </ul>
-
-        <p><strong>H حرف</strong></p>
-        <ul>
-            <li>حرف صامت 100% لا يُلفظ ابدًا. مثل: فندق <em>Hotel</em> - اهلًا <em>Hola</em>.</li>
-            <li>استثناء وحيد، إذا سبقه حرف C ليصبح (ch) يُنطق (تش). مثل: حليب <em>Leche</em> - ولد <em>Chico</em>.</li>
-        </ul>
-
-        <p><strong>Q حرف</strong></p>
-        <ul>
-            <li>لا يأتي بمفردهُ ابدًا، بل يأتي متبوعًا بحرف U ثم حرف علة (إما E او I) وفي هذه الحالة يكون U صامتًا تمامًا وينطق التركيب (ك). مثل: ماذا <em>¿Qué?</em> - أريد <em>Quiero</em>.</li>
-        </ul>
-
-        <p><strong>Ñ حرف</strong></p>
-        <ul>
-            <li>يُنطق (ني) مُدمجة (دمج النون والياء سريعًا). مثل: طفل <em>Niño</em>.</li>
-        </ul>
-
-        <p><strong>LL حرف</strong></p>
-        <ul>
-            <li>يُنطق (ي). مثل: شارع <em>Calle</em>.</li>
-        </ul>
-
-        <p><strong>V حرف</strong></p>
-        <ul>
-            <li>يُنطق تمامًا مثل حرف الباء الخفيفة (ب). مثل: حياة <em>Vida</em> - عصير/نبيذ <em>Vino</em>.</li>
-        </ul>
-
-        <p><strong>Ch الحرف المركب</strong></p>
-        <ul>
-            <li>هذا التركيب يُعامل كأنه حرف واحد في النطق، يُنطق (تش). مثل: حليب <em>Leche</em> - ولد <em>Chico</em>.</li>
-        </ul>
-
-        <p><strong>D حرف</strong></p>
-        <ul>
-            <li>يُنطق (د) صريحة ومشددة إذا جاء في بداية الكلمة أو بعد حرفي N, L. مثل: يوم <em>Día</em> - يمشي <em>Andar</em>.</li>
-            <li>يُنطق بصوت ناعم ومخفف جدًا يشبه حرف (ذ) إذا جاء بين حرفين متحركين (حروف العلة) أو في نهاية الكلمة. مثل: مدينة <em>Ciudad</em>.</li>
-        </ul>
-
-        <p><strong>RR الحرف المُكرر</strong></p>
-        <ul>
-            <li>يُنطق راء مُشددة وقوية (مع اهتزاز اللسان). مثل: كلب <em>Perro</em>.</li>
-        </ul>
-
-        <p><strong>NN الحرف المُكرر</strong></p>
-        <ul>
-            <li>يُنطق نون عادية مشددة قليلًا. مثل: إتصال <em>Conexión</em>.</li>
-        </ul>
-
-        <p><strong>النبرة أو الشدة الذكية - الأكسنت (El Acento Tilde):</strong></p>
-        <ul>
-            <li>هيَ الخط الصغير الذي يوضع فوق أحرف العلة فقط بالشكل التالي: (á, é, í, ó, ú).</li>
-            <li>تفيد في الضغط بنبرة الصوت على هذا الحرف أثناء نطق الكلمة.</li>
-            <li>أحيانًا يتغير معنى الكلمة تمامًا، مثل: <strong>Sí</strong> (مع أكسنت) تعني (نعم)، بينما <strong>Si</strong> (بدون أكسنت) تعني (إذا / لو).</li>
-        </ul>
+    <div class="card">
+        <p><strong>حرف G:</strong><br>
+        - يُنطق (خ) إذا جاء بعدهُ أحد الحرفان (E, I). مثل: ناس <em>Gente</em> - جيم <em>Gimnasio</em>.<br>
+        - يُنطق (گ) إذا جاء بعده أحرف العلة (A, O, U). مثل: قط <em>Gato</em> - هدف <em>Gol</em>.<br>
+        - <strong>ملاحظة مهمة:</strong> إذا جاء التركيب (Gü) قبل (e, i) فإن حرف (u) لا يُنطق، وظيفته فقط حماية حرف G ليبقى ناطقًا بالصوت (گ). مثل: حرب <em>Guerra</em> - جيتار <em>Guitarra</em>.</p>
     </div>
 
-    <!-- بوت التدريب الذكي -->
-    <div class="bot-box">
-        <h3>🤖 المساعد الذكي لممارسة النطق</h3>
-        <p>اكتب أي حرف أو كلمة من الدرس (مثل Ñ, Gracias, Perro, Sí) وسأقوم بمساعدتك بتوضيح طريقة نطقها!</p>
-        <input type="text" id="userInput" placeholder="اكتب هنا...">
-        <button onclick="askBot()">اسأل المساعد</button>
-        <div id="botReply" style="display:none;"></div>
+    <div class="card">
+        <p><strong>حرف H:</strong><br>
+        - حرف صامت 100% لا يُلفظ ابدًا. مثل: فندق <em>Hotel</em> - أهلًا <em>Hola</em>.<br>
+        - استثناء وحيد، إذا سبقه حرف C ليصبح (ch) يُنطق (تش). مثل: حليب <em>Leche</em> - ولد <em>Chico</em>.</p>
     </div>
 
+    <div class="card">
+        <p><strong>حرف Q:</strong><br>
+        - لا يأتي بمفردهُ ابدًا، بل يأتي متبوعًا بحرف U ثم حرف علة (إما E او I) وفي هذه الحالة يكون U صامتًا تمامًا وينطق التركيب (ك). مثل: ماذا <em>¿Qué?</em> - أريد <em>Quiero</em>.</p>
+    </div>
+
+    <div class="card">
+        <p><strong>حرف Ñ:</strong><br>
+        - يُنطق (ني) مُدمجة (دمج النون والياء سريعًا). مثل: طفل <em>Niño</em>.</p>
+    </div>
+
+    <div class="card">
+        <p><strong>حرف LL:</strong><br>
+        - يُنطق (ي). مثل: شارع <em>Calle</em>.</p>
+    </div>
+
+    <div class="card">
+        <p><strong>حرف V:</strong><br>
+        - يُنطق تمامًا مثل حرف الباء الخفيفة (ب). مثل: حياة <em>Vida</em> - عصير/نبيذ <em>Vino</em>.</p>
+    </div>
+
+    <div class="card">
+        <p><strong>الحرف المركب Ch:</strong><br>
+        - هذا التركيب يُعامل كأنه حرف واحد في النطق، يُنطق (تش). مثل: حليب <em>Leche</em> - ولد <em>Chico</em>.</p>
+    </div>
+
+    <div class="card">
+        <p><strong>حرف D:</strong><br>
+        - يُنطق (د) صريحة ومشددة إذا جاء في بداية الكلمة أو بعد حرفي N, L. مثل: يوم <em>Día</em> - يمشي <em>Andar</em>.<br>
+        - يُنطق بصوت ناعم ومخفف جدًا يشبه حرف (ذ) إذا جاء بين حرفين متحركين (حروف العلة) أو في نهاية الكلمة. مثل: مدينة <em>Ciudad</em>.</p>
+    </div>
+
+    <div class="card">
+        <p><strong>الحرف المُكرر RR:</strong><br>
+        - يُنطق راء مُشددة وقوية (مع اهتزاز اللسان). مثل: كلب <em>Perro</em>.</p>
+    </div>
+
+    <div class="card">
+        <p><strong>الحرف المُكرر NN:</strong><br>
+        - يُنطق نون عادية مشددة قليلًا. مثل: إتصال <em>Conexión</em>.</p>
+    </div>
+
+    <h3>النبرة أو الشدة الذكية - الأكسنت (El Acento Tilde):</h3>
+    <div class="card">
+        <p>هيَ الخط الصغير الذي يوضع فوق أحرف العلة فقط بالشكل التالي: (á, é, í, ó, ú).<br>
+        تفيد في الضغط بنبرة الصوت على هذا الحرف أثناء نطق الكلمة.<br>
+        أحيانًا يتغير معنى الكلمة تمامًا، مثل:<br>
+        - <strong>Sí</strong> (مع أكسنت) تعني (نعم).<br>
+        - <strong>Si</strong> (بدون أكسنت) تعني (إذا / لو).</p>
+    </div>
+
+    <!-- قسم المساعد الذكي لممارسة النطق بالمايكروفون -->
+    <div class="assistant-box">
+        <h3 style="margin-top: 0; border: none;">🤖 المساعد الذكي لممارسة النطق</h3>
+        <p>اضغط على الزر أدناه وانطق بصوت واضح بإحدى كلمات الدرس (مثل: Hola, Gracias, Sí, Perro)</p>
+        
+        <button id="start-btn">🎤 اضغط للتحدث</button>
+        <p id="result">بانتظار نطقك...</p>
+    </div>
 </div>
 
 <script>
-    function askBot() {
-        const val = document.getElementById('userInput').value.trim();
-        const replyBox = document.getElementById('botReply');
-        
-        if(!val) {
-            replyBox.style.display = "block";
-            replyBox.style.color = "#d9534f";
-            replyBox.style.background = "#fdf2f2";
-            replyBox.innerHTML = "يرجى كتابة حرف أو كلمة أولاً ليتسنى لي مساعدتك!";
-            return;
-        }
+    const startBtn = document.getElementById('start-btn');
+    const resultText = document.getElementById('result');
 
-        replyBox.style.display = "block";
-        replyBox.style.color = "#2e7d32";
-        replyBox.style.background = "#e8f5e9";
-        
-        const text = val.toLowerCase();
-        if(text.includes('ñ')) {
-            replyBox.innerHTML = "💡 <strong>حرف Ñ:</strong> يُلفظ مثل دمج النون والياء سريعاً (ني)، مثل كلمة Niño (طفل).";
-        } else if(text.includes('gracias') || text.includes('cero') || text.includes('casa')) {
-            replyBox.innerHTML = "💡 <strong>قاعدة حرف C:</strong> انتبه لمكان الحرف! إذا بعده (e/i) يلفظ (ث)، وإذا بعده (a/o/u) يلفظ (ك).";
-        } else if(text.includes('perro')) {
-            replyBox.innerHTML = "💡 <strong>الحرف RR:</strong> راء مشددة وقوية مع اهتزاز اللسان (بيرّو).";
-        } else if(text.includes('si')) {
-            replyBox.innerHTML = "💡 <strong>الأكسنت (Tilde):</strong> (Sí) بالخط تعني نعم، و (Si) بدون خط تعني إذا/لو!";
-        } else {
-            replyBox.innerHTML = "🌟 <strong>رائع!</strong> تطبق القواعد بشكل سليم على \"" + val + "\". استمر بالتدرب على النطق الصحيح!";
-        }
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    
+    if (SpeechRecognition) {
+        const recognition = new SpeechRecognition();
+        recognition.lang = 'es-ES'; // تحديد اللغة إلى الإسبانية
+
+        startBtn.onclick = () => {
+            recognition.start();
+            resultText.innerText = "جاري الاستماع... انطق الكلمة الآن 🗣️";
+            resultText.style.color = "#b87d7d";
+        };
+
+        recognition.onresult = (event) => {
+            const transcript = event.results[0][0].transcript.toLowerCase();
+            // التحقق من النطق ومطابقته للكلمات
+            if(transcript.includes('hola') || transcript.includes('gracias') || transcript.includes('si') || transcript.includes('perro') || transcript.includes('casa')) {
+                resultText.innerText = `¡Excelente! نطقك صحيح: "${transcript}" 🌟`;
+                resultText.style.color = "#2e7d32";
+            } else {
+                resultText.innerText = `حاول مرة أخرى! سمعت: "${transcript}" (تأكد من النطق الإسباني الصحيح)`;
+                resultText.style.color = "#c62828";
+            }
+        };
+
+        recognition.onerror = () => {
+            resultText.innerText = "عذراً، لم أسمع الصوت بوضوح أو تم رفض الإذن. حاول مجدداً.";
+            resultText.style.color = "#c62828";
+        };
+    } else {
+        startBtn.style.display = "none";
+        resultText.innerText = "متصفحك لا يدعم ميزة التعرف على الصوت، جرب فتحه من متصفح كروم أو سفاري حديث.";
     }
 </script>
 
