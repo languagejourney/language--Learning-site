@@ -31,64 +31,41 @@
         }
 
         .container {
-            max-width: 700px;
+            max-width: 600px;
             width: 100%;
-            text-align: right;
-            padding: 30px 10px;
+            text-align: center;
+            padding: 50px 0;
         }
 
         h1 {
             font-family: 'Dancing Script', cursive;
-            font-size: 3rem;
+            font-size: 3.5rem;
             color: #000;
-            text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
 
-        .section-box {
+        .section-link {
+            display: block;
             background-color: var(--pink-mid);
             color: #000;
-            padding: 12px 25px;
-            margin: 25px 0 15px 0;
+            padding: 20px;
+            margin: 20px auto;
             border-radius: 20px;
             font-weight: bold;
-            font-size: 1.4rem;
-            text-align: center;
-            display: block;
+            font-size: 1.5rem;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: 0.2s;
+            width: 80%;
         }
 
-        .content-card {
-            background-color: #fff;
-            border: 2px solid var(--grey);
-            padding: 20px;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            line-height: 1.8;
-        }
-
-        .content-card h3 {
-            color: var(--pink-dark);
-            font-family: 'Dancing Script', cursive;
-            font-size: 1.8rem;
-            margin-top: 0;
-            text-align: center;
-        }
-
-        ul {
-            padding-right: 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        .back-container {
-            text-align: center;
-            margin-top: 30px;
+        .section-link:hover {
+            background-color: var(--pink-dark);
         }
 
         .back-btn {
             display: inline-block;
+            margin-top: 50px;
             background-color: var(--pink-light);
             border: 2px solid var(--grey);
             padding: 10px 25px;
@@ -104,95 +81,13 @@
 <div class="container">
     <h1>Español</h1>
 
-    <!-- القسم الرئيسي الأول -->
-    <div class="section-box">القسم الأول: الأساسيات / Fundamentos</div>
+    <!-- الضغط هنا ينقل لصفحة الأساسيات -->
+    <a href="fundamentos.html" class="section-link">القسم الأول: الأساسيات</a>
     
-    <!-- الدرس الأول -->
-    <div class="content-card">
-        <h3>الدرس الأول: الأبجدية والنطق الصحيح <br> Capítulo 1: Fundamentos y Pronunciación</h3>
-        
-        <p>تتكون اللغة الإسبانية من 27 حرفًا، والأبجدية الإسبانية تشبه الإنجليزية تمامًا، باستثناء حرف واحد إضافي مُميز جدًا وهو حرف <strong>(Ñ)</strong>.</p>
-        
-        <p><strong>الأبجدية الإسبانية:</strong></p>
-        <ul>
-            <li>Aa (آ)</li>
-            <li>Bb (بي)</li>
-            <li>Cc (ثي أو سي)</li>
-            <li>Dd (دي)</li>
-            <li>Ee (إي)</li>
-            <li>Ff (إف)</li>
-            <li>Gg (خِي)</li>
-            <li>Hh (إيتشي)</li>
-            <li>Ii (إي)</li>
-            <li>Jj (خوتا)</li>
-            <li>Kk (كا)</li>
-            <li>Ll (إيلي)</li>
-            <li>Mm (إيمي)</li>
-            <li>Nn (إيني)</li>
-            <li>Ññ (إيني - بنفخة هوائية)</li>
-            <li>Oo (أو)</li>
-            <li>Pp (بي - مع نفخة هوائية قوية)</li>
-            <li>Qq (كو)</li>
-            <li>Rr (إيري)</li>
-            <li>Ss (إيسي)</li>
-            <li>Tt (تِي)</li>
-            <li>Uu (وو)</li>
-            <li>Vv (أوبيه)</li>
-            <li>Ww (أوبيه دوبل)</li>
-            <li>Xx (إيكس)</li>
-            <li>Yy (إي غريغا)</li>
-            <li>Zz (ثيتا أو سيتا)</li>
-        </ul>
+    <!-- القسم الثاني -->
+    <a href="#" class="section-link">القسم الثاني: قواعد</a>
 
-        <p><strong>أحرف العلة (Las Vocales):</strong></p>
-        <p>في الإسبانية، أحرف العلة هي المُحرك الأساسي للغة، وتضم 5 أحرف أساسية (U, O, I, E, A) تتقسم إلى قسمين لتسهيل فهم قاعدة نطق الأحرف:</p>
-        <ul>
-            <li><strong>أحرف علة ضعيفة (مُغلقة):</strong> U, I (كالضمة والكسرة في اللغة العربية).</li>
-            <li><strong>أحرف علة قوية (مفتوحة):</strong> A, O, E (كالفتحة في اللغة العربية).</li>
-        </ul>
-
-        <p><strong>ملاحظات نطق مُهمة (Notas):</strong></p>
-        <ul>
-            <li><strong>حرف C:</strong> يُنطق (ث) إذا جاء بعده (E, I) مثل Gracias و Cero. ويُنطق (ك) إذا جاء بعده (A, O, U) أو في النهاية مثل Casa و Coche. ويُنطق (كث) إذا تكرر (cc) مثل Acción.</li>
-            <li><strong>حرف G:</strong> يُنطق (خ) إذا جاء بعده (E, I) مثل Gente و Gimnasio. ويُنطق (گ) إذا جاء بعده (A, O, U) مثل Gato و Gol. وإذا جاء التركيب (Gü) قبل (e, i) فإن (u) لا يُنطق ووظيفته حماية نطق الـ (گ) مثل Guerra و Guitarra.</li>
-            <li><strong>حرف H:</strong> حرف صامت 100% لا يُلفظ أبداً مثل Hotel و Hola. واستثناء إذا سبقه C ليصبح (ch) يُنطق (تش) مثل Leche و Chico.</li>
-            <li><strong>حرف Q:</strong> لا يأتي بمفرده أبداً، بل يتبوعه U ثم (E أو I) ويكون الصوت (ك) مثل ¿Qué? و Quiero.</li>
-            <li><strong>حرف Ñ:</strong> يُنطق (ني) مُدمجة مثل Niño.</li>
-            <li><strong>حرف LL:</strong> يُنطق (ي) مثل Calle.</li>
-            <li><strong>حرف V:</strong> يُنطق كالباء الخفيفة (ب) مثل Vida و Vino.</li>
-            <li><strong>حرف D:</strong> يُنطق (د) صريحة في البداية أو بعد N,L مثل Día، ومخففة كالـ (ذ) بين حرفين متحركين مثل Ciudad.</li>
-            <li><strong>الحرف المُكرر RR:</strong> راء مشددة قوية مع اهتزاز اللسان مثل Perro.</li>
-            <li><strong>الحرف المُكرر NN:</strong> نون عادية مشددة قليلاً مثل Conexión.</li>
-        </ul>
-
-        <p><strong>النبرة أو الشدة الذكية - الأكسنت (El Acento Tilde):</strong></p>
-        <p>هي الخط الصغير الذي يوضع فوق أحرف العلة فقط (á, é, í, ó, ú)، وتفيد في الضغط بنبرة الصوت على الحرف. أحياناً تغير معنى الكلمة تماماً:</p>
-        <ul>
-            <li><strong>Sí</strong> (مع أكسنت): تعني (نعم).</li>
-            <li><strong>Si</strong> (بدون أكسنت): تعني (إذا / لو).</li>
-        </ul>
-    </div>
-
-    <!-- مكان مخصص للدرس الثاني (لإضافته لاحقاً) -->
-    <div class="content-card">
-        <h3>الدرس الثاني: [عنوان الدرس القادم]</h3>
-        <p style="color: #777; text-align: center;">سيتم إضافة محتوى الدرس الثاني هنا قريباً...</p>
-    </div>
-
-    <!-- مكان مخصص للدرس الثالث (لإضافته لاحقاً) -->
-    <div class="content-card">
-        <h3>الدرس الثالث: [عنوان الدرس الثالث]</h3>
-        <p style="color: #777; text-align: center;">سيتم إضافة محتوى الدرس الثالث هنا قريباً...</p>
-    </div>
-
-    <!-- القسم الثاني: قواعد -->
-    <div class="section-box">القسم الثاني: قواعد / Gramática</div>
-    <div class="content-card" style="text-align: center;">
-        <p style="color: #777;">قريباً سيتم إضافة دروس القواعد هنا...</p>
-    </div>
-
-    <!-- زر الرجوع -->
-    <div class="back-container">
+    <div style="margin-top: 30px;">
         <a href="index.html" class="back-btn">العودة للرئيسية 🏠</a>
     </div>
 </div>
