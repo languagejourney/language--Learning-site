@@ -3,207 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الدرس الأول - الأساسيات</title>
+    <title>الدرس الأول: الأبجدية - Taghreed Ali</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&display=swap" rel="stylesheet">
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;700&display=swap');
-
-        :root {
-            --grey: #545454;
-            --pink-dark: #F168BC;
-            --pink-mid: #EF8BC8;
-            --pink-light: #FDBBE3;
-            --bg-color: #ffffff;
-        }
-
-        body {
+        body, html {
             margin: 0;
-            padding: 20px;
-            font-family: 'Quicksand', sans-serif;
-            background-color: var(--bg-color);
-            background-image: radial-gradient(circle at 15% 20%, var(--pink-light) 0%, transparent 25%),
-                              radial-gradient(circle at 85% 80%, var(--pink-light) 0%, transparent 25%);
-            border: 15px solid var(--grey);
+            padding: 0;
+            width: 100%;
             min-height: 100vh;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            box-sizing: border-box;
+            background: linear-gradient(135deg, #fff0f5, #ffe4e9);
+            font-family: 'Playfair Display', serif;
         }
 
         .container {
-            max-width: 700px;
-            width: 100%;
+            width: 88%;
+            max-width: 420px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* صندوق المحتوى العلمي */
+        .content-box {
+            background-color: #ffffff;
+            border: 1.5px solid #545454;
+            border-radius: 18px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
             text-align: right;
-            padding: 30px 10px;
+            max-height: 75vh;
+            overflow-y: auto;
         }
 
         h1 {
-            font-family: 'Dancing Script', cursive;
-            font-size: 2.2rem;
-            color: #000;
+            font-family: 'Playfair Display', cursive, serif;
+            font-style: italic;
+            font-size: 1.6rem;
+            color: #545454;
             text-align: center;
-            margin-bottom: 25px;
-            line-height: 1.6;
+            margin-bottom: 15px;
+            font-weight: 600;
         }
 
-        .content-card {
-            background-color: #fff;
-            border: 2px solid var(--grey);
-            padding: 25px;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            line-height: 1.9;
+        h2 {
+            font-size: 1.1rem;
+            color: #F168BC;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            border-bottom: 1px dashed #FDBBE3;
+            padding-bottom: 4px;
+        }
+
+        p, li {
+            font-size: 0.95rem;
+            color: #222;
+            line-height: 1.6;
         }
 
         ul {
             padding-right: 20px;
+            margin: 5px 0;
         }
 
-        li {
-            margin-bottom: 8px;
-        }
-
+        /* زر العودة */
         .back-container {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 20px;
         }
 
         .back-btn {
             display: inline-block;
-            background-color: var(--pink-light);
-            border: 2px solid var(--grey);
-            padding: 10px 25px;
-            border-radius: 12px;
-            color: var(--grey);
+            padding: 10px 22px;
+            background-color: #FDBBE3;
+            border: 1.5px solid #545454;
+            border-radius: 14px;
+            color: #000000;
             text-decoration: none;
+            font-size: 0.95rem;
             font-weight: bold;
+            font-family: 'Playfair Display', serif;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>الدرس الأول: الأبجدية والنطق الصحيح<br><span style="font-size: 1.6rem; color: var(--pink-dark);">Capítulo 1: Fundamentos y Pronunciación</span></h1>
-    
-    <div class="content-card">
-        <p>تتكون اللغة الإسبانية من 27 حرفًا، والأبجدية الإسبانية تشبه الإنجليزية تمامًا، باستثناء حرف واحد إضافي مُميز جدًا وهو حرف <strong>(Ñ)</strong>.</p>
-        
-        <p><strong>الأبجدية الإسبانية:</strong></p>
-        <ul>
-            <li>Aa (آ)</li>
-            <li>Bb (بي)</li>
-            <li>Cc (ثي أو سي)</li>
-            <li>Dd (دي)</li>
-            <li>Ee (إي)</li>
-            <li>Ff (إف)</li>
-            <li>Gg (خِي)</li>
-            <li>Hh (إيتشي)</li>
-            <li>Ii (إي)</li>
-            <li>Jj (خوتا)</li>
-            <li>Kk (كا)</li>
-            <li>Ll (إي)</li>
-            <li>Mm (إيمي)</li>
-            <li>Nn (إيني)</li>
-            <li>Ññ (إيني - بنفخة هوائية)</li>
-            <li>Oo (أو)</li>
-            <li>Pp (بي-مع نفخة هوائية قوية)</li>
-            <li>Qq (كو)</li>
-            <li>Rr (إيري)</li>
-            <li>Ss (إيسي)</li>
-            <li>Tt (تِي)</li>
-            <li>Uu (وو)</li>
-            <li>Vv (أوبيه)</li>
-            <li>Ww (أوبيه دوبل)</li>
-            <li>Xx (إيكس)</li>
-            <li>Yy (إي غريغا)</li>
-            <li>Zz (ثيتا أو سيتا)</li>
-        </ul>
+    <div class="container">
+        <div class="content-box">
+            <h1>الدرس الأول: الأبجدية والنطق الصحيح<br><span style="font-size: 1.2rem; color: #777;">Capítulo 1: Fundamentos y Pronunciation</span></h1>
 
-        <p><strong>أحرف العلة / Las Vocales:</strong></p>
-        <p>في الإسبانية، أحرف العلة هيَ المُحرك الأساسي للغة، وتضم 5 أحرف أساسية (U, O, I, E, A) تتقسم إلى قسمين لتسهيل فهم قاعدة نطق الأحرف:</p>
-        <ul>
-            <li>أحرف علة ضعيفة (مُغلقة): U, I (كالضمة والكسرة في اللغة العربية).</li>
-            <li>أحرف علة قوية (مفتوحة) : A, O, E (كالفتحة في اللغة العربية).</li>
-        </ul>
+            <p>تكون اللغة الإسبانية من 27 حرفًا، والأبجدية الإسبانية تشبه الإنجليزية تمامًا، باستثناء حرف واحد إضافي مُميز جدًا وهو حرف <strong>(Ñ)</strong>.</p>
 
-        <p><strong>مُلاحظات نطق مُهمة / Notas:</strong></p>
-        
-        <p><strong>C حرف:</strong></p>
-        <ul>
-            <li>يُنطق (ث) إذا جاء بعدهُ أحد احرف العلة (E,I). مثل : شكرًا Gracias - صفر Cero .</li>
-            <li>يُنطق (ك) إذا جاء بعده أحرف العلة (A,O,U) أو جاء في نهاية الكلمة . مثل : بيت Casa - سيارة Coche .</li>
-            <li>يُنطق (كث) إذا تكرر (cc) مثل : اكشن/ حدث Acción</li>
-        </ul>
+            <h2>الأبجدية الإسبانية:</h2>
+            <ul>
+                <li>Aa (آ)</li>
+                <li>Bb (بي)</li>
+                <li>Cc (ثي أو سي)</li>
+                <li>Dd (دي)</li>
+                <li>Ee (إي)</li>
+                <li>Ff (إف)</li>
+                <li>Gg (خِي)</li>
+                <li>Hh (إيتشي)</li>
+                <li>Ii (إي)</li>
+                <li>Jj (خوتا)</li>
+                <li>Kk (كا)</li>
+                <li>Ll (إي)</li>
+                <li>Mm (إيمي)</li>
+                <li>Nn (إيني)</li>
+                <li>Ññ (إيني - بنفخة هوائية)</li>
+                <li>Oo (أو)</li>
+                <li>Pp (بي - مع نفخة هوائية قوية)</li>
+                <li>Qq (كو)</li>
+                <li>Rr (إيري)</li>
+                <li>Ss (إيسي)</li>
+                <li>Tt (تِي)</li>
+                <li>Uu (وو)</li>
+                <li>Vv (أوبيه)</li>
+                <li>Ww (أوبيه دوبل)</li>
+                <li>Xx (إيكس)</li>
+                <li>Yy (إي غريغا)</li>
+                <li>Zz (ثيتا أو سيتا)</li>
+            </ul>
 
-        <p><strong>G حرف:</strong></p>
-        <ul>
-            <li>يُنطق (خ) إذا جاء بعدهُ أحد الحرفان (E,I). مثل : ناس Gente - جيم Gimnasio.</li>
-            <li>يُنطق (گ) إذا جاء بعده أحرف العلة (A,O,U) . مثل : قط Gato - هدف Gol .</li>
-            <li>مُلاحظة مُهمة: إذا جاء التركيب (Gü) قبل (e, i) فإن حرف (u) لا يُنطق ، وظيفته فقط حماية حرف G ليبقى ناطقًا بالصوت (گ) . مثل : حرب Guerra - جيتار Guitarra .</li>
-        </ul>
+            <h2>أحرف العلة (Las Vocales):</h2>
+            <p>في الإسبانية، أحرف العلة هي المُحرك الأساسي للغة، وتضم 5 أحرف أساسية <strong>(U, O, I, E, A)</strong> تتقسم إلى قسمين لتسهيل فهم قاعدة نطق الأحرف:</p>
+            <ul>
+                <li><strong>أحرف علة ضعيفة (مُغلقة):</strong> U, I (كالضمة والكسرة في العربية).</li>
+                <li><strong>أحرف علة قوية (مفتوحة):</strong> A, O, E (كالفتحة في العربية).</li>
+            </ul>
 
-        <p><strong>H حرف:</strong></p>
-        <ul>
-            <li>حرف صامت 100% لا يُلفظ ابدًا مثل : فندق Hotel - اهلًا Hola .</li>
-            <li>استثناء وحيد ، إذا سبقه حرف C ليصبح (ch) يُنطق (تش) . مثل : حليب Leche - ولد Chico</li>
-        </ul>
+            <h2>مُلاحظات نطق مُهمة (Notas):</h2>
+            
+            <p><strong>حرف C:</strong><br>
+            - يُنطق (ث) إذا جاء بعدهُ أحد أحرف العلة (E, I). مثل: شكراً <em>Gracias</em> - صفر <em>Cero</em>.<br>
+            - يُنطق (ك) إذا جاء بعده أحرف العلة (A, O, U) أو في نهاية الكلمة. مثل: بيت <em>Casa</em> - سيارة <em>Coche</em>.<br>
+            - يُنطق (كث) إذا تكرر (cc). مثل: حدث <em>Acción</em>.</p>
 
-        <p><strong>Q حرف:</strong></p>
-        <ul>
-            <li>لا يأتي بمفردهُ ابدًا ، بل يأتي متبوعًا بحرف U ثم حرف علة (إما E او I) وفي هذه الحالة يكون U صامتًا تمامًا وينطق التركيب (ك) مثل : ماذا ¿Qué? - أريد Quiero .</li>
-        </ul>
+            <p><strong>حرف G:</strong><br>
+            - يُنطق (خ) إذا جاء بعدهُ أحد الحرفان (E, I). مثل: ناس <em>Gente</em> - جيم <em>Gimnasio</em>.<br>
+            - يُنطق (گ) إذا جاء بعده أحرف العلة (A, O, U). مثل: قط <em>Gato</em> - هدف <em>Gol</em>.<br>
+            <em>ملاحظة مهمة:</em> إذا جاء التركيب (Gü) قبل (e, i) فإن حرف (u) لا يُنطق، وظيفته فقط حماية حرف G ليبقى ناطقاً بصوت (گ). مثل: حرب <em>Guerra</em> - جيتار <em>Guitarra</em>.</p>
 
-        <p><strong>Ñ حرف:</strong></p>
-        <ul>
-            <li>يُنطق (ني) مُدمجة (دمج النون والياء سريعًا) مثل : طفل Niño</li>
-        </ul>
+            <p><strong>حرف H:</strong><br>
+            حرف صامت 100% لا يُلفظ أبداً. مثل: فندق <em>Hotel</em> - أهلاً <em>Hola</em>.<br>
+            <em>استثناء وحيد:</em> إذا سبقه حرف C ليصبح (ch) يُنطق (تش). مثل: حليب <em>Leche</em> - ولد <em>Chico</em>.</p>
 
-        <p><strong>LL حرف:</strong></p>
-        <ul>
-            <li>يُنطق (ي) مثل : شارع Calle</li>
-        </ul>
+            <p><strong>حرف Q:</strong><br>
+            لا يأتي بمفرده أبداً، بل يأتي متبوعاً بحرف U ثم حرف علة (إما E أو I) وفي هذه الحالة يكون U صامتاً تماماً وينطق التركيب (ك). مثل: ماذا <em>¿Qué?</em> - أريد <em>Quiero</em>.</p>
 
-        <p><strong>V حرف:</strong></p>
-        <ul>
-            <li>يُنطق تمامًا مثل حرف الباء الخفيفة (ب) مثل : حياة Vida - عصير/نبيذ Vino</li>
-        </ul>
+            <p><strong>حرف Ñ:</strong><br>
+            يُنطق (ني) مُدمجة (دمج النون والياء سريعاً). مثل: طفل <em>Niño</em>.</p>
 
-        <p><strong>Ch الحرف المركب:</strong></p>
-        <ul>
-            <li>هذا التركيب يُعامل كأنه حرف واحد في النطق ، يُنطق (تش) . مثل : حليب Leche - ولد Chico</li>
-        </ul>
+            <p><strong>حرف LL:</strong><br>
+            يُنطق (ي). مثل: شارع <em>Calle</em>.</p>
 
-        <p><strong>D حرف:</strong></p>
-        <ul>
-            <li>يُنطق (د) صريحة ومشددة إذا جاء في بداية الكلمة أو بعد حرفي N,L ، مثل : يوم Día - يمشي Andar</li>
-            <li>يُنطق بصوت ناعم ومخفف جدًا يشبه حرف (ذ) إذا جاء بين حرفين متحركين (حروف العلة) أو في نهاية الكلمة، مثل : مدينة Ciudad</li>
-        </ul>
+            <p><strong>حرف V:</strong><br>
+            يُنطق تماماً مثل حرف الباء الخفيفة (ب). مثل: حياة <em>Vida</em> - عصير/نبيذ <em>Vino</em>.</p>
 
-        <p><strong>RR الحرف المُكرر:</strong></p>
-        <ul>
-            <li>يُنطق راء مُشددة وقوية (مع اهتزاز اللسان) ، مثل : كلب Perro .</li>
-        </ul>
+            <p><strong>الحرف المركب (Ch):</strong><br>
+            هذا التركيب يُعامل كأنه حرف واحد في النطق، يُنطق (تش). مثل: حليب <em>Leche</em> - ولد <em>Chico</em>.</p>
 
-        <p><strong>NN الحرف المُكرر:</strong></p>
-        <ul>
-            <li>يُنطق نون عادية مشددة قليلًا ، مثل : إتصال Conexión</li>
-        </ul>
+            <p><strong>حرف D:</strong><br>
+            - يُنطق (د) صريحة ومشددة إذا جاء في بداية الكلمة أو بعد حرفي N, L. مثل: يوم <em>Día</em> - يمشي <em>Andar</em>.<br>
+            - يُنطق بصوت ناعم ومخفف جداً يشبه حرف (ذ) إذا جاء بين حرفين متحركين (حروف العلة) أو في نهاية الكلمة. مثل: مدينة <em>Ciudad</em>.</p>
 
-        <p><strong>النبرة أو الشدة الذكية - الأكسنت / El Acento Tilde:</strong></p>
-        <p>هيَ الخط الصغير الذي يوضع فوق أحرف العلة فقط بالشكل التالي : (á, é, í, ó, ú)</p>
-        <p>تفيد في الضغط بنبرة الصوت على هذا الحرف أثناء نطق الكلمة . أحيانًا يتغير معنى الكلمة تمامًا ، مثل :</p>
-        <ul>
-            <li><strong>Sí</strong> (مع أكسنت) تعني (نعم).</li>
-            <li><strong>Si</strong> (بدون أكسنت) تعني (إذا / لو).</li>
-        </ul>
+            <p><strong>الحرف المُكرر (RR):</strong><br>
+            يُنطق راء مشددة وقوية (مع اهتزاز اللسان). مثل: كلب <em>Perro</em>.</p>
+
+            <p><strong>الحرف المُكرر (NN):</strong><br>
+            يُنطق نون عادية مشددة قليلاً. مثل: إتصال <em>Conexión</em>.</p>
+
+            <h2>النبرة أو الشدة الذكية - الأكسنت (El Acento Tilde):</h2>
+            <p>هي الخط الصغير الذي يوضع فوق أحرف العلة فقط بالشكل التالي: <strong>(á, é, í, ó, ú)</strong><br>
+            تفيد في الضغط بنبرة الصوت على هذا الحرف أثناء نطق الكلمة. أحياناً يتغير معنى الكلمة تماماً، مثل:</p>
+            <ul>
+                <li><strong>Sí</strong> (مع أكسنت): تعني (نعم).</li>
+                <li><strong>Si</strong> (بدون أكسنت): تعني (إذا / لو).</li>
+            </ul>
+        </div>
+
+        <div class="back-container">
+            <a href="fundamentos.html" class="back-btn">⬅️ العودة للأساسيات</a>
+        </div>
     </div>
-
-    <!-- زر الرجوع -->
-    <div class="back-container">
-        <a href="fundamentos.html" class="back-btn">العودة لقائمة الأساسيات 🔙</a>
-    </div>
-</div>
 
 </body>
 </html>
-
