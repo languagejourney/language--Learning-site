@@ -3,180 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Language Journey - Tagreed Ali</title>
-    <!-- استيراد خطوط Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Cairo:wght@400;600;700&family=Satisfy&display=swap" rel="stylesheet">
+    <title>My Language Journal</title>
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;700&display=swap');
+
+        :root {
+            --grey: #545454;
+            --pink-dark: #F168BC;
+            --pink-mid: #EF8BC8;
+            --pink-light: #FDBBE3;
+            --bg-color: #ffffff;
         }
 
         body {
-            background-color: #F8E7F1; /* لون الخلفية الوردي الباهت */
-            font-family: 'Cairo', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            margin: 0;
+            padding: 20px;
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--bg-color);
+            /* خلفية بيضاء مع تأثير غيوم/ورود وردية خفيفة جداً */
+            background-image: radial-gradient(circle at 15% 20%, var(--pink-light) 0%, transparent 25%),
+                              radial-gradient(circle at 85% 80%, var(--pink-light) 0%, transparent 25%);
+            /* الإطار الرصاصي المطلوب */
+            border: 15px solid var(--grey);
             min-height: 100vh;
-            padding: 20px 0;
-        }
-
-        .welcome-container {
-            position: relative;
-            width: 100%;
-            max-width: 450px;
-            background-color: #ffffff;
-            border-radius: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 30px 20px;
-            box-shadow: 0 8px 25px rgba(233, 114, 168, 0.15);
-            border: 2px solid #E972A8;
+            box-sizing: border-box;
         }
 
-        /* حبل الأعلام في الأعلى */
-        .flags-banner {
+        .container {
+            max-width: 600px;
             width: 100%;
             text-align: center;
-            margin-bottom: 15px;
+            padding: 40px 0;
         }
 
-        .flags-banner img {
-            max-width: 200px;
-            height: auto;
-        }
-
-        /* عنوان Welcome المزخرف مع الظل */
+        /* عنوان Welcome بالخط الجميل واللون الأسود */
         .welcome-title {
-            font-family: 'Pacifico', cursive;
-            font-size: 46px;
-            color: #E972A8;
-            text-shadow: 3px 3px 0px #A84187;
-            margin-bottom: 15px;
-            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            font-size: 4rem;
+            color: #000;
+            text-shadow: 3px 3px 0px var(--pink-light);
+            margin-bottom: 30px;
         }
 
-        /* قسم التوضيح والرحلة (المصادر والبداية) */
-        .intro-box {
-            width: 100%;
-            background-color: #FAF0F5;
-            border-radius: 15px;
-            padding: 18px;
-            margin-bottom: 20px;
-            text-align: right;
-            border-right: 4px solid #E972A8;
+        /* مربعات العبارات بالتدرجات الوردية والنص الأسود */
+        .phrase-1 {
+            background-color: var(--pink-dark);
+            color: #000;
+        }
+        .phrase-2 {
+            background-color: var(--pink-mid);
+            color: #000;
+        }
+        .phrase-3 {
+            background-color: var(--pink-light);
+            color: #000;
         }
 
-        .intro-box p {
-            font-size: 15px;
-            color: #333333;
-            line-height: 1.6;
-            margin-bottom: 10px;
+        .phrase-box {
+            padding: 15px 30px;
+            margin: 15px auto;
+            border-radius: 25px;
+            display: inline-block;
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
 
-        .intro-box .arabic-text {
-            font-size: 14px;
-            color: #555555;
-            border-top: 1px dashed #E972A8;
-            padding-top: 8px;
-            margin-top: 8px;
-        }
-
-        /* خانات ولغات الموقع والأزرار */
-        .buttons-section {
+        /* أزرار التنقل (Español, English, About) */
+        .nav-buttons {
+            margin-top: 40px;
             display: flex;
-            gap: 10px;
-            width: 100%;
             justify-content: center;
-            margin-bottom: 25px;
-            flex-wrap: wrap;
+            gap: 15px;
         }
 
-        .lang-btn {
-            background-color: #F4D1E2;
-            color: #A84187;
-            padding: 10px 20px;
-            border-radius: 20px;
+        .btn {
+            background-color: var(--pink-light);
+            border: 2px solid var(--grey);
+            padding: 12px 25px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: bold;
+            color: var(--grey);
             text-decoration: none;
-            font-weight: 600;
-            font-size: 15px;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: 0.2s;
         }
 
-        .lang-btn:hover {
-            background-color: #E972A8;
-            color: #ffffff;
+        .btn:hover {
+            background-color: var(--pink-mid);
+            color: #000;
         }
 
-        /* التوقيع والأيقونات في الأسفل */
-        .footer-section {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-top: 1px solid #F4D1E2;
-            padding-top: 15px;
-        }
-
-        .footer-icon img {
-            width: 35px;
-            height: 35px;
-            object-fit: contain;
-        }
-
+        /* التوقيع في الأسفل بخط يدوي */
         .signature {
-            font-family: 'Satisfy', cursive;
-            font-size: 22px;
-            color: #000000;
+            margin-top: 60px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: #000;
         }
     </style>
 </head>
 <body>
 
-    <div class="welcome-container">
-        
-        <!-- أعلام الدول -->
-        <div class="flags-banner">
-            <img src="flags-string.png" alt="Flags Bunting">
-        </div>
-
-        <!-- العنوان الرئيسي -->
-        <div class="welcome-title">Welcome</div>
-
-        <!-- خانة التوضيح (المصادر والقصة والبداية) -->
-        <div class="intro-box">
-            <p><strong>My Language Journey • رحلتي اللغوية</strong></p>
-            <p>Este es mi rincón personal para compartir notas, errores comunes y mi propia forma de aprender español y otros idiomas paso a paso usando mis propias fuentes.</p>
-            <div class="arabic-text">
-                هذه مساحتي الشخصية لمشاركة الملاحظات، الأخطاء الشائعة، وكيفية بدايتي والمصادر التي أعتمد عليها في تعلم الإسبانية ولغات أخرى خطوة بخطوة.
-            </div>
-        </div>
-
-        <!-- أزرار اللغات والخانات -->
-        <div class="buttons-section">
-            <a href="spanish.html" class="lang-btn">Español</a>
-            <a href="english.html" class="lang-btn">English</a>
-            <a href="notes.html" class="lang-btn">Notes & Sources</a>
-        </div>
-
-        <!-- التوقيع والأيقونات في الأسفل -->
-        <div class="footer-section">
-            <div class="footer-icon">
-                <img src="globe-plane.png" alt="Globe">
-            </div>
-            <div class="signature">
-                By : Tagreed Ali
-            </div>
-            <div class="footer-icon">
-                <img src="book-bulb.png" alt="Book and Bulb">
-            </div>
-        </div>
-
+<div class="container">
+    
+    <!-- عنوان الموقع -->
+    <div class="welcome-title">Welcome</div>
+    
+    <!-- العبارات المطلوبة بالتدريج -->
+    <div>
+        <div class="phrase-box phrase-1">My Language Journey</div><br>
+        <div class="phrase-box phrase-2">اتعلم وأخطأ لكن أستمر</div><br>
+        <div class="phrase-box phrase-3">تعلم بطريقتي! تجربة ممتعة!</div>
     </div>
+
+    <!-- الخانات المطلوبة -->
+    <div class="nav-buttons">
+        <a href="espanol.html" class="btn">Español</a>
+        <a href="english.html" class="btn">English</a>
+        <a href="about.html" class="btn">About</a>
+    </div>
+
+    <!-- التوقيع -->
+    <div class="signature">By : Tagreed Ali</div>
+
+</div>
 
 </body>
 </html>
