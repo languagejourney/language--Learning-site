@@ -189,6 +189,72 @@
             <a href="fundamentos.html" class="back-btn">⬅️ العودة للأساسيات</a>
         </div>
     </div>
+<!-- ================= كود ميزة النطق والتفاعل الصوتي المستقل ================= -->
+<div id="voice-coach-section" style="text-align: center; margin: 40px auto; padding: 25px; background: rgba(255, 255, 255, 0.85); border-radius: 15px; max-width: 400px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #ffd1dc;">
+    <h3 style="color: #c75b8a; font-family: 'Times New Roman', serif; margin-bottom: 10px;">مدرب النطق الصوتي 🎙️</h3>
+    <p style="font-size: 14px; color: #555; margin-bottom: 15px;">اضغط على الزر وانطق الحرف أو الكلمة الإسبانية (مثل: <strong>Hola</strong> أو <strong>Perro</strong>):</p>
+    
+    <!-- زر الميكروفون -->
+    <button id="micBtn" onclick="startSpeechTest()" style="background-color: #ff69b4; color: white; border: none; padding: 12px 25px; font-size: 16px; border-radius: 50px; cursor: pointer; box-shadow: 0 4px 10px rgba(255,105,180,0.4); transition: 0.3s;">
+        🎤 ابدأ النطق
+    </button>
+
+    <!-- شاشة عرض النتيجة -->
+    <p id="speechResult" style="margin-top: 15px; font-weight: bold; color: #333; font-size: 15px;"></p>
+</div>
+
+<script>
+function startSpeechTest() {
+    const resultElement = document.getElementById("speechResult");
+    
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+        resultElement.innerHTML = "عذراً، متصفحك لا يدعم هذه الميزة. جربي استخدام متصفح Google Chrome.";
+        return;
+    }
+
+    const recognition = new SpeechRecognition();
+    recognition.lang = 'es-ES'; // تحديد اللغة الإسبانية
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+
+    resultElement.innerHTML = "جاري الاستماع... انطق الكلمة الآن 🗣️";
+
+    recognition.onresult = function(event) {
+        const speechText = event.results[0][0].transcript.toLowerCase().trim();
+        resultElement.innerHTML = `سمعتك تقول: "${speechText}"`;
+        evaluatePronunciation(speechText);
+    };
+
+    recognition.onerror = function(event) {
+        resultElement.innerHTML = "حدث خطأ في التعرف على الصوت، جربي مرة أخرى.";
+    };
+
+    recognition.start();
+}
+
+function evaluatePronunciation(userWord) {
+    const resultElement = document.getElementById("speechResult");
+    let feedback = "";
+    let audioMessage = "";
+
+    if (userWord.length > 0) {
+        feedback = "✨ أحسنت! نطْقك رائع وصحيح.";
+        audioMessage = "¡Muy bien! Excelente pronunciación.";
+    } else {
+        feedback = "❌ حاول مرة أخرى، النطق بحاجة لبعض التركيز.";
+        audioMessage = "Inténtalo de nuovo.";
+    }
+
+    resultElement.innerHTML += `<br><span style="color: #d63384; display:block; margin-top:8px;">${feedback}</span>`;
+    
+    const speechSynth = window.speechSynthesis;
+    const utterThis = new SpeechSynthesisUtterance(audioMessage);
+    utterThis.lang = 'es-ES';
+    speechSynth.speak(utterThis);
+}
+</script>
+<!-- ================= نهاية الكود ================= -->
 
 </body>
 </html>
