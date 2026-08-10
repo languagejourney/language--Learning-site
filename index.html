@@ -1,132 +1,101 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        :root {
-            --grey: #545454;
-            --pink-dark: #F168BC;
-            --pink-mid: #EF8BC8;
-            --pink-light: #FDBBE3;
-            --bg-color: #ffffff;
-        }
-
-        body {
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تغريد علي - رحلة التعلم</title>
+    <style>
+        /* إعدادات الشاشة الأساسية لمنع الفراغات والتحكم بالمساحة */
+        body, html {
             margin: 0;
-            padding: 20px;
-            font-family: 'Quicksand', sans-serif;
-            background-color: var(--bg-color);
-            /* خلفية بيضاء مع تأثير غيوم/ورود وردية خفيفة جداً */
-            background-image: radial-gradient(circle at 15% 20%, var(--pink-light) 0%, transparent 25%),
-                              radial-gradient(circle at 85% 80%, var(--pink-light) 0%, transparent 25%);
-            /* الإطار الرصاصي المطلوب */
-            border: 15px solid var(--grey);
+            padding: 0;
+            width: 100%;
             min-height: 100vh;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #fff0f5, #ffe4e9); /* خلفية وردية هادئة */
         }
 
+        /* الحاوية الرئيسية للمحتوى */
         .container {
-            max-width: 600px;
-            width: 100%;
+            width: 90%; /* ياخذ 90% من عرض الشاشة */
+            max-width: 400px; /* تحديد عرض أقصى حتى ما يصير عريض زيادة بالشاشات الكبيرة */
             text-align: center;
-            padding: 40px 0;
+            padding: 20px;
         }
 
-        /* عنوان Welcome بالخط الجميل واللون الأسود */
-        .welcome-title {
-            font-family: 'Dancing Script', cursive;
-            font-size: 4rem;
-            color: #000;
-            text-shadow: 3px 3px 0px var(--pink-light);
+        h1 {
+            font-family: 'cursive', sans-serif;
+            font-size: 2.5rem;
+            color: #333;
             margin-bottom: 30px;
         }
 
-        /* مربعات العبارات بالتدرجات الوردية والنص الأسود */
-        .phrase-1 {
-            background-color: var(--pink-dark);
-            color: #000;
-        }
-        .phrase-2 {
-            background-color: var(--pink-mid);
-            color: #000;
-        }
-        .phrase-3 {
-            background-color: var(--pink-light);
-            color: #000;
-        }
-
-        .phrase-box {
-            padding: 15px 30px;
-            margin: 15px auto;
-            border-radius: 25px;
-            display: inline-block;
-            font-family: 'Dancing Script', cursive;
-            font-size: 1.8rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-
-        /* أزرار التنقل (Español, English, About) */
-        .nav-buttons {
-            margin-top: 40px;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-
+        /* تنسيق الأزرار */
         .btn {
-            background-color: var(--pink-light);
-            border: 2px solid var(--grey);
-            padding: 12px 25px;
-            border-radius: 15px;
-            cursor: pointer;
-            font-family: 'Quicksand', sans-serif;
-            font-weight: bold;
-            color: var(--grey);
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #f8b4c4;
+            color: #333;
             text-decoration: none;
-            transition: 0.2s;
+            border-radius: 15px;
+            font-weight: bold;
+            border: 2px solid #333;
+            transition: transform 0.2s;
         }
 
         .btn:hover {
-            background-color: var(--pink-mid);
-            color: #000;
+            transform: scale(1.02);
+            background-color: #f595a8;
         }
 
-        /* التوقيع في الأسفل بخط يدوي */
-        .signature {
-            margin-top: 60px;
-            font-family: 'Dancing Script', cursive;
-            font-size: 2rem;
-            color: #000;
+        /* تنسيق الروابط السفلى (About, English, Español) */
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .nav-links a {
+            flex: 1;
+            padding: 10px;
+            background-color: #f8b4c4;
+            border: 1px solid #333;
+            border-radius: 10px;
+            color: #333;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .footer-name {
+            margin-top: 30px;
+            font-family: 'cursive', sans-serif;
+            font-size: 1.2rem;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    
-    <!-- عنوان الموقع -->
-    <div class="welcome-title">Welcome</div>
-    
-    <!-- العبارات المطلوبة بالتدريج -->
-    <div>
-        <div class="phrase-box phrase-1">My Language Journey</div><br>
-        <div class="phrase-box phrase-2">اتعلم وأخطأ لكن أستمر</div><br>
-        <div class="phrase-box phrase-3">تعلم بطريقتي! تجربة ممتعة!</div>
+    <div class="container">
+        <h1>Welcome</h1>
+
+        <a href="#" class="btn">My Language Journey</a>
+        <a href="#" class="btn">اتعلم وأخطأ لكن أستمر</a>
+        <a href="#" class="btn">تعلم بطريقتي! تجربة ممتعة!</a>
+
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="english.html">English</a>
+            <a href="espanol.html">Español</a>
+        </div>
+
+        <div class="footer-name">By : Taghreed Ali</div>
     </div>
-
-    <!-- الخانات المطلوبة -->
-    <div class="nav-buttons">
-        <a href="espanol.html" class="btn">Español</a>
-        <a href="english.html" class="btn">English</a>
-        <a href="about.html" class="btn">About</a>
-    </div>
-
-    <!-- التوقيع -->
-    <div class="signature">By : Tagreed Ali</div>
-
-</div>
 
 </body>
 </html>
