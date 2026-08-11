@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كيف أبدأ؟ - Español</title>
+    <!-- استدعاء نفس الخطوط الأصلية -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri&display=swap" rel="stylesheet">
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #fff0f5, #ffe4e9);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .container {
+            width: 88%;
+            max-width: 420px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* صندوق المحتوى بالإطار الرصاصي المعتمد */
+        .content-box {
+            background-color: #ffffff;
+            border: 1.5px solid #545454;
+            border-radius: 18px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            text-align: right;
+            max-height: 75vh;
+            overflow-y: auto;
+        }
+
+        h2 {
+            color: #545454;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 5px;
+        }
+
+        p, li {
+            color: #000000;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        /* تنسيق الروابط بالألوان الوردية المتدرجة */
+        a.resource-link {
+            color: #F168BC;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a.resource-link:hover {
+            text-decoration: underline;
+            color: #EF8BC8;
+        }
+
+        /* زر العودة */
+        .back-container {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background-color: #F168BC;
+            color: #000000;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1.5px solid #545454;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="content-box">
+            
+            <h2>كيف أبدأ؟</h2>
+            <h3 style="text-align: center; color: #545454; font-style: italic; font-size: 14px;">My language journal</h3>
+            
+            <hr style="border: 0; border-top: 1px solid #FDBBE3; margin: 15px 0;">
+
+            <p>مرحبا! كوني أول مرة اتعلم اللغة ولا أعرف اي شي عنها تهت بين الفيديوهات والكتب وغيرها لذا قررت أن اتعلم من خلال:</p>
+            <ul>
+                <li>- اليوتيوب <strong style="color: #545454;">"للقواعد"</strong></li>
+                <li>- وتطبيق Duolingo <strong style="color: #545454;">"للمُفردات"</strong></li>
+                <li>- وتطبيق Busuu <strong style="color: #545454;">"لتعلم القواعد والمفردات سويًا"</strong></li>
+                <li>- وقناة <a href="#" class="resource-link">هنا نضع الرابط</a> <strong style="color: #545454;">"لمُمارسة اللغة الإسبانية الـ Shadowing"</strong></li>
+            </ul>
+
+            <p>ثم أجمع كُل هذا في كتاب يخصني مُرتب كالموقع واجمل، كوني استطيع التحكم بكل تفاصيله بنفسي ويمكنك اقتنائه الكترونيًا بسعر رمزي وقبل الأقتناء تستطيع رؤية نموذج من خلال الموقع نفسه <strong style="color: #545454;">"في خانة About"</strong>!</p>
+
+            <p>يمكنكم البدء من خلال القسم الأول الذي سيضم الأساسيات الدرس الأول والثاني وهكذا ....</p>
+
+            <p>تستطيع أن تقرأ على الموقع ثم تذهب لأي برنامج ذكاء أصطناعي Ai او قناة يوتيوب تقرأ الدرس ويوضحه لك لكنك استفدت بأنك عرفت الخطوة الأولى ومحتوى الدرس وكيف تبدأ</p>
+
+            <p>ثم القسم الثاني وهكذا بالطريقة نفسها .</p>
+
+            <p style="background-color: #fff0f5; padding: 10px; border-radius: 10px; border-right: 3px solid #F168BC;">* مع كُل قسم سأحاول إرفاق أي مصدر أو معلومة تساعدكم في التعلم !</p>
+
+            <!-- زر العودة -->
+            <div class="back-container">
+                <a href="espandol.html" class="back-btn">العودة للقسم ↩️</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
