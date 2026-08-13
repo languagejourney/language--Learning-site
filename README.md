@@ -1,2 +1,2 @@
-# Spanish-Learning-site
-Learning my way ! 
+# language-Learning-site
+let’s learning together ! 
