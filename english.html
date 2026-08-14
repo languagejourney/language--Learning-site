@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English - My Language Journal</title>
+    
+    <!-- استيراد خط The Season أو خط بديل مائل وناعم قريب جداً منه -->
+    <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@400;700&family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&display=swap" rel="stylesheet">
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* خلفية وردية متدرجة هادئة */
+            background: linear-gradient(135deg, #fff0f5, #ffe4e9);
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* الحاوية بـ قياس مضبوط تماماً وما تطلع عن حدود الشاشة */
+        .container {
+            width: 85%;
+            max-width: 340px; 
+            text-align: center;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        /* Welcome بخط مائل وأنيق (The Season style) */
+        h1 {
+            font-family: 'Playfair Display', cursive, serif;
+            font-style: italic;
+            font-size: 2.8rem;
+            color: #545454;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        /* الأزرار (تدرج الوردي من الأغمق للأفتح) */
+        .btn-1 {
+            background-color: #F168BC; /* الأغمق */
+        }
+
+        .btn-2 {
+            background-color: #EF8BC8; /* الأفتح */
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 13px 10px;
+            margin: 10px 0;
+            color: #000000; /* الخطوط باللون الأسود */
+            text-decoration: none;
+            border-radius: 16px;
+            font-weight: bold;
+            border: 1.5px solid #545454; /* الإطار بلون الرصاصي المحدد */
+            box-sizing: border-box;
+            /* تطبيق خط The Season المائل والناعم على النصوص */
+            font-family: 'Playfair Display', cursive, serif;
+            font-style: italic;
+            font-size: 1.05rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* الروابط الثلاثة السفلى (About, English, Español) */
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .nav-links a {
+            flex: 1;
+            padding: 10px 4px;
+            background-color: #FDBBE3;
+            border: 1.5px solid #545454;
+            border-radius: 12px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>English</h1>
+
+        <a href="english-start.html" class="btn btn-1">كيف ابدأ</a>
+        <a href="english-grammar.html" class="btn btn-2">دروس القواعد</a>
+
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="english.html">English</a>
+            <a href="espanol.html">Español</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
