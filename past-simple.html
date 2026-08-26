@@ -19,102 +19,330 @@
             background: linear-gradient(135deg, #fff0f5, #ffe4e9);
             font-family: 'Playfair Display', serif;
         }
-        .container {
-            width: 88%;
+
+        .main-wrapper {
+            width: 90%;
             max-width: 420px;
-            padding: 20px;
-            box-sizing: border-box;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
         }
-        .content-box {
+
+        /* الإطار الخارجي الرئيسي */
+        .card-container {
+            width: 100%;
             background-color: #ffffff;
             border: 1.5px solid #545454;
-            border-radius: 18px;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-            text-align: right;
-            max-height: 80vh;
-            overflow-y: auto;
-        }
-        h2 { color: #545454; text-align: center; margin-bottom: 5px; }
-        p, li { color: #000000; font-size: 15px; line-height: 1.7; }
-        strong { color: #545454; }
-        /* تنسيق خانة الفيديو */
-        .video-box {
+            border-radius: 24px;
+            padding: 25px 18px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
             text-align: center;
-            margin: 20px 0;
-            padding: 15px;
-            border: 1px dashed #FDBBE3;
-            border-radius: 12px;
-            background-color: #fafafa;
+            max-height: 88vh;
+            overflow-y: auto;
+            scrollbar-width: none;
         }
-        .back-container { text-align: center; margin-top: 25px; }
-        .back-btn {
+
+        .card-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* عنوان الدرس الرئيسي */
+        h1 {
+            font-family: 'Playfair Display', cursive, serif;
+            font-size: 1.8rem;
+            color: #545454;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: #EE69B8;
+            font-size: 1.15rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        /* مقدمة الدرس */
+        .info-card {
+            background-color: #ffffff;
+            border: 1.5px solid #f6a0dd;
+            border-radius: 16px;
+            padding: 14px 16px;
+            margin-bottom: 20px;
+            text-align: right;
+            box-shadow: 0 2px 8px rgba(238, 105, 184, 0.08);
+        }
+
+        .info-card p {
+            margin: 0;
+            color: #444444;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* شارات العناوين */
+        .section-badge {
             display: inline-block;
-            background-color: #F168BC;
-            color: #000000;
-            padding: 10px 20px;
-            border-radius: 20px;
-            text-decoration: none;
+            background-color: #EE69B8;
+            color: #ffffff;
+            padding: 8px 22px;
+            border-radius: 12px;
+            font-size: 1.05rem;
             font-weight: bold;
             border: 1.5px solid #545454;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        /* بطاقات القواعد */
+        .rule-item {
+            background-color: #fff8fc;
+            border-right: 4px solid #EE69B8;
+            border-top: 1px solid #eee;
+            border-left: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            border-radius: 10px;
+            padding: 12px 14px;
+            margin-bottom: 14px;
+            text-align: right;
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .rule-title {
+            color: #EE69B8;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 6px;
+        }
+
+        .formula-box {
+            background-color: #fff;
+            border: 1px dashed #EE69B8;
+            border-radius: 8px;
+            padding: 6px 10px;
+            direction: ltr;
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+            margin: 6px 0 10px 0;
+            font-family: sans-serif;
+        }
+
+        .en-example {
+            direction: ltr;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            color: #d81b60;
+            font-weight: bold;
+            background-color: #ffe4e9;
+            padding: 4px 10px;
+            border-radius: 6px;
+            display: block;
+            margin: 4px 0;
+            font-size: 0.9rem;
+        }
+
+        /* تنسيق الجداول */
+        .custom-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 1.5px solid #545454;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+        }
+
+        .custom-table th {
+            background-color: #F17FC7;
+            color: #000000;
+            padding: 10px;
+            font-size: 0.95rem;
+            border-bottom: 1.5px solid #545454;
+            font-weight: bold;
+        }
+
+        .custom-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.9rem;
+            color: #333;
+            text-align: center;
+        }
+
+        .custom-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* صناديق الفيديو والاختبار */
+        .action-box {
+            text-align: center;
+            margin: 12px 0;
+            padding: 14px;
+            border: 1.5px dashed #F8ABE4;
+            border-radius: 16px;
+            background-color: #fffbfe;
+            transition: 0.2s;
+        }
+
+        .action-box a {
+            color: #EE69B8;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: block;
+        }
+
+        .action-box:hover {
+            background-color: #fff0f7;
+            border-color: #EE69B8;
+        }
+
+        /* زر العودة */
+        .back-btn {
+            margin-top: 15px;
+            display: inline-block;
+            padding: 9px 24px;
+            background-color: #EE69B8;
+            border: 1.5px solid #545454;
+            border-radius: 20px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="content-box">
+
+    <div class="main-wrapper">
+        <div class="card-container">
             
-            <h2>Past Simple</h2>
-            <h3 style="text-align: center; color: #545454; font-style: italic; font-size: 14px;">الماضي البسيط</h3>
-            <hr style="border: 0; border-top: 1px solid #FDBBE3; margin: 15px 0;">
-            <p>يتحدث عن حدث في الماضي تم وانتهى (في وقت محدد).</p>
-            <p><strong>صيغة الإثبات:</strong><br>
-            S + التصريف الثاني للفعل + com …</p>
-            <p><em>مثل:</em><br>
-            - I went to school yesterday. (جملة مثبتة)<br>
-            - I did go to school yesterday. (جملة مؤكدة مُثبتة)</p>
-            <p><strong>صيغة السؤال:</strong><br>
-            Did + S + V(inf) + com…<br>
-            <em>أمثلة:</em><br>
-            - Did she study English in high school?<br>
-            - Did they visit the pyramids last year?</p>
-            <p><strong>صيغة النفي:</strong><br>
-            S + did + not + com…<br>
-            <em>أمثلة:</em><br>
-            - I didn't go to school yesterday.<br>
-            - They didn't visit the pyramids last year.</p>
-            <p><strong>التصريف الثاني للفعل (V2):</strong></p>
-            <ul>
-                <li><strong>أفعال منتظمة (Regular):</strong> تُضاف لها (ed, ied, d).</li>
-                <li><strong>أفعال شاذة (Irregular):</strong> مثل (see, saw, seen).</li>
-            </ul>
-            <p><strong>أفعال الكينونة في الماضي (was, were):</strong><br>
-            - I, she, he, it -> (was)<br>
-            - we, they, you -> (were)</p>
-            <p>وتأتي بدون استخدام فعل مساعد مثل (don't/didn't) في حالتها البسيطة للنفي، بل تنفي بـ (wasn't / weren't).</p>
-            <p>تستخدم (was/were) في الماضي البسيط عندما نريد وصف حالة، أو صفة، أو مكان في الماضي وليس حركة أو فعلاً حركياً (مثل الطبخ أو الركض).<br>
-            <em>(بمعنى عندما لا يكون هناك فعل حركي رئيسي في الجملة).</em></p>
-            <p><strong>1. مع الصفات (Adjectives):</strong><br>
-            - I was tired yesterday.<br>
-            - They were happy during the holiday.</p>
-            <p><strong>2. مع الأماكن (Places):</strong><br>
-            - She was at high school in 2020.<br>
-            - We were at the garden last week.</p>
-            <p><strong>3. مع الوظائف أو الأسماء (Nouns / Jobs):</strong><br>
-            - He was a student.</p>
-            <p><strong>الأفعال غير الحركية (Stative Verbs):</strong> تشمل أفعال المشاعر، العقل والتفكير، الملكية، الحواس، والوجود.</p>
-            <!-- خانة الفيديو المضافة -->
-            <div class="video-box">
-                <p><strong>الڤيديو المُعتمد بالشرح:</strong></p>
-                <a href="https://youtu.be/5TjpEcrNbCc?si=OvmT63pPpl5ezThn" target="_blank" style="color:#F168BC; font-weight:bold; text-decoration:none;">اضغط هنا للمشاهدة ✨</a>
+            <h1>Past Simple</h1>
+            <div class="subtitle">الماضي البسيط</div>
+            
+            <!-- مقدمة الدرس -->
+            <div class="info-card">
+                <p>📌 يتحدث زمن الماضي البسيط عن <strong>حدث تم وانتهى في الماضي</strong> في وقت محدد.</p>
             </div>
-            <div class="video-box">
-                <a href="https://share.gemini.google/6LFt7Cr03U2D" target="_blank" style="color:#F168BC; font-weight:bold; text-decoration:none;">اختبار تفاعلي بواسطة الـ Ai</a>
+
+            <!-- الصيغ الأساسية -->
+            <div class="section-badge">صيغ الزمن (Structure)</div>
+
+            <!-- الإثبات -->
+            <div class="rule-item">
+                <div class="rule-title">1- صيغة الإثبات (Affirmative):</div>
+                <div class="formula-box">S + V2 (التصريف الثاني) + Complement</div>
+                <span class="en-example">• I went to school yesterday. <small style="color:#555;">(مثبتة)</small></span>
+                <span class="en-example">• I did go to school yesterday. <small style="color:#555;">(مؤكدة)</small></span>
             </div>
-            <div class="back-container">
-                <a href="english-grammar.html" class="back-btn">العودة ↩️</a>
+
+            <!-- السؤال -->
+            <div class="rule-item">
+                <div class="rule-title">2- صيغة السؤال (Question):</div>
+                <div class="formula-box">Did + S + V(inf / مجرد) + Complement ?</div>
+                <span class="en-example">• Did she study English in high school?</span>
+                <span class="en-example">• Did they visit the pyramids last year?</span>
             </div>
+
+            <!-- النفي -->
+            <div class="rule-item">
+                <div class="rule-title">3- صيغة النفي (Negative):</div>
+                <div class="formula-box">S + did not (didn't) + V(inf / مجرد) + Complement</div>
+                <span class="en-example">• I didn't go to school yesterday.</span>
+                <span class="en-example">• They didn't visit the pyramids last year.</span>
+            </div>
+
+            <!-- التصريف الثاني -->
+            <div class="section-badge">التصريف الثاني للفعل (V2)</div>
+
+            <div class="info-card">
+                <p>ينقسم الفعل في الماضي البسيط إلى نوعين:</p>
+                <hr style="border:0; border-top:1px dashed #EE69B8; margin: 8px 0;">
+                <p>• <strong>أفعال منتظمة (Regular):</strong> تُضاف لها (ed, ied, d).</p>
+                <p style="margin-top: 4px;">• <strong>أفعال شاذة (Irregular):</strong> تتغير صيغتها مثل:<br>
+                <span style="color:#d81b60; font-weight:bold; direction:ltr; display:inline-block;">see ➔ saw ➔ seen</span></p>
+            </div>
+
+            <!-- Was / Were -->
+            <div class="section-badge">أفعال الكينونة (Was / Were)</div>
+
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>الضمائر (Subjects)</th>
+                        <th>فعل الكينونة</th>
+                        <th>النفي (Negative)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I, She, He, It</td>
+                        <td><strong style="color:#EE69B8;">Was</strong></td>
+                        <td>Wasn't</td>
+                    </tr>
+                    <tr>
+                        <td>We, They, You</td>
+                        <td><strong style="color:#EE69B8;">Were</strong></td>
+                        <td>Weren't</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="rule-item">
+                <p style="margin:0; font-size:0.9rem; color:#444;">
+                    ⚠️ <strong>ملاحظة مهمة:</strong> تأتي (was/were) بدون استخدام فعل مساعد مثل (didn't) وتنفي نفسها بـ (wasn't / weren't).<br><br>
+                    نستخدمها في الماضي البسيط لوصف <strong>حالة، أو صفة، أو مكان</strong> وليس فعلاً حركياً (مثل الطبخ أو الركض).
+                </p>
+            </div>
+
+            <!-- استخدامات Was / Were -->
+            <div class="rule-item">
+                <div class="rule-title">حالات استخدام Was / Were:</div>
+                
+                <strong>1. مع الصفات (Adjectives):</strong>
+                <span class="en-example">• I was tired yesterday.</span>
+                <span class="en-example">• They were happy during the holiday.</span>
+                <br>
+                <strong>2. مع الأماكن (Places):</strong>
+                <span class="en-example">• She was at high school in 2020.</span>
+                <span class="en-example">• We were at the garden last week.</span>
+                <br>
+                <strong>3. مع الوظائف والأسماء (Nouns / Jobs):</strong>
+                <span class="en-example">• He was a student.</span>
+            </div>
+
+            <div class="info-card" style="background-color: #fffafc;">
+                <p>💡 <strong>الأفعال غير الحركية (Stative Verbs):</strong> تشمل أفعال المشاعر، العقل والتفكير، الملكية، الحواس، والوجود.</p>
+            </div>
+
+            <!-- الروابط الخارجية والفيديو -->
+            <div class="action-box">
+                <p style="margin:0 0 5px 0; color:#545454; font-weight:bold; font-size:0.9rem;">🎬 الڤيديو المُعتمد بالشرح:</p>
+                <a href="https://youtu.be/5TjpEcrNbCc?si=OvmT63pPpl5ezThn" target="_blank">اضغط هنا للمشاهدة ✨</a>
+            </div>
+
+            <div class="action-box">
+                <p style="margin:0 0 5px 0; color:#545454; font-weight:bold; font-size:0.9rem;">🤖 اختبار تفاعلي ذكي:</p>
+                <a href="https://share.gemini.google/6LFt7Cr03U2D" target="_blank">بدء الاختبار بواسطة AI 🔗</a>
+            </div>
+
+            <!-- زر العودة -->
+            <div>
+                <a href="english-grammar.html" class="back-btn">🔄 العودة للقواعد</a>
+            </div>
+
         </div>
     </div>
+
 </body>
 </html>
