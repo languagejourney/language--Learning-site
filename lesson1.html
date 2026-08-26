@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الدرس الأول: الأبجدية والنطق الصحيح</title>
     <!-- استدعاء الخطوط المطلوبة -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&display=swap" rel="stylesheet">
     
     <style>
         body, html {
@@ -20,53 +20,167 @@
             font-family: 'Playfair Display', serif;
         }
 
-        .container {
-            width: 88%;
+        .main-wrapper {
+            width: 90%;
             max-width: 420px;
-            padding: 20px;
-            box-sizing: border-box;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
         }
 
-        /* صندوق المحتوى الأصلي بتصميمج الرصاصي والوردي */
-        .content-box {
+        /* الإطار الخارجي الرئيسي للموقع */
+        .card-container {
+            width: 100%;
             background-color: #ffffff;
             border: 1.5px solid #545454;
-            border-radius: 18px;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-            text-align: right;
-            max-height: 75vh;
-            overflow-y: auto;
-        }
-
-        h2, h3 {
-            color: #545454;
+            border-radius: 24px;
+            padding: 25px 18px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
             text-align: center;
-            font-family: 'Playfair Display', serif;
+            max-height: 88vh;
+            overflow-y: auto;
+            scrollbar-width: none;
         }
 
-        p, li {
+        .card-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* عنوان الدرس الرئيسي */
+        h1 {
+            font-family: 'Playfair Display', cursive, serif;
+            font-size: 1.8rem;
+            color: #545454;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: #EE69B8;
+            font-size: 1.15rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        /* بطاقة الملاحظات والمعلومات */
+        .info-card {
+            background-color: #ffffff;
+            border: 1.5px solid #f6a0dd;
+            border-radius: 16px;
+            padding: 14px 16px;
+            margin-bottom: 20px;
+            text-align: right;
+            box-shadow: 0 2px 8px rgba(238, 105, 184, 0.08);
+        }
+
+        .info-card p {
+            margin: 0;
+            color: #444444;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* عناوين الفصول والأقسام بداخل مستطيلات وردية */
+        .section-badge {
+            display: inline-block;
+            background-color: #EE69B8;
+            color: #ffffff;
+            padding: 8px 22px;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            font-weight: bold;
+            border: 1.5px solid #545454;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        /* تنسيق الجداول */
+        .custom-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 1.5px solid #545454;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+        }
+
+        .custom-table th {
+            background-color: #F17FC7;
             color: #000000;
-            font-size: 15px;
+            padding: 10px;
+            font-size: 1rem;
+            border-bottom: 1.5px solid #545454;
+            font-weight: bold;
+        }
+
+        .custom-table td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.92rem;
+            color: #333;
+            text-align: center;
+        }
+
+        .custom-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .letter-span {
+            font-weight: bold;
+            color: #EE69B8;
+            font-size: 1.05rem;
+        }
+
+        /* قائمة النطق بطريقة المنشورات المصممة */
+        .rule-item {
+            background-color: #fff8fc;
+            border-right: 4px solid #EE69B8;
+            border-top: 1px solid #eee;
+            border-left: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            border-radius: 8px;
+            padding: 10px 12px;
+            margin-bottom: 10px;
+            text-align: right;
+            font-size: 0.92rem;
             line-height: 1.6;
         }
 
-        /* تنسيق البطاقات التفاعلية بأسفل الدرس بالألوان المطلوبة */
+        .rule-item strong {
+            color: #EE69B8;
+        }
+
+        .rule-item em {
+            color: #d81b60;
+            font-style: normal;
+            font-weight: bold;
+        }
+
+        /* البطاقات التفاعلية أسفل الدرس */
         .cards-wrapper {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 10px;
-            margin-top: 25px;
+            margin-top: 20px;
+            margin-bottom: 15px;
         }
 
-        .card-container {
+        .card-container-flip {
             perspective: 1000px;
-            width: 90px;
-            height: 90px;
+            width: 75px;
+            height: 75px;
         }
 
-        .card {
+        .card-flip {
             position: relative;
             width: 100%;
             height: 100%;
@@ -76,7 +190,7 @@
             cursor: pointer;
         }
 
-        .card.is-flipped {
+        .card-flip.is-flipped {
             transform: rotateY(180deg);
         }
 
@@ -89,139 +203,221 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            border-radius: 10px;
-            border: 1px solid #545454;
-            padding: 5px;
+            border-radius: 12px;
+            border: 1.5px solid #545454;
+            padding: 4px;
             box-sizing: border-box;
         }
 
         .card-front { 
-            background-color: #FDBBE3; 
+            background-color: #F8ABE4; 
             color: #000000; 
-            font-size: 18px; 
+            font-size: 16px; 
             font-weight: bold; 
         }
 
         .card-back { 
-            background-color: #EF8BC8; 
+            background-color: #FDD7FC; 
             color: #000000; 
             transform: rotateY(180deg); 
-            font-size: 11px;
+            font-size: 10px;
             text-align: center;
+            font-weight: bold;
         }
 
-        /* تنسيق رابط الفيديو الإضافي */
+        /* رابط الفيديو */
         .video-link {
-            text-align: center;
-            margin-top: 20px;
-            padding: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
         }
+
         .video-link a {
-            color: #F168BC;
+            color: #EE69B8;
             font-weight: bold;
-            text-decoration: underline;
+            text-decoration: none;
+            background-color: #fff0f8;
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px dashed #EE69B8;
+            display: inline-block;
+            font-size: 0.9rem;
         }
 
         /* زر العودة */
-        .back-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-
         .back-btn {
+            margin-top: 15px;
             display: inline-block;
-            background-color: #F168BC;
-            color: #000000;
-            padding: 10px 20px;
+            padding: 9px 22px;
+            background-color: #EE69B8;
+            border: 1.5px solid #545454;
             border-radius: 20px;
+            color: #000000;
             text-decoration: none;
+            font-size: 0.95rem;
             font-weight: bold;
-            border: 1px solid #545454;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="content-box">
+    <div class="main-wrapper">
+        <div class="card-container">
             
-            <h2>الدرس الأول: الأبجدية والنطق الصحيح</h2>
-            <h3 style="font-style: italic;">Capítulo 1: Fundamentos y Pronunciación</h3>
+            <h1>الدرس الأول: الأبجدية والنطق الصحيح</h1>
+            <div class="subtitle">Capítulo 1: Fundamentos y Pronunciación</div>
             
-            <p>تتكون اللغة الإسبانية من 27 حرفًا، والأبجدية الإسبانية تشبه الأنجليزية تمامًا، باستثناء حرف واحد إضافي مُميز جدًا وهو حرف <strong>(Ñ)</strong>.</p>
-            
-            <hr style="border: 0; border-top: 1px solid #FDBBE3; margin: 15px 0;">
+            <!-- مقدمة الدرس في كارت لطيف -->
+            <div class="info-card">
+                <p>تتكون اللغة الإسبانية من <strong>27 حرفًا</strong>، والأبجدية الإسبانية تشبه الإنجليزية تمامًا، باستثناء حرف واحد إضافي مُميز جدًا وهو حرف <strong>(Ñ)</strong>.</p>
+            </div>
 
-            <p><strong>الأبجدية الإسبانية:</strong><br>
-            Aa (آ) <br> Bb (بي) <br> Cc (ثي أو سي) <br> Dd (دي) <br> Ee (إي) <br> Ff (إف) <br> Gg (خِي) <br> Hh (إيتشي) <br> Ii (إي) <br> Jj (خوتا) <br> Kk (كا) <br> Ll (إي) <br> Mm (إيمي) <br> Nn (إيني) <br> Ññ (إيني - بنفخة هوائية) <br> Oo (أو) <br> Pp (بي-مع نفخة هوائية قوية) <br> Qq (كو) <br> Rr (إيري) <br> Ss (إيسي) <br> Tt (تِي) <br> Uu (وو) <br> Vv (أوبيه) <br> Ww (أوبيه دوبل) <br> Xx (إيكس) <br> Yy (إي غريغا) <br> Zz (ثيتا أو سيتا)</p>
+            <!-- عنوان قسم الأبجدية -->
+            <div class="section-badge">1. الأبجدية الإسبانية</div>
 
-            <hr style="border: 0; border-top: 1px solid #FDBBE3; margin: 15px 0;">
+            <!-- جدول الحروف للنظام والجمالية -->
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>الحرف</th>
+                        <th>النطق بالعربية</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="letter-span">Aa</td><td>آ</td></tr>
+                    <tr><td class="letter-span">Bb</td><td>بي</td></tr>
+                    <tr><td class="letter-span">Cc</td><td>ثي أو سي</td></tr>
+                    <tr><td class="letter-span">Dd</td><td>دي</td></tr>
+                    <tr><td class="letter-span">Ee</td><td>إي</td></tr>
+                    <tr><td class="letter-span">Ff</td><td>إف</td></tr>
+                    <tr><td class="letter-span">Gg</td><td>خِي</td></tr>
+                    <tr><td class="letter-span">Hh</td><td>إيتشي</td></tr>
+                    <tr><td class="letter-span">Ii</td><td>إي</td></tr>
+                    <tr><td class="letter-span">Jj</td><td>خوتا</td></tr>
+                    <tr><td class="letter-span">Kk</td><td>كا</td></tr>
+                    <tr><td class="letter-span">Ll</td><td>إي</td></tr>
+                    <tr><td class="letter-span">Mm</td><td>إيمي</td></tr>
+                    <tr><td class="letter-span">Nn</td><td>إيني</td></tr>
+                    <tr><td class="letter-span">Ññ</td><td>إيني (بنفخة هوائية)</td></tr>
+                    <tr><td class="letter-span">Oo</td><td>أو</td></tr>
+                    <tr><td class="letter-span">Pp</td><td>بي (نفخة هوائية قوية)</td></tr>
+                    <tr><td class="letter-span">Qq</td><td>كو</td></tr>
+                    <tr><td class="letter-span">Rr</td><td>إيري</td></tr>
+                    <tr><td class="letter-span">Ss</td><td>إيسي</td></tr>
+                    <tr><td class="letter-span">Tt</td><td>تِي</td></tr>
+                    <tr><td class="letter-span">Uu</td><td>وو</td></tr>
+                    <tr><td class="letter-span">Vv</td><td>أوبيه</td></tr>
+                    <tr><td class="letter-span">Ww</td><td>أوبيه دوبل</td></tr>
+                    <tr><td class="letter-span">Xx</td><td>إيكس</td></tr>
+                    <tr><td class="letter-span">Yy</td><td>إي غريغا</td></tr>
+                    <tr><td class="letter-span">Zz</td><td>ثيتا أو سيتا</td></tr>
+                </tbody>
+            </table>
 
-            <p><strong>أحرف العلة (Las Vocales):</strong><br>
-            في الإسبانية، أحرف العلة هيَ المُحرك الأساسي للغة، وتضم 5 أحرف أساسية (U, O, I, E, A) تتقسم إلى قسمين لتسهيل فهم قاعدة نطق الأحرف:<br>
-            - أحرف علة ضعيفة (مُغلقة): U, I (كالضمة والكسرة في اللغة العربية).<br>
-            - أحرف علة قوية (مفتوحة): A, O, E (كالفتحة في اللغة العربية).</p>
+            <!-- أحرف العلة -->
+            <div class="section-badge">2. أحرف العلة (Las Vocales)</div>
 
-            <hr style="border: 0; border-top: 1px solid #FDBBE3; margin: 15px 0;">
+            <div class="info-card">
+                <p>في الإسبانية، أحرف العلة هيَ المُحرك الأساسي للغة، وتضم 5 أحرف أساسية (<strong>U, O, I, E, A</strong>) وتتقسم إلى قسمين لتسهيل فهم القاعدة:</p>
+                <hr style="border:0; border-top:1px dashed #EE69B8; margin: 10px 0;">
+                <p>• <strong>أحرف علة ضعيفة (مُغلقة):</strong> U, I <small>(كالضمة والكسرة في العربية)</small>.</p>
+                <p>• <strong>أحرف علة قوية (مفتوحة):</strong> A, O, E <small>(كالفتحة في العربية)</small>.</p>
+            </div>
 
-            <p><strong>مُلاحظات نطق مُهمة (Notas):</strong><br>
-            - <strong>حرف C:</strong> يُنطق (ث) إذا جاء بعدهُ أحد احرف العلة (E,I) مثل <em>Gracias</em>، أو <em>Cero</em>. ويُنطق (ك) إذا جاء بعده أحرف العلة (A,O,U) أو في نهاية الكلمة مثل <em>Casa</em>، أو <em>Coche</em>. ويُنطق (كث) إذا تكرر (cc) مثل <em>Acción</em>.<br><br>
-            - <strong>حرف G:</strong> يُنطق (خ) إذا جاء بعدهُ (E,I) مثل <em>Gente</em>، أو <em>Gimnasio</em>. ويُنطق (گ) إذا جاء بعده أحرف العلة (A,O,U) مثل <em>Gato</em>، أو <em>Gol</em>. <br>
-            <em>مُلاحظة مهمة:</em> إذا جاء التركيب (Gü) قبل (e, i) فإن حرف (u) لا يُنطق ، وظيفته فقط حماية حرف G ليبقى ناطقًا بالصوت (گ) مثل <em>Guerra</em>، أو <em>Guitarra</em>.<br><br>
-            - <strong>حرف H:</strong> حرف صامت 100% لا يُلفظ ابدًا مثل <em>Hotel</em>، أو <em>Hola</em>. استثناء وحيد، إذا سبقه حرف C ليصبح (ch) يُنطق (تش) مثل <em>Leche</em>، أو <em>Chico</em>.<br><br>
-            - <strong>حرف Q:</strong> لا يأتي بمفردهُ ابدًا، بل يأتي متبوعًا بحرف U ثم حرف علة (إما E او I) وفي هذه الحالة يكون U صامتًا تمامًا وينطق التركيب (ك) مثل <em>¿Qué?</em>، أو <em>Quiero</em>.<br><br>
-            - <strong>حرف Ñ:</strong> يُنطق (ني) مُدمجة (دمج النون والياء سريعًا) مثل <em>Niño</em>.<br><br>
-            - <strong>حرف LL:</strong> يُنطق (ي) مثل <em>Calle</em>.<br><br>
-            - <strong>حرف V:</strong> يُنطق تمامًا مثل حرف الباء الخفيفة (ب) مثل <em>Vida</em>، أو <em>Vino</em>.<br><br>
-            - <strong>الحرف المركب Ch:</strong> يُعامل كأنه حرف واحد في النطق، يُنطق (تش) مثل <em>Leche</em>، أو <em>Chico</em>.<br><br>
-            - <strong>حرف D:</strong> يُنطق (د) صريحة ومشددة إذا جاء في بداية الكلمة أو بعد حرفي N,L مثل <em>Día</em>، أو <em>Andar</em>. ويُنطق بصوت ناعم ومخفف جدًا يشبه حرف (ذ) إذا جاء بين حرفين متحركين (حروف العلة) أو في نهاية الكلمة مثل <em>Ciudad</em>.<br><br>
-            - <strong>RR الحرف المُكرر:</strong> يُنطق راء مُشددة وقوية (مع اهتزاز اللسان) مثل <em>Perro</em>.<br><br>
-            - <strong>NN الحرف المُكرر:</strong> يُنطق نون عادية مشددة قليلًا مثل <em>Conexión</em>.</p>
+            <!-- ملاحظات النطق المهمة -->
+            <div class="section-badge">3. مُلاحظات نطق مُهمة (Notas)</div>
 
-            <hr style="border: 0; border-top: 1px solid #FDBBE3; margin: 15px 0;">
+            <div class="rule-item">
+                <strong>• حرف C:</strong> يُنطق (ث) إذا جاء بعدهُ (E, I) مثل <em>Gracias</em>، أو <em>Cero</em>. ويُنطق (ك) إذا جاء بعده (A, O, U) أو في نهاية الكلمة مثل <em>Casa</em>، أو <em>Coche</em>. ويُنطق (كث) إذا تكرر (cc) مثل <em>Acción</em>.
+            </div>
 
-            <p><strong>النبرة أو الشدة الذكية - الأكسنت (El Acento Tilde):</strong><br>
-            هيَ الخط الصغير الذي يوضع فوق أحرف العلة فقط بالشكل التالي: (á, é, í, ó, ú). تفيد في الضغط بنبرة الصوت على هذا الحرف أثناء نطق الكلمة. أحيانًا يتغير معنى الكلمة تمامًا، مثل:<br>
-            - <strong>Sí</strong> (مع أكسنت): تعني (نعم).<br>
-            - <strong>Si</strong> (بدون أكسنت): تعني (إذا / لو).</p>
+            <div class="rule-item">
+                <strong>• حرف G:</strong> يُنطق (خ) إذا جاء بعدهُ (E, I) مثل <em>Gente</em>، أو <em>Gimnasio</em>. ويُنطق (گ) إذا جاء بعده (A, O, U) مثل <em>Gato</em>، أو <em>Gol</em>.<br>
+                <small style="color:#666;">* ملاحظة مهمة: إذا جاء التركيب (Gü) قبل (e, i) فإن حرف (u) لا يُنطق، وظيفته فقط حماية G ليبقى ناطقاً بالصوت (گ) مثل <em>Guerra</em>، أو <em>Guitarra</em>.</small>
+            </div>
 
-            <!-- البطاقات التفاعلية المرتبة بأسفل الصندوق -->
+            <div class="rule-item">
+                <strong>• حرف H:</strong> حرف صامت 100% لا يُلفظ أبداً مثل <em>Hotel</em>، أو <em>Hola</em>. استثناء وحيد، إذا سبقه حرف C ليصبح (ch) يُنطق (تش) مثل <em>Leche</em>، أو <em>Chico</em>.
+            </div>
+
+            <div class="rule-item">
+                <strong>• حرف Q:</strong> لا يأتي بمفردهُ أبداً، بل يأتي متبوعاً بحرف U ثم حرف علة (إما E أو I) وفي هذه الحالة يكون U صامتاً تماماً وينطق التركيب (ك) مثل <em>¿Qué?</em>، أو <em>Quiero</em>.
+            </div>
+
+            <div class="rule-item">
+                <strong>• حرف Ñ:</strong> يُنطق (ني) مُدمجة (دمج النون والياء سريعاً) مثل <em>Niño</em>.
+            </div>
+
+            <div class="rule-item">
+                <strong>• حرف LL:</strong> يُنطق (ي) مثل <em>Calle</em>.
+            </div>
+
+            <div class="rule-item">
+                <strong>• حرف V:</strong> يُنطق تماماً مثل حرف الباء الخفيفة (ب) مثل <em>Vida</em>، أو <em>Vino</em>.
+            </div>
+
+            <div class="rule-item">
+                <strong>• الحرف المركب Ch:</strong> يُعامل كأنه حرف واحد في النطق، يُنطق (تش) مثل <em>Leche</em>، أو <em>Chico</em>.
+            </div>
+
+            <div class="rule-item">
+                <strong>• حرف D:</strong> يُنطق (د) صريحة ومشددة إذا جاء في بداية الكلمة أو بعد حرفي N,L مثل <em>Día</em>، أو <em>Andar</em>. ويُنطق بصوت ناعم ومخفف جدًا يشبه حرف (ذ) إذا جاء بين حرفين متحركين أو في نهاية الكلمة مثل <em>Ciudad</em>.
+            </div>
+
+            <div class="rule-item">
+                <strong>• RR الحرف المُكرر:</strong> يُنطق راء مُشددة وقوية (مع اهتزاز اللسان) مثل <em>Perro</em>.
+            </div>
+
+            <div class="rule-item">
+                <strong>• NN الحرف المُكرر:</strong> يُنطق نون عادية مشددة قليلًا مثل <em>Conexión</em>.
+            </div>
+
+            <!-- النبرة والأكسنت -->
+            <div class="section-badge">4. النبرة أو الشدة الذكية (El Acento)</div>
+
+            <div class="info-card">
+                <p>هيَ الخط الصغير الذي يوضع فوق أحرف العلة فقط بالشكل التالي: (á, é, í, ó, ú). تفيد في الضغط بنبرة الصوت على هذا الحرف أثناء نطق الكلمة. أحيانًا يتغير معنى الكلمة تمامًا، مثل:</p>
+                <hr style="border:0; border-top:1px dashed #EE69B8; margin: 10px 0;">
+                <p>• <strong>Sí</strong> (مع أكسنت): تعني (نعم).</p>
+                <p>• <strong>Si</strong> (بدون أكسنت): تعني (إذا / لو).</p>
+            </div>
+
+            <!-- البطاقات التفاعلية -->
             <div class="cards-wrapper">
-                <div class="card-container">
-                    <div class="card" onclick="this.classList.toggle('is-flipped')">
+                <div class="card-container-flip">
+                    <div class="card-flip" onclick="this.classList.toggle('is-flipped')">
                         <div class="card-front">Ñ</div>
                         <div class="card-back">حرف مميز<br>ينطق (ني)</div>
                     </div>
                 </div>
-                <div class="card-container">
-                    <div class="card" onclick="this.classList.toggle('is-flipped')">
+                <div class="card-container-flip">
+                    <div class="card-flip" onclick="this.classList.toggle('is-flipped')">
                         <div class="card-front">D</div>
                         <div class="card-back">Andar<br>(يمشي)</div>
                     </div>
                 </div>
-                <div class="card-container">
-                    <div class="card" onclick="this.classList.toggle('is-flipped')">
+                <div class="card-container-flip">
+                    <div class="card-flip" onclick="this.classList.toggle('is-flipped')">
                         <div class="card-front">RR</div>
                         <div class="card-back">Perro<br>اهتزاز لسان</div>
                     </div>
                 </div>
-                <div class="card-container">
-                    <div class="card" onclick="this.classList.toggle('is-flipped')">
+                <div class="card-container-flip">
+                    <div class="card-flip" onclick="this.classList.toggle('is-flipped')">
                         <div class="card-front">Sí</div>
                         <div class="card-back">بأكسنت<br>تعني (نعم)</div>
                     </div>
                 </div>
             </div>
 
-            <!-- رابط إضافي -->
+            <!-- رابط الفيديو -->
             <div class="video-link">
-                <a href="https://youtube.com/shorts/gq-0eYmRoPE?si=i02sRx5zGxMFZ0St" target="_blank">فيديو مُمتع لتعلم نطق الأحرف</a>
+                <a href="https://youtube.com/shorts/gq-0eYmRoPE?si=i02sRx5zGxMFZ0St" target="_blank">🎬 فيديو مُمتع لتعلم نطق الأحرف</a>
             </div>
 
             <!-- زر العودة -->
-            <div class="back-container">
-                <a href="fundamentos.html" class="back-btn">العودة للأساسيات ↩️</a>
+            <div>
+                <a href="fundamentos.html" class="back-btn">🔄 العودة للأساسيات</a>
             </div>
 
         </div>
