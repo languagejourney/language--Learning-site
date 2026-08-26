@@ -9,6 +9,7 @@
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+
       gtag('js', new Date());
 
       gtag('config', 'G-WBZH2BVR73');
@@ -29,18 +30,20 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             background: linear-gradient(135deg, #fff0f5, #ffe4e9);
             font-family: 'Playfair Display', serif;
+            position: relative;
         }
 
         .main-content {
             width: 85%;
             max-width: 340px; 
             text-align: center;
-            padding: 40px 15px 20px 15px;
+            padding: 20px 15px 20px 15px;
             box-sizing: border-box;
+            margin-top: -20px;
         }
 
         h1 {
@@ -58,7 +61,7 @@
             color: #545454;
             font-size: 1.1rem;
             margin-top: 0;
-            margin-bottom: 35px;
+            margin-bottom: 40px;
         }
 
         .btn {
@@ -88,11 +91,20 @@
         }
 
         .btn-espanol {
-            background-color: #A9C2A6; 
+            background-color: #F2A1D2; 
             font-family: 'Playfair Display', cursive, serif;
             font-style: italic;
             font-size: 1.25rem;
             font-weight: bold;
+        }
+
+        .btn-about {
+            background-color: #FDBBE3; 
+            font-family: 'Playfair Display', cursive, serif;
+            font-style: italic;
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0;
         }
 
         /* تنسيق أسفل الصفحة (Footer) */
@@ -102,6 +114,8 @@
             padding: 15px 10px 25px 10px;
             font-size: 0.85rem;
             box-sizing: border-box;
+            position: absolute;
+            bottom: 0;
         }
 
         footer a {
@@ -126,6 +140,7 @@
 
         <a href="english.html" class="btn btn-english">English</a>
         <a href="espanol.html" class="btn btn-espanol">Español</a>
+        <a href="about.html" class="btn btn-about">About</a>
     </div>
 
     <!-- الفوتر الخاص بالروابط الرسمية لـ Google AdSense -->
