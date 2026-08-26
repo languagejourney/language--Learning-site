@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="2CoaE9LP12mauaQPuLnsW2Ku4hmEyEW0Cs9mFQ0u6fM" />
@@ -9,18 +9,16 @@
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-
       gtag('js', new Date());
-
       gtag('config', 'G-WBZH2BVR73');
     </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Language Journal</title>
+    <title>Welcome - My Language Journey</title>
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@400;700&family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
     
     <style>
         body, html {
@@ -32,7 +30,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(135deg, #fff0f5, #ffe4e9);
+            background: #ffe6ea;
             font-family: 'Playfair Display', serif;
             position: relative;
         }
@@ -41,78 +39,82 @@
             width: 85%;
             max-width: 340px; 
             text-align: center;
-            padding: 20px 15px 20px 15px;
+            padding: 20px 15px;
             box-sizing: border-box;
-            margin-top: -20px;
+            margin-top: -30px;
         }
 
-        h1 {
-            font-family: 'Playfair Display', cursive, serif;
+        h1.title {
+            font-family: 'Playfair Display', serif;
             font-style: italic;
-            font-size: 2.2rem;
+            font-size: 3rem;
             color: #545454;
-            margin-bottom: 5px;
-            font-weight: 600;
+            margin-bottom: 35px;
+            font-weight: 500;
         }
 
-        p.subtitle {
-            font-family: 'Amiri', serif;
-            font-style: italic;
-            color: #545454;
-            font-size: 1.1rem;
-            margin-top: 0;
-            margin-bottom: 40px;
-        }
-
-        .btn {
+        .btn-box {
             display: block;
             width: 100%;
             padding: 14px 10px;
-            margin-bottom: 22px;
+            margin-bottom: 18px;
             text-decoration: none;
             color: #000000;
             border-radius: 16px;
             border: 1.5px solid #545454;
             box-sizing: border-box;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.03);
-        }
-
-        .btn:active {
-            transform: scale(0.98);
-        }
-
-        .btn-english {
-            background-color: #EF8BC8; 
-            font-family: 'Playfair Display', cursive, serif;
-            font-style: italic;
-            font-size: 1.25rem;
+            background-color: #f382be;
+            font-size: 1.2rem;
             font-weight: bold;
         }
 
-        .btn-espanol {
-            background-color: #F2A1D2; 
-            font-family: 'Playfair Display', cursive, serif;
+        .btn-main {
+            font-family: 'Playfair Display', serif;
             font-style: italic;
-            font-size: 1.25rem;
-            font-weight: bold;
         }
 
-        .btn-about {
-            background-color: #FDBBE3; 
-            font-family: 'Playfair Display', cursive, serif;
+        .btn-arabic {
+            font-family: 'Amiri', serif;
             font-style: italic;
             font-size: 1.25rem;
-            font-weight: bold;
-            margin-bottom: 0;
         }
 
-        /* تنسيق أسفل الصفحة (Footer) */
+        .btn-arabic-light {
+            background-color: #fbbde3;
+            font-family: 'Amiri', serif;
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+
+        /* الصف السفلي للأزرار الثلاثة */
+        .bottom-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .btn-small {
+            flex: 1;
+            padding: 12px 5px;
+            text-decoration: none;
+            color: #000000;
+            border-radius: 14px;
+            border: 1.5px solid #545454;
+            background-color: #fbbde3;
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            font-size: 1rem;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        /* الفوتر لروابط Google AdSense */
         footer {
             width: 100%;
             text-align: center;
-            padding: 15px 10px 25px 10px;
-            font-size: 0.85rem;
+            padding: 15px 10px 20px 10px;
             box-sizing: border-box;
             position: absolute;
             bottom: 0;
@@ -121,7 +123,7 @@
         footer a {
             color: #545454;
             text-decoration: none;
-            margin: 0 8px;
+            margin: 0 6px;
             font-family: 'Playfair Display', serif;
             font-size: 0.85rem;
             border-bottom: 1px dotted #545454;
@@ -135,15 +137,20 @@
 <body>
 
     <div class="main-content">
-        <h1>My language journal</h1>
-        <p class="subtitle">مُلاﺣَﻈﺎتِي اﻟﻠُّﻐَﻮِﻳَّﺔُ</p>
+        <h1 class="title">Welcome</h1>
 
-        <a href="english.html" class="btn btn-english">English</a>
-        <a href="espanol.html" class="btn btn-espanol">Español</a>
-        <a href="about.html" class="btn btn-about">About</a>
+        <a href="#" class="btn-box btn-main">My Language Journey</a>
+        <a href="#" class="btn-box btn-arabic">اتعلم وأخطأ لكن أستمر</a>
+        <a href="#" class="btn-box btn-arabic-light">تعلم من رحلتي! تجربة ممتعة!</a>
+
+        <div class="bottom-buttons">
+            <a href="espanol.html" class="btn-small">Español</a>
+            <a href="english.html" class="btn-small">English</a>
+            <a href="about.html" class="btn-small">About</a>
+        </div>
     </div>
 
-    <!-- الفوتر الخاص بالروابط الرسمية لـ Google AdSense -->
+    <!-- الفوتر الخاص بسياسة الخصوصية والتواصل -->
     <footer>
         <a href="privacy.html">Privacy Policy</a>
         <span>|</span>
