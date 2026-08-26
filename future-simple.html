@@ -4,321 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Future Simple - English Grammar</title>
-    <!-- استدعاء الخطوط -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&display=swap" rel="stylesheet">
-    
     <style>
         body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            margin: 0; padding: 0; width: 100%; min-height: 100vh;
+            display: flex; justify-content: center; align-items: center;
             background: linear-gradient(135deg, #fff0f5, #ffe4e9);
             font-family: 'Playfair Display', serif;
         }
-
-        .main-wrapper {
-            width: 90%;
-            max-width: 420px;
-            padding: 20px 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        /* الإطار الخارجي الرئيسي */
+        .main-wrapper { width: 90%; max-width: 420px; padding: 20px 0; display: flex; justify-content: center; }
         .card-container {
-            width: 100%;
-            background-color: #ffffff;
-            border: 1.5px solid #545454;
-            border-radius: 24px;
-            padding: 25px 18px;
-            box-sizing: border-box;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-            text-align: center;
-            max-height: 88vh;
-            overflow-y: auto;
-            scrollbar-width: none;
+            width: 100%; background-color: #ffffff; border: 1.5px solid #545454;
+            border-radius: 24px; padding: 25px 18px; box-sizing: border-box;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03); text-align: center;
+            max-height: 88vh; overflow-y: auto; scrollbar-width: none;
         }
-
-        .card-container::-webkit-scrollbar {
-            display: none;
-        }
-
-        /* عنوان الدرس الرئيسي */
-        h1 {
-            font-family: 'Playfair Display', cursive, serif;
-            font-size: 1.8rem;
-            color: #545454;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            font-weight: 600;
-            line-height: 1.3;
-        }
-
-        .subtitle {
-            font-family: 'Playfair Display', serif;
-            font-style: italic;
-            color: #EE69B8;
-            font-size: 1.15rem;
-            margin-top: 0;
-            margin-bottom: 20px;
-        }
-
-        /* مقدمة الدرس */
+        .card-container::-webkit-scrollbar { display: none; }
+        h1 { font-size: 1.8rem; color: #545454; margin: 5px 0; font-weight: 600; }
+        .subtitle { font-style: italic; color: #EE69B8; font-size: 1.15rem; margin-bottom: 20px; }
         .info-card {
-            background-color: #ffffff;
-            border: 1.5px solid #f6a0dd;
-            border-radius: 16px;
-            padding: 14px 16px;
-            margin-bottom: 20px;
-            text-align: right;
+            background-color: #ffffff; border: 1.5px solid #f6a0dd; border-radius: 16px;
+            padding: 14px 16px; margin-bottom: 20px; text-align: right;
             box-shadow: 0 2px 8px rgba(238, 105, 184, 0.08);
         }
-
-        .info-card p {
-            margin: 0;
-            color: #444444;
-            font-size: 0.95rem;
-            line-height: 1.7;
-        }
-
-        /* شارات العناوين */
+        .info-card p { margin: 0; color: #444444; font-size: 0.95rem; line-height: 1.7; }
         .section-badge {
-            display: inline-block;
-            background-color: #EE69B8;
-            color: #ffffff;
-            padding: 8px 22px;
-            border-radius: 12px;
-            font-size: 1.05rem;
-            font-weight: bold;
-            border: 1.5px solid #545454;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: inline-block; background-color: #EE69B8; color: #ffffff;
+            padding: 8px 22px; border-radius: 12px; font-size: 1.05rem; font-weight: bold;
+            border: 1.5px solid #545454; margin: 15px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
-
-        /* بطاقات القواعد */
         .rule-item {
-            background-color: #fff8fc;
-            border-right: 4px solid #EE69B8;
-            border-top: 1px solid #eee;
-            border-left: 1px solid #eee;
-            border-bottom: 1px solid #eee;
-            border-radius: 10px;
-            padding: 12px 14px;
-            margin-bottom: 14px;
-            text-align: right;
-            font-size: 0.92rem;
-            line-height: 1.6;
+            background-color: #fff8fc; border-right: 4px solid #EE69B8;
+            border-top: 1px solid #eee; border-left: 1px solid #eee; border-bottom: 1px solid #eee;
+            border-radius: 10px; padding: 12px 14px; margin-bottom: 14px;
+            text-align: right; font-size: 0.92rem; line-height: 1.6;
         }
-
-        .rule-title {
-            color: #EE69B8;
-            font-weight: bold;
-            font-size: 1rem;
-            margin-bottom: 6px;
-        }
-
+        .rule-title { color: #EE69B8; font-weight: bold; font-size: 1rem; margin-bottom: 6px; }
         .formula-box {
-            background-color: #fff;
-            border: 1px dashed #EE69B8;
-            border-radius: 8px;
-            padding: 6px 10px;
-            direction: ltr;
-            text-align: center;
-            font-weight: bold;
-            color: #333;
-            margin: 6px 0 10px 0;
-            font-family: sans-serif;
+            background-color: #fff; border: 1px dashed #EE69B8; border-radius: 8px;
+            padding: 6px 10px; direction: ltr; text-align: center; font-weight: bold;
+            color: #333; margin: 6px 0 10px 0; font-family: sans-serif;
         }
-
         .en-example {
-            direction: ltr;
-            text-align: left;
-            font-family: 'Playfair Display', serif;
-            color: #d81b60;
-            font-weight: bold;
-            background-color: #ffe4e9;
-            padding: 4px 10px;
-            border-radius: 6px;
-            display: block;
-            margin: 4px 0;
-            font-size: 0.9rem;
+            direction: ltr; text-align: left; font-family: 'Playfair Display', serif;
+            color: #d81b60; font-weight: bold; background-color: #ffe4e9;
+            padding: 4px 10px; border-radius: 6px; display: block; margin: 4px 0; font-size: 0.9rem;
         }
-
         .keyword-tag {
-            display: inline-block;
-            background-color: #ffe4e9;
-            color: #d81b60;
-            padding: 3px 8px;
-            border-radius: 6px;
-            font-size: 0.85rem;
-            font-weight: bold;
-            margin: 2px 3px;
-            direction: ltr;
+            display: inline-block; background-color: #ffe4e9; color: #d81b60;
+            padding: 3px 8px; border-radius: 6px; font-size: 0.85rem; font-weight: bold; margin: 2px 3px; direction: ltr;
         }
-
-        /* صناديق الفيديو */
         .action-box {
-            text-align: center;
-            margin: 12px 0;
-            padding: 14px;
-            border: 1.5px dashed #F8ABE4;
-            border-radius: 16px;
-            background-color: #fffbfe;
-            transition: 0.2s;
+            text-align: center; margin: 12px 0; padding: 14px;
+            border: 1.5px dashed #F8ABE4; border-radius: 16px; background-color: #fffbfe;
         }
-
-        .action-box a {
-            color: #EE69B8;
-            font-weight: bold;
-            text-decoration: none;
-            font-size: 0.95rem;
-            display: block;
-        }
-
-        .action-box:hover {
-            background-color: #fff0f7;
-            border-color: #EE69B8;
-        }
-
-        /* زر العودة */
+        .action-box a { color: #EE69B8; font-weight: bold; text-decoration: none; font-size: 0.95rem; display: block; }
         .back-btn {
-            margin-top: 15px;
-            display: inline-block;
-            padding: 9px 24px;
-            background-color: #EE69B8;
-            border: 1.5px solid #545454;
-            border-radius: 20px;
-            color: #000000;
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: bold;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            margin-top: 15px; display: inline-block; padding: 9px 24px;
+            background-color: #EE69B8; border: 1.5px solid #545454; border-radius: 20px;
+            color: #000000; text-decoration: none; font-size: 0.95rem; font-weight: bold;
         }
-
-        .list-style {
-            padding-right: 18px;
-            margin: 5px 0;
-        }
-
-        .list-style li {
-            margin-bottom: 6px;
-            color: #333;
-            font-size: 0.92rem;
-        }
+        .list-style { padding-right: 18px; margin: 5px 0; }
+        .list-style li { margin-bottom: 6px; color: #333; font-size: 0.92rem; }
     </style>
 </head>
 <body>
-
     <div class="main-wrapper">
         <div class="card-container">
-            
             <h1>Future Simple</h1>
             <div class="subtitle">المستقبل البسيط</div>
             
-            <!-- مقدمة الدرس -->
             <div class="info-card">
                 <p>📌 يُستخدم زمن المستقبل البسيط للتعبير عن <strong>حدث لم يحصل بعد</strong>، والتكلم عن شيء سوف يحدث في المستقبل.</p>
             </div>
 
-            <!-- 1. الإثبات -->
             <div class="section-badge">1. صيغة الإثبات (Affirmative)</div>
 
-            <!-- استخدام Will -->
             <div class="rule-item">
                 <div class="rule-title">أولاً: باستخدام Will</div>
                 <div class="formula-box">S + Will + V(inf / مجرد) + Complement</div>
-                
                 <p style="margin: 6px 0 4px 0; color:#555; font-weight:bold;">تُستخدم هذه الصيغة (will) لـ:</p>
                 <ol class="list-style">
-                    <li>
-                        <strong>1- التنبؤات (Predictions):</strong>
-                        <span class="en-example">• Aliens will invade Earth in 2050.</span>
-                        <span class="en-example">• It will rain tomorrow.</span>
-                    </li>
-                    <li>
-                        <strong>2- القرارات العفوية والسريعة:</strong>
-                        <span class="en-example">• I'm thirsty, I will drink some water.</span>
-                    </li>
-                    <li>
-                        <strong>3- التطوع (Volunteering):</strong>
-                        <span class="en-example">• Don't worry, I will help you with homework.</span>
-                    </li>
-                    <li>
-                        <strong>4- الوعود (Promises):</strong>
-                        <span class="en-example">• I will always love you.</span>
-                    </li>
+                    <li><strong>1- التنبؤات:</strong> <span class="en-example">• Aliens will invade Earth in 2050.</span><span class="en-example">• It will rain tomorrow.</span></li>
+                    <li><strong>2- القرارات العفوية:</strong> <span class="en-example">• I'm thirsty, I will drink water.</span></li>
+                    <li><strong>3- التطوع:</strong> <span class="en-example">• I will help you with homework.</span></li>
+                    <li><strong>4- الوعود:</strong> <span class="en-example">• I will always love you.</span></li>
                 </ol>
             </div>
 
-            <!-- استخدام Going to -->
             <div class="rule-item">
-                <div class="rule-title">ثانياً: باستخدام Going to <small style="color:#666;">(تُختصر gonna)</small></div>
+                <div class="rule-title">ثانياً: باستخدام Going to <small style="color:#666;">(gonna)</small></div>
                 <div class="formula-box">S + (am / is / are) + going to + V(inf)</div>
                 <p style="margin: 0 0 6px 0; color: #555;">تُستخدم عند وجود <strong>دليل قاطع</strong> أو شيء <strong>مُخطط له مسبقاً</strong>.</p>
                 <span class="en-example">• I'm going to visit my uncle tomorrow.</span>
             </div>
 
-            <!-- 2. السؤال -->
             <div class="section-badge">2. صيغة السؤال (Question)</div>
-
             <div class="rule-item">
                 <div class="rule-title">باستخدام Will:</div>
-                <div class="formula-box">Will + S + V(inf / مجرد) + Complement ?</div>
+                <div class="formula-box">Will + S + V(inf) + Complement ?</div>
                 <span class="en-example">• Will he visit his uncle?</span>
-
                 <br>
                 <div class="rule-title">باستخدام Going to:</div>
                 <div class="formula-box">(Am / Is / Are) + S + going to + V(inf) ?</div>
                 <span class="en-example">• Is he going to visit his uncle?</span>
             </div>
 
-            <!-- 3. النفي -->
             <div class="section-badge">3. صيغة النفي (Negative)</div>
-
             <div class="rule-item">
-                <div class="rule-title">باستخدام Will: <small style="color:#666;">(will not ➔ won't)</small></div>
+                <div class="rule-title">باستخدام Will:</div>
                 <div class="formula-box">S + won't (will not) + V(inf) + Complement</div>
                 <span class="en-example">• He won’t visit his uncle tomorrow.</span>
-
                 <br>
                 <div class="rule-title">باستخدام Going to:</div>
                 <div class="formula-box">S + (am / is / are) + not + going to + V(inf)</div>
-                <span class="en-example">• He is not going to visit his uncle tomorrow.</span>
+                <span class="en-example">• He is not going to visit his uncle.</span>
             </div>
 
-            <!-- الكلمات الدالة -->
             <div class="section-badge">الكلمات الدالة (Keywords)</div>
-
             <div class="info-card" style="text-align: center;">
-                <p style="margin-bottom: 8px;">تظهر غالباً مع المستقبل كلمات مثل:</p>
                 <div>
                     <span class="keyword-tag">Tomorrow</span>
                     <span class="keyword-tag">Next week</span>
-                    <span class="keyword-tag">Next year</span>
                     <span class="keyword-tag">Soon</span>
                     <span class="keyword-tag">In the future</span>
-                    <span class="keyword-tag">In 2030</span>
                 </div>
             </div>
 
-            <!-- فيديو الشرح -->
             <div class="action-box">
-                <p style="margin:0 0 5px 0; color:#545454; font-weight:bold; font-size:0.9rem;">🎬 الڤيديو المُعتمد بالشرح:</p>
+                <p style="margin:0 0 5px 0; color:#545454; font-weight:bold;">🎬 الڤيديو المُعتمد بالشرح:</p>
                 <a href="https://youtu.be/TDh-m2xLyg8?si=gIhgGErCeYHyhpuS" target="_blank">اضغط هنا للمشاهدة ✨</a>
             </div>
 
-            <!-- زر العودة -->
             <div>
                 <a href="english-grammar.html" class="back-btn">🔄 العودة للقواعد</a>
             </div>
-
         </div>
     </div>
-
 </body>
 </html>
