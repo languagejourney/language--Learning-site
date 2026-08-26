@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- الصفحة الرئيسية -->
+  <url>
+    <loc>https://languagejourney.github.io/language--Learning-site/</loc>
+    <priority>1.00</priority>
+  </url>
+  <!-- صفحة الإنجليزي -->
+  <url>
+    <loc>https://languagejourney.github.io/language--Learning-site/english.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <!-- صفحة الإسباني -->
+  <url>
+    <loc>https://languagejourney.github.io/language--Learning-site/espanol.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <!-- صفحة التواصل -->
+  <url>
+    <loc>https://languagejourney.github.io/language--Learning-site/contact.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <!-- سياسة الخصوصية -->
+  <url>
+    <loc>https://languagejourney.github.io/language--Learning-site/privacy.html</loc>
+    <priority>0.50</priority>
+  </url>
+  <!-- الشروط والأحكام -->
+  <url>
+    <loc>https://languagejourney.github.io/language--Learning-site/terms.html</loc>
+    <priority>0.50</priority>
+  </url>
+</urlset>
