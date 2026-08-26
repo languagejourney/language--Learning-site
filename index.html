@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WBZH2BVR73"></script>
@@ -13,9 +13,9 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taghreed Ali - Welcome</title>
+    <title>My Language Journal</title>
     
-    <!-- استيراد خط The Season أو خط بديل مائل وناعم قريب جداً منه -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@400;700&family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&display=swap" rel="stylesheet">
     
     <style>
@@ -25,110 +25,114 @@
             width: 100%;
             min-height: 100vh;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
-            /* خلفية وردية متدرجة هادئة */
             background: linear-gradient(135deg, #fff0f5, #ffe4e9);
             font-family: 'Playfair Display', serif;
         }
 
-        /* الحاوية بـ قياس مضبوط تماماً وما تطلع عن حدود الشاشة */
-        .container {
+        .main-content {
             width: 85%;
             max-width: 340px; 
             text-align: center;
-            padding: 15px;
+            padding: 40px 15px 20px 15px;
             box-sizing: border-box;
         }
 
-        /* Welcome بخط مائل وأنيق (The Season style) */
         h1 {
             font-family: 'Playfair Display', cursive, serif;
             font-style: italic;
-            font-size: 2.8rem;
+            font-size: 2.2rem;
             color: #545454;
-            margin-bottom: 25px;
+            margin-bottom: 5px;
             font-weight: 600;
         }
 
-        /* الأزرار الثلاثة الأولى (تدرج الوردي من الأغمق للأفتح) */
-        .btn-1 {
-            background-color: #F168BC; /* الأغمق */
-        }
-
-        .btn-2 {
-            background-color: #EF8BC8; /* الوسط */
-        }
-
-        .btn-3 {
-            background-color: #FDBBE3; /* الأفتح */
+        p.subtitle {
+            font-family: 'Amiri', serif;
+            font-style: italic;
+            color: #545454;
+            font-size: 1.1rem;
+            margin-top: 0;
+            margin-bottom: 35px;
         }
 
         .btn {
             display: block;
             width: 100%;
-            padding: 13px 10px;
-            margin: 10px 0;
-            color: #000000; /* الخطوط باللون الأسود */
+            padding: 14px 10px;
+            margin-bottom: 22px;
             text-decoration: none;
+            color: #000000;
             border-radius: 16px;
-            font-weight: bold;
-            border: 1.5px solid #545454; /* الإطار بلون الرصاصي المحدد */
+            border: 1.5px solid #545454;
             box-sizing: border-box;
-            /* تطبيق خط The Season المائل والناعم على النصوص */
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.03);
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-english {
+            background-color: #EF8BC8; 
             font-family: 'Playfair Display', cursive, serif;
             font-style: italic;
-            font-size: 1.05rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-
-        /* الروابط الثلاثة السفلى (About, English, Español) */
-        .nav-links {
-            display: flex;
-            justify-content: space-between;
-            gap: 8px;
-            margin-top: 12px;
-        }
-
-        .nav-links a {
-            flex: 1;
-            padding: 10px 4px;
-            background-color: #FDBBE3;
-            border: 1.5px solid #545454;
-            border-radius: 12px;
-            color: #000000;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem;
             font-weight: bold;
         }
 
-        /* By tagreed ali بخط يدوي تقريبًا */
-        .footer-name {
-            margin-top: 22px;
-            font-family: 'Amiri', cursive, serif;
+        .btn-espanol {
+            background-color: #A9C2A6; 
+            font-family: 'Playfair Display', cursive, serif;
             font-style: italic;
-            font-size: 1.2rem;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        /* تنسيق أسفل الصفحة (Footer) */
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 15px 10px 25px 10px;
+            font-size: 0.85rem;
+            box-sizing: border-box;
+        }
+
+        footer a {
             color: #545454;
+            text-decoration: none;
+            margin: 0 8px;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.85rem;
+            border-bottom: 1px dotted #545454;
+        }
+
+        footer span {
+            color: #888;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Welcome</h1>
+    <div class="main-content">
+        <h1>My language journal</h1>
+        <p class="subtitle">مُلاﺣَﻈﺎتِي اﻟﻠُّﻐَﻮِﻳَّﺔُ</p>
 
-        <a href="#" class="btn btn-1">My Language Journey</a>
-        <a href="#" class="btn btn-2">اتعلم وأخطأ لكن أستمر</a>
-        <a href="#" class="btn btn-3">تعلم من رحلتي! تجربة ممتعة!</a>
-
-        <div class="nav-links">
-            <a href="about.html">About</a>
-            <a href="english.html">English</a>
-            <a href="espanol.html">Español</a>
-        </div>
-
+        <a href="english.html" class="btn btn-english">English</a>
+        <a href="espanol.html" class="btn btn-espanol">Español</a>
     </div>
+
+    <!-- الفوتر الخاص بالروابط الرسمية لـ Google AdSense -->
+    <footer>
+        <a href="privacy.html">Privacy Policy</a>
+        <span>|</span>
+        <a href="terms.html">Terms & Conditions</a>
+        <span>|</span>
+        <a href="contact.html">Contact Us</a>
+    </footer>
 
 </body>
 </html>
