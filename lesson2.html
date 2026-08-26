@@ -20,97 +20,233 @@
             font-family: 'Playfair Display', serif;
         }
 
-        .container {
-            width: 88%;
+        .main-wrapper {
+            width: 90%;
             max-width: 420px;
-            padding: 20px;
-            box-sizing: border-box;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
         }
 
-        /* صندوق المحتوى بالإطار الرصاصي المعتمد */
-        .content-box {
+        /* الإطار الخارجي الرئيسي للموقع */
+        .card-container {
+            width: 100%;
             background-color: #ffffff;
             border: 1.5px solid #545454;
-            border-radius: 18px;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-            text-align: right;
-            max-height: 75vh;
-            overflow-y: auto;
-        }
-
-        h2 {
-            color: #545454;
+            border-radius: 24px;
+            padding: 25px 18px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
             text-align: center;
-            font-family: 'Playfair Display', serif;
-            margin-bottom: 5px;
+            max-height: 88vh;
+            overflow-y: auto;
+            scrollbar-width: none;
         }
 
-        p, li {
-            color: #000000;
-            font-size: 15px;
+        .card-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* عنوان الدرس الرئيسي */
+        h1 {
+            font-family: 'Playfair Display', cursive, serif;
+            font-size: 1.8rem;
+            color: #545454;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: #EE69B8;
+            font-size: 1.15rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        /* مقدمة الدرس */
+        .info-card {
+            background-color: #ffffff;
+            border: 1.5px solid #f6a0dd;
+            border-radius: 16px;
+            padding: 14px 16px;
+            margin-bottom: 20px;
+            text-align: right;
+            box-shadow: 0 2px 8px rgba(238, 105, 184, 0.08);
+        }
+
+        .info-card p {
+            margin: 0;
+            color: #444444;
+            font-size: 0.95rem;
             line-height: 1.7;
         }
 
-        /* زر العودة */
-        .back-container {
-            text-align: center;
-            margin-top: 25px;
-        }
-
-        .back-btn {
+        /* شارات العناوين بالمستطيل الوردي */
+        .section-badge {
             display: inline-block;
-            background-color: #F168BC;
-            color: #000000;
-            padding: 10px 20px;
-            border-radius: 20px;
-            text-decoration: none;
+            background-color: #EE69B8;
+            color: #ffffff;
+            padding: 8px 22px;
+            border-radius: 12px;
+            font-size: 1.05rem;
             font-weight: bold;
             border: 1.5px solid #545454;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            margin-top: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        /* تنسيق الجداول */
+        .custom-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 1.5px solid #545454;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+        }
+
+        .custom-table th {
+            background-color: #F17FC7;
+            color: #000000;
+            padding: 10px;
+            font-size: 1rem;
+            border-bottom: 1.5px solid #545454;
+            font-weight: bold;
+        }
+
+        .custom-table td {
+            padding: 10px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.95rem;
+            color: #333;
+            text-align: center;
+        }
+
+        .custom-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .pronoun-span {
+            font-weight: bold;
+            color: #EE69B8;
+            font-size: 1.05rem;
+        }
+
+        /* بطاقات الملاحظات المصممة */
+        .rule-item {
+            background-color: #fff8fc;
+            border-right: 4px solid #EE69B8;
+            border-top: 1px solid #eee;
+            border-left: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 12px;
+            text-align: right;
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .rule-item strong {
+            color: #EE69B8;
+        }
+
+        /* زر العودة */
+        .back-btn {
+            margin-top: 15px;
+            display: inline-block;
+            padding: 9px 24px;
+            background-color: #EE69B8;
+            border: 1.5px solid #545454;
+            border-radius: 20px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="content-box">
+    <div class="main-wrapper">
+        <div class="card-container">
             
-            <h2>الدرس الثاني: الضمائر الشخصية</h2>
-            <h3 style="text-align: center; color: #545454; font-style: italic; font-size: 14px;">Capítulo 2: Los Pronombres Personales</h3>
+            <h1>الدرس الثاني: الضمائر الشخصية</h1>
+            <div class="subtitle">Capítulo 2: Los Pronombres Personales</div>
             
-            <hr style="border: 0; border-top: 1px solid #FDBBE3; margin: 15px 0;">
+            <!-- مقدمة الدرس -->
+            <div class="info-card">
+                <p>في اللغة الإسبانية، تنقسم الضمائر بشكل يشبه اللغة العربية تمامًا إلى: <strong>(مفرد، جمع، مذكر، ومؤنث)</strong>.</p>
+            </div>
 
-            <p>في الإسبانية، تنقسم الضمائر بشكل يشبه العربية (مفرد، جمع، مذكر، ومؤنث).</p>
+            <!-- جدول ضمائر المفرد -->
+            <div class="section-badge">1. Singular (ضمائر المُفرد)</div>
 
-            <p><strong>Singular (ضمائر المُفرد):</strong><br>
-            1- <strong>Yo:</strong> أنا<br>
-            2- <strong>Tú:</strong> أنـتَ / أنـتِ<br>
-            3- <strong>Él:</strong> هو<br>
-            4- <strong>Ella:</strong> هي<br>
-            5- <strong>Usted:</strong> أنت / أنتِ (رسمية / للإحترام)</p>
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>الضمير بالإسبانية</th>
+                        <th>المعنى بالعربية</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="pronoun-span">Yo</td><td>أنا</td></tr>
+                    <tr><td class="pronoun-span">Tú</td><td>أنـتَ / أنـتِ</td></tr>
+                    <tr><td class="pronoun-span">Él</td><td>هو</td></tr>
+                    <tr><td class="pronoun-span">Ella</td><td>هي</td></tr>
+                    <tr><td class="pronoun-span">Usted</td><td>أنت / أنتِ <small style="color:#777;">(رسمية / للإحترام)</small></td></tr>
+                </tbody>
+            </table>
 
-            <p><strong>Plural (ضمائر الجمع):</strong><br>
-            1- <strong>Nosotros:</strong> نحن (للمذكر أو الجمع المختلط)<br>
-            2- <strong>Nosotras:</strong> نحن (للمؤنث فقط)<br>
-            3- <strong>Vosotros:</strong> أنتم (للمذكر أو الجمع المختلط)<br>
-            4- <strong>Vosotras:</strong> أنتم (للمؤنث فقط)<br>
-            5- <strong>Ellos:</strong> هُمّ (للمذكر أو الجمع المختلط)<br>
-            6- <strong>Ellas:</strong> هنّ (للمؤنث فقط)<br>
-            7- <strong>Ustedes:</strong> أنتم (للجمع رسمية / للإحترام)</p>
+            <!-- جدول ضمائر الجمع -->
+            <div class="section-badge">2. Plural (ضمائر الجمع)</div>
 
-            <h3 style="color: #545454; font-size: 16px; margin-top: 20px;">ملاحظات | Notas:</h3>
-            
-            <p><strong>-</strong> إذا كان هناك مجموعة فيها 99 بنت ولد واحد فقط، نستخدم ضمير المذكر الجمع Ellos أو Nosotros. الإسبانية تتحول للمذكر فوراً عند دخول أي عنصر مذكر في الجمع.</p>
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>الضمير بالإسبانية</th>
+                        <th>المعنى بالعربية</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="pronoun-span">Nosotros</td><td>نحن <small style="color:#777;">(للمذكر أو الجمع المختلط)</small></td></tr>
+                    <tr><td class="pronoun-span">Nosotras</td><td>نحن <small style="color:#777;">(للمؤنث فقط)</small></td></tr>
+                    <tr><td class="pronoun-span">Vosotros</td><td>أنتم <small style="color:#777;">(للمذكر أو الجمع المختلط)</small></td></tr>
+                    <tr><td class="pronoun-span">Vosotras</td><td>أنتم <small style="color:#777;">(للمؤنث فقط)</small></td></tr>
+                    <tr><td class="pronoun-span">Ellos</td><td>هُمّ <small style="color:#777;">(للمذكر أو الجمع المختلط)</small></td></tr>
+                    <tr><td class="pronoun-span">Ellas</td><td>هنّ <small style="color:#777;">(للمؤنث فقط)</small></td></tr>
+                    <tr><td class="pronoun-span">Ustedes</td><td>أنتم <small style="color:#777;">(للجمع رسمية / للإحترام)</small></td></tr>
+                </tbody>
+            </table>
 
-            <p><strong>-</strong> تُستخدم فقط داخل دولة إسبانيا للتحدث مع: (أنتم) Vosotros / Vosotras لمجموعة من الأصدقاء أو الأشخاص المقربين (صيغة غير رسمية).<br>
-            في دول أمريكا اللاتينية، ألغوا استخدام Vosotros تماماً! ويستخدمون Ustedes دائماً لخطاب أي جمع، سواء كانوا أصدقاء مقربين أو أشخاصاً رسميين.</p>
+            <!-- قسم الملاحظات -->
+            <div class="section-badge">ملاحظات | Notas</div>
 
-            <p><strong>-</strong> يجب أن تُكتب Tú و Él مع الأكسنت لأنها لو كُتبت بدونها سيتغير معناها تماماً.</p>
+            <div class="rule-item">
+                <strong>• قاعدة التذكير في الجمع:</strong> إذا كان هناك مجموعة فيها 99 بنت وولداً واحداً فقط، نستخدم ضمير المذكر الجمع (<strong>Ellos</strong> أو <strong>Nosotros</strong>). الإسبانية تتحول للمذكر فوراً عند دخول أي عنصر مذكر في الجمع.
+            </div>
+
+            <div class="rule-item">
+                <strong>• فرق الاستخدام الجغرافي:</strong><br>
+                - تُستخدم <strong>Vosotros / Vosotras</strong> فقط داخل دولة إسبانيا للتحدث مع مجموعة من الأصدقاء أو الأشخاص المقربين (صيغة غير رسمية).<br>
+                - في دول <strong>أمريكا اللاتينية</strong>، ألغوا استخدام Vosotros تماماً! ويستخدمون <strong>Ustedes</strong> دائماً لخطاب أي جمع، سواء كانوا أصدقاء مقربين أو أشخاصاً رسميين.
+            </div>
+
+            <div class="rule-item">
+                <strong>• أكسنت الضمائر:</strong> يجب أن تُكتب <strong>Tú</strong> و <strong>Él</strong> مع الأكسنت دائماً، لأنها لو كُتبت بدونها (Tu / El) سيتغير معناها تماماً إلى أدوات ملكية وتعريف!
+            </div>
 
             <!-- زر العودة -->
-            <div class="back-container">
-                <a href="fundamentos.html" class="back-btn">العودة ↩️</a>
+            <div>
+                <a href="fundamentos.html" class="back-btn">🔄 العودة للأساسيات</a>
             </div>
 
         </div>
