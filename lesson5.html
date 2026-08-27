@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 5: Los Verbos Regulares</title>
+    <!-- استدعاء الخطوط -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&display=swap" rel="stylesheet">
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #fff0f5, #ffe4e9);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .main-wrapper {
+            width: 90%;
+            max-width: 420px;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* الإطار الخارجي الرئيسي */
+        .card-container {
+            width: 100%;
+            background-color: #ffffff;
+            border: 1.5px solid #545454;
+            border-radius: 24px;
+            padding: 25px 18px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            text-align: center;
+            max-height: 88vh;
+            overflow-y: auto;
+            scrollbar-width: none;
+        }
+
+        .card-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* عنوان الدرس الرئيسي */
+        h1 {
+            font-family: 'Playfair Display', cursive, serif;
+            font-size: 1.6rem;
+            color: #545454;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-weight: 600;
+            line-height: 1.3;
+            direction: ltr;
+        }
+
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: #EE69B8;
+            font-size: 1.15rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        /* مقدمة الدرس والملاحظات */
+        .info-card {
+            background-color: #ffffff;
+            border: 1.5px solid #f6a0dd;
+            border-radius: 16px;
+            padding: 14px 16px;
+            margin-bottom: 20px;
+            text-align: right;
+            box-shadow: 0 2px 8px rgba(238, 105, 184, 0.08);
+        }
+
+        .info-card p {
+            margin: 0;
+            color: #444444;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* شارات العناوين */
+        .section-badge {
+            display: inline-block;
+            background-color: #EE69B8;
+            color: #ffffff;
+            padding: 8px 22px;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            font-weight: bold;
+            border: 1.5px solid #545454;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        /* بطاقات القواعد */
+        .rule-item {
+            background-color: #fff8fc;
+            border-right: 4px solid #EE69B8;
+            border-top: 1px solid #eee;
+            border-left: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            border-radius: 10px;
+            padding: 12px 14px;
+            margin-bottom: 14px;
+            text-align: right;
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .rule-title {
+            color: #EE69B8;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 6px;
+        }
+
+        .es-example {
+            direction: ltr;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            color: #d81b60;
+            font-weight: bold;
+            background-color: #ffe4e9;
+            padding: 4px 10px;
+            border-radius: 6px;
+            display: block;
+            margin: 4px 0;
+            font-size: 0.9rem;
+        }
+
+        .keyword-tag {
+            display: inline-block;
+            background-color: #ffe4e9;
+            color: #d81b60;
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 0.88rem;
+            font-weight: bold;
+            margin: 3px 4px;
+            direction: ltr;
+        }
+
+        /* قائمة التنسيق */
+        .list-style {
+            padding-right: 18px;
+            margin: 5px 0;
+        }
+
+        .list-style li {
+            margin-bottom: 8px;
+            color: #333;
+            font-size: 0.92rem;
+        }
+
+        /* زر العودة */
+        .back-btn {
+            margin-top: 15px;
+            display: inline-block;
+            padding: 9px 24px;
+            background-color: #EE69B8;
+            border: 1.5px solid #545454;
+            border-radius: 20px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="card-container">
+            
+            <h1>Capítulo 5: Los Verbos Regulares</h1>
+            <div class="subtitle">الدرس الخامس : الأفعال المنتظمة</div>
+            
+            <!-- المقدمة -->
+            <div class="info-card">
+                <p>في الإسبانية، أي فعل عادي في اللغة (مثل: يتكلم، يأكل، يعيش) يجب أن ينتهي بواحدة من ثلاث نهايات، ولهذا تُقسم الأفعال إلى 3 مجموعات:</p>
+                <ul class="list-style" style="margin-top: 10px;">
+                    <li><strong>1 المجموعة الأولى:</strong> الأفعال التي تنتهي بـ AR (مثل: Hablar - يتكلم).</li>
+                    <li><strong>2 المجموعة الثانية:</strong> الأفعال التي تنتهي بـ ER (مثل: Comer - يأكل).</li>
+                    <li><strong>3 المجموعة الثالثة:</strong> الأفعال التي تنتهي بـ IR (مثل: Vivir - يعيش).</li>
+                </ul>
+            </div>
+
+            <!-- مفاهيم أساسية -->
+            <div class="section-badge">مفاهيم أساسية قبل التصريف (Conceptos Básicos)</div>
+
+            <div class="info-card">
+                <p>حتى نبدأ بتصريف أي فعل، يجب أن نفهم أن الفعل يتكون من جزئين:</p>
+                <ol class="list-style" style="margin-top: 10px;">
+                    <li><strong>1 الجذر (Raíz):</strong> وهو الجزء الذي لا يتغير في الأفعال المنتظمة.</li>
+                    <li><strong>2 النهاية (Terminación):</strong> وهي النهايات الثلاث (AR, ER, IR) التي نحذفها لنضع مكانها نهايات الزمن.</li>
+                </ol>
+            </div>
+
+            <!-- خطوات تصريف الفعل المنتظم -->
+            <div class="rule-item">
+                <div class="rule-title">خطوات تصريف الفعل المنتظم (Pasos para conjugar):</div>
+                <p style="margin: 4px 0;">لتحويل الفعل من "المصدر" (مثل: يتكلم) إلى "فعل مصرف" (مثل: أنا أتكلم)، نتبع القاعدة التالية:</p>
+                <ol class="list-style">
+                    <li>1 نحذف النهاية الأصلية للفعل (AR أو ER أو IR).</li>
+                    <li>2 نأخذ ما تبقى من الفعل (الجذر).</li>
+                    <li>3 نضيف النهايات الخاصة بكل مجموعة حسب الضمير الشخصي.</li>
+                </ol>
+            </div>
+
+            <!-- ملاحظة ذهبية -->
+            <div class="info-card">
+                <p><strong>ملاحظة ذهبية (حذف الضمير):</strong><br>
+                مثال: بدلاً من قول Yo hablo، يمكننا قول Hablo فقط، وسيفهم الجميع أنني المتحدث.</p>
+            </div>
+
+            <!-- المجموعة الأولى AR -->
+            <div class="section-badge">المجموعة الأولى: الأفعال المنتهية بـ (AR)</div>
+
+            <div class="rule-item">
+                <p style="margin: 4px 0;"><strong>القاعدة الذهبية لتصريف أفعال هذه المجموعة في زمن الحاضر (Presente):</strong><br>
+                نحذف النهاية (AR) من أصل الفعل، ثم نضيف النهايات التالية حسب الضمير:</p>
+                
+                <ul class="list-style" style="list-style-type: none; padding-right: 0; margin-top: 10px;">
+                    <li>Yo: أنا</li>
+                    <li>Tú: أنتَ / أنتِ</li>
+                    <li>Él: هو , Ella: هي , Usted حضرتك</li>
+                    <li>Nosotros: نحن , Nosotras: نحن</li>
+                    <li>Vosotros: أنتم, Vosotras: أنتم</li>
+                    <li>Ellos: هم , Ellas: هنّ ، Ustedes حضراتكم</li>
+                </ul>
+
+                <div style="text-align: center; margin: 10px 0;">
+                    <span class="keyword-tag">-o</span>
+                    <span class="keyword-tag">-as</span>
+                    <span class="keyword-tag">-a</span>
+                    <span class="keyword-tag">-amos</span>
+                    <span class="keyword-tag">-áis</span>
+                    <span class="keyword-tag">-an</span>
+                </div>
+
+                <div class="rule-title" style="margin-top: 15px;">تطبيق عملي على فعل: Hablar (يتكلم)</div>
+                <p style="margin: 4px 0;">بعد حذف (AR)، يبقى لدينا الجذر (Habl):</p>
+                
+                <span class="es-example">• Hablo (أنا أتكلم)</span>
+                <span class="es-example">• Hablas (أنتَ تتكلم)</span>
+                <span class="es-example">• Habla (هو يتكلم)</span>
+                <span class="es-example">• Hablamos (نحن نتكلم)</span>
+                <span class="es-example">• Habláis (أنتم تتكلمون)</span>
+                <span class="es-example">• Hablan (هم يتكلمون)</span>
+
+                <div class="rule-title" style="margin-top: 15px;">أفعال للتدريب :</div>
+                <ul class="list-style">
+                    <li>Trabajar: يعمل</li>
+                    <li>Estudiar: يدرس</li>
+                    <li>Bailar: يرقص</li>
+                </ul>
+            </div>
+
+            <!-- المجموعة الثانية ER -->
+            <div class="section-badge">المجموعة الثانية: الأفعال المنتهية بـ (ER)</div>
+
+            <div class="rule-item">
+                <p style="margin: 4px 0;"><strong>القاعدة الذهبية لتصريف أفعال هذه المجموعة في زمن الحاضر (Presente):</strong><br>
+                نحذف النهاية (ER) من أصل الفعل، ثم نضيف النهايات التالية:</p>
+                
+                <ul class="list-style" style="list-style-type: none; padding-right: 0; margin-top: 10px;">
+                    <li>Yo: أنا</li>
+                    <li>Tú: أنتَ / أنتِ</li>
+                    <li>Él: هو , Ella: هي , Usted حضرتك</li>
+                    <li>Nosotros: نحن , Nosotras: نحن</li>
+                    <li>Vosotros: أنتم, Vosotras: أنتم</li>
+                    <li>Ellos: هم , Ellas: هنّ ، Ustedes حضراتكم</li>
+                </ul>
+
+                <div style="text-align: center; margin: 10px 0;">
+                    <span class="keyword-tag">-o</span>
+                    <span class="keyword-tag">-es</span>
+                    <span class="keyword-tag">-e</span>
+                    <span class="keyword-tag">-emos</span>
+                    <span class="keyword-tag">-éis</span>
+                    <span class="keyword-tag">-en</span>
+                </div>
+
+                <div class="rule-title" style="margin-top: 15px;">تطبيق عملي على فعل: Comer (يأكل)</div>
+                <p style="margin: 4px 0;">بعد حذف (ER)، يبقى لدينا الجذر (Com):</p>
+                
+                <span class="es-example">• Como (أنا آكل)</span>
+                <span class="es-example">• Comes (أنتَ تأكل)</span>
+                <span class="es-example">• Come (هو يأكل)</span>
+                <span class="es-example">• Comemos (نحن نأكل)</span>
+                <span class="es-example">• Coméis (أنتم تأكلون)</span>
+                <span class="es-example">• Comen (هم يأكلون)</span>
+
+                <div class="rule-title" style="margin-top: 15px;">أفعال للتدريب :</div>
+                <ul class="list-style">
+                    <li>Beber: يشرب</li>
+                    <li>Leer: يقرأ</li>
+                    <li>Correr: يركض</li>
+                </ul>
+            </div>
+
+            <!-- المجموعة الثالثة IR -->
+            <div class="section-badge">المجموعة الثالثة: الأفعال المنتهية بـ (IR)</div>
+
+            <div class="rule-item">
+                <p style="margin: 4px 0;"><strong>القاعدة الذهبية لتصريف أفعال هذه المجموعة في زمن الحاضر (Presente):</strong><br>
+                نحذف النهاية (IR) من أصل الفعل، ثم نضيف النهايات التالية:</p>
+                
+                <ul class="list-style" style="list-style-type: none; padding-right: 0; margin-top: 10px;">
+                    <li>Yo: أنا</li>
+                    <li>Tú: أنتَ / أنتِ</li>
+                    <li>Él: هو , Ella: هي , Usted حضرتك</li>
+                    <li>Nosotros: نحن , Nosotras: نحن</li>
+                    <li>Vosotros: أنتم, Vosotras: أنتم</li>
+                    <li>Ellos: هم , Ellas: هنّ ، Ustedes حضراتكم</li>
+                </ul>
+
+                <div style="text-align: center; margin: 10px 0;">
+                    <span class="keyword-tag">-o</span>
+                    <span class="keyword-tag">-es</span>
+                    <span class="keyword-tag">-e</span>
+                    <span class="keyword-tag">-imos</span>
+                    <span class="keyword-tag">-ís</span>
+                    <span class="keyword-tag">-en</span>
+                </div>
+
+                <div class="rule-title" style="margin-top: 15px;">تطبيق عملي على فعل: Vivir (يعيش)</div>
+                <p style="margin: 4px 0;">بعد حذف (IR)، يبقى لدينا الجذر (Viv):</p>
+                
+                <span class="es-example">• Vivo (أنا أعيش)</span>
+                <span class="es-example">• Vives (أنتَ تعيش)</span>
+                <span class="es-example">• Vive (هو يعيش)</span>
+                <span class="es-example">• Vivimos (نحن نعيش)</span>
+                <span class="es-example">• Vivís (أنتم تعيشون)</span>
+                <span class="es-example">• Viven (هم يعيشون)</span>
+
+                <div class="rule-title" style="margin-top: 15px;">أفعال للتدريب :</div>
+                <ul class="list-style">
+                    <li>Escribir : يكتب</li>
+                    <li>Abrir: يفتح</li>
+                    <li>Recibir : يستلم/ يستقبل</li>
+                </ul>
+            </div>
+
+            <!-- زر العودة -->
+            <div style="margin-top: 20px;">
+                <a href="spanish-lessons.html" class="back-btn">العودة ↩️</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
