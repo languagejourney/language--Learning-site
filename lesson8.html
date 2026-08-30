@@ -1,1 +1,348 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 8: Verbos Totalmente Irregulares</title>
+    <!-- استدعاء الخطوط -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&display=swap" rel="stylesheet">
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #fff0f5, #ffe4e9);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .main-wrapper {
+            width: 90%;
+            max-width: 420px;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* الإطار الخارجي الرئيسي */
+        .card-container {
+            width: 100%;
+            background-color: #ffffff;
+            border: 1.5px solid #545454;
+            border-radius: 24px;
+            padding: 25px 18px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            text-align: center;
+            max-height: 88vh;
+            overflow-y: auto;
+            scrollbar-width: none;
+        }
+
+        .card-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* عنوان الدرس الرئيسي */
+        h1 {
+            font-family: 'Playfair Display', cursive, serif;
+            font-size: 1.5rem;
+            color: #545454;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-weight: 600;
+            line-height: 1.3;
+            direction: ltr;
+        }
+
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: #EE69B8;
+            font-size: 1.15rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        /* مقدمة الدرس والملاحظات */
+        .info-card {
+            background-color: #ffffff;
+            border: 1.5px solid #f6a0dd;
+            border-radius: 16px;
+            padding: 14px 16px;
+            margin-bottom: 20px;
+            text-align: right;
+            box-shadow: 0 2px 8px rgba(238, 105, 184, 0.08);
+        }
+
+        .info-card p {
+            margin: 0;
+            color: #444444;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* شارات العناوين */
+        .section-badge {
+            display: inline-block;
+            background-color: #EE69B8;
+            color: #ffffff;
+            padding: 8px 18px;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: 1.5px solid #545454;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        /* بطاقات القواعد */
+        .rule-item {
+            background-color: #fff8fc;
+            border-right: 4px solid #EE69B8;
+            border-top: 1px solid #eee;
+            border-left: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            border-radius: 10px;
+            padding: 12px 14px;
+            margin-bottom: 14px;
+            text-align: right;
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .rule-title {
+            color: #EE69B8;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 6px;
+        }
+
+        /* صفوف تصريف الضمائر مع الفعل */
+        .pronoun-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            border: 1px solid #ffe4e9;
+            border-radius: 8px;
+            padding: 6px 12px;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+        }
+
+        .pronoun-text {
+            color: #333;
+            font-weight: bold;
+        }
+
+        .conjugated-tag {
+            background-color: #ffe4e9;
+            color: #d81b60;
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-weight: bold;
+            direction: ltr;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* زر العودة */
+        .back-btn {
+            margin-top: 15px;
+            display: inline-block;
+            padding: 9px 24px;
+            background-color: #EE69B8;
+            border: 1.5px solid #545454;
+            border-radius: 20px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="card-container">
+            
+            <h1>Capítulo 8: Verbos Totalmente Irregulares</h1>
+            <div class="subtitle">الدرس الثامن: الأفعال الشاذة بالكامل</div>
+            
+            <!-- المقدمة -->
+            <div class="info-card">
+                <p>هذه الأفعال تتغير بشكل كامل ومباشر في جذرها ونهاياتها مع جميع الضمائر، ولا تلتزم بأي من القواعد المنتظمة، وتُحفظ كما هي لشدة أهميتها واستخدامها اليومي.</p>
+            </div>
+
+            <!-- 1- فعل Ir -->
+            <div class="section-badge">1- فعل: Ir (يذهب)</div>
+            <div class="rule-item">
+                <p style="margin: 4px 0 10px 0;">يتغير شكل الفعل بالكامل عند التصريف ليتحول إلى حرف الـ V:</p>
+                
+                <div class="pronoun-row">
+                    <span class="pronoun-text">1- Yo</span>
+                    <span class="conjugated-tag">voy (أنا أذهب)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">2- Tú</span>
+                    <span class="conjugated-tag">vas (أنتَ تذهب)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">3- Él / Ella / Usted</span>
+                    <span class="conjugated-tag">va (هو يذهب)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">4- Nosotros / Nosotras</span>
+                    <span class="conjugated-tag">vamos (نحن نذهب)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">5- Vosotros / Vosotras</span>
+                    <span class="conjugated-tag">vais (أنتم تذهبون)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">6- Ellos / Ellas / Ustedes</span>
+                    <span class="conjugated-tag">van (هم يذهبون)</span>
+                </div>
+            </div>
+
+            <!-- 2- فعل Ser -->
+            <div class="section-badge">2- فعل: Ser (يكون)</div>
+            <div class="rule-item">
+                <p style="margin: 4px 0 10px 0;">يكون - الهوية / الصفات الدائمة / الجنسية. من أهم أفعال الإسبانية وتتغير صيغته تماماً بدون اتباع نهايات مجموعته:</p>
+
+                <div class="pronoun-row">
+                    <span class="pronoun-text">1- Yo</span>
+                    <span class="conjugated-tag">soy (أنا أكون)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">2- Tú</span>
+                    <span class="conjugated-tag">eres (أنتَ تكون)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">3- Él / Ella / Usted</span>
+                    <span class="conjugated-tag">es (هو يكون)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">4- Nosotros / Nosotras</span>
+                    <span class="conjugated-tag">somos (نحن نكون)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">5- Vosotros / Vosotras</span>
+                    <span class="conjugated-tag">sois (أنتم تكونون)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">6- Ellos / Ellas / Ustedes</span>
+                    <span class="conjugated-tag">son (هم يكونون)</span>
+                </div>
+            </div>
+
+            <!-- 3- فعل Haber -->
+            <div class="section-badge">3- فعل: Haber (مساعد / الوجود)</div>
+            <div class="rule-item">
+                <p style="margin: 4px 0 10px 0;">يُستخدم كفعل مساعد للتركيبات القواعدية، أو بصيغته الشائعة (Hay) للتعبير عن الوجود:</p>
+
+                <div class="pronoun-row">
+                    <span class="pronoun-text">1- Yo</span>
+                    <span class="conjugated-tag">he</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">2- Tú</span>
+                    <span class="conjugated-tag">has</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">3- Él / Ella / Usted</span>
+                    <span class="conjugated-tag">ha (تتحول إلى Hay عند التعبير عن "يوجد")</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">4- Nosotros / Nosotras</span>
+                    <span class="conjugated-tag">hemos</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">5- Vosotros / Vosotras</span>
+                    <span class="conjugated-tag">habéis</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">6- Ellos / Ellas / Ustedes</span>
+                    <span class="conjugated-tag">han</span>
+                </div>
+            </div>
+
+            <!-- 4- فعل Tener -->
+            <div class="section-badge">4- فعل: Tener (يمتلك / لديه)</div>
+            <div class="rule-item">
+                <p style="margin: 4px 0 10px 0;">تتغير صيغة الفعل بالكامل مع معظم الضمائر، حيث يتغير جذر الكلمة مع Yo بـ go، وتتحول الـ e إلى ie مع باقي الضمائر:</p>
+
+                <div class="pronoun-row">
+                    <span class="pronoun-text">1- Yo</span>
+                    <span class="conjugated-tag">tengo (أنا أمتلك / عندي)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">2- Tú</span>
+                    <span class="conjugated-tag">tienes (أنتَ تمتلك)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">3- Él / Ella / Usted</span>
+                    <span class="conjugated-tag">tiene (هو / هي تمتلك)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">4- Nosotros / Nosotras</span>
+                    <span class="conjugated-tag">tenemos (نحن نمتلك)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">5- Vosotros / Vosotras</span>
+                    <span class="conjugated-tag">tenéis (أنتم تمتلكون)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">6- Ellos / Ellas / Ustedes</span>
+                    <span class="conjugated-tag">tienen (هم يمتلكون)</span>
+                </div>
+            </div>
+
+            <!-- 5- فعل Venir -->
+            <div class="section-badge">5- فعل: Venir (يأتي)</div>
+            <div class="rule-item">
+                <p style="margin: 4px 0 10px 0;">يشبه تصريف فعل Tener تماماً، حيث تتغير e إلى ie في الوسط مع شذوذ Yo بـ go:</p>
+
+                <div class="pronoun-row">
+                    <span class="pronoun-text">1- Yo</span>
+                    <span class="conjugated-tag">vengo (أنا آتي)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">2- Tú</span>
+                    <span class="conjugated-tag">vienes (أنتَ تأتي)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">3- Él / Ella / Usted</span>
+                    <span class="conjugated-tag">viene (هو / هي يأتي)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">4- Nosotros / Nosotras</span>
+                    <span class="conjugated-tag">venimos (نحن نأتي)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">5- Vosotros / Vosotras</span>
+                    <span class="conjugated-tag">venís (أنتم تأتون)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">6- Ellos / Ellas / Ustedes</span>
+                    <span class="conjugated-tag">vienen (هم يأتون)</span>
+                </div>
+            </div>
+
+            <!-- زر العودة -->
+            <div style="margin-top: 20px;">
+                <a href="spanish-lessons.html" class="back-btn">العودة ↩️</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
 
