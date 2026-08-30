@@ -1,1 +1,348 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 7: Verbos Irregulares (Yo Solo)</title>
+    <!-- استدعاء الخطوط -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&display=swap" rel="stylesheet">
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #fff0f5, #ffe4e9);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .main-wrapper {
+            width: 90%;
+            max-width: 420px;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* الإطار الخارجي الرئيسي */
+        .card-container {
+            width: 100%;
+            background-color: #ffffff;
+            border: 1.5px solid #545454;
+            border-radius: 24px;
+            padding: 25px 18px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            text-align: center;
+            max-height: 88vh;
+            overflow-y: auto;
+            scrollbar-width: none;
+        }
+
+        .card-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* عنوان الدرس الرئيسي */
+        h1 {
+            font-family: 'Playfair Display', cursive, serif;
+            font-size: 1.5rem;
+            color: #545454;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-weight: 600;
+            line-height: 1.3;
+            direction: ltr;
+        }
+
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: #EE69B8;
+            font-size: 1.15rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        /* مقدمة الدرس والملاحظات */
+        .info-card {
+            background-color: #ffffff;
+            border: 1.5px solid #f6a0dd;
+            border-radius: 16px;
+            padding: 14px 16px;
+            margin-bottom: 20px;
+            text-align: right;
+            box-shadow: 0 2px 8px rgba(238, 105, 184, 0.08);
+        }
+
+        .info-card p {
+            margin: 0;
+            color: #444444;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* شارات العناوين */
+        .section-badge {
+            display: inline-block;
+            background-color: #EE69B8;
+            color: #ffffff;
+            padding: 8px 18px;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: 1.5px solid #545454;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        /* بطاقات القواعد */
+        .rule-item {
+            background-color: #fff8fc;
+            border-right: 4px solid #EE69B8;
+            border-top: 1px solid #eee;
+            border-left: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            border-radius: 10px;
+            padding: 12px 14px;
+            margin-bottom: 14px;
+            text-align: right;
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .rule-title {
+            color: #EE69B8;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 6px;
+        }
+
+        /* صفوف تصريف الضمائر مع الفعل */
+        .pronoun-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            border: 1px solid #ffe4e9;
+            border-radius: 8px;
+            padding: 6px 12px;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+        }
+
+        .pronoun-text {
+            color: #333;
+            font-weight: bold;
+        }
+
+        .conjugated-tag {
+            background-color: #ffe4e9;
+            color: #d81b60;
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-weight: bold;
+            direction: ltr;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* قائمة التنسيق */
+        .list-style {
+            padding-right: 18px;
+            margin: 5px 0;
+        }
+
+        .list-style li {
+            margin-bottom: 8px;
+            color: #333;
+            font-size: 0.92rem;
+        }
+
+        /* زر العودة */
+        .back-btn {
+            margin-top: 15px;
+            display: inline-block;
+            padding: 9px 24px;
+            background-color: #EE69B8;
+            border: 1.5px solid #545454;
+            border-radius: 20px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="card-container">
+            
+            <h1>Capítulo 7: Verbos Irregulares (Yo Solo)</h1>
+            <div class="subtitle">الدرس السابع: أفعال الضمير الأول فقط</div>
+            
+            <!-- المقدمة -->
+            <div class="info-card">
+                <p>هذه الأفعال تتميز بـ "شذوذ ذكي وخفيف جداً"؛ فهي تتغير بشكل خاص عندما تتحدث عن نفسك فقط (مع الضمير Yo).<br>
+                مع باقي الضمائر الخمسة (Tú, Él/Ella, Nosotros, Vosotros, Ellos)، يرجع الفعل طبيعياً ومنتظماً 100%، ويأخذ نفس النهايات المنتظمة حسب مجموعته (AR, ER, IR).</p>
+            </div>
+
+            <!-- النمط الأول: أفعال انتهت بـ go -->
+            <div class="section-badge">1- الأفعال المنتهية بـ (go) مع الضمير Yo</div>
+
+            <div class="rule-item">
+                <p style="margin: 4px 0 10px 0;">عند تصريف الفعل مع (Yo)، ينتهي بطريقة خاصة بـ (go)، وباقي الضمائر تبقى طبيعية تماماً.</p>
+
+                <!-- تطبيق Hacer -->
+                <div class="rule-title" style="margin-top: 12px;">تطبيق عملي على فعل: Hacer (يفعل/يصنع) - ينتهي بـ ER</div>
+                
+                <div class="pronoun-row">
+                    <span class="pronoun-text">1- Yo</span>
+                    <span class="conjugated-tag">hago (أنا أفعل / أصنع)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">2- Tú</span>
+                    <span class="conjugated-tag">haces (أنتَ تفعل)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">3- Él / Ella / Usted</span>
+                    <span class="conjugated-tag">hace (هو يفعل)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">4- Nosotros / Nosotras</span>
+                    <span class="conjugated-tag">hacemos (نحن نفعل)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">5- Vosotros / Vosotras</span>
+                    <span class="conjugated-tag">hacéis (أنتم تفعلون)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">6- Ellos / Ellas / Ustedes</span>
+                    <span class="conjugated-tag">hacen (هم يفعلون)</span>
+                </div>
+
+                <!-- تطبيق Salir -->
+                <div class="rule-title" style="margin-top: 18px;">تطبيق عملي على فعل: Salir (يخرج) - ينتهي بـ IR</div>
+                
+                <div class="pronoun-row">
+                    <span class="pronoun-text">1- Yo</span>
+                    <span class="conjugated-tag">salgo (أنا أخرج)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">2- Tú</span>
+                    <span class="conjugated-tag">sales (أنتَ تخرج)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">3- Él / Ella / Usted</span>
+                    <span class="conjugated-tag">sale (هو يخرج)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">4- Nosotros / Nosotras</span>
+                    <span class="conjugated-tag">salimos (نحن نخرج)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">5- Vosotros / Vosotras</span>
+                    <span class="conjugated-tag">salís (أنتم تخرجون)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">6- Ellos / Ellas / Ustedes</span>
+                    <span class="conjugated-tag">salen (هم يخرجون)</span>
+                </div>
+
+                <!-- أفعال شائعة برمز go -->
+                <div class="rule-title" style="margin-top: 18px;">أفعال شائعة جداً تتبع نفس هذا النمط (ينتهي بـ go مع Yo):</div>
+                <ul class="list-style">
+                    <li>1- Poner (يضع) -> Yo pongo / Tú pones</li>
+                    <li>2- Traer (يجلب / يحضر) -> Yo traigo / Tú traes</li>
+                    <li>3- Oír (يسمع) -> Yo oigo / Tú oyes</li>
+                </ul>
+            </div>
+
+            <!-- النمط الثاني: أفعال zco -->
+            <div class="section-badge">2- الأفعال المنتهية بـ (zco) مع الضمير Yo</div>
+
+            <div class="rule-item">
+                <p style="margin: 4px 0 10px 0;">هذه الأفعال تنتهي في أصلها بـ (cer) أو (cir). عند تصريفها مع الضمير Yo، نحذف هذه النهايات ونضع (zco)، بينما تعود طبيعية ومنتظمة 100% مع باقي الضمائر.</p>
+
+                <!-- تطبيق Conocer -->
+                <div class="rule-title" style="margin-top: 12px;">تطبيق عملي على فعل: Conocer (يعرف أشخاص أو أماكن) - ينتهي بـ ER</div>
+                
+                <div class="pronoun-row">
+                    <span class="pronoun-text">1- Yo</span>
+                    <span class="conjugated-tag">conozco (أنا أَعرف)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">2- Tú</span>
+                    <span class="conjugated-tag">conoces (أنتَ تعرف)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">3- Él / Ella / Usted</span>
+                    <span class="conjugated-tag">conoce (هو يعرف)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">4- Nosotros / Nosotras</span>
+                    <span class="conjugated-tag">conocemos (نحن نعرف)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">5- Vosotros / Vosotras</span>
+                    <span class="conjugated-tag">conocéis (أنتم تعرفون)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">6- Ellos / Ellas / Ustedes</span>
+                    <span class="conjugated-tag">conocen (هم يعرفون)</span>
+                </div>
+
+                <!-- تطبيق Conducir -->
+                <div class="rule-title" style="margin-top: 18px;">تطبيق عملي آخر على فعل: Conducir (يقود / يسوق) - ينتهي بـ IR</div>
+                
+                <div class="pronoun-row">
+                    <span class="pronoun-text">1- Yo</span>
+                    <span class="conjugated-tag">conduzco (أنا أقود)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">2- Tú</span>
+                    <span class="conjugated-tag">conduces (أنتَ تقود)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">3- Él / Ella / Usted</span>
+                    <span class="conjugated-tag">conduce (هو يقود)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">4- Nosotros / Nosotras</span>
+                    <span class="conjugated-tag">conducimos (نحن نقود)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">5- Vosotros / Vosotras</span>
+                    <span class="conjugated-tag">conducís (أنتم تقودون)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">6- Ellos / Ellas / Ustedes</span>
+                    <span class="conjugated-tag">conducen (هم يقودون)</span>
+                </div>
+
+                <!-- أفعال شائعة برمز zco -->
+                <div class="rule-title" style="margin-top: 18px;">أفعال شائعة جداً تتبع نفس هذا النمط (ينتهي بـ zco مع Yo):</div>
+                <ul class="list-style">
+                    <li>1- Traducir (يترجم) -> Yo traduzco / Tú traduces</li>
+                    <li>2- Producir (ينتج) -> Yo produzco / Tú produces</li>
+                    <li>3- Ofrecer (يعرض / يقدم خدمة) -> Yo ofrezco / Tú ofreces</li>
+                </ul>
+            </div>
+
+            <!-- زر العودة -->
+            <div style="margin-top: 20px;">
+                <a href="spanish-lessons.html" class="back-btn">العودة ↩️</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
 
