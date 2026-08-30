@@ -116,13 +116,6 @@
             line-height: 1.6;
         }
 
-        .rule-title {
-            color: #EE69B8;
-            font-weight: bold;
-            font-size: 1rem;
-            margin-bottom: 6px;
-        }
-
         /* صفوف تصريف الضمائر مع الفعل */
         .pronoun-row {
             display: flex;
@@ -149,6 +142,30 @@
             font-weight: bold;
             direction: ltr;
             font-family: 'Playfair Display', serif;
+        }
+
+        /* صندوق الإجراءات والروابط */
+        .action-box {
+            text-align: center;
+            margin: 20px 0 15px 0;
+            padding: 14px;
+            border: 1.5px dashed #F8ABE4;
+            border-radius: 16px;
+            background-color: #fffbfe;
+            transition: 0.2s;
+        }
+
+        .action-box a {
+            color: #EE69B8;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: block;
+        }
+
+        .action-box:hover {
+            background-color: #fff0f7;
+            border-color: #EE69B8;
         }
 
         /* زر العودة */
@@ -335,6 +352,11 @@
                 </div>
             </div>
 
+            <!-- اختبار تفاعلي -->
+            <div class="action-box">
+                <a href="https://share.gemini.google/GsLp9zSjkpGy" target="_blank">الأختبارات على شكل مستند تفاعلي مولد بالذكاء الأصطناعي Ai 📝</a>
+            </div>
+
             <!-- زر العودة -->
             <div style="margin-top: 20px;">
                 <a href="spanish-lessons.html" class="back-btn">العودة ↩️</a>
@@ -345,4 +367,3 @@
 
 </body>
 </html>
-
