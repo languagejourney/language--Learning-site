@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WBZH2BVR73"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WBZH2BVR73');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- تحسينات SEO لصفحة دروس القواعد بالإنجليزية -->
-    <title>شرح قواعد اللغة الإنجليزية والأزمنة | English Grammar - My Language Journal</title>
-    <meta name="description" content="دروس شرح قواعد اللغة الإنجليزية والأزمنة الأساسية: المضارع البسيط، الماضي البسيط، المستقبل، والأزمنة المستمرة بطريقة مبسطة وسهلة.">
-    <meta name="keywords" content="قواعد اللغة الإنجليزية, أزمنة اللغة الإنجليزية, English grammar tenses, Present Simple, Past Simple, Future Simple, Present Continuous">
+    <title>شرح قواعد اللغة الإنجليزية والأزمنة والتراكيب | English Grammar - My Language Journal</title>
+    <meta name="description" content="دليل شامل لدروس قواعد اللغة الإنجليزية: شرح الأزمنة (Tenses) وقواعد تراكيب الجملة مثل If الشرطية، المبني للمجهول، والكلام المنقول بطريقة مبسطة.">
+    <meta name="keywords" content="قواعد اللغة الإنجليزية, أزمنة الإنجليزية, English grammar tenses, Present Simple, Past Simple, Future Simple, If الشرطية, المبني للمجهول">
     <meta name="author" content="My Language Journal">
 
-    <!-- استدعاء نفس الخطوط الأصلية -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri&display=swap" rel="stylesheet">
+    <!-- استدعاء الخطوط الأصلية مع خط Tajawal العربي -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     
     <style>
         body, html {
@@ -23,13 +33,13 @@
             justify-content: center;
             align-items: center;
             background: linear-gradient(135deg, #fff0f5, #ffe4e9);
-            font-family: 'Playfair Display', serif;
+            font-family: 'Playfair Display', 'Tajawal', serif;
         }
 
         .container {
             width: 88%;
             max-width: 420px;
-            padding: 20px;
+            padding: 20px 10px;
             box-sizing: border-box;
             text-align: center;
         }
@@ -41,7 +51,7 @@
             border-radius: 18px;
             padding: 20px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-            max-height: 75vh;
+            max-height: 80vh;
             overflow-y: auto;
         }
 
@@ -50,9 +60,23 @@
             text-align: center;
             font-family: 'Playfair Display', serif;
             margin-bottom: 5px;
+            font-size: 1.8rem;
         }
 
-        /* تنسيق أزرار الأزمنة بتدرج وردي متناسق من الأغمق للأفتح */
+        .section-title {
+            color: #545454;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin: 18px 0 10px 0;
+            background-color: #fff0f5;
+            padding: 6px 12px;
+            border-radius: 12px;
+            display: inline-block;
+            border: 1px dashed #EE6BBF;
+        }
+
+        /* تنسيق أزرار الأزمنة والتراكيب بتدرج وردي ناعم */
         .btn-grammar-1 { background-color: #EE6BBF; }
         .btn-grammar-2 { background-color: #F178C9; }
         .btn-grammar-3 { background-color: #F485D3; }
@@ -64,7 +88,7 @@
             display: block;
             width: 100%;
             padding: 12px 10px;
-            margin: 10px 0;
+            margin: 9px 0;
             color: #000000;
             text-decoration: none;
             border-radius: 16px;
@@ -73,33 +97,42 @@
             box-sizing: border-box;
             font-family: 'Playfair Display', cursive, serif;
             font-style: italic;
-            font-size: 1.05rem;
+            font-size: 1.02rem;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
             transition: transform 0.2s ease;
         }
 
-        .grammar-btn:hover {
-            transform: scale(1.02);
+        .grammar-btn:active {
+            transform: scale(0.98);
         }
 
-        /* زر العودة */
+        /* زر العودة والتنقل */
         .back-container {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
         }
 
         .back-btn {
-            display: inline-block;
+            display: block;
+            width: 100%;
             background-color: #F168BC;
             color: #000000;
-            padding: 10px 20px;
-            border-radius: 20px;
+            padding: 10px 15px;
+            border-radius: 16px;
             text-decoration: none;
             font-weight: bold;
             border: 1.5px solid #545454;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-            font-family: 'Playfair Display', serif;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+            font-family: 'Tajawal', sans-serif;
             font-size: 0.95rem;
+            box-sizing: border-box;
+        }
+
+        .back-btn-home {
+            background-color: #ffb6c1;
         }
     </style>
 </head>
@@ -109,11 +142,11 @@
         <div class="content-box">
             
             <h2>دروس القواعد</h2>
-            <h3 style="text-align: center; color: #545454; font-style: italic; font-size: 14px; margin-bottom: 20px;">English Grammar Tenses</h3>
+            <h3 style="text-align: center; color: #545454; font-style: italic; font-size: 14px; margin-bottom: 15px;">English Grammar Hub</h3>
             
-            <hr style="border: 0; border-top: 1px solid #FDBBE3; margin: 15px 0;">
+            <!-- القسم الأول: الأزمنة -->
+            <div class="section-title">⏳ 1. الأزمنة (Tenses)</div>
 
-            <!-- أزرار الأزمنة الستة -->
             <a href="present-simple.html" class="grammar-btn btn-grammar-1">Present Simple</a>
             <a href="past-simple.html" class="grammar-btn btn-grammar-2">Past Simple</a>
             <a href="future-simple.html" class="grammar-btn btn-grammar-3">Future Simple</a>
@@ -121,9 +154,19 @@
             <a href="past-continuous.html" class="grammar-btn btn-grammar-5">Past Continuous</a>
             <a href="future-continuous.html" class="grammar-btn btn-grammar-6">Future Continuous</a>
 
-            <!-- زر العودة -->
+            <hr style="border: 0; border-top: 1px solid #FDBBE3; margin: 20px 0 10px 0;">
+
+            <!-- القسم الثاني: القواعد والتراكيب -->
+            <div class="section-title">🧩 2. القواعد والتراكيب (Structures)</div>
+
+            <a href="conditionals-if.html" class="grammar-btn btn-grammar-2">Conditionals (If الشرطية)</a>
+            <a href="passive-voice.html" class="grammar-btn btn-grammar-3">Passive Voice (المبني للمجهول)</a>
+            <a href="reported-speech.html" class="grammar-btn btn-grammar-4">Reported Speech (الكلام المنقول)</a>
+
+            <!-- أزرار العودة والتنقل السلس -->
             <div class="back-container">
-                <a href="english.html" class="back-btn">العودة ↩️</a>
+                <a href="english.html" class="back-btn">🔄 العودة لقسم الإنجليزية</a>
+                <a href="index.html" class="back-btn back-btn-home">🏠 الصفحة الرئيسية</a>
             </div>
 
         </div>
