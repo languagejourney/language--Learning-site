@@ -3,31 +3,98 @@
   <!-- الصفحة الرئيسية -->
   <url>
     <loc>https://languagejourney.github.io/language--Learning-site/</loc>
+    <lastmod>2026-09-02</lastmod>
     <priority>1.00</priority>
   </url>
-  <!-- صفحة الإنجليزي -->
   <url>
-    <loc>https://languagejourney.github.io/language--Learning-site/english.html</loc>
+    <loc>https://languagejourney.github.io/language--Learning-site/index.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- المراحل الرئيسية -->
+  <url>
+    <loc>https://languagejourney.github.io/language--Learning-site/stage1.html</loc>
+    <lastmod>2026-09-02</lastmod>
     <priority>0.80</priority>
   </url>
-  <!-- صفحة الإسباني -->
   <url>
-    <loc>https://languagejourney.github.io/language--Learning-site/espanol.html</loc>
+    <loc>https://languagejourney.github.io/language--Learning-site/stage2.html</loc>
+    <lastmod>2026-09-02</lastmod>
     <priority>0.80</priority>
   </url>
-  <!-- صفحة التواصل -->
   <url>
-    <loc>https://languagejourney.github.io/language--Learning-site/contact.html</loc>
-    <priority>0.50</priority>
+    <loc>https://languagejourney.github.io/language--Learning-site/stage3.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.80</priority>
   </url>
-  <!-- سياسة الخصوصية -->
+  <url>
+    <loc>https://languagejourney.github.io/language--Learning-site/stage4.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- الدروس والقواعد -->
+  <url>
+    <loc>https://languagejourney.github.io/language--Learning-site/present-simple.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://languagejourney.github.io/language--Learning-site/present-continuous.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://languagejourney.github.io/language--Learning-site/past-simple.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://languagejourney.github.io/language--Learning-site/lesson3.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://languagejourney.github.io/language--Learning-site/lesson4.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://languagejourney.github.io/language--Learning-site/lesson5.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://languagejourney.github.io/language--Learning-site/lesson6.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://languagejourney.github.io/language--Learning-site/lesson7.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://languagejourney.github.io/language--Learning-site/lesson8.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://languagejourney.github.io/language--Learning-site/lesson9.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- صفحات الشروط والخصوصية -->
   <url>
     <loc>https://languagejourney.github.io/language--Learning-site/privacy.html</loc>
-    <priority>0.50</priority>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.30</priority>
   </url>
-  <!-- الشروط والأحكام -->
   <url>
     <loc>https://languagejourney.github.io/language--Learning-site/terms.html</loc>
-    <priority>0.50</priority>
+    <lastmod>2026-09-02</lastmod>
+    <priority>0.30</priority>
   </url>
 </urlset>
