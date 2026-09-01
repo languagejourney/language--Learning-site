@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WBZH2BVR73"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WBZH2BVR73');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Future Simple - English Grammar</title>
-    <!-- استدعاء الخطوط -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&display=swap" rel="stylesheet">
+
+    <!-- تحسينات SEO لدرس المستقبل البسيط -->
+    <title>Future Simple (المستقبل البسيط) - English Grammar | My Language Journal</title>
+    <meta name="description" content="شرح شامل ومبسط لزمن المستقبل البسيط (Future Simple) في اللغة الإنجليزية باستخدام Will و Going to مع الأمثلة، صيغ النفي والسؤال، والكلمات الدالة.">
+    <meta name="keywords" content="Future Simple, المستقبل البسيط, Will vs Going to, قواعد الإنجليزية, English Grammar, تعلم الإنجليزية, My Language Journal">
+    <meta name="author" content="My Language Journal">
+
+    <!-- استدعاء الخطوط الموحدة -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     
     <style>
         body, html {
@@ -17,7 +33,8 @@
             justify-content: center;
             align-items: center;
             background: linear-gradient(135deg, #fff0f5, #ffe4e9);
-            font-family: 'Playfair Display', serif;
+            font-family: 'Tajawal', 'Playfair Display', serif;
+            color: #333333;
         }
 
         .main-wrapper {
@@ -49,22 +66,22 @@
 
         /* عنوان الدرس الرئيسي */
         h1 {
-            font-family: 'Playfair Display', cursive, serif;
+            font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
             color: #545454;
             margin-top: 5px;
             margin-bottom: 5px;
-            font-weight: 600;
+            font-weight: 700;
             line-height: 1.3;
         }
 
         .subtitle {
-            font-family: 'Playfair Display', serif;
-            font-style: italic;
-            color: #EE69B8;
+            font-family: 'Tajawal', sans-serif;
             font-size: 1.15rem;
+            color: #EE69B8;
             margin-top: 0;
             margin-bottom: 20px;
+            font-weight: 500;
         }
 
         /* مقدمة الدرس والملاحظات */
@@ -132,7 +149,7 @@
             font-weight: bold;
             color: #333;
             margin: 6px 0 10px 0;
-            font-family: sans-serif;
+            font-family: 'Playfair Display', sans-serif;
         }
 
         .en-example {
@@ -159,12 +176,13 @@
             font-weight: bold;
             margin: 3px 4px;
             direction: ltr;
+            font-family: 'Playfair Display', serif;
         }
 
-        /* صندوق الفيديو والاختبار */
+        /* صناديق الإجراءات والروابط */
         .action-box {
             text-align: center;
-            margin: 15px 0;
+            margin: 12px 0;
             padding: 14px;
             border: 1.5px dashed #F8ABE4;
             border-radius: 16px;
@@ -177,7 +195,7 @@
             font-weight: bold;
             text-decoration: none;
             font-size: 0.95rem;
-            display: block;
+            display: inline-block;
         }
 
         .action-box:hover {
@@ -185,28 +203,41 @@
             border-color: #EE69B8;
         }
 
-        /* زر العودة */
-        .back-btn {
+        /* أزرار العودة والتنقل */
+        .btn-container {
+            text-align: center;
             margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .back-btn {
             display: inline-block;
-            padding: 9px 24px;
+            padding: 9px 20px;
             background-color: #EE69B8;
             border: 1.5px solid #545454;
             border-radius: 20px;
             color: #000000;
             text-decoration: none;
-            font-size: 0.95rem;
+            font-size: 0.92rem;
             font-weight: bold;
             box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            transition: 0.2s;
+        }
+
+        .back-btn-secondary {
+            background-color: #FDBBE3;
         }
 
         .list-style {
-            padding-right: 18px;
+            padding-right: 0;
             margin: 5px 0;
+            list-style-type: none;
         }
 
         .list-style li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             color: #333;
             font-size: 0.92rem;
         }
@@ -222,42 +253,42 @@
             
             <!-- المقدمة -->
             <div class="info-card">
-                <p>📌 للتعبير عن المستقبل، حدث لم يحصل بعد. التكلم عن شيء سوف يحدث في المستقبل.</p>
+                <p>📌 يُستخدم للتعبير عن المستقبل، والتحدث عن أفعال وأحداث لم تحصل بعد وسوف تحدث لاحقًا.</p>
             </div>
 
             <!-- صيغة الإثبات -->
             <div class="section-badge">صيغة الإثبات</div>
 
             <div class="rule-item">
-                <div class="rule-title">1- بأستخدام Will:</div>
+                <div class="rule-title">1- باستخدام Will:</div>
                 <div class="formula-box">S + Will + V(inf) + com …</div>
-                <p style="margin: 4px 0; font-weight: bold; color: #555;">تستخدم هذه الصيغة (will) لـ:</p>
-                <ol class="list-style" style="list-style-type: none; padding-right: 0;">
-                    <li style="margin-bottom: 10px;">
+                <p style="margin: 4px 0; font-weight: bold; color: #555;">تُستخدم صيغة (will) للحالات التالية:</p>
+                <ul class="list-style">
+                    <li>
                         <strong>1- التنبؤات:</strong>
-                        <span class="en-example">• Aliens will invade Earth in 2050.
-                            • it will rain tomorrow.</span>
+                        <span class="en-example">• Aliens will invade Earth in 2050.</span>
+                        <span class="en-example">• It will rain tomorrow.</span>
                     </li>
-                    <li style="margin-bottom: 10px;">
+                    <li>
                         <strong>2- القرارات العفوية والسريعة:</strong>
                         <span class="en-example">• I'm thirsty, I will drink some water.</span>
                     </li>
-                    <li style="margin-bottom: 10px;">
+                    <li>
                         <strong>3- التطوع:</strong>
                         <span class="en-example">• Don't worry, I will help you with your homework.</span>
                     </li>
-                    <li style="margin-bottom: 10px;">
+                    <li>
                         <strong>4- الوعود:</strong>
                         <span class="en-example">• I will always love you.</span>
                     </li>
-                </ol>
+                </ul>
             </div>
 
             <div class="rule-item">
-                <div class="rule-title">2- بأستخدام going to: <small style="color:#666;">(تُختصر gonna)</small></div>
+                <div class="rule-title">2- باستخدام going to: <small style="color:#666;">(تُختصر gonna)</small></div>
                 <div class="formula-box">S + (am, is, are) + going to + V(inf)</div>
-                <p style="margin: 4px 0;">تُستخدم عند وجود دليل قاطع أو شيء مُخطط له مسبقاً.</p>
-                <p style="margin: 4px 0; font-weight: bold; color: #545454;">مثل:</p>
+                <p style="margin: 4px 0;">تُستخدم عند وجود دليل قاطع أو شيء مُخطط له مسبقًا.</p>
+                <p style="margin: 4px 0; font-weight: bold; color: #545454;">مثال:</p>
                 <span class="en-example">• I'm going to visit my uncle tomorrow.</span>
             </div>
 
@@ -265,12 +296,12 @@
             <div class="section-badge">صيغة السؤال</div>
 
             <div class="rule-item">
-                <div class="formula-box">Will + S + V(inf) + com…</div>
+                <div class="formula-box">Will + S + V(inf) + com… ?</div>
                 <p style="margin: 2px 0; font-weight: bold; color: #545454;">مثال:</p>
                 <span class="en-example">• Will he visit his uncle?</span>
 
                 <br>
-                <div class="formula-box">(Am, Is, Are) + going to + V(inf.)</div>
+                <div class="formula-box">(Am, Is, Are) + S + going to + V(inf) … ?</div>
                 <p style="margin: 2px 0; font-weight: bold; color: #545454;">مثال:</p>
                 <span class="en-example">• Is he going to visit his uncle?</span>
             </div>
@@ -279,42 +310,43 @@
             <div class="section-badge">صيغة النفي</div>
 
             <div class="rule-item">
-                <div class="formula-box">S + will + not + V(inf) + com…</div>
+                <div class="formula-box">S + will + not (won't) + V(inf) + com…</div>
                 <p style="margin: 2px 0; font-weight: bold; color: #545454;">مثال:</p>
                 <span class="en-example">• He won’t visit his uncle tomorrow.</span>
 
                 <br>
-                <div class="formula-box">S + (am, is, are) + not + going to + V(inf) .</div>
+                <div class="formula-box">S + (am, is, are) + not + going to + V(inf) …</div>
             </div>
 
             <!-- الكلمات الدالة -->
             <div class="section-badge">الكلمات الدالة</div>
 
             <div class="info-card" style="text-align: center;">
-                <p style="margin-bottom: 10px;">تظهر غالباً مع المستقبل كلمات مثل:</p>
+                <p style="margin-bottom: 10px;">تظهر غالبًا مع زمن المستقبل كلمات مثل:</p>
                 <div>
                     <span class="keyword-tag">Tomorrow</span>
-                    <span class="keyword-tag">next year/day/week</span>
+                    <span class="keyword-tag">next year / day / week</span>
                     <span class="keyword-tag">soon</span>
                     <span class="keyword-tag">in the future</span>
                     <span class="keyword-tag">in 2030...</span>
                 </div>
             </div>
 
-            <!-- فيديو الشرح -->
+            <!-- الروابط الخارجية والفيديو -->
             <div class="action-box">
-                <p style="margin:0 0 6px 0; color:#545454; font-weight:bold; font-size:0.95rem;">الڤيديو المُعتمد بالشرح:</p>
+                <p style="margin:0 0 5px 0; color:#545454; font-weight:bold; font-size:0.9rem;">🎬 الڤيديو المُعتمد بالشرح:</p>
                 <a href="https://youtu.be/TDh-m2xLyg8?si=gIhgGErCeYHyhpuS" target="_blank">اضغط هنا للمشاهدة ✨</a>
             </div>
 
-            <!-- اختبار تفاعلي -->
             <div class="action-box">
-                <a href="https://share.gemini.google/gIRJHMmCNIXBP" target="_blank">اختبار تفاعلي بواسطة الـ Ai 📝</a>
+                <p style="margin:0 0 5px 0; color:#545454; font-weight:bold; font-size:0.9rem;">🤖 اختبار تفاعلي ذكي:</p>
+                <a href="https://share.gemini.google/gIRJHMmCNIXBP" target="_blank">بدء الاختبار بواسطة AI 🔗</a>
             </div>
 
-            <!-- زر العودة -->
-            <div style="margin-top: 20px;">
-                <a href="english-grammar.html" class="back-btn">العودة ↩️</a>
+            <!-- أزرار التصفح -->
+            <div class="btn-container">
+                <a href="english-grammar.html" class="back-btn">🔄 العودة لقواعد الإنجليزية</a>
+                <a href="index.html" class="back-btn back-btn-secondary">🏠 الصفحة الرئيسية</a>
             </div>
 
         </div>
