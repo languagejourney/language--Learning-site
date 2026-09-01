@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WBZH2BVR73"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WBZH2BVR73');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Grammar - Present Continuous</title>
-    <!-- استدعاء الخطوط -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&display=swap" rel="stylesheet">
+
+    <!-- تحسينات SEO لدرس المضارع المستمر -->
+    <title>Present Continuous (المضارع المستمر) - English Grammar | My Language Journal</title>
+    <meta name="description" content="شرح شامل ومبسط لزمن المضارع المستمر (Present Continuous) في اللغة الإنجليزية مع أمثلة، قواعد إضافة ing، وأفعال لا تقبل ing.">
+    <meta name="keywords" content="Present Continuous, المضارع المستمر, قواعد الإنجليزية, English Grammar, ing rules, Stative Verbs, تعلم الإنجليزية, My Language Journal">
+    <meta name="author" content="My Language Journal">
+
+    <!-- استدعاء الخطوط الموحدة -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     
     <style>
         body, html {
@@ -17,7 +33,8 @@
             justify-content: center;
             align-items: center;
             background: linear-gradient(135deg, #fff0f5, #ffe4e9);
-            font-family: 'Playfair Display', serif;
+            font-family: 'Tajawal', 'Playfair Display', serif;
+            color: #333333;
         }
 
         .main-wrapper {
@@ -49,23 +66,22 @@
 
         /* عنوان الدرس الرئيسي */
         h1 {
-            font-family: 'Playfair Display', cursive, serif;
-            font-size: 1.6rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
             color: #545454;
             margin-top: 5px;
             margin-bottom: 5px;
-            font-weight: 600;
+            font-weight: 700;
             line-height: 1.3;
-            direction: ltr;
         }
 
         .subtitle {
-            font-family: 'Playfair Display', serif;
-            font-style: italic;
-            color: #EE69B8;
+            font-family: 'Tajawal', sans-serif;
             font-size: 1.15rem;
+            color: #EE69B8;
             margin-top: 0;
             margin-bottom: 20px;
+            font-weight: 500;
         }
 
         /* شارات العناوين */
@@ -73,9 +89,9 @@
             display: inline-block;
             background-color: #EE69B8;
             color: #ffffff;
-            padding: 8px 18px;
+            padding: 8px 22px;
             border-radius: 12px;
-            font-size: 1rem;
+            font-size: 1.05rem;
             font-weight: bold;
             border: 1.5px solid #545454;
             margin-top: 15px;
@@ -133,6 +149,7 @@
             text-align: left;
             font-family: 'Playfair Display', serif;
             font-size: 0.92rem;
+            font-weight: bold;
         }
 
         /* صفوف الفاعل والـ Be */
@@ -147,6 +164,7 @@
             margin-bottom: 6px;
             font-size: 0.9rem;
             direction: ltr;
+            font-family: 'Playfair Display', serif;
         }
 
         .pronoun-text {
@@ -191,6 +209,7 @@
             margin: 4px 0;
             border-radius: 6px;
             font-size: 0.92rem;
+            font-weight: bold;
         }
 
         .wrong {
@@ -203,12 +222,12 @@
             background-color: #e8f5e9;
         }
 
-        /* صندوق الإجراءات والروابط */
+        /* صناديق الإجراءات والروابط */
         .action-box {
             text-align: center;
             margin: 12px 0;
-            padding: 12px;
-            border: 1.5px dashed #EE69B8;
+            padding: 14px;
+            border: 1.5px dashed #F8ABE4;
             border-radius: 16px;
             background-color: #fffbfe;
             transition: 0.2s;
@@ -219,7 +238,7 @@
             font-weight: bold;
             text-decoration: none;
             font-size: 0.95rem;
-            display: block;
+            display: inline-block;
         }
 
         .action-box:hover {
@@ -227,19 +246,31 @@
             border-color: #EE69B8;
         }
 
-        /* زر العودة */
-        .back-btn {
+        /* أزرار العودة والتنقل */
+        .btn-container {
+            text-align: center;
             margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .back-btn {
             display: inline-block;
-            padding: 9px 24px;
+            padding: 9px 20px;
             background-color: #EE69B8;
             border: 1.5px solid #545454;
             border-radius: 20px;
             color: #000000;
             text-decoration: none;
-            font-size: 0.95rem;
+            font-size: 0.92rem;
             font-weight: bold;
             box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            transition: 0.2s;
+        }
+
+        .back-btn-secondary {
+            background-color: #FDBBE3;
         }
     </style>
 </head>
@@ -257,7 +288,7 @@
                 <p style="margin-bottom: 6px; font-weight: bold; color: #EE69B8;">يُستخدم هذا الزمن في الحالات التالية:</p>
                 <ul>
                     <li>التحدث عن شيء يحدث في <b>هذه اللحظة</b> (حدث وقت الكلام).</li>
-                    <li>حدث بدأ وما زال <b>مستتمراً</b> لم ينتهِ بعد.</li>
+                    <li>حدث بدأ وما زال <b>مستمرًا</b> لم ينتهِ بعد.</li>
                     <li>التعبير عن الترتيبات في <b>المستقبل القريب</b>.</li>
                 </ul>
             </div>
@@ -283,16 +314,16 @@
             <div class="section-badge">القاعدة (Affirmative)</div>
             <div class="rule-item">
                 <div class="formula-box">S + be [is / am / are] + V-ing</div>
-                <div class="example-box">ex: I'm reading a book.</div>
-                <div class="example-box">ex: She is studying right now.</div>
+                <div class="example-box">• I'm reading a book.</div>
+                <div class="example-box">• She is studying right now.</div>
             </div>
 
             <!-- النفي -->
             <div class="section-badge">النفي (Negative)</div>
             <div class="rule-item">
                 <div class="formula-box">S + be + not + V-ing + Com. (المكملة)</div>
-                <div class="example-box">I'm not reading a book.</div>
-                <div class="example-box">They are not (aren't) playing football.</div>
+                <div class="example-box">• I'm not reading a book.</div>
+                <div class="example-box">• They are not (aren't) playing football.</div>
             </div>
 
             <!-- السؤال -->
@@ -300,13 +331,13 @@
             <div class="rule-item">
                 <p style="margin: 4px 0; font-weight: bold; color: #EE69B8;">1- Yes / No question:</p>
                 <div class="formula-box">be + S + V-ing ... ?</div>
-                <div class="example-box">Am I reading a book?</div>
-                <div class="example-box">Is he working today?</div>
+                <div class="example-box">• Am I reading a book?</div>
+                <div class="example-box">• Is he working today?</div>
 
                 <p style="margin: 12px 0 4px 0; font-weight: bold; color: #EE69B8;">2- Question with (Wh):</p>
                 <div class="formula-box">Wh-word + be + S + V-ing ... ?</div>
-                <div class="example-box">What are you doing?</div>
-                <div class="example-box">Where is she going?</div>
+                <div class="example-box">• What are you doing?</div>
+                <div class="example-box">• Where is she going?</div>
             </div>
 
             <!-- الكلمات الدالة -->
@@ -353,19 +384,21 @@
                 <div class="correct-wrong correct">I want an apple. ✔</div>
             </div>
 
-            <!-- الفيديو المعتمد -->
+            <!-- الروابط الخارجية والفيديو -->
             <div class="action-box">
-                <a href="https://youtu.be/ZqQG54yds-Y?si=SuTgy2xq1bSD6TFh" target="_blank">الفيديو المُعتمد بالشرح: اضغط هنا للمشاهدة ✨</a>
+                <p style="margin:0 0 5px 0; color:#545454; font-weight:bold; font-size:0.9rem;">🎬 الڤيديو المُعتمد بالشرح:</p>
+                <a href="https://youtu.be/ZqQG54yds-Y?si=SuTgy2xq1bSD6TFh" target="_blank">اضغط هنا للمشاهدة ✨</a>
             </div>
 
-            <!-- اختبار تفاعلي -->
             <div class="action-box">
-                <a href="https://share.gemini.google/Am4HBPFW1zCQ" target="_blank">اختبار تفاعلي بواسطة الـ Ai 📝</a>
+                <p style="margin:0 0 5px 0; color:#545454; font-weight:bold; font-size:0.9rem;">🤖 اختبار تفاعلي ذكي:</p>
+                <a href="https://share.gemini.google/Am4HBPFW1zCQ" target="_blank">بدء الاختبار بواسطة AI 🔗</a>
             </div>
 
-            <!-- زر العودة -->
-            <div style="margin-top: 15px;">
-                <a href="english-lessons.html" class="back-btn">العودة ↩️</a>
+            <!-- أزرار التصفح -->
+            <div class="btn-container">
+                <a href="english-grammar.html" class="back-btn">🔄 العودة لقواعد الإنجليزية</a>
+                <a href="index.html" class="back-btn back-btn-secondary">🏠 الصفحة الرئيسية</a>
             </div>
 
         </div>
