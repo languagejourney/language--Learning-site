@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WBZH2BVR73"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WBZH2BVR73');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Present Simple - English Grammar</title>
-    <!-- استدعاء الخطوط -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&display=swap" rel="stylesheet">
+
+    <!-- تحسينات SEO لدرس المضارع البسيط -->
+    <title>Present Simple (المضارع البسيط) - English Grammar | My Language Journal</title>
+    <meta name="description" content="شرح شامل ومبسط لزمن المضارع البسيط (Present Simple) في اللغة الإنجليزية مع أمثلة، ظروف التكرار، وقواعد إضافة s للفعل.">
+    <meta name="keywords" content="Present Simple, المضارع البسيط, قواعد الإنجليزية, English Grammar, Do Does, ظروف التكرار, تعلم الإنجليزية, My Language Journal">
+    <meta name="author" content="My Language Journal">
+
+    <!-- استدعاء الخطوط الموحدة -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     
     <style>
         body, html {
@@ -17,7 +33,8 @@
             justify-content: center;
             align-items: center;
             background: linear-gradient(135deg, #fff0f5, #ffe4e9);
-            font-family: 'Playfair Display', serif;
+            font-family: 'Tajawal', 'Playfair Display', serif;
+            color: #333333;
         }
 
         .main-wrapper {
@@ -49,22 +66,22 @@
 
         /* عنوان الدرس الرئيسي */
         h1 {
-            font-family: 'Playfair Display', cursive, serif;
+            font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
             color: #545454;
             margin-top: 5px;
             margin-bottom: 5px;
-            font-weight: 600;
+            font-weight: 700;
             line-height: 1.3;
         }
 
         .subtitle {
-            font-family: 'Playfair Display', serif;
-            font-style: italic;
-            color: #EE69B8;
+            font-family: 'Tajawal', sans-serif;
             font-size: 1.15rem;
+            color: #EE69B8;
             margin-top: 0;
             margin-bottom: 20px;
+            font-weight: 500;
         }
 
         /* مقدمة الدرس والملاحظات */
@@ -132,7 +149,7 @@
             font-weight: bold;
             color: #333;
             margin: 6px 0 10px 0;
-            font-family: sans-serif;
+            font-family: 'Playfair Display', sans-serif;
         }
 
         .en-example {
@@ -159,12 +176,13 @@
             font-weight: bold;
             margin: 3px 4px;
             direction: ltr;
+            font-family: 'Playfair Display', serif;
         }
 
         /* صناديق الروابط بالفيديو والتمارين */
         .action-box {
             text-align: center;
-            margin: 15px 0;
+            margin: 12px 0;
             padding: 14px;
             border: 1.5px dashed #F8ABE4;
             border-radius: 16px;
@@ -177,7 +195,7 @@
             font-weight: bold;
             text-decoration: none;
             font-size: 0.95rem;
-            display: block;
+            display: inline-block;
         }
 
         .action-box:hover {
@@ -185,19 +203,31 @@
             border-color: #EE69B8;
         }
 
-        /* زر العودة */
-        .back-btn {
+        /* أزرار العودة والتنقل */
+        .btn-container {
+            text-align: center;
             margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .back-btn {
             display: inline-block;
-            padding: 9px 24px;
+            padding: 9px 20px;
             background-color: #EE69B8;
             border: 1.5px solid #545454;
             border-radius: 20px;
             color: #000000;
             text-decoration: none;
-            font-size: 0.95rem;
+            font-size: 0.92rem;
             font-weight: bold;
             box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            transition: 0.2s;
+        }
+
+        .back-btn-secondary {
+            background-color: #FDBBE3;
         }
 
         .list-style {
@@ -265,7 +295,7 @@
             </div>
 
             <!-- 2. صيغة السؤال -->
-            <div class="section-badge">صيغة السؤال</div>
+            <div class="section-badge">ثانياً: صيغة السؤال</div>
 
             <div class="info-card" style="text-align: center;">
                 <p>توجد صيغتان أساسيتان لتكوين السؤال في زمن المضارع البسيط.</p>
@@ -290,7 +320,7 @@
             </div>
 
             <!-- 3. صيغة النفي -->
-            <div class="section-badge">صيغة النفي</div>
+            <div class="section-badge">ثالثاً: صيغة النفي</div>
 
             <div class="info-card" style="text-align: center;">
                 <p>توجد صيغتان أساسيتان للنفي في زمن المضارع البسيط.</p>
@@ -314,7 +344,7 @@
             </div>
 
             <!-- 4. قواعد إضافة s للفعل -->
-            <div class="section-badge">قواعد إضافة s للفعل</div>
+            <div class="section-badge">رابعاً: قواعد إضافة s للفعل</div>
 
             <div class="rule-item">
                 <ol class="list-style">
@@ -325,7 +355,7 @@
             </div>
 
             <!-- 5. ظروف التكرار -->
-            <div class="section-badge">ظروف التكرار</div>
+            <div class="section-badge">خامساً: ظروف التكرار</div>
 
             <div class="info-card" style="text-align: center;">
                 <div style="margin-bottom: 8px;">
@@ -348,19 +378,21 @@
                 مثال: <span class="en-example" style="display:inline-block; padding:2px 6px;">Yes, I am.</span> وليس <span class="en-example" style="display:inline-block; padding:2px 6px; text-decoration: line-through;">Yes, I'm.</span></p>
             </div>
 
-            <!-- فيديو الشرح والاختبار التفاعلي -->
+            <!-- الروابط الخارجية والفيديو -->
             <div class="action-box">
-                <p style="margin:0 0 6px 0; color:#545454; font-weight:bold; font-size:0.95rem;">الڤيديو المُعتمد بالشرح:</p>
+                <p style="margin:0 0 5px 0; color:#545454; font-weight:bold; font-size:0.9rem;">🎬 الڤيديو المُعتمد بالشرح:</p>
                 <a href="https://youtu.be/rlbFDiuwlF0?si=OvmT63pPpl5ezThn" target="_blank">اضغط هنا للمشاهدة ✨</a>
             </div>
 
             <div class="action-box">
-                <a href="https://share.gemini.google/DwTpNhJJ80fx" target="_blank">اختبار تفاعلي بواسطة الـ Ai 📝</a>
+                <p style="margin:0 0 5px 0; color:#545454; font-weight:bold; font-size:0.9rem;">🤖 اختبار تفاعلي ذكي:</p>
+                <a href="https://share.gemini.google/DwTpNhJJ80fx" target="_blank">بدء الاختبار بواسطة AI 🔗</a>
             </div>
 
-            <!-- زر العودة -->
-            <div style="margin-top: 20px;">
-                <a href="english-grammar.html" class="back-btn">العودة ↩️</a>
+            <!-- أزرار التصفح -->
+            <div class="btn-container">
+                <a href="english-grammar.html" class="back-btn">🔄 العودة لقواعد الإنجليزية</a>
+                <a href="index.html" class="back-btn back-btn-secondary">🏠 الصفحة الرئيسية</a>
             </div>
 
         </div>
