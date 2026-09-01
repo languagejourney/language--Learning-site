@@ -105,7 +105,7 @@
         }
 
         .rule-item li {
-            margin-bottom: 5px;
+            margin-bottom: 6px;
         }
 
         /* إطار القاعدة الأساسية والجمل */
@@ -119,7 +119,8 @@
             color: #d81b60;
             direction: ltr;
             font-family: 'Playfair Display', serif;
-            font-size: 1rem;
+            font-size: 0.95rem;
+            text-align: center;
         }
 
         .example-box {
@@ -131,7 +132,34 @@
             direction: ltr;
             text-align: left;
             font-family: 'Playfair Display', serif;
-            font-size: 0.95rem;
+            font-size: 0.92rem;
+        }
+
+        /* صفوف الفاعل والـ Be */
+        .pronoun-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            border: 1px solid #ffe4e9;
+            border-radius: 8px;
+            padding: 6px 12px;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+            direction: ltr;
+        }
+
+        .pronoun-text {
+            color: #333;
+            font-weight: bold;
+        }
+
+        .verb-tag {
+            background-color: #ffe4e9;
+            color: #d81b60;
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-weight: bold;
         }
 
         /* الكلمات الدالة Tags */
@@ -162,6 +190,7 @@
             padding: 6px 10px;
             margin: 4px 0;
             border-radius: 6px;
+            font-size: 0.92rem;
         }
 
         .wrong {
@@ -223,31 +252,39 @@
             <div class="subtitle">المضارع المستمر</div>
 
             <!-- الاستخدام -->
-            <div class="section-badge">استخدامه</div>
+            <div class="section-badge">استخدامه (Uses)</div>
             <div class="rule-item">
+                <p style="margin-bottom: 6px; font-weight: bold; color: #EE69B8;">يُستخدم هذا الزمن في الحالات التالية:</p>
                 <ul>
-                    <li>نتحدث عن شيء يحدث في هذه اللحظة.</li>
-                    <li>ما زال مستمراً.</li>
-                    <li>التعبير عن المستقبل القريب.</li>
+                    <li>التحدث عن شيء يحدث في <b>هذه اللحظة</b> (حدث وقت الكلام).</li>
+                    <li>حدث بدأ وما زال <b>مستتمراً</b> لم ينتهِ بعد.</li>
+                    <li>التعبير عن الترتيبات في <b>المستقبل القريب</b>.</li>
                 </ul>
             </div>
 
-            <!-- القاعدة مثبت -->
+            <!-- توزيع ضمائر الفاعل -->
+            <div class="section-badge">توزيع الفاعل مع (Be)</div>
+            <div class="rule-item">
+                <div class="pronoun-row">
+                    <span class="pronoun-text">I</span>
+                    <span class="verb-tag">am ('m)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">He / She / It / مفرد</span>
+                    <span class="verb-tag">is ('s)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">They / We / You / جمع</span>
+                    <span class="verb-tag">are ('re)</span>
+                </div>
+            </div>
+
+            <!-- القاعدة المثبتة -->
             <div class="section-badge">القاعدة (Affirmative)</div>
             <div class="rule-item">
                 <div class="formula-box">S + be [is / am / are] + V-ing</div>
                 <div class="example-box">ex: I'm reading a book.</div>
-            </div>
-
-            <!-- السؤال -->
-            <div class="section-badge">السؤال (Questions)</div>
-            <div class="rule-item">
-                <p style="margin: 4px 0; font-weight: bold;">1- Yes/No question:</p>
-                <div class="formula-box">be + S + V-ing ... ?</div>
-                <div class="example-box">Am I reading a book?</div>
-
-                <p style="margin: 10px 0 4px 0; font-weight: bold;">2- Question with (Wh):</p>
-                <div class="example-box">What are you doing?</div>
+                <div class="example-box">ex: She is studying right now.</div>
             </div>
 
             <!-- النفي -->
@@ -255,12 +292,27 @@
             <div class="rule-item">
                 <div class="formula-box">S + be + not + V-ing + Com. (المكملة)</div>
                 <div class="example-box">I'm not reading a book.</div>
+                <div class="example-box">They are not (aren't) playing football.</div>
+            </div>
+
+            <!-- السؤال -->
+            <div class="section-badge">السؤال (Questions)</div>
+            <div class="rule-item">
+                <p style="margin: 4px 0; font-weight: bold; color: #EE69B8;">1- Yes / No question:</p>
+                <div class="formula-box">be + S + V-ing ... ?</div>
+                <div class="example-box">Am I reading a book?</div>
+                <div class="example-box">Is he working today?</div>
+
+                <p style="margin: 12px 0 4px 0; font-weight: bold; color: #EE69B8;">2- Question with (Wh):</p>
+                <div class="formula-box">Wh-word + be + S + V-ing ... ?</div>
+                <div class="example-box">What are you doing?</div>
+                <div class="example-box">Where is she going?</div>
             </div>
 
             <!-- الكلمات الدالة -->
-            <div class="section-badge">الكلمات الدالة</div>
+            <div class="section-badge">الكلمات الدالة (Key Words)</div>
             <div class="rule-item">
-                <p style="margin-bottom: 8px;">تظهر عادةً مع المضارع المستمر:</p>
+                <p style="margin-bottom: 8px;">تظهر عادةً مع المضارع المستمر وتدل عليه:</p>
                 <div class="tags-wrapper">
                     <span class="tag-pill">Now</span>
                     <span class="tag-pill">At the moment</span>
@@ -273,14 +325,17 @@
             <!-- قواعد إضافة ing -->
             <div class="section-badge">قواعد إضافة (ing) للأفعال</div>
             <div class="rule-item">
-                <p>1. الفعل الذي ينتهي بحرف <b>(e)</b> غير ملفوظة تُحذف عند إضافة (ing):</p>
+                <p><b>1. الفعل الذي ينتهي بحرف (e) غير ملفوظة:</b> تُحذف عند إضافة (ing):</p>
                 <div class="example-box">write ➔ writing</div>
 
-                <p style="margin-top: 10px;">2. الفعل الذي ينتهي بحرف صحيح وقبله حرف علة واحد فقط، يُضاعف الحرف الأخير ونضيف (ing):</p>
+                <p style="margin-top: 10px;"><b>2. الفعل الذي ينتهي بحرف صحيح وقبله حرف علة واحد فقط:</b> يُضاعف الحرف الأخير ونضيف (ing):</p>
                 <div class="example-box">swim ➔ swimming</div>
 
-                <p style="margin-top: 10px;">3. الفعل الذي ينتهي بـ <b>(ie)</b>، تُقلب إلى <b>(y)</b> ونضيف (ing):</p>
+                <p style="margin-top: 10px;"><b>3. الفعل الذي ينتهي بـ (ie):</b> تُقلب إلى (y) ونضيف (ing):</p>
                 <div class="example-box">lie ➔ lying</div>
+
+                <p style="margin-top: 10px;"><b>4. الأفعال المنتهية بـ (y):</b> تبقى الـ (y) كما هي دائماً ونضيف (ing):</p>
+                <div class="example-box">play ➔ playing | study ➔ studying</div>
             </div>
 
             <!-- أفعال لا تقبل ing -->
@@ -293,7 +348,7 @@
                     <span class="tag-pill">know</span>
                     <span class="tag-pill">understand</span>
                 </div>
-                <p>أفعال الشعور والإدراك غالباً لا تأتي بـ (ing) لأنها تعبر عن استمرارية دائمة/ثابتة وليست وقتية، وتُستخدم بدلاً منها صيغة المضارع البسيط فقط.</p>
+                <p>أفعال الشعور والإدراك غالباً لا تأتي بـ (ing) لأنها تعبر عن استمرارية دائمية/ثابتة وليست وقتية، وتُستخدم بدلاً منها صيغة <b>المضارع البسيط</b> فقط.</p>
                 <div class="correct-wrong wrong">I am wanting an apple. ✖</div>
                 <div class="correct-wrong correct">I want an apple. ✔</div>
             </div>
