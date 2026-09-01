@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Present Simple - English Grammar</title>
+    <title>English Grammar - Present Continuous</title>
     <!-- استدعاء الخطوط -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&display=swap" rel="stylesheet">
     
@@ -50,12 +50,13 @@
         /* عنوان الدرس الرئيسي */
         h1 {
             font-family: 'Playfair Display', cursive, serif;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             color: #545454;
             margin-top: 5px;
             margin-bottom: 5px;
             font-weight: 600;
             line-height: 1.3;
+            direction: ltr;
         }
 
         .subtitle {
@@ -67,40 +68,22 @@
             margin-bottom: 20px;
         }
 
-        /* مقدمة الدرس والملاحظات */
-        .info-card {
-            background-color: #ffffff;
-            border: 1.5px solid #f6a0dd;
-            border-radius: 16px;
-            padding: 14px 16px;
-            margin-bottom: 20px;
-            text-align: right;
-            box-shadow: 0 2px 8px rgba(238, 105, 184, 0.08);
-        }
-
-        .info-card p {
-            margin: 0;
-            color: #444444;
-            font-size: 0.95rem;
-            line-height: 1.7;
-        }
-
         /* شارات العناوين */
         .section-badge {
             display: inline-block;
             background-color: #EE69B8;
             color: #ffffff;
-            padding: 8px 22px;
+            padding: 8px 18px;
             border-radius: 12px;
-            font-size: 1.05rem;
+            font-size: 1rem;
             font-weight: bold;
             border: 1.5px solid #545454;
             margin-top: 15px;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
-        /* بطاقات القواعد */
+        /* بطاقات القواعد والملاحظات */
         .rule-item {
             background-color: #fff8fc;
             border-right: 4px solid #EE69B8;
@@ -111,62 +94,92 @@
             padding: 12px 14px;
             margin-bottom: 14px;
             text-align: right;
-            font-size: 0.92rem;
-            line-height: 1.6;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: #444;
         }
 
-        .rule-title {
-            color: #EE69B8;
-            font-weight: bold;
-            font-size: 1rem;
-            margin-bottom: 6px;
+        .rule-item ul {
+            margin: 5px 0;
+            padding-right: 20px;
         }
 
+        .rule-item li {
+            margin-bottom: 5px;
+        }
+
+        /* إطار القاعدة الأساسية والجمل */
         .formula-box {
-            background-color: #fff;
-            border: 1px dashed #EE69B8;
-            border-radius: 8px;
-            padding: 6px 10px;
-            direction: ltr;
-            text-align: center;
+            background-color: #ffffff;
+            border: 1.5px dashed #EE69B8;
+            border-radius: 12px;
+            padding: 10px;
+            margin: 10px 0;
             font-weight: bold;
-            color: #333;
-            margin: 6px 0 10px 0;
-            font-family: sans-serif;
+            color: #d81b60;
+            direction: ltr;
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
         }
 
-        .en-example {
+        .example-box {
+            background-color: #ffe4e9;
+            border-radius: 8px;
+            padding: 8px 12px;
+            margin: 6px 0;
+            color: #333;
             direction: ltr;
             text-align: left;
             font-family: 'Playfair Display', serif;
-            color: #d81b60;
-            font-weight: bold;
-            background-color: #ffe4e9;
-            padding: 4px 10px;
-            border-radius: 6px;
-            display: block;
-            margin: 4px 0;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
         }
 
-        .keyword-tag {
-            display: inline-block;
+        /* الكلمات الدالة Tags */
+        .tags-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 8px;
+        }
+
+        .tag-pill {
             background-color: #ffe4e9;
             color: #d81b60;
-            padding: 4px 10px;
-            border-radius: 8px;
-            font-size: 0.88rem;
+            padding: 5px 12px;
+            border-radius: 12px;
             font-weight: bold;
-            margin: 3px 4px;
+            font-size: 0.9rem;
+            font-family: 'Playfair Display', serif;
             direction: ltr;
         }
 
-        /* صناديق الروابط بالفيديو والتمارين */
+        /* الملاحظات للأمثلة الصحيحة والخاطئة */
+        .correct-wrong {
+            font-family: 'Playfair Display', serif;
+            direction: ltr;
+            text-align: left;
+            padding: 6px 10px;
+            margin: 4px 0;
+            border-radius: 6px;
+        }
+
+        .wrong {
+            color: #d32f2f;
+            background-color: #fde8e8;
+        }
+
+        .correct {
+            color: #2e7d32;
+            background-color: #e8f5e9;
+        }
+
+        /* صندوق الإجراءات والروابط */
         .action-box {
             text-align: center;
-            margin: 15px 0;
-            padding: 14px;
-            border: 1.5px dashed #F8ABE4;
+            margin: 12px 0;
+            padding: 12px;
+            border: 1.5px dashed #EE69B8;
             border-radius: 16px;
             background-color: #fffbfe;
             transition: 0.2s;
@@ -199,17 +212,6 @@
             font-weight: bold;
             box-shadow: 0 2px 5px rgba(0,0,0,0.08);
         }
-
-        .list-style {
-            padding-right: 18px;
-            margin: 5px 0;
-        }
-
-        .list-style li {
-            margin-bottom: 8px;
-            color: #333;
-            font-size: 0.92rem;
-        }
     </style>
 </head>
 <body>
@@ -217,150 +219,98 @@
     <div class="main-wrapper">
         <div class="card-container">
             
-            <h1>Present Simple</h1>
-            <div class="subtitle">المضارع البسيط</div>
-            
-            <!-- المقدمة والقاعدة العامة -->
-            <div class="info-card">
-                <p>📌 يُستخدم زمن المضارع البسيط للتحدث عن الحاضر، والتعبير عن الحقائق العامة، والروتين اليومي، والعادات، والمواعيد المحددة.</p>
-            </div>
+            <h1>Present Continuous</h1>
+            <div class="subtitle">المضارع المستمر</div>
 
-            <div class="rule-item" style="text-align: center;">
-                <div class="rule-title">قاعدة الجملة المُثبتة:</div>
-                <div class="formula-box">S + V + Complete…</div>
-            </div>
-
-            <!-- 1. أنواع الفاعل -->
-            <div class="section-badge">أولاً: أنواع الفاعل</div>
-
+            <!-- الاستخدام -->
+            <div class="section-badge">استخدامه</div>
             <div class="rule-item">
-                <div class="rule-title">1- الفاعل المفرد (He, She, It):</div>
-                <p style="margin: 4px 0;">عند استخدام أحد الضمائر المفردة (He, She, It)، يجب إضافة (s) إلى الفعل في زمن المضارع البسيط، ويُعرف ذلك بصيغة الشخص الثالث المفرد.</p>
-                <p style="margin: 4px 0; font-weight: bold;">وتكون القاعدة:</p>
-                <div class="formula-box">S (He, She, It) + V(s) + com…</div>
-                <span class="en-example">• She eats fish.</span>
+                <ul>
+                    <li>نتحدث عن شيء يحدث في هذه اللحظة.</li>
+                    <li>ما زال مستمراً.</li>
+                    <li>التعبير عن المستقبل القريب.</li>
+                </ul>
             </div>
 
+            <!-- القاعدة مثبت -->
+            <div class="section-badge">القاعدة (Affirmative)</div>
             <div class="rule-item">
-                <div class="rule-title">2- الفاعل الجمع (They, You, We, I):</div>
-                <p style="margin: 4px 0;">عند استخدام هذه الضمائر، يبقى الفعل بصيغته الأساسية دون إضافة (s) أو أي تغيير آخر، وتكون القاعدة:</p>
-                <div class="formula-box">S (They, You, We, I) + V(inf.) + com…</div>
-                <span class="en-example">• I play football.</span>
+                <div class="formula-box">S + be [is / am / are] + V-ing</div>
+                <div class="example-box">ex: I'm reading a book.</div>
             </div>
 
-            <!-- ملاحظة مهمة -->
-            <div class="info-card">
-                <p><strong>ملاحظة مهمة جدًا:</strong><br>
-                في زمن المضارع البسيط، يجب التمييز بين أفعال الكينونة (am, is, are) والأفعال الأساسية مثل (go, eat, play). لا يُستخدم فعل الكينونة مع الفعل الأساسي بهذه الصورة في الجملة نفسها؛ لذلك لا نقول: <span style="text-decoration: line-through; color: #d81b60;">I am play.</span></p>
-            </div>
-
-            <!-- التأكيد -->
+            <!-- السؤال -->
+            <div class="section-badge">السؤال (Questions)</div>
             <div class="rule-item">
-                <div class="rule-title">استخدام Do و Does للتأكيد:</div>
-                <p style="margin: 4px 0;">يمكن استخدام (Do) أو (Does) في الجملة المثبتة لغرض التأكيد، وتكون القاعدة:</p>
-                <div class="formula-box">S + Do للجمع / Does للمفرد + V(inf.) + com…</div>
-                <span class="en-example">• I do play football.</span>
-                <span class="en-example">• She does eat fish.</span>
-                <p style="margin: 6px 0 0 0; color: #555; font-size: 0.88rem;">عند استخدام (Do) أو (Does) مع الفعل، يجب أن يعود الفعل إلى صيغته الأساسية دون أي إضافة؛ لأن (Do) و(Does) تحملان علامة الزمن، ولذلك لا نضيف (s) إلى الفعل بعد (Does).</p>
+                <p style="margin: 4px 0; font-weight: bold;">1- Yes/No question:</p>
+                <div class="formula-box">be + S + V-ing ... ?</div>
+                <div class="example-box">Am I reading a book?</div>
+
+                <p style="margin: 10px 0 4px 0; font-weight: bold;">2- Question with (Wh):</p>
+                <div class="example-box">What are you doing?</div>
             </div>
 
-            <!-- 2. صيغة السؤال -->
-            <div class="section-badge">صيغة السؤال</div>
-
-            <div class="info-card" style="text-align: center;">
-                <p>توجد صيغتان أساسيتان لتكوين السؤال في زمن المضارع البسيط.</p>
-            </div>
-
+            <!-- النفي -->
+            <div class="section-badge">النفي (Negative)</div>
             <div class="rule-item">
-                <div class="rule-title">الصيغة الأولى باستخدام Do / Does:</div>
-                <div class="formula-box">Do / Does + S + V(inf.) + com …</div>
-                <p style="margin: 4px 0;">نستخدم (Do) مع (I, You, We, They)، ونستخدم (Does) مع (He, She, It). ويأتي الفعل بعدهما بصيغته الأساسية دون أي إضافة.</p>
-                <p style="margin: 4px 0; font-weight: bold;">أمثلة:</p>
-                <span class="en-example">• Do you play football?</span>
-                <span class="en-example">• Does she eat fish?</span>
+                <div class="formula-box">S + be + not + V-ing + Com. (المكملة)</div>
+                <div class="example-box">I'm not reading a book.</div>
             </div>
 
+            <!-- الكلمات الدالة -->
+            <div class="section-badge">الكلمات الدالة</div>
             <div class="rule-item">
-                <div class="rule-title">الصيغة الثانية باستخدام أفعال الكينونة:</div>
-                <div class="formula-box">(Am, Is, Are) + S + com…</div>
-                <p style="margin: 4px 0;">تُستخدم أفعال الكينونة لتكوين السؤال عندما لا تحتوي الجملة على فعل أساسي، وإنما تحتوي على صفة أو اسم أو مكمل للجملة.</p>
-                <p style="margin: 4px 0; font-weight: bold;">أمثلة:</p>
-                <span class="en-example">• Is he strong?</span>
-                <span class="en-example">• Are they happy?</span>
-            </div>
-
-            <!-- 3. صيغة النفي -->
-            <div class="section-badge">صيغة النفي</div>
-
-            <div class="info-card" style="text-align: center;">
-                <p>توجد صيغتان أساسيتان للنفي في زمن المضارع البسيط.</p>
-            </div>
-
-            <div class="rule-item">
-                <div class="rule-title">الصيغة الأولى باستخدام Do / Does + not:</div>
-                <div class="formula-box">S + Do / Does + not + V(inf.) + com …</div>
-                <p style="margin: 4px 0;">نستخدم (Do not / don't) مع (I, You, We, They)، ونستخدم (Does not / doesn't) مع (He, She, It). ويأتي الفعل بعدهما بصيغته الأساسية.</p>
-                <p style="margin: 4px 0; font-weight: bold;">أمثلة:</p>
-                <span class="en-example">• I don't play football.</span>
-                <span class="en-example">• She doesn't eat fish.</span>
-            </div>
-
-            <div class="rule-item">
-                <div class="rule-title">الصيغة الثانية باستخدام أفعال الكينونة:</div>
-                <div class="formula-box">S + (Am, Is, Are) + not + com…</div>
-                <p style="margin: 4px 0; font-weight: bold;">أمثلة:</p>
-                <span class="en-example">• He isn't strong.</span>
-                <span class="en-example">• They aren't happy.</span>
-            </div>
-
-            <!-- 4. قواعد إضافة s للفعل -->
-            <div class="section-badge">قواعد إضافة s للفعل</div>
-
-            <div class="rule-item">
-                <ol class="list-style">
-                    <li>إذا انتهى الفعل بأحد الأحرف أو الأصوات (sh, ch, ss, x, o, z)، نضيف (es)، مثل: <span class="en-example" style="display:inline-block; padding:2px 6px;">Go → Goes</span></li>
-                    <li>إذا انتهى الفعل بحرف (y) وكان قبله حرف صحيح، نقلب (y) إلى (ies)، مثل: <span class="en-example" style="display:inline-block; padding:2px 6px;">Study → Studies</span></li>
-                    <li>إذا انتهى الفعل بحرف (y) وكان قبله حرف علة، نضيف (s) فقط، مثل: <span class="en-example" style="display:inline-block; padding:2px 6px;">Play → Plays</span></li>
-                </ol>
-            </div>
-
-            <!-- 5. ظروف التكرار -->
-            <div class="section-badge">ظروف التكرار</div>
-
-            <div class="info-card" style="text-align: center;">
-                <div style="margin-bottom: 8px;">
-                    <span class="keyword-tag">Always</span>
-                    <span class="keyword-tag">usually</span>
-                    <span class="keyword-tag">often</span>
-                    <span class="keyword-tag">sometimes</span>
-                    <span class="keyword-tag">never</span>
+                <p style="margin-bottom: 8px;">تظهر عادةً مع المضارع المستمر:</p>
+                <div class="tags-wrapper">
+                    <span class="tag-pill">Now</span>
+                    <span class="tag-pill">At the moment</span>
+                    <span class="tag-pill">Look!</span>
+                    <span class="tag-pill">Listen!</span>
+                    <span class="tag-pill">Today</span>
                 </div>
-                <p style="font-size: 0.9rem; text-align: right; margin-top: 6px;">
-                • تأتي ظروف التكرار عادةً قبل الفعل الأساسي، مثل: <span class="en-example">• I always play football.</span>
-                • أما مع أفعال الكينونة، فتأتي ظروف التكرار بعدها، مثل: <span class="en-example">• He is always late.</span>
-                </p>
             </div>
 
-            <!-- 6. ملاحظة الاختصارات -->
-            <div class="info-card">
-                <p><strong>ملاحظة حول الاختصارات:</strong><br>
-                تُستخدم الاختصارات بشكل شائع في المحادثات والكتابة غير الرسمية (Informal). أما في البحوث والكتابة الأكاديمية والرسمية، فمن الأفضل استخدام الصيغ الكاملة وتجنب الاختصارات.<br>
-                مثال: <span class="en-example" style="display:inline-block; padding:2px 6px;">Yes, I am.</span> وليس <span class="en-example" style="display:inline-block; padding:2px 6px; text-decoration: line-through;">Yes, I'm.</span></p>
+            <!-- قواعد إضافة ing -->
+            <div class="section-badge">قواعد إضافة (ing) للأفعال</div>
+            <div class="rule-item">
+                <p>1. الفعل الذي ينتهي بحرف <b>(e)</b> غير ملفوظة تُحذف عند إضافة (ing):</p>
+                <div class="example-box">write ➔ writing</div>
+
+                <p style="margin-top: 10px;">2. الفعل الذي ينتهي بحرف صحيح وقبله حرف علة واحد فقط، يُضاعف الحرف الأخير ونضيف (ing):</p>
+                <div class="example-box">swim ➔ swimming</div>
+
+                <p style="margin-top: 10px;">3. الفعل الذي ينتهي بـ <b>(ie)</b>، تُقلب إلى <b>(y)</b> ونضيف (ing):</p>
+                <div class="example-box">lie ➔ lying</div>
             </div>
 
-            <!-- فيديو الشرح والاختبار التفاعلي -->
+            <!-- أفعال لا تقبل ing -->
+            <div class="section-badge">أفعال لا تقبل الـ (ing)</div>
+            <div class="rule-item">
+                <div class="tags-wrapper" style="margin-bottom: 10px;">
+                    <span class="tag-pill">like</span>
+                    <span class="tag-pill">love</span>
+                    <span class="tag-pill">want</span>
+                    <span class="tag-pill">know</span>
+                    <span class="tag-pill">understand</span>
+                </div>
+                <p>أفعال الشعور والإدراك غالباً لا تأتي بـ (ing) لأنها تعبر عن استمرارية دائمة/ثابتة وليست وقتية، وتُستخدم بدلاً منها صيغة المضارع البسيط فقط.</p>
+                <div class="correct-wrong wrong">I am wanting an apple. ✖</div>
+                <div class="correct-wrong correct">I want an apple. ✔</div>
+            </div>
+
+            <!-- الفيديو المعتمد -->
             <div class="action-box">
-                <p style="margin:0 0 6px 0; color:#545454; font-weight:bold; font-size:0.95rem;">الڤيديو المُعتمد بالشرح:</p>
-                <a href="https://youtu.be/rlbFDiuwlF0?si=OvmT63pPpl5ezThn" target="_blank">اضغط هنا للمشاهدة ✨</a>
+                <a href="https://youtu.be/ZqQG54yds-Y?si=SuTgy2xq1bSD6TFh" target="_blank">الفيديو المُعتمد بالشرح: اضغط هنا للمشاهدة ✨</a>
             </div>
 
+            <!-- اختبار تفاعلي -->
             <div class="action-box">
-                <a href="https://share.gemini.google/DwTpNhJJ80fx" target="_blank">اختبار تفاعلي بواسطة الـ Ai 📝</a>
+                <a href="https://share.gemini.google/Am4HBPFW1zCQ" target="_blank">اختبار تفاعلي بواسطة الـ Ai 📝</a>
             </div>
 
             <!-- زر العودة -->
-            <div style="margin-top: 20px;">
-                <a href="english-grammar.html" class="back-btn">العودة ↩️</a>
+            <div style="margin-top: 15px;">
+                <a href="english-lessons.html" class="back-btn">العودة ↩️</a>
             </div>
 
         </div>
