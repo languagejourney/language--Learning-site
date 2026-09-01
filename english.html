@@ -15,12 +15,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- تحسينات SEO لصفحة قسم اللغة الإنجليزية -->
-    <title>تعلم اللغة الإنجليزية والقواعد | English - My Language Journal</title>
-    <meta name="description" content="قسم تعلم اللغة الإنجليزية للمبتدئين: خطة البدء، دروس القواعد وتبسيط المهارات الأساسية عبر مدونة My Language Journal.">
-    <meta name="keywords" content="تعلم اللغة الإنجليزية, قواعد الإنجليزية, خطة تعلم الإنجليزية, English grammar, My Language Journal English">
+    <title>تعلم اللغة الإنجليزية: القواعد والمفردات والفروقات | English - My Language Journal</title>
+    <meta name="description" content="دليلك الشامل لتعلم اللغة الإنجليزية للمبتدئين: خطة البدء، دروس القواعد والأزمنة، بنك المفردات، والفروقات الدقيقة بين الكلمات عبر مدونة My Language Journal.">
+    <meta name="keywords" content="تعلم اللغة الإنجليزية, قواعد الإنجليزية, مفردات انجليزي, الفروقات بين الكلمات الانجليزية, English grammar, My Language Journal English">
     <meta name="author" content="My Language Journal">
 
-    <!-- استيراد خط The Season أو خط بديل مائل وناعم قريب جداً منه -->
+    <!-- استيراد الخطوط -->
     <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@400;700&family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&display=swap" rel="stylesheet">
     
     <style>
@@ -46,7 +46,7 @@
             box-sizing: border-box;
         }
 
-        /* Welcome بخط مائل وأنيق (The Season style) */
+        /* Welcome بخط مائل وأنيق */
         h1 {
             font-family: 'Playfair Display', cursive, serif;
             font-style: italic;
@@ -56,13 +56,14 @@
             font-weight: 600;
         }
 
-        /* الأزرار (تدرج الوردي من الأغمق للأفتح) */
-        .btn-1 {
-            background-color: #F168BC; /* الأغمق */
-        }
-
-        .btn-2 {
-            background-color: #EF8BC8; /* الأفتح */
+        /* تدرج الألوان للأزرار */
+        .btn-1 { background-color: #F168BC; }
+        .btn-2 { background-color: #EF8BC8; }
+        .btn-3 { background-color: #F47EC6; }
+        .btn-4 { background-color: #F79BD4; }
+        .btn-home {
+            background-color: #FFB6C1;
+            margin-top: 15px;
         }
 
         .btn {
@@ -70,17 +71,21 @@
             width: 100%;
             padding: 13px 10px;
             margin: 10px 0;
-            color: #000000; /* الخطوط باللون الأسود */
+            color: #000000;
             text-decoration: none;
             border-radius: 16px;
             font-weight: bold;
-            border: 1.5px solid #545454; /* الإطار بلون الرصاصي المحدد */
+            border: 1.5px solid #545454;
             box-sizing: border-box;
-            /* تطبيق خط The Season المائل والناعم على النصوص */
             font-family: 'Playfair Display', cursive, serif;
             font-style: italic;
             font-size: 1.05rem;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
         }
     </style>
 </head>
@@ -89,9 +94,14 @@
     <div class="container">
         <h1>English</h1>
 
+        <!-- الأزرار الكاملة للهيكل الجديد -->
         <a href="english-start.html" class="btn btn-1">كيف ابدأ</a>
         <a href="english-grammar.html" class="btn btn-2">دروس القواعد</a>
+        <a href="english-vocabulary.html" class="btn btn-3">المفردات</a>
+        <a href="english-differences.html" class="btn btn-4">الفروقات اللغوية</a>
 
+        <!-- زر العودة للرئيسية -->
+        <a href="index.html" class="btn btn-home">🏠 الصفحة الرئيسية</a>
     </div>
 
 </body>
