@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Grammar - Present Continuous</title>
+    <!-- استدعاء الخطوط -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&display=swap" rel="stylesheet">
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #fff0f5, #ffe4e9);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .main-wrapper {
+            width: 90%;
+            max-width: 420px;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* الإطار الخارجي الرئيسي */
+        .card-container {
+            width: 100%;
+            background-color: #ffffff;
+            border: 1.5px solid #545454;
+            border-radius: 24px;
+            padding: 25px 18px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            text-align: center;
+            max-height: 88vh;
+            overflow-y: auto;
+            scrollbar-width: none;
+        }
+
+        .card-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* عنوان الدرس الرئيسي */
+        h1 {
+            font-family: 'Playfair Display', cursive, serif;
+            font-size: 1.6rem;
+            color: #545454;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-weight: 600;
+            line-height: 1.3;
+            direction: ltr;
+        }
+
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: #EE69B8;
+            font-size: 1.15rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        /* شارات العناوين */
+        .section-badge {
+            display: inline-block;
+            background-color: #EE69B8;
+            color: #ffffff;
+            padding: 8px 18px;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: 1.5px solid #545454;
+            margin-top: 15px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        /* بطاقات القواعد والملاحظات */
+        .rule-item {
+            background-color: #fff8fc;
+            border-right: 4px solid #EE69B8;
+            border-top: 1px solid #eee;
+            border-left: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            border-radius: 10px;
+            padding: 12px 14px;
+            margin-bottom: 14px;
+            text-align: right;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: #444;
+        }
+
+        .rule-item ul {
+            margin: 5px 0;
+            padding-right: 20px;
+        }
+
+        .rule-item li {
+            margin-bottom: 5px;
+        }
+
+        /* إطار القاعدة الأساسية والجمل */
+        .formula-box {
+            background-color: #ffffff;
+            border: 1.5px dashed #EE69B8;
+            border-radius: 12px;
+            padding: 10px;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #d81b60;
+            direction: ltr;
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+        }
+
+        .example-box {
+            background-color: #ffe4e9;
+            border-radius: 8px;
+            padding: 8px 12px;
+            margin: 6px 0;
+            color: #333;
+            direction: ltr;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.95rem;
+        }
+
+        /* الكلمات الدالة Tags */
+        .tags-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 8px;
+        }
+
+        .tag-pill {
+            background-color: #ffe4e9;
+            color: #d81b60;
+            padding: 5px 12px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            font-family: 'Playfair Display', serif;
+            direction: ltr;
+        }
+
+        /* الملاحظات للأمثلة الصحيحة والخاطئة */
+        .correct-wrong {
+            font-family: 'Playfair Display', serif;
+            direction: ltr;
+            text-align: left;
+            padding: 6px 10px;
+            margin: 4px 0;
+            border-radius: 6px;
+        }
+
+        .wrong {
+            color: #d32f2f;
+            background-color: #fde8e8;
+        }
+
+        .correct {
+            color: #2e7d32;
+            background-color: #e8f5e9;
+        }
+
+        /* صندوق الإجراءات والروابط */
+        .action-box {
+            text-align: center;
+            margin: 12px 0;
+            padding: 12px;
+            border: 1.5px dashed #EE69B8;
+            border-radius: 16px;
+            background-color: #fffbfe;
+            transition: 0.2s;
+        }
+
+        .action-box a {
+            color: #EE69B8;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: block;
+        }
+
+        .action-box:hover {
+            background-color: #fff0f7;
+            border-color: #EE69B8;
+        }
+
+        /* زر العودة */
+        .back-btn {
+            margin-top: 15px;
+            display: inline-block;
+            padding: 9px 24px;
+            background-color: #EE69B8;
+            border: 1.5px solid #545454;
+            border-radius: 20px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="card-container">
+            
+            <h1>Present Continuous</h1>
+            <div class="subtitle">المضارع المستمر</div>
+
+            <!-- الاستخدام -->
+            <div class="section-badge">استخدامه</div>
+            <div class="rule-item">
+                <ul>
+                    <li>نتحدث عن شيء يحدث في هذه اللحظة.</li>
+                    <li>ما زال مستمراً.</li>
+                    <li>التعبير عن المستقبل القريب.</li>
+                </ul>
+            </div>
+
+            <!-- القاعدة مثبت -->
+            <div class="section-badge">القاعدة (Affirmative)</div>
+            <div class="rule-item">
+                <div class="formula-box">S + be [is / am / are] + V-ing</div>
+                <div class="example-box">ex: I'm reading a book.</div>
+            </div>
+
+            <!-- السؤال -->
+            <div class="section-badge">السؤال (Questions)</div>
+            <div class="rule-item">
+                <p style="margin: 4px 0; font-weight: bold;">1- Yes/No question:</p>
+                <div class="formula-box">be + S + V-ing ... ?</div>
+                <div class="example-box">Am I reading a book?</div>
+
+                <p style="margin: 10px 0 4px 0; font-weight: bold;">2- Question with (Wh):</p>
+                <div class="example-box">What are you doing?</div>
+            </div>
+
+            <!-- النفي -->
+            <div class="section-badge">النفي (Negative)</div>
+            <div class="rule-item">
+                <div class="formula-box">S + be + not + V-ing + Com. (المكملة)</div>
+                <div class="example-box">I'm not reading a book.</div>
+            </div>
+
+            <!-- الكلمات الدالة -->
+            <div class="section-badge">الكلمات الدالة</div>
+            <div class="rule-item">
+                <p style="margin-bottom: 8px;">تظهر عادةً مع المضارع المستمر:</p>
+                <div class="tags-wrapper">
+                    <span class="tag-pill">Now</span>
+                    <span class="tag-pill">At the moment</span>
+                    <span class="tag-pill">Look!</span>
+                    <span class="tag-pill">Listen!</span>
+                    <span class="tag-pill">Today</span>
+                </div>
+            </div>
+
+            <!-- قواعد إضافة ing -->
+            <div class="section-badge">قواعد إضافة (ing) للأفعال</div>
+            <div class="rule-item">
+                <p>1. الفعل الذي ينتهي بحرف <b>(e)</b> غير ملفوظة تُحذف عند إضافة (ing):</p>
+                <div class="example-box">write ➔ writing</div>
+
+                <p style="margin-top: 10px;">2. الفعل الذي ينتهي بحرف صحيح وقبله حرف علة واحد فقط، يُضاعف الحرف الأخير ونضيف (ing):</p>
+                <div class="example-box">swim ➔ swimming</div>
+
+                <p style="margin-top: 10px;">3. الفعل الذي ينتهي بـ <b>(ie)</b>، تُقلب إلى <b>(y)</b> ونضيف (ing):</p>
+                <div class="example-box">lie ➔ lying</div>
+            </div>
+
+            <!-- أفعال لا تقبل ing -->
+            <div class="section-badge">أفعال لا تقبل الـ (ing)</div>
+            <div class="rule-item">
+                <div class="tags-wrapper" style="margin-bottom: 10px;">
+                    <span class="tag-pill">like</span>
+                    <span class="tag-pill">love</span>
+                    <span class="tag-pill">want</span>
+                    <span class="tag-pill">know</span>
+                    <span class="tag-pill">understand</span>
+                </div>
+                <p>أفعال الشعور والإدراك غالباً لا تأتي بـ (ing) لأنها تعبر عن استمرارية دائمة/ثابتة وليست وقتية، وتُستخدم بدلاً منها صيغة المضارع البسيط فقط.</p>
+                <div class="correct-wrong wrong">I am wanting an apple. ✖</div>
+                <div class="correct-wrong correct">I want an apple. ✔</div>
+            </div>
+
+            <!-- الفيديو المعتمد -->
+            <div class="action-box">
+                <a href="https://youtu.be/ZqQG54yds-Y?si=SuTgy2xq1bSD6TFh" target="_blank">الفيديو المُعتمد بالشرح: اضغط هنا للمشاهدة ✨</a>
+            </div>
+
+            <!-- اختبار تفاعلي -->
+            <div class="action-box">
+                <a href="https://share.gemini.google/Am4HBPFW1zCQ" target="_blank">اختبار تفاعلي بواسطة الـ Ai 📝</a>
+            </div>
+
+            <!-- زر العودة -->
+            <div style="margin-top: 15px;">
+                <a href="english-lessons.html" class="back-btn">العودة ↩️</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
