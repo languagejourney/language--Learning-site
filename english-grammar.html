@@ -15,9 +15,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- تحسينات SEO لصفحة دروس القواعد بالإنجليزية -->
-    <title>شرح قواعد اللغة الإنجليزية والأزمنة والتراكيب | English Grammar - My Language Journal</title>
-    <meta name="description" content="دليل شامل لدروس قواعد اللغة الإنجليزية: شرح الأزمنة (Tenses) وقواعد تراكيب الجملة مثل If الشرطية، المبني للمجهول، والكلام المنقول بطريقة مبسطة.">
-    <meta name="keywords" content="قواعد اللغة الإنجليزية, أزمنة الإنجليزية, English grammar tenses, Present Simple, Past Simple, Future Simple, If الشرطية, المبني للمجهول">
+    <title>شرح قواعد اللغة الإنجليزية ومراحل التراكيب | English Grammar</title>
+    <meta name="description" content="دليل شامل لتعلم قواعد اللغة الإنجليزية مقسم إلى الأزمنة و4 مراحل تركيبية: من الأساسيات إلى الصياغات الاحترافية والمتقدمة.">
+    <meta name="keywords" content="قواعد اللغة الإنجليزية, أزمنة الإنجليزية, English grammar, مراحل تعلم القواعد, أساسيات الإنجليزية, القواعد التركيبية, English grammar tenses">
     <meta name="author" content="My Language Journal">
 
     <!-- استدعاء الخطوط الأصلية مع خط Tajawal العربي -->
@@ -76,7 +76,7 @@
             border: 1px dashed #F168BC;
         }
 
-        /* تطبيق تدرجات الوردي المحددة من الأغمق للأفتح */
+        /* تطبيق تدرجات الوردي المعتمدة من الأغمق للأفتح */
         .btn-grammar-1 { background-color: #F168BC; }
         .btn-grammar-2 { background-color: #EF8BC8; }
         .btn-grammar-3 { background-color: #FDBBE3; }
@@ -105,6 +105,33 @@
         .grammar-btn:active {
             transform: scale(0.98);
         }
+
+        /* تنسيق بطاقات المراحل */
+        .stage-card {
+            display: block;
+            width: 100%;
+            padding: 14px 10px;
+            margin: 12px 0;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 16px;
+            font-weight: bold;
+            border: 1.5px solid #545454;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .stage-card:active {
+            transform: scale(0.98);
+        }
+
+        .stage-1 { background-color: #F168BC; }
+        .stage-2 { background-color: #EF8BC8; }
+        .stage-3 { background-color: #FDBBE3; }
+        .stage-4 { background-color: #F4CFE5; }
 
         /* زر العودة والتنقل */
         .back-container {
@@ -144,7 +171,7 @@
             <h2>دروس القواعد</h2>
             <h3 style="text-align: center; color: #545454; font-style: italic; font-size: 14px; margin-bottom: 15px;">English Grammar Hub</h3>
             
-            <!-- القسم الأول: الأزمنة -->
+            <!-- أولاً: قسم الأزمنة -->
             <div class="section-title">⏳ 1. الأزمنة (Tenses)</div>
 
             <a href="present-simple.html" class="grammar-btn btn-grammar-1">Present Simple</a>
@@ -154,14 +181,15 @@
             <a href="past-continuous.html" class="grammar-btn btn-grammar-5">Past Continuous</a>
             <a href="future-continuous.html" class="grammar-btn btn-grammar-6">Future Continuous</a>
 
-            <hr style="border: 0; border-top: 1px solid #FDBBE3; margin: 20px 0 10px 0;">
+            <hr style="border: 0; border-top: 1px solid #FDBBE3; margin: 25px 0 15px 0;">
 
-            <!-- القسم الثاني: القواعد والتراكيب -->
-            <div class="section-title">🧩 2. القواعد والتراكيب (Structures)</div>
+            <!-- ثانياً: قسم القواعد التركيبية مقسمة إلى 4 مراحل -->
+            <div class="section-title">🧩 2. القواعد التركيبية (Structures)</div>
 
-            <a href="conditionals-if.html" class="grammar-btn btn-grammar-1">Conditionals If الشرطية</a>
-            <a href="passive-voice.html" class="grammar-btn btn-grammar-2">Passive Voice المبني للمجهول</a>
-            <a href="reported-speech.html" class="grammar-btn btn-grammar-3">Reported Speech الكلام المنقول </a>
+            <a href="#" class="stage-card stage-1">🧱 المرحلة الأولى: البناء والأساسيات (Foundation)</a>
+            <a href="#" class="stage-card stage-2">🌱 المرحلة الثانية: التوسعة والتعبير (Expansion & Nuance)</a>
+            <a href="#" class="stage-card stage-3">🔗 المرحلة الثالثة: الربط والتركيب المتقدم (Advanced Cohesion)</a>
+            <a href="#" class="stage-card stage-4">👑 المرحلة الرابعة: الصياغات الثقيلة والاحترافية (Mastery)</a>
 
             <!-- أزرار العودة والتنقل السلس -->
             <div class="back-container">
