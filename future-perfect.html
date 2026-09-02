@@ -14,13 +14,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- تحسينات SEO لصفحة درس Future Perfect -->
+    <!-- تحسينات SEO لصفحة زمن المستقبل التام -->
     <title>شرح زمن المستقبل التام Future Perfect | My Language Journal</title>
-    <meta name="description" content="شرح شامل ومبسط لزمن المستقبل التام Future Perfect في اللغة الإنجليزية: القواعد، التكوين، الإثبات، النفي، السؤال، الروابط الزمنية، الفيديو المعتمد، واختبار تفاعلي.">
-    <meta name="keywords" content="Future Perfect, المستقبل التام, قواعد اللغة الإنجليزية, تعلم الإنجليزية, English Grammar, My Language Journal">
+    <meta name="description" content="شرح شامل ومبسط لزمن المستقبل التام (Future Perfect): الاستخدام، صيغ الإثبات والنفي والسؤال، الكلمات الدالة، الروابط الزمنية، فيديو شرح معتمد واختبار تفاعلي ذكي.">
+    <meta name="keywords" content="المستقبل التام, Future Perfect, قواعد اللغة الإنجليزية, will have PP, by the time, تعلم الإنجليزية, English grammar, My Language Journal">
     <meta name="author" content="My Language Journal">
 
-    <!-- استيراد الخطوط المعتمدة -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     
     <style>
@@ -29,280 +28,275 @@
             padding: 0;
             width: 100%;
             min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background: linear-gradient(135deg, #FFF5FB, #FFF0F9);
             font-family: 'Tajawal', sans-serif;
-            color: #333333;
-            line-height: 1.7;
         }
 
         .container {
-            width: 90%;
-            max-width: 750px;
-            margin: 30px auto;
-            padding: 25px;
-            background-color: #ffffff;
-            border: 1.5px solid #545454;
-            border-radius: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            width: 88%;
+            max-width: 440px;
+            padding: 20px 10px;
             box-sizing: border-box;
+            text-align: center;
         }
 
-        /* عنوان الدرس الرئيسي */
+        .content-box {
+            background-color: #ffffff;
+            border: 1.5px solid #545454;
+            border-radius: 18px;
+            padding: 22px 16px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            max-height: 85vh;
+            overflow-y: auto;
+            text-align: right;
+            scrollbar-width: none;
+        }
+
+        .content-box::-webkit-scrollbar {
+            display: none;
+        }
+
         h1 {
-            font-family: 'Playfair Display', serif;
-            font-style: italic;
-            font-size: 2.4rem;
             color: #545454;
             text-align: center;
-            margin-top: 10px;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            margin-top: 0;
             margin-bottom: 5px;
-            font-weight: 600;
+            font-size: 1.8rem;
         }
 
         .subtitle {
             text-align: center;
-            font-size: 1.2rem;
-            color: #666666;
-            margin-bottom: 30px;
-            font-weight: 500;
+            color: #545454;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            font-style: italic;
         }
 
-        /* أقسام الدرس */
-        .section-box {
-            background-color: #FAF8F9;
-            border: 1px solid #E0D0DC;
-            border-radius: 14px;
-            padding: 20px;
-            margin-bottom: 25px;
+        .section-header {
+            background-color: #F4CFE5;
+            color: #000000;
+            font-weight: 700;
+            font-size: 0.95rem;
+            padding: 8px 12px;
+            border-radius: 12px;
+            border: 1.5px solid #545454;
+            margin: 18px 0 10px 0;
+            display: block;
+            text-align: right;
         }
 
-        h2 {
-            color: #8A2B68;
-            font-size: 1.3rem;
-            margin-top: 0;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #F4CFE5;
-            padding-bottom: 5px;
-            display: inline-block;
-        }
-
-        p {
+        .rule-box {
+            background-color: #FFF5FB;
+            border: 1px dashed #F168BC;
+            border-radius: 12px;
+            padding: 10px 12px;
             margin: 8px 0;
-            font-size: 1.05rem;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #333;
         }
 
-        /* تنسيق الصيغ والقواعد */
-        .formula-box {
-            background-color: #FFF0F9;
-            border-right: 4px solid #F168BC;
-            padding: 12px 15px;
-            margin: 12px 0;
-            border-radius: 6px;
-            font-family: 'Playfair Display', 'Tajawal', serif;
-            direction: ltr;
-            text-align: left;
-            font-weight: bold;
-            font-size: 1.1rem;
-            color: #222222;
-        }
-
-        /* قائمة الأمثلة والروابط */
-        ul {
-            list-style-type: none;
-            padding-right: 0;
-            margin: 10px 0;
-        }
-
-        li {
-            position: relative;
-            padding-right: 25px;
-            margin-bottom: 10px;
-            font-size: 1.05rem;
-        }
-
-        li::before {
-            content: "•";
-            color: #F168BC;
-            font-weight: bold;
-            font-size: 1.5rem;
-            position: absolute;
-            right: 5px;
-            top: -5px;
+        .rule-title {
+            font-weight: 700;
+            color: #d13f98;
+            margin-bottom: 4px;
         }
 
         .en-text {
             font-family: 'Playfair Display', serif;
             direction: ltr;
-            display: inline-block;
-            font-weight: 600;
-            color: #2c3e50;
-        }
-
-        .highlight {
-            background-color: #FDBBE3;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 500;
-        }
-
-        /* قسم الفيديو */
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            border-radius: 12px;
-            border: 1px solid #545454;
-            margin-top: 15px;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-
-        /* الأزرار والروابط الخارجية */
-        .quiz-btn {
             display: block;
-            width: 100%;
+            text-align: left;
+            background: #fff;
+            padding: 6px 10px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            margin-top: 6px;
+            font-size: 0.92rem;
+            color: #222;
+        }
+
+        code {
+            display: block;
+            direction: ltr;
+            text-align: left;
+            background: #ffffff;
+            padding: 6px 10px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            color: #d13f98;
+            margin: 4px 0;
+            font-size: 0.92rem;
+        }
+
+        ul {
+            margin: 6px 0;
+            padding-right: 20px;
+            font-size: 0.88rem;
+            line-height: 1.6;
+        }
+
+        /* كروت الفيديو والاختبار */
+        .interactive-card {
+            border: 1.5px dashed #f49ac2;
+            border-radius: 16px;
             padding: 14px 10px;
-            margin: 20px 0 10px 0;
-            background-color: #F168BC;
-            color: #ffffff;
+            margin: 15px 0;
             text-align: center;
-            text-decoration: none;
-            border-radius: 16px;
+            background-color: #ffffff;
+        }
+
+        .interactive-title {
+            font-size: 0.95rem;
             font-weight: bold;
-            border: 1.5px solid #545454;
-            box-sizing: border-box;
-            font-size: 1.1rem;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.08);
-            transition: transform 0.2s ease, background-color 0.2s ease;
+            color: #333333;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
         }
 
-        .quiz-btn:hover {
-            background-color: #e052aa;
+        .interactive-link {
+            display: inline-block;
+            color: #ee60a8;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: opacity 0.2s ease;
         }
 
-        .quiz-btn:active {
-            transform: scale(0.98);
+        .interactive-link:hover {
+            opacity: 0.8;
         }
 
-        .back-btn {
+        /* أزرار العودة السفلية */
+        .back-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .action-btn {
             display: block;
             width: 100%;
-            padding: 12px 10px;
-            margin-top: 15px;
-            background-color: #F8DAEC;
-            color: #000000;
-            text-align: center;
+            padding: 12px 15px;
+            border-radius: 18px;
             text-decoration: none;
-            border-radius: 16px;
             font-weight: bold;
             border: 1.5px solid #545454;
+            font-size: 0.95rem;
             box-sizing: border-box;
-            font-size: 1rem;
+            text-align: center;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            transition: transform 0.2s ease;
         }
 
-        .back-btn:active {
-            transform: scale(0.98);
+        .btn-grammar {
+            background-color: #f168bc;
+            color: #ffffff;
+        }
+
+        .btn-home {
+            background-color: #fce4f3;
+            color: #000000;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Future Perfect</h1>
-        <div class="subtitle">زمن المستقبل التام</div>
-
-        <!-- 1. الاستخدام والمعنى -->
-        <div class="section-box">
-            <h2>📌 الاستخدام (Usage)</h2>
-            <p>يُعبر زمن المستقبل التام عن <strong>حدث سوف يكتمل أو ينتهي بحلول نقطة زمنية محددة في المستقبل</strong>.</p>
-            <p>عند الربط بين حدثين في المستقبل:</p>
-            <ul>
-                <li><strong>الحدث الأول (الأسبق حدوثاً):</strong> يكون في زمن المستقبل التام <span class="en-text">(Future Perfect)</span>.</li>
-                <li><strong>الحدث الثاني:</strong> يكون في زمن المضارع البسيط <span class="en-text">(Present Simple)</span>.</li>
-            </ul>
-        </div>
-
-        <!-- 2. التكوين والقواعد -->
-        <div class="section-box">
-            <h2>⚙️ التكوين والقواعد (Form)</h2>
+        <div class="content-box">
             
-            <p><strong>1. الإثبات (Affirmative):</strong></p>
-            <div class="formula-box">
-                S + will have + P.P + com...
+            <h1>Future Perfect</h1>
+            <div class="subtitle">زمن المستقبل التام</div>
+
+            <!-- 1. الاستخدام (Usage) -->
+            <div class="section-header">📌 الاستخدام (Usage)</div>
+            <div class="rule-box">
+                <p style="margin:0 0 6px 0;">يُعبر عن حدث <b>راح يكتمل بالمستقبل</b> قبل وقت أو حدث آخر.</p>
+                <ul>
+                    <li>
+                        <b>الحدث الأول (الأسبق):</b> Future Perfect
+                    </li>
+                    <li style="margin-top: 4px;">
+                        <b>الحدث الثاني:</b> Present Simple
+                    </li>
+                </ul>
             </div>
 
-            <p><strong>2. النفي (Negative):</strong></p>
-            <div class="formula-box">
-                S + will not (won't) + have + P.P...
+            <!-- 2. التكوين والقواعد (Form) -->
+            <div class="section-header">⚙️ التكوين والقواعد (Form)</div>
+
+            <div class="rule-box">
+                <div class="rule-title">أ) الإثبات (Affirmative):</div>
+                <code>S + will have + P.P + com...</code>
             </div>
 
-            <p><strong>3. السؤال (Question):</strong></p>
-            <div class="formula-box">
-                Will + S + have + P.P...?
+            <div class="rule-box">
+                <div class="rule-title">ب) النفي (Negative):</div>
+                <code>S + will not (won't) + have + P.P...</code>
             </div>
+
+            <div class="rule-box">
+                <div class="rule-title">ج) السؤال (Question):</div>
+                <code>Will + S + have + P.P...?</code>
+            </div>
+
+            <!-- 3. الأمثلة (Examples) -->
+            <div class="section-header">📝 أمثلة توضيحية (Examples)</div>
+            <div class="rule-box">
+                <span class="en-text">By tomorrow noon, I will have finished this book.</span>
+                <span class="en-text">You can call me at 8:00 AM, I will have woken up.</span>
+                <span class="en-text">When you arrive, I will have cooked dinner.</span>
+                <span class="en-text">Before 2030, they will have built that bridge.</span>
+                <span class="en-text">By this time next week, he will have finished his report.</span>
+                
+                <div class="rule-title" style="margin-top: 10px;">النفي والسؤال:</div>
+                <span class="en-text">I won't have finished the project by 5 PM.</span>
+                <span class="en-text">Will you have finished the report by tomorrow?</span>
+            </div>
+
+            <!-- 4. الكلمات الدالة والروابط الزمنية -->
+            <div class="section-header">🔑 الكلمات الدالة والروابط الزمنية (Keywords)</div>
+            <div class="rule-box">
+                <ul>
+                    <li><b>By ......... :</b> تمثل نقطة زمنية بالمستقبل.</li>
+                    <li><b>By the time :</b> يتبعها مضارع بسيط.</li>
+                    <li><b>Before :</b> نقطة زمنية أو مضارع بسيط.</li>
+                    <li><b>When :</b> يتبعها مضارع بسيط.</li>
+                </ul>
+                <div style="margin-top: 8px; font-size: 0.85rem; color: #d13f98;">
+                    <b>ملاحظة مهمة:</b> عندما يرتبط المستقبل التام بجملة تحتوي على فعل مع (By the time / Before / When) يكون زمن الجملة المربوطة في المضارع البسيط (Present Simple).
+                </div>
+            </div>
+
+            <!-- كرت الفيديو المعتمد بالشرح -->
+            <div class="interactive-card">
+                <div class="interactive-title">🎬 الفيديُو المًعتمَد بالشرح:</div>
+                <a href="https://youtu.be/Uu-u3gBSHzA?si=W9DbV2w40eWqB5hW" target="_blank" class="interactive-link">اضغط هنا للمشاهدة ✨</a>
+            </div>
+
+            <!-- كرت الاختبار التفاعلي -->
+            <div class="interactive-card">
+                <div class="interactive-title">🤖 اختبار تفاعلي مولد بالذكاء الاصطناعي AI:</div>
+                <a href="https://share.gemini.google/lLUyEL0PNTds" target="_blank" class="interactive-link">بدء الاختبار بواسطة AI 🔗</a>
+            </div>
+
+            <!-- أزرار التوجيه والعودة -->
+            <div class="back-container">
+                <a href="english-grammar.html" class="action-btn btn-grammar">📖 العودة لدروس القواعد</a>
+                <a href="index.html" class="action-btn btn-home">🏠 الصفحة الرئيسية</a>
+            </div>
+
         </div>
-
-        <!-- 3. الكلمات الدالة والروابط الزمنية -->
-        <div class="section-box">
-            <h2>🔑 الكلمات الدالة والروابط الزمنية (Keywords)</h2>
-            <p>تستخدم مع زمن المستقبل التام مجموعة من الكلمات والروابط الدالة على وقت الاكتفاء أو الانتهاء:</p>
-            <ul>
-                <li><span class="en-text">By + [نقطة زمنية في المستقبل]</span> ← تعني: بحلول/قبل نقطة زمنية معينة.</li>
-                <li><span class="en-text">By the time</span> ← تعني: بحلول الوقت الذي (يتبعها مضارع بسيط).</li>
-                <li><span class="en-text">Before</span> ← تعني: قبل (تتبعها نقطة زمنية أو فعل في المضارع البسيط).</li>
-                <li><span class="en-text">When</span> ← تعني: عندما (يتبعها مضارع بسيط).</li>
-            </ul>
-
-            <div style="background-color: #FFF0F9; border-right: 3px solid #8A2B68; padding: 10px 15px; margin-top: 15px; border-radius: 8px;">
-                <strong>💡 ملاحظة مهمة جداً حول استخدام (By the time / When / Before):</strong><br>
-                عندما يربط المستقبل التام بجملة أخرى تحتوي على فعل، فإن زمن الجملة المربوطة بـ <span class="en-text">(By the time / Before / When)</span> يكون دائماً في <strong>المضارع البسيط (Present Simple)</strong>.
-            </div>
-        </div>
-
-        <!-- 4. أمثلة توضيحية -->
-        <div class="section-box">
-            <h2>📝 أمثلة توضيحية (Examples)</h2>
-            <ul>
-                <li><span class="en-text">By tomorrow noon, I will have finished this book.</span></li>
-                <li><span class="en-text">You can call me at 8:00 AM, I will have woken up.</span></li>
-                <li><span class="en-text">When you arrive, I will have cooked dinner.</span></li>
-                <li><span class="en-text">Before 2030, they will have built that bridge.</span></li>
-                <li><span class="en-text">By this time next week, he will have finished his report.</span></li>
-            </ul>
-
-            <p><strong>أمثلة النفي والسؤال:</strong></p>
-            <ul>
-                <li><strong>النفي:</strong> <span class="en-text">I won't have finished the project by 5 PM.</span></li>
-                <li><strong>السؤال:</strong> <span class="en-text">Will you have finished the report by tomorrow?</span></li>
-            </ul>
-        </div>
-
-        <!-- 5. الفيديو المعتمد بالشرح -->
-        <div class="section-box">
-            <h2>🎬 الفيديو المُعتمد بالشرح</h2>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/Uu-u3gBSHzA" title="Future Perfect Explanation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-
-        <!-- 6. الاختبار التفاعلي -->
-        <a href="https://share.gemini.google/lLUyEL0PNTds" target="_blank" class="quiz-btn">
-            ✨ اختبار تفاعلي مولد بالذكاء الاصطناعي AI
-        </a>
-
-        <!-- 7. زر العودة -->
-        <a href="english-grammar.html" class="back-btn">📖 العودة لدروس القواعد</a>
-        <a href="index.html" class="back-btn" style="background-color: #FFF0F9; margin-top: 8px;">🏠 الصفحة الرئيسية</a>
     </div>
 
 </body>
