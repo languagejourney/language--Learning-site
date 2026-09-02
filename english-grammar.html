@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>شرح قواعد اللغة الإنجليزية ومراحل التراكيب | English Grammar</title>
-    <meta name="description" content="دليل شامل لتعلم قواعد اللغة الإنجليزية مقسم إلى الأزمنة و4 مراحل تركيبية: من الأساسيات إلى الصياغات الاحترافية والمتقدمة.">
+    <meta name="description" content="دليل شامل لتعلم قواعد اللغة الإنجليزية مقسم إلى مجموعات الأزمنة و4 مراحل تركيبية: من الأساسيات إلى الصياغات الاحترافية والمتقدمة.">
     <meta name="keywords" content="قواعد اللغة الإنجليزية, أزمنة الإنجليزية, English grammar, مراحل تعلم القواعد, أساسيات الإنجليزية, القواعد التركيبية, English grammar tenses">
     <meta name="author" content="My Language Journal">
 
@@ -73,33 +73,39 @@
             border: 1px dashed #F168BC;
         }
 
-        /* تدرجات الوردي للأزمنة */
-        .btn-grammar-1 { background-color: #F168BC; color: #fff; }
-        .btn-grammar-2 { background-color: #EF8BC8; color: #000; }
-        .btn-grammar-3 { background-color: #FDBBE3; color: #000; }
-        .btn-grammar-4 { background-color: #F4CFE5; color: #000; }
-        .btn-grammar-5 { background-color: #F8DAEC; color: #000; }
-        .btn-grammar-6 { background-color: #FFEBF7; color: #000; }
+        /* تدرجات ألوان مجموعات الأزمنة */
+        .tense-category-1 { background-color: #F168BC; color: #ffffff; }
+        .tense-category-2 { background-color: #EF8BC8; color: #000000; }
+        .tense-category-3 { background-color: #FDBBE3; color: #000000; }
+        .tense-category-4 { background-color: #F4CFE5; color: #000000; }
 
         .grammar-btn {
             display: block;
             width: 100%;
-            padding: 12px 10px;
-            margin: 9px 0;
+            padding: 13px 10px;
+            margin: 10px 0;
             text-decoration: none;
             border-radius: 16px;
             font-weight: bold;
             border: 1.5px solid #545454;
             box-sizing: border-box;
-            font-family: 'Playfair Display', cursive, serif;
-            font-style: italic;
-            font-size: 1.02rem;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1rem;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
             transition: transform 0.2s ease;
         }
 
         .grammar-btn:active {
             transform: scale(0.98);
+        }
+
+        .grammar-btn span {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            display: block;
+            font-size: 0.85rem;
+            opacity: 0.9;
+            margin-top: 2px;
         }
 
         /* بطاقات المراحل الرئيسية */
@@ -166,19 +172,32 @@
             <h2>دروس القواعد</h2>
             <h3 style="text-align: center; color: #545454; font-style: italic; font-size: 14px; margin-bottom: 15px;">English Grammar Hub</h3>
             
-            <!-- أولاً: قسم الأزمنة -->
-            <div class="section-title">⏳ 1. الأزمنة (Tenses)</div>
+            <!-- أولاً: مجموعات الأزمنة الرئيسية -->
+            <div class="section-title">⏳ 1. أقسام الأزمنة (Tense Groups)</div>
 
-            <a href="present-simple.html" class="grammar-btn btn-grammar-1">Present Simple</a>
-            <a href="past-simple.html" class="grammar-btn btn-grammar-2">Past Simple</a>
-            <a href="future-simple.html" class="grammar-btn btn-grammar-3">Future Simple</a>
-            <a href="present-continuous.html" class="grammar-btn btn-grammar-4">Present Continuous</a>
-            <a href="past-continuous.html" class="grammar-btn btn-grammar-5">Past Continuous</a>
-            <a href="future-continuous.html" class="grammar-btn btn-grammar-6">Future Continuous</a>
+            <a href="simple-tenses.html" class="grammar-btn tense-category-1">
+                الأزمنة البسيطة
+                <span>Simple Tenses</span>
+            </a>
+            
+            <a href="continuous-tenses.html" class="grammar-btn tense-category-2">
+                الأزمنة المستمرة
+                <span>Continuous Tenses</span>
+            </a>
+
+            <a href="perfect-tenses.html" class="grammar-btn tense-category-3">
+                الأزمنة التامة
+                <span>Perfect Tenses</span>
+            </a>
+
+            <a href="perfect-continuous-tenses.html" class="grammar-btn tense-category-4">
+                الأزمنة التامة المستمرة
+                <span>Perfect Continuous Tenses</span>
+            </a>
 
             <hr style="border: 0; border-top: 1px solid #FDBBE3; margin: 25px 0 15px 0;">
 
-            <!-- ثانياً: قسم القواعد التركيبية (بطاقات المراحل الـ 4 فقط) -->
+            <!-- ثانياً: قسم القواعد التركيبية (بطاقات المراحل الـ 4) -->
             <div class="section-title">🧩 2. القواعد التركيبية (Structures)</div>
 
             <a href="stage1.html" class="stage-card stage-1">🧱 المرحلة الأولى: البناء والأساسيات (Foundation)</a>
