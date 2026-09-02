@@ -16,11 +16,11 @@
 
     <!-- تحسينات SEO لصفحة قسم اللغة الإسبانية -->
     <title>تعلم اللغة الإسبانية من الصفر للمبتدئين | Español - My Language Journal</title>
-    <meta name="description" content="قسم تعلم اللغة الإسبانية للمبتدئين من الصفر: خطة البدء، أساسيات اللغة، وقواعد الإسبانية المتبعة عبر مدونة My Language Journal.">
-    <meta name="keywords" content="تعلم اللغة الإسبانية, تعلم الإسبانية من الصفر, قواعد اللغة الإسبانية, أساسيات اللغة الإسبانية, Spanish for beginners, My Language Journal Español">
+    <meta name="description" content="قسم تعلم اللغة الإسبانية للمبتدئين من الصفر: خطة البدء، أساسيات اللغة، قواعد الإسبانية، والمفردات المتبعة عبر مدونة My Language Journal.">
+    <meta name="keywords" content="تعلم اللغة الإسبانية, تعلم الإسبانية من الصفر, قواعد اللغة الإسبانية, أساسيات اللغة الإسبانية, مفردات اللغة الإسبانية, Spanish for beginners, My Language Journal Español">
     <meta name="author" content="My Language Journal">
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     
     <style>
         body, html {
@@ -31,41 +31,40 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(135deg, #fff0f5, #ffe4e9);
-            font-family: 'Playfair Display', serif;
+            background: linear-gradient(135deg, #FFF5FB, #FFF0F9);
+            font-family: 'Playfair Display', 'Tajawal', serif;
         }
 
         .container {
-            width: 85%;
-            max-width: 340px;
-            text-align: center;
-            padding: 15px;
+            width: 88%;
+            max-width: 420px;
+            padding: 20px 10px;
             box-sizing: border-box;
+            text-align: center;
+        }
+
+        .content-box {
+            background-color: #ffffff;
+            border: 1.5px solid #545454;
+            border-radius: 18px;
+            padding: 25px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            max-height: 85vh;
+            overflow-y: auto;
         }
 
         /* عنوان الصفحة */
         h1 {
             font-family: 'Playfair Display', cursive, serif;
             font-style: italic;
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             color: #545454;
-            margin-bottom: 25px;
+            margin-top: 0;
+            margin-bottom: 20px;
             font-weight: 600;
         }
 
-        /* تدرج الألوان للأزرار */
-        .btn-0 {
-            background-color: #F168BC;
-        }
-
-        .btn-1 {
-            background-color: #EF8BC8;
-        }
-
-        .btn-2 {
-            background-color: #FDBBE3;
-        }
-
+        /* أزرار الخانات الرئيسية */
         .btn {
             display: block;
             width: 100%;
@@ -77,38 +76,75 @@
             font-weight: bold;
             border: 1.5px solid #545454;
             box-sizing: border-box;
-            font-family: 'Playfair Display', serif;
-            font-size: 1.05rem;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1rem;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
         }
 
-        /* زر العودة للرئيسية */
-        .back-btn {
-            margin-top: 25px;
-            display: inline-block;
-            padding: 10px 20px;
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        /* تدرج الألوان للأزرار */
+        .btn-0 {
+            background-color: #F168BC;
+            color: #ffffff;
+        }
+
+        .btn-1 {
+            background-color: #EF8BC8;
+            color: #000000;
+        }
+
+        .btn-2 {
             background-color: #FDBBE3;
+            color: #000000;
+        }
+
+        .btn-3 {
+            background-color: #F4CFE5;
+            color: #000000;
+        }
+
+        /* أزرار العودة والتنقل */
+        .back-container {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .back-btn {
+            display: block;
+            width: 100%;
+            padding: 10px 15px;
+            background-color: #FFF0F9;
             border: 1.5px solid #545454;
-            border-radius: 14px;
+            border-radius: 16px;
             color: #000000;
             text-decoration: none;
             font-size: 0.95rem;
             font-weight: bold;
-            font-family: 'Playfair Display', serif;
+            font-family: 'Tajawal', sans-serif;
+            box-sizing: border-box;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.05);
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Español</h1>
+        <div class="content-box">
+            <h1>Español</h1>
 
-        <a href="how-to-start.html" class="btn btn-0">كيف أبدأ؟</a>
-        <a href="fundamentos.html" class="btn btn-1">القسم الأول: الأساسيات</a>
-        <a href="#" class="btn btn-2">القسم الثاني: القواعد</a>
+            <a href="how-to-start.html" class="btn btn-0">كيف أبدأ؟</a>
+            <a href="fundamentos.html" class="btn btn-1">القسم الأول: الأساسيات</a>
+            <a href="spanish-grammar.html" class="btn btn-2">القسم الثاني: القواعد</a>
+            <a href="spanish-vocabulary.html" class="btn btn-3">القسم الثالث: المفردات</a>
 
-        <br>
-        <a href="index.html" class="back-btn">🏠 العودة للرئيسية</a>
+            <div class="back-container">
+                <a href="index.html" class="back-btn">🏠 العودة للرئيسية</a>
+            </div>
+        </div>
     </div>
 
 </body>
