@@ -16,7 +16,7 @@
     
     <!-- تحسينات SEO لصفحة المفردات -->
     <title>بنك المفردات الإنجليزية مترجمة للعربية | English Vocabulary Hub</title>
-    <meta name="description" content="دليل شامل لتعلم مفردات اللغة الإنجليزية مترجمة للعربية: مصطلحات الحياة اليومية، كلمات العمل والسوق، وعبارات السفر والتواصل بطريقة مبسطة.">
+    <meta name="description" content="دليل شامل لتعلم مفردات اللغة الإنجليزية مترجمة للعربية مقسمة حسَب المواضيع: الحياة اليومية، السفر، العمل، الصحة، الهوايات، المشاعر، والعبارات الشائعة.">
     <meta name="keywords" content="مفردات انجليزي, كلمات انجليزية مترجمة, مفردات العمل بالانجليزي, English vocabulary, تعلم مفردات الانجليزية, My Language Journal">
     <meta name="author" content="My Language Journal">
 
@@ -53,6 +53,11 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.05);
             max-height: 80vh;
             overflow-y: auto;
+            scrollbar-width: none;
+        }
+
+        .content-box::-webkit-scrollbar {
+            display: none;
         }
 
         h2 {
@@ -75,7 +80,7 @@
             border: 1.5px solid #545454;
             box-sizing: border-box;
             font-family: 'Tajawal', sans-serif;
-            font-size: 1rem;
+            font-size: 0.95rem;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
             transition: transform 0.2s ease;
         }
@@ -86,8 +91,15 @@
 
         /* تطبيق تدرجات الوردي المعتمدة بالتسلسل */
         .btn-v1 { background-color: #F168BC; }
-        .btn-v2 { background-color: #EF8BC8; }
-        .btn-v3 { background-color: #FDBBE3; }
+        .btn-v2 { background-color: #EF7ABF; }
+        .btn-v3 { background-color: #EE8CC2; }
+        .btn-v4 { background-color: #EC9EC5; }
+        .btn-v5 { background-color: #EBAFC8; }
+        .btn-v6 { background-color: #F8BBD0; }
+        .btn-v7 { background-color: #FDBBE3; }
+        .btn-v8 { background-color: #F8C3E6; }
+        .btn-v9 { background-color: #F4CFE5; }
+        .btn-v10 { background-color: #F6D6EA; }
 
         /* أزرار العودة والتنقل */
         .back-container {
@@ -127,9 +139,16 @@
             <h2>المفردات</h2>
             <h3 style="text-align: center; color: #545454; font-style: italic; font-size: 14px; margin-bottom: 20px;">Vocabulary Builder</h3>
 
-            <a href="vocab-daily-life.html" class="vocab-btn btn-v1"> مفردات الحياة اليومية</a>
-            <a href="vocab-business.html" class="vocab-btn btn-v2"> مفردات العمل والسوق</a>
-            <a href="vocab-travel.html" class="vocab-btn btn-v3">  مفردات السفر والتواصل</a>
+            <a href="vocab-life-routine.html" class="vocab-btn btn-v1">Life & Routine | الحياة اليومية والروتين</a>
+            <a href="vocab-travel-places.html" class="vocab-btn btn-v2">Travel & Places | السفر والمواصلات والأماكن</a>
+            <a href="vocab-shopping-dining.html" class="vocab-btn btn-v3">Shopping & Dining | التسوق والمطاعم والمعاملات</a>
+            <a href="vocab-work-education.html" class="vocab-btn btn-v4">Work & Education | العمل والتعليم والمهن</a>
+            <a href="vocab-descriptions-traits.html" class="vocab-btn btn-v5">Descriptions & Traits | وصف الأشخاص والصفات</a>
+            <a href="vocab-health-socializing.html" class="vocab-btn btn-v6">Health & Socializing | الصحة والجسم والتواصل الاجتماعي</a>
+            <a href="vocab-connectors-phrases.html" class="vocab-btn btn-v7">Connectors & Phrases | روابط الكلام والعبارات الشائعة</a>
+            <a href="vocab-opinions-feelings.html" class="vocab-btn btn-v8">Opinions & Feelings | التعبير عن الرأي والمشاعر</a>
+            <a href="vocab-hobbies-culture.html" class="vocab-btn btn-v9">Hobbies & Culture | الهوايات والاهتمامات والثقافة</a>
+            <a href="vocab-time-storytelling.html" class="vocab-btn btn-v10">Time & Storytelling | الأحداث الزمنية والحكايات</a>
 
             <!-- أزرار العودة والتنقل السلس -->
             <div class="back-container">
