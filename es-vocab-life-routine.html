@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>مفردات الحياة اليومية والروتين بالإسبانية | Vocabulario Español</title>
-    <meta name="description" content="جدول شامل لمفردات العائلة والحياة اليومية باللغة الإسبانية مع المعاني، المرادفات، والجمل التطبيقية.">
+    <meta name="description" content="جدول شامل لمفردات العائلة والأطعمة والحياة اليومية باللغة الإسبانية مقسم حسب المواضيع مع المعاني، المرادفات، والجمل التطبيقية.">
     <meta name="keywords" content="كلمات اسبانية، مفردات العائلة بالإسبانية, كلمات الحياة اليومية اسباني، مرادفات الإسبانية, vocabulario español, تعلم الإسبانية, My Language Journal">
     <meta name="author" content="My Language Journal">
 
@@ -79,6 +79,33 @@
             margin-bottom: 20px;
             direction: ltr;
             font-weight: 600;
+        }
+
+        /* عنوان القسم الجديد */
+        .section-header {
+            background: linear-gradient(135deg, #EE69B8, #d81b60);
+            color: #ffffff;
+            padding: 10px 16px;
+            border-radius: 14px;
+            margin: 22px 0 14px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 3px 8px rgba(216, 27, 96, 0.15);
+        }
+
+        .section-title-ar {
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+
+        .section-title-es {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.95rem;
+            font-style: italic;
+            direction: ltr;
+            opacity: 0.9;
         }
 
         /* كارت المفردة الشامل */
@@ -177,7 +204,7 @@
         /* أزرار التنقل */
         .btn-container {
             text-align: center;
-            margin-top: 18px;
+            margin-top: 22px;
             display: flex;
             flex-direction: column;
             gap: 8px;
@@ -209,6 +236,12 @@
             
             <h1>الحياة اليومية والروتين</h1>
             <div class="subtitle">Vida Cotidiana y Rutina | Vocabulario</div>
+
+            <!-- ==================== القسم الأول: العائلة والأشخاص ==================== -->
+            <div class="section-header">
+                <span class="section-title-ar">👨‍👩‍👧‍👦 العائلة والأشخاص</span>
+                <span class="section-title-es">Familia y Personas</span>
+            </div>
 
             <!-- 1. الوالدان -->
             <div class="vocab-card">
@@ -579,7 +612,383 @@
                 </div>
             </div>
 
-            <!-- أزرار التصفح -->
+
+            <!-- ==================== القسم الثاني: الأطعمة والمشروبات ==================== -->
+            <div class="section-header">
+                <span class="section-title-ar">☕ الأطعمة والمشروبات</span>
+                <span class="section-title-es">Comidas y Bebidas</span>
+            </div>
+
+            <!-- 10. حليب -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">حليب</span>
+                    <span class="main-es">Leche</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Leche</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Bebo un vaso de leche caliente antes de dormir.</span>
+                        <span class="example-ar">(أشرب كأسًا من الحليب الدافيء قبل النوم.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Leche vegetal</span>
+                        <span class="syn-desc">حليب نباتي</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Prefiero la leche vegetal para preparar mi café.</span>
+                        <span class="example-ar">(أفضل الحليب النباتي لإعداد قهوتي.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Lácteo</span>
+                        <span class="syn-desc">منتج ألبان / مشتقات</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">El yogur es un producto lácteo muy saludable.</span>
+                        <span class="example-ar">(الزبادي هو منتج ألبان صحي جدًا.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11. لحم -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">لحم</span>
+                    <span class="main-es">Carne</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Carne</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">La carne está bien cocinada y muy sabrosa.</span>
+                        <span class="example-ar">(اللحم مطبوخ جيدًا ولذيذ جدًا.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Carne vacuna / de res</span>
+                        <span class="syn-desc">لحم بقر</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Compramos carne vacuna para el almuerzo.</span>
+                        <span class="example-ar">(اشترينا لحم بقر للغداء.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Proteína animal</span>
+                        <span class="syn-desc">بروتين حيواني (رسمي)</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Esta receta contiene proteína animal de alta calidad.</span>
+                        <span class="example-ar">(تحتوي هذه الوصفة على بروتين حيواني عالي الجودة.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12. خضار -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">خضار / خضروات</span>
+                    <span class="main-es">Verdura</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Verdura</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Es importante comer verdura fresca todos los días.</span>
+                        <span class="example-ar">(من المهم أكل خضار طازجة كل يوم.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Hortaliza</span>
+                        <span class="syn-desc">نباتات زراعية مأكولة</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">La zanahoria es una hortaliza rica en vitaminas.</span>
+                        <span class="example-ar">(الجزر هو خضار غني بالفيتمينات.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Vegetal</span>
+                        <span class="syn-desc">نبات / خضار</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Mezclamos diferentes tipos de vegetales en la ensalada.</span>
+                        <span class="example-ar">(نخلط أنواعًا مختلفة من الخضروات في السلطة.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 13. ملح -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">ملح</span>
+                    <span class="main-es">Sal</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Sal</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Añade una pizca de sal a la sopa.</span>
+                        <span class="example-ar">(أضف رشة من الملح إلى الحساء.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Sal marina</span>
+                        <span class="syn-desc">ملح بحري</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Uso sal marina para sazonar los platos.</span>
+                        <span class="example-ar">(أستخدم ملحًا بحريًا لتتبيل الأطباق.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Condimento</span>
+                        <span class="syn-desc">توابل / مكمل طعم</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">La sal es el condimento más usado en la cocina.</span>
+                        <span class="example-ar">(الملح هو التابل الأكثر استخدامًا في المطبخ.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 14. سكر -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">سكر</span>
+                    <span class="main-es">Azúcar</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Azúcar</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">No me gusta poner mucho azúcar en el té.</span>
+                        <span class="example-ar">(لا يعجبني وضع الكثير من السكر في الشاي.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Endulzante</span>
+                        <span class="syn-desc">مُحلِّي</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Puedes usar miel como un endulzante natural.</span>
+                        <span class="example-ar">(يمكنك استخدام العسل كمُحلٍّ طبيعي.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Azúcar moreno / de caña</span>
+                        <span class="syn-desc">سكر أسمر / قصب</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">El azúcar moreno da un sabor especial a los postres.</span>
+                        <span class="example-ar">(السكر الأسمر يعطي طعمًا خاصًا للحلويات.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 15. قهوة -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">قهوة</span>
+                    <span class="main-es">Café</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Café</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Tomo un café bien cargado por la mañana.</span>
+                        <span class="example-ar">(أشرب قهوة ثقيلة/قوية في الصباح.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Café expreso</span>
+                        <span class="syn-desc">قهوة مركزة</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Pedí un café expreso en la cafetería.</span>
+                        <span class="example-ar">(طلبت قهوة إسبريسو في المقهى.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Infusión de café</span>
+                        <span class="syn-desc">مشروب القهوة</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Esta infusión de café tiene un aroma excelente.</span>
+                        <span class="example-ar">(هذا المشروب من القهوة له رائحة ممتازة.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 16. شاي -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">شاي</span>
+                    <span class="main-es">Té</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Té</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Me gusta beber té con menta por la tarde.</span>
+                        <span class="example-ar">(أحب شرب الشاي مع النعناع في الظهيرة.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Infusión</span>
+                        <span class="syn-desc">مشروب عشبي / نقع</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">La manzanilla es una infusión relajante.</span>
+                        <span class="example-ar">(البابونج هو مشروب عشبي مهدئ.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Té verde / negro</span>
+                        <span class="syn-desc">شاي أخضر / أسود</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">El té verde es excelente para la salud.</span>
+                        <span class="example-ar">(الشاي الأخضر ممتاز للصحة.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 17. مثلجات / آيس كريم -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">آيس كريم / مثلجات</span>
+                    <span class="main-es">Helado</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Helado</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">En verano siempre me apetece un helado de vainilla.</span>
+                        <span class="example-ar">(في الصيف دائمًا ما أشتهي آيس كريم بالفانيليا.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Nieve</span>
+                        <span class="syn-desc">مثلجات (أمريكا اللاتينية)</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Compramos una nieve de limón muy refrescante.</span>
+                        <span class="example-ar">(اشترينا آيس كريم ليمون منعشًا جدًا.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Sorbete</span>
+                        <span class="syn-desc">سوربيه / مشروب مثلج</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">El sorbete de frutas es ligero y delicioso.</span>
+                        <span class="example-ar">(سوربيه الفواكه خفيف ولذيذ.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 18. مشروبات -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">مشروبات</span>
+                    <span class="main-es">Bebidas</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Bebidas</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">La carta del restaurante tiene muchas bebidas frías.</span>
+                        <span class="example-ar">(قائمة المطعم تحتوي على العديد من المشروبات الباردة.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Refrescos</span>
+                        <span class="syn-desc">منعشات / غازية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Servieron refrescos naturales durante la fiesta.</span>
+                        <span class="example-ar">(قدموا مشروبات طبيعية منعشة خلال الحفلة.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Líquidos</span>
+                        <span class="syn-desc">سوائل (رسمي / صحي)</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Es fundamental consumir suficientes líquidos durante el día.</span>
+                        <span class="example-ar">(من الضروري استهلاك سوائل كافية خلال اليوم.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- أزرار التنقل -->
             <div class="btn-container">
                 <a href="spanish-vocabulary.html" class="back-btn">🔄 العودة لجدول المفردات</a>
                 <a href="index.html" class="back-btn back-btn-secondary">🏠 الصفحة الرئيسية</a>
