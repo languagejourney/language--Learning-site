@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>مفردات الحياة اليومية والروتين بالإسبانية | Vocabulario Español</title>
-    <meta name="description" content="جدول شامل لمفردات العائلة والحياة اليومية باللغة الإسبانية مع المعاني والمرادفات.">
+    <meta name="description" content="جدول شامل لمفردات العائلة والحياة اليومية باللغة الإسبانية مع المعاني، المرادفات، والجمل التطبيقية.">
     <meta name="keywords" content="كلمات اسبانية، مفردات العائلة بالإسبانية, كلمات الحياة اليومية اسباني، مرادفات الإسبانية, vocabulario español, تعلم الإسبانية, My Language Journal">
     <meta name="author" content="My Language Journal">
 
@@ -48,7 +48,7 @@
             background-color: #ffffff;
             border: 1.5px solid #545454;
             border-radius: 24px;
-            padding: 22px 16px;
+            padding: 22px 14px;
             box-sizing: border-box;
             box-shadow: 0 4px 15px rgba(0,0,0,0.04);
             text-align: center;
@@ -81,13 +81,13 @@
             font-weight: 600;
         }
 
-        /* كارت الكلمة المرتب */
+        /* كارت المفردة الشامل */
         .vocab-card {
             background-color: #fff9fc;
             border: 1.5px solid #f8abe4;
-            border-radius: 16px;
-            margin-bottom: 14px;
-            padding: 14px 12px;
+            border-radius: 18px;
+            margin-bottom: 18px;
+            padding: 14px;
             text-align: right;
         }
 
@@ -96,56 +96,82 @@
             justify-content: space-between;
             align-items: center;
             background-color: #fce4ec;
-            padding: 6px 12px;
-            border-radius: 10px;
-            margin-bottom: 12px;
+            padding: 8px 14px;
+            border-radius: 12px;
+            margin-bottom: 14px;
+            border: 1px solid #f8abe4;
         }
 
         .main-ar {
             font-weight: bold;
-            font-size: 0.98rem;
+            font-size: 1rem;
             color: #333;
         }
 
         .main-es {
             font-family: 'Playfair Display', serif;
             font-weight: bold;
-            font-size: 1.05rem;
+            font-size: 1.1rem;
             color: #d81b60;
             direction: ltr;
         }
 
-        /* قائمة المرادفات الأنيقة */
-        .synonym-list {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
+        /* قسم المرادف والجملة الخاص به */
+        .synonym-block {
+            background: #ffffff;
+            border: 1px solid #f3c2e7;
+            padding: 10px 12px;
+            border-radius: 12px;
+            margin-bottom: 10px;
         }
 
-        .synonym-item {
+        .synonym-block:last-child {
+            margin-bottom: 0;
+        }
+
+        .syn-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: #ffffff;
-            border: 1px solid #f3c2e7;
-            padding: 6px 10px;
-            border-radius: 8px;
+            margin-bottom: 6px;
+            border-bottom: 1px dashed #ffe4e9;
+            padding-bottom: 4px;
         }
 
         .syn-word {
             font-family: 'Playfair Display', serif;
-            font-weight: 600;
-            font-size: 0.95rem;
+            font-weight: bold;
+            font-size: 0.98rem;
             color: #8e24aa;
             direction: ltr;
         }
 
         .syn-desc {
-            font-size: 0.82rem;
+            font-size: 0.8rem;
             color: #666;
             background-color: #fff0f5;
             padding: 2px 8px;
             border-radius: 6px;
+        }
+
+        .example-box {
+            margin-top: 6px;
+        }
+
+        .example-es {
+            font-family: 'Playfair Display', serif;
+            color: #d81b60;
+            direction: ltr;
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .example-ar {
+            color: #444;
+            font-size: 0.82rem;
+            display: block;
+            margin-top: 2px;
         }
 
         /* أزرار التنقل */
@@ -190,18 +216,37 @@
                     <span class="main-ar">الوالدان / الآباء</span>
                     <span class="main-es">Padres</span>
                 </div>
-                <div class="synonym-list">
-                    <div class="synonym-item">
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Padres</span>
-                        <span class="syn-desc">آباء / الكلمة الأصلية</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
                     </div>
-                    <div class="synonym-item">
+                    <div class="example-box">
+                        <span class="example-es">Mis padres apoyan siempre mis estudios.</span>
+                        <span class="example-ar">(والداي يدعمان دراستي دائمًا.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Progenitores</span>
                         <span class="syn-desc">رسمي / أكاديمي</span>
                     </div>
-                    <div class="synonym-item">
+                    <div class="example-box">
+                        <span class="example-es">Los datos de los progenitores deben figurar en el formulario.</span>
+                        <span class="example-ar">(يجب أن تظهر بيانات الوالدين في الاستمارة.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Papás</span>
                         <span class="syn-desc">ودود / عائلي</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Mis papás van a viajar este fin de semana.</span>
+                        <span class="example-ar">(والداي سيسافران هذا الأسبوع.)</span>
                     </div>
                 </div>
             </div>
@@ -212,18 +257,37 @@
                     <span class="main-ar">أخ / أخت</span>
                     <span class="main-es">Hermano / a</span>
                 </div>
-                <div class="synonym-list">
-                    <div class="synonym-item">
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Hermano / a</span>
-                        <span class="syn-desc">أخ / أخت</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
                     </div>
-                    <div class="synonym-item">
+                    <div class="example-box">
+                        <span class="example-es">Mi hermano mayor estudia en la universidad.</span>
+                        <span class="example-ar">(أخي الكبير يدرس في الجامعة.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Hermanastro / a</span>
                         <span class="syn-desc">غير شقيق / ة</span>
                     </div>
-                    <div class="synonym-item">
-                        <span class="syn-word">Hermano de leche</span>
-                        <span class="syn-desc">أخ في الرضاعة</span>
+                    <div class="example-box">
+                        <span class="example-es">Tengo una hermanastra con la que me llevo muy bien.</span>
+                        <span class="example-ar">(لدي أخت غير شقيقة أتفاهم معها جيدًا.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Hermano/a de leche</span>
+                        <span class="syn-desc">في الرضاعة</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Él es mi hermano de leche y nos conocemos desde niños.</span>
+                        <span class="example-ar">(هو أخي في الرضاعة ونعرف بعضنا منذ الصغر.)</span>
                     </div>
                 </div>
             </div>
@@ -234,18 +298,37 @@
                     <span class="main-ar">جد / جدة</span>
                     <span class="main-es">Abuelo / a</span>
                 </div>
-                <div class="synonym-list">
-                    <div class="synonym-item">
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Abuelo / a</span>
-                        <span class="syn-desc">جد / جدة</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
                     </div>
-                    <div class="synonym-item">
+                    <div class="example-box">
+                        <span class="example-es">Mi abuela prepara el mejor café por la mañana.</span>
+                        <span class="example-ar">(جدتي تعد أفضل قهوة في الصباح.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Abuelito / a</span>
                         <span class="syn-desc">جدو / تيتي (تحبب)</span>
                     </div>
-                    <div class="synonym-item">
+                    <div class="example-box">
+                        <span class="example-es">Mi abuelita me contó una historia muy bonita.</span>
+                        <span class="example-ar">(جدتي العزيزة حكت لي قصة جميلة جدًا.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Yayo / Yaya</span>
                         <span class="syn-desc">عامية إسبانية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Vamos a visitar a los yayos este domingo.</span>
+                        <span class="example-ar">(سنزور الجدين هذا الأحد.)</span>
                     </div>
                 </div>
             </div>
@@ -256,18 +339,37 @@
                     <span class="main-ar">أب / بابا</span>
                     <span class="main-es">Papá</span>
                 </div>
-                <div class="synonym-list">
-                    <div class="synonym-item">
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Papá</span>
-                        <span class="syn-desc">بابا</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
                     </div>
-                    <div class="synonym-item">
+                    <div class="example-box">
+                        <span class="example-es">Mi papá lee el periódico cada mañana.</span>
+                        <span class="example-ar">(أبي يقرأ الصحيفة كل صباح.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Padre</span>
                         <span class="syn-desc">أب (رسمي)</span>
                     </div>
-                    <div class="synonym-item">
+                    <div class="example-box">
+                        <span class="example-es">Su padre trabaja como médico en el hospital.</span>
+                        <span class="example-ar">(والده يعمل طبيبًا في المستشفى.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Papi</span>
                         <span class="syn-desc">دادي / تحبب</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Gracias por todo, papi.</span>
+                        <span class="example-ar">(شكراً على كل شيء يا بابا.)</span>
                     </div>
                 </div>
             </div>
@@ -278,18 +380,37 @@
                     <span class="main-ar">عم / خال</span>
                     <span class="main-es">Tío / Tía</span>
                 </div>
-                <div class="synonym-list">
-                    <div class="synonym-item">
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Tío / Tía</span>
-                        <span class="syn-desc">عم / خال</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
                     </div>
-                    <div class="synonym-item">
+                    <div class="example-box">
+                        <span class="example-es">Mi tía vive en una ciudad hermosa.</span>
+                        <span class="example-ar">(عمتي/خالتي تعيش في مدينة جميلة.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Pariente</span>
                         <span class="syn-desc">قريب</span>
                     </div>
-                    <div class="synonym-item">
+                    <div class="example-box">
+                        <span class="example-es">Mi tío es mi pariente más cercano aquí.</span>
+                        <span class="example-ar">(عمي هو قريبي الأقرب هنا.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Tío / Tía</span>
                         <span class="syn-desc">يا صاحب (عامية)</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">¡Hola, tío! ¿Cómo estás?</span>
+                        <span class="example-ar">(أهلاً يا صاحب! كيف حالك؟)</span>
                     </div>
                 </div>
             </div>
@@ -300,18 +421,37 @@
                     <span class="main-ar">ابن / ابنة</span>
                     <span class="main-es">Hijo / a</span>
                 </div>
-                <div class="synonym-list">
-                    <div class="synonym-item">
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Hijo / Hija</span>
-                        <span class="syn-desc">ابن / ابنة</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
                     </div>
-                    <div class="synonym-item">
+                    <div class="example-box">
+                        <span class="example-es">Su hija habla tres idiomas con fluidez.</span>
+                        <span class="example-ar">(ابنتها تتحدث ثلاث لغات بطلاقة.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Descendiente</span>
                         <span class="syn-desc">سليل (رسمي)</span>
                     </div>
-                    <div class="synonym-item">
+                    <div class="example-box">
+                        <span class="example-es">Es el único descendiente de la familia.</span>
+                        <span class="example-ar">(هو السليل الوحيد للعائلة.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Hijito / a</span>
                         <span class="syn-desc">بنيّ / بنيتي</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Cuídate mucho, hijita.</span>
+                        <span class="example-ar">(اعتني بنفسكِ جيدًا يا بنيتي.)</span>
                     </div>
                 </div>
             </div>
@@ -322,18 +462,37 @@
                     <span class="main-ar">زوج / زوجة</span>
                     <span class="main-es">Esposo / a</span>
                 </div>
-                <div class="synonym-list">
-                    <div class="synonym-item">
-                        <span class="syn-word">Esposo / a</span>
-                        <span class="syn-desc">زوج / زوجة</span>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Esposo / Esposa</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
                     </div>
-                    <div class="synonym-item">
+                    <div class="example-box">
+                        <span class="example-es">Mi esposo y yo organizamos un viaje.</span>
+                        <span class="example-ar">(زوجي وأنا ننظم رحلة.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Marido / Mujer</span>
                         <span class="syn-desc">أكثر استخداماً</span>
                     </div>
-                    <div class="synonym-item">
+                    <div class="example-box">
+                        <span class="example-es">Su marido es un arquitecto muy famoso.</span>
+                        <span class="example-ar">(زوجها مهندس معماري شهير جدًا.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Cónyuge</span>
                         <span class="syn-desc">قرين (رسمي)</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Debe firmar el documento junto con su cónyuge.</span>
+                        <span class="example-ar">(يجب أن يوقع الوثيقة إلى جانب قرينه/زوجته.)</span>
                     </div>
                 </div>
             </div>
@@ -344,18 +503,37 @@
                     <span class="main-ar">زميل / شريك</span>
                     <span class="main-es">Compañero / a</span>
                 </div>
-                <div class="synonym-list">
-                    <div class="synonym-item">
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Compañero / a</span>
                         <span class="syn-desc">زميل دراسة/عمل</span>
                     </div>
-                    <div class="synonym-item">
+                    <div class="example-box">
+                        <span class="example-es">Ella es mi compañera en el proyecto actual.</span>
+                        <span class="example-ar">(هي زميلتي في المشروع الحالي.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Pareja</span>
                         <span class="syn-desc">شريك/ة حياة</span>
                     </div>
-                    <div class="synonym-item">
+                    <div class="example-box">
+                        <span class="example-es">Mi pareja y yo compartimos los mismos gustos.</span>
+                        <span class="example-ar">(شريكي وأنا نتشارك نفس الأذواق.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Colega</span>
                         <span class="syn-desc">زميل مهنة</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Hablé sobre el tema con un colega de trabajo.</span>
+                        <span class="example-ar">(تحدثت عن الموضوع مع زميل عمل.)</span>
                     </div>
                 </div>
             </div>
@@ -366,18 +544,37 @@
                     <span class="main-ar">صديق / صديقة</span>
                     <span class="main-es">Amigo / a</span>
                 </div>
-                <div class="synonym-list">
-                    <div class="synonym-item">
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Amigo / a</span>
-                        <span class="syn-desc">صديق / هـ</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
                     </div>
-                    <div class="synonym-item">
+                    <div class="example-box">
+                        <span class="example-es">Una buena amiga siempre escucha con atención.</span>
+                        <span class="example-ar">(الصديقة الجيدة تستمع دائمًا باهتمام.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Conocido / a</span>
                         <span class="syn-desc">معرفة</span>
                     </div>
-                    <div class="synonym-item">
+                    <div class="example-box">
+                        <span class="example-es">No es mi amigo íntimo, solo es un conocido.</span>
+                        <span class="example-ar">(ليس صديقي المقرب، هو مجرد معرفة.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
                         <span class="syn-word">Mejor amigo / a</span>
                         <span class="syn-desc">أفضل صديق/هـ</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Confío plenamente en mi mejor amiga.</span>
+                        <span class="example-ar">(أثق تمامًا في أفضل صديقة لي.)</span>
                     </div>
                 </div>
             </div>
