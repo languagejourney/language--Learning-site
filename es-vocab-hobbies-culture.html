@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WBZH2BVR73"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WBZH2BVR73');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>الهوايات والاهتمامات والثقافة بالإسبانية | Hobbies & Culture</title>
+    <meta name="description" content="صفحة تفاعلية لمفردات الطقس والتبيعة وفصول السنة بالإسبانية مقسمة حسب المواضيع مع المعاني، المرادفات، والجمل التطبيقية.">
+    <meta name="keywords" content="مفردات الطقس بالإسبانية,كيف اقول بارد بالاسباني ، كيف اقول حار بالاسباني, فصول السنة بالإسبانية, vocabulario español, tiempo y naturaleza, estaciones del año, تعلم الإسبانية, My Language Journal">
+    <meta name="author" content="My Language Journal">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #fff0f5, #ffe4e9);
+            font-family: 'Tajawal', 'Playfair Display', serif;
+            color: #333333;
+        }
+
+        .main-wrapper {
+            width: 95%;
+            max-width: 500px;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card-container {
+            width: 100%;
+            background-color: #ffffff;
+            border: 1.5px solid #545454;
+            border-radius: 24px;
+            padding: 22px 14px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+            text-align: center;
+            max-height: 88vh;
+            overflow-y: auto;
+            scrollbar-width: none;
+        }
+
+        .card-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        h1 {
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1.4rem;
+            color: #545454;
+            margin-top: 5px;
+            margin-bottom: 2px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1rem;
+            color: #EE69B8;
+            margin-top: 0;
+            margin-bottom: 20px;
+            direction: ltr;
+            font-weight: 600;
+        }
+
+        /* عنوان القسم */
+        .section-header {
+            background: linear-gradient(135deg, #EE69B8, #d81b60);
+            color: #ffffff;
+            padding: 10px 16px;
+            border-radius: 14px;
+            margin: 22px 0 14px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 3px 8px rgba(216, 27, 96, 0.15);
+        }
+
+        .section-title-ar {
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+
+        .section-title-es {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.95rem;
+            font-style: italic;
+            direction: ltr;
+            opacity: 0.9;
+        }
+
+        /* كارت المفردة الشامل */
+        .vocab-card {
+            background-color: #fff9fc;
+            border: 1.5px solid #f8abe4;
+            border-radius: 18px;
+            margin-bottom: 18px;
+            padding: 14px;
+            text-align: right;
+        }
+
+        .card-header-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fce4ec;
+            padding: 8px 14px;
+            border-radius: 12px;
+            margin-bottom: 14px;
+            border: 1px solid #f8abe4;
+        }
+
+        .main-ar {
+            font-weight: bold;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .main-es {
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #d81b60;
+            direction: ltr;
+        }
+
+        /* قسم المرادف والجملة الخاص به */
+        .synonym-block {
+            background: #ffffff;
+            border: 1px solid #f3c2e7;
+            padding: 10px 12px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+
+        .synonym-block:last-child {
+            margin-bottom: 0;
+        }
+
+        .syn-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
+            border-bottom: 1px dashed #ffe4e9;
+            padding-bottom: 4px;
+        }
+
+        .syn-word {
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            font-size: 0.98rem;
+            color: #8e24aa;
+            direction: ltr;
+        }
+
+        .syn-desc {
+            font-size: 0.8rem;
+            color: #666;
+            background-color: #fff0f5;
+            padding: 2px 8px;
+            border-radius: 6px;
+        }
+
+        .example-box {
+            margin-top: 6px;
+        }
+
+        .example-es {
+            font-family: 'Playfair Display', serif;
+            color: #d81b60;
+            direction: ltr;
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .example-ar {
+            color: #444;
+            font-size: 0.82rem;
+            display: block;
+            margin-top: 2px;
+        }
+
+        /* أزرار التنقل */
+        .btn-container {
+            text-align: center;
+            margin-top: 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 9px 20px;
+            background-color: #EE69B8;
+            border: 1.5px solid #545454;
+            border-radius: 20px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            transition: 0.2s;
+        }
+
+        .back-btn-secondary {
+            background-color: #FDBBE3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="card-container">
+            
+            <h1>الهوايات والاهتمامات والثقافة</h1>
+            <div class="subtitle">Hobbies & Culture | Vocabulario</div>
+
+            <!-- ==================== أولاً: الطقس والطبيعة ==================== -->
+            <div class="section-header">
+                <span class="section-title-ar">☀️ الطقس والطبيعة</span>
+                <span class="section-title-es">Tiempo y Naturaleza</span>
+            </div>
+
+            <!-- 1. Sol -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">شمس</span>
+                    <span class="main-es">Sol</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Sol</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">El sol brilla con fuerza hoy.</span>
+                        <span class="example-ar">(الشمس تشرق بقوة اليوم.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Luz solar</span>
+                        <span class="syn-desc">ضوء الشمس / الأشعة الشمسية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">La luz solar es esencial para las plantas.</span>
+                        <span class="example-ar">(ضوء الشمس ضروري للنباتات.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Astro rey</span>
+                        <span class="syn-desc">كوكب الشمس / الجرم الملك (أدبي)</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">El astro rey ilumina todo el valle.</span>
+                        <span class="example-ar">(الجرم الملك يضيء الوادي بأكمله.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Calor -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">حرارة / حر</span>
+                    <span class="main-es">Calor</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Calor</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Hace mucho calor durante la tarde.</span>
+                        <span class="example-ar">(الجو حار جداً خلال الظهيرة.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Altas temperaturas</span>
+                        <span class="syn-desc">درجات حرارة مرتفعة (رسمي)</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Esperamos altas temperaturas esta semana.</span>
+                        <span class="example-ar">(نتوقع درجات حرارة مرتفعة هذا الأسبوع.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Bochorno</span>
+                        <span class="syn-desc">حر خانق مع رطوبة</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Hay un bochorno insoportable en la ciudad.</span>
+                        <span class="example-ar">(هناك حر خانق لا يطاق في المدينة.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Frío -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">برد / برودة</span>
+                    <span class="main-es">Frío</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Frío</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Siento frío cuando salgo por la noche.</span>
+                        <span class="example-ar">(أشعر بالبرد عندما أخرج في الليل.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Bajas temperaturas</span>
+                        <span class="syn-desc">درجات حرارة منخفضة (رسمي)</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Las bajas temperaturas continuarán mañana.</span>
+                        <span class="example-ar">(درجات الحرارة المنخفضة ستستمر غداً.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Fresco</span>
+                        <span class="syn-desc">برودة لطيفة / جو منعش</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Hace un aire muy fresco cerca de la montaña.</span>
+                        <span class="example-ar">(هناك هواء منعش/بارد جداً بالقرب من الجبل.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Viento -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">ريح / هواء متحرك</span>
+                    <span class="main-es">Viento</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Viento</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">El viento sopla fuerte en la costa.</span>
+                        <span class="example-ar">(الريح تهب بقوة على الساحل.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Brisa</span>
+                        <span class="syn-desc">نسيم / هواء عليل</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Disfrutamos de la brisa marina al atardecer.</span>
+                        <span class="example-ar">(استمتعنا بالنسيم البحري عند الغروب.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Corriente de aire</span>
+                        <span class="syn-desc">تيار هوائي</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Hay una corriente de aire fresca en la habitación.</span>
+                        <span class="example-ar">(يوجد تيار هوائي منعش في الغرفة.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Buen tiempo -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">طقس جيد / جو لطيف</span>
+                    <span class="main-es">Buen tiempo</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Buen tiempo</span>
+                        <span class="syn-desc">العبارة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Aprovechamos el buen tiempo para dar un paseo.</span>
+                        <span class="example-ar">(استغللنا الطقس الجيد للقيام بنزهة.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Clima agradable</span>
+                        <span class="syn-desc">مناخ/طقس لطيف</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Hoy tenemos un clima agradable para salir.</span>
+                        <span class="example-ar">(اليوم لدينا مناخ لطيف للخروج.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Día soleado / apacible</span>
+                        <span class="syn-desc">يوم مشمس / هادئ وممتع</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Es un día apacible y perfecto para descansar.</span>
+                        <span class="example-ar">(إنه يوم هادئ وممتع ومثالي للراحة.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== ثانياً: فصول السنة ==================== -->
+            <div class="section-header">
+                <span class="section-title-ar">🍂 فصول السنة</span>
+                <span class="section-title-es">Las Estaciones</span>
+            </div>
+
+            <!-- 1. Verano -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">الصيف</span>
+                    <span class="main-es">Verano</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Verano</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">El verano es mi estación favorita para viajar.</span>
+                        <span class="example-ar">(الصيف هو فصلي المفضل للسفر.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Estación estival</span>
+                        <span class="syn-desc">فصل الصيف (أكاديمي/رسمي)</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">La estación estival trae días más largos.</span>
+                        <span class="example-ar">(فصل الصيف يجلب أياماً أطول.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Época de calor</span>
+                        <span class="syn-desc">موسم الحرارة</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">En la época de calor consumimos más agua.</span>
+                        <span class="example-ar">(في موسم الحرارة نستهلك ماءً أكثر.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Invierno -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">الشتاء</span>
+                    <span class="main-es">Invierno</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Invierno</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">En invierno me gusta tomar té caliente.</span>
+                        <span class="example-ar">(في الشتاء أحب شرب الشاي الدافيء.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Estación invernal</span>
+                        <span class="syn-desc">فصل الشتاء (رسمي/أكاديمي)</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">La estación invernal comienza en diciembre.</span>
+                        <span class="example-ar">(فصل الشتاء يبدأ في ديسمبر.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Época de frío</span>
+                        <span class="syn-desc">موسم البرد</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Usamos abrigos durante la época de frío.</span>
+                        <span class="example-ar">(نستخدم المعاطف خلال موسم البرد.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Otoño -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">الخريف</span>
+                    <span class="main-es">Otoño</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Otoño</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Las hojas caen de los árboles en otoño.</span>
+                        <span class="example-ar">(الأوراق تسقط من الأشجار في الخريف.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Estación otoñal</span>
+                        <span class="syn-desc">فصل الخريف (رسمي)</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">El paisaje cambiante de la estación otoñal es hermoso.</span>
+                        <span class="example-ar">(المنظر الطبيعي المتغير لفصل الخريف جميل.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Tiempo de hojarasca</span>
+                        <span class="syn-desc">موسم تساقط الأوراق (أدبي)</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">En el tiempo de hojarasca, el parque se llena de colores.</span>
+                        <span class="example-ar">(في موسم تساقط الأوراق، يمتلئ المنتزه بالألوان.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Primavera -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">الربيع</span>
+                    <span class="main-es">Primavera</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Primavera</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Las flores florecen durante la primavera.</span>
+                        <span class="example-ar">(الأزهار تتفتح خلال الربيع.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Estación primaveral</span>
+                        <span class="syn-desc">فصل الربيع (رسمي)</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">El clima en la estación primaveral es muy suave.</span>
+                        <span class="example-ar">(الطقس في فصل الربيع معتدل جداً.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Época de floración</span>
+                        <span class="syn-desc">موسم الإزهار / التفتح</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">La época de floración llena los jardines de fragancia.</span>
+                        <span class="example-ar">(موسم التفتح يملأ الحدائق بالعبق.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- أزرار التنقل -->
+            <div class="btn-container">
+                <a href="spanish-vocabulary.html" class="back-btn">🔄 العودة لجدول المفردات</a>
+                <a href="index.html" class="back-btn back-btn-secondary">🏠 الصفحة الرئيسية</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
