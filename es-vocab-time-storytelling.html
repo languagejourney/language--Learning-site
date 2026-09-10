@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WBZH2BVR73"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WBZH2BVR73');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>الأحداث الزمنية والحكايات بالإسبانية | Time & Storytelling</title>
+    <meta name="description" content="صفحة تفاعلية لمفردات الأحداث الزمنية، الحاضر، الماضي، المستقبل، والتكرار بالإسبانية مع المعاني،كيف اقول اليوم بالاسباني، المرادفات، والجمل التطبيقية.">
+    <meta name="keywords" content="مفردات الوقت بالإسبانية, الأحداث الزمنية بالإسبانية, vocabulario español, el tiempo, presente pasado futuro, تعلم الإسبانية, My Language Journal">
+    <meta name="author" content="My Language Journal">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #fff0f5, #ffe4e9);
+            font-family: 'Tajawal', 'Playfair Display', serif;
+            color: #333333;
+        }
+
+        .main-wrapper {
+            width: 95%;
+            max-width: 500px;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card-container {
+            width: 100%;
+            background-color: #ffffff;
+            border: 1.5px solid #545454;
+            border-radius: 24px;
+            padding: 22px 14px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+            text-align: center;
+            max-height: 88vh;
+            overflow-y: auto;
+            scrollbar-width: none;
+        }
+
+        .card-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        h1 {
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1.4rem;
+            color: #545454;
+            margin-top: 5px;
+            margin-bottom: 2px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1rem;
+            color: #EE69B8;
+            margin-top: 0;
+            margin-bottom: 20px;
+            direction: ltr;
+            font-weight: 600;
+        }
+
+        /* عنوان القسم */
+        .section-header {
+            background: linear-gradient(135deg, #EE69B8, #d81b60);
+            color: #ffffff;
+            padding: 10px 16px;
+            border-radius: 14px;
+            margin: 22px 0 14px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 3px 8px rgba(216, 27, 96, 0.15);
+        }
+
+        .section-title-ar {
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+
+        .section-title-es {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.95rem;
+            font-style: italic;
+            direction: ltr;
+            opacity: 0.9;
+        }
+
+        /* كارت المفردة الشامل */
+        .vocab-card {
+            background-color: #fff9fc;
+            border: 1.5px solid #f8abe4;
+            border-radius: 18px;
+            margin-bottom: 18px;
+            padding: 14px;
+            text-align: right;
+        }
+
+        .card-header-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fce4ec;
+            padding: 8px 14px;
+            border-radius: 12px;
+            margin-bottom: 14px;
+            border: 1px solid #f8abe4;
+        }
+
+        .main-ar {
+            font-weight: bold;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .main-es {
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #d81b60;
+            direction: ltr;
+        }
+
+        /* قسم المرادف والجملة الخاص به */
+        .synonym-block {
+            background: #ffffff;
+            border: 1px solid #f3c2e7;
+            padding: 10px 12px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+
+        .synonym-block:last-child {
+            margin-bottom: 0;
+        }
+
+        .syn-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
+            border-bottom: 1px dashed #ffe4e9;
+            padding-bottom: 4px;
+        }
+
+        .syn-word {
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            font-size: 0.98rem;
+            color: #8e24aa;
+            direction: ltr;
+        }
+
+        .syn-desc {
+            font-size: 0.8rem;
+            color: #666;
+            background-color: #fff0f5;
+            padding: 2px 8px;
+            border-radius: 6px;
+        }
+
+        .example-box {
+            margin-top: 6px;
+        }
+
+        .example-es {
+            font-family: 'Playfair Display', serif;
+            color: #d81b60;
+            direction: ltr;
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .example-ar {
+            color: #444;
+            font-size: 0.82rem;
+            display: block;
+            margin-top: 2px;
+        }
+
+        /* أزرار التنقل */
+        .btn-container {
+            text-align: center;
+            margin-top: 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 9px 20px;
+            background-color: #EE69B8;
+            border: 1.5px solid #545454;
+            border-radius: 20px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            transition: 0.2s;
+        }
+
+        .back-btn-secondary {
+            background-color: #FDBBE3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="card-container">
+            
+            <h1>الأحداث الزمنية والحكايات</h1>
+            <div class="subtitle">Time & Storytelling | Vocabulario</div>
+
+            <!-- ==================== أولاً: الحاضر ==================== -->
+            <div class="section-header">
+                <span class="section-title-ar">⏳ الحاضر</span>
+                <span class="section-title-es">Presente</span>
+            </div>
+
+            <!-- 1. Hoy -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">اليوم</span>
+                    <span class="main-es">Hoy</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Hoy</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Hoy tengo una clase muy interesante.</span>
+                        <span class="example-ar">(اليوم لدي درس ممتع جداً.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">En el día de hoy</span>
+                        <span class="syn-desc">في يومنا هذا / اليوم (رسمي)</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">En el día de hoy presentamos el nuevo proyecto.</span>
+                        <span class="example-ar">(في يومنا هذا نقدم المشروع الجديد.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Actualmente</span>
+                        <span class="syn-desc">في الوقت الحالي / حالياً</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Actualmente, prefiero organizar mi tiempo de forma diferente.</span>
+                        <span class="example-ar">(حالياً، أفضل تنظيم وقتي بشكل مختلف.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Ahora -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">الآن</span>
+                    <span class="main-es">Ahora</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Ahora</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Ahora estoy estudiando vocabulario en español.</span>
+                        <span class="example-ar">(الآن أنا أدرس مفردات اللغة الإسبانية.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">En este momento</span>
+                        <span class="syn-desc">في هذه اللحظة</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">En este momento no puedo hablar por teléfono.</span>
+                        <span class="example-ar">(في هذه اللحظة لا أستطيع التحدث في الهاتف.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">De inmediato / Ya</span>
+                        <span class="syn-desc">حالاً / فوراً</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Necesito terminar este trabajo ya.</span>
+                        <span class="example-ar">(أحتاج إنهاء هذا العمل حالاً.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== ثانياً: الماضي والمستقبل ==================== -->
+            <div class="section-header">
+                <span class="section-title-ar">📅 الماضي والمستقبل</span>
+                <span class="section-title-es">Pasado y Futuro</span>
+            </div>
+
+            <!-- 1. Ayer -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">أمس / البارحة</span>
+                    <span class="main-es">Ayer</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Ayer</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Ayer leí un artículo muy interesante.</span>
+                        <span class="example-ar">(أمس قرأت مقالاً ممتعاً جداً.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">En el día de ayer</span>
+                        <span class="syn-desc">في يوم أمس (رسمي)</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">En el día de ayer recibimos la confirmación.</span>
+                        <span class="example-ar">(في يوم أمس استلمنا التأكيد.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Recientemente</span>
+                        <span class="syn-desc">مؤخراً / حديثاً</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Recientemente empecé a practicar un nuevo hábito.</span>
+                        <span class="example-ar">(مؤخراً بدأت بممارسة عادة جديدة.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Mañana -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">غداً</span>
+                    <span class="main-es">Mañana</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Mañana</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Mañana voy a repasar las notas del curso.</span>
+                        <span class="example-ar">(غداً سأراجع ملاحظات الدورة/الدرس.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">El día siguiente</span>
+                        <span class="syn-desc">اليوم التالي / القادم</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Nos veremos el día siguiente por la tarde.</span>
+                        <span class="example-ar">(سنلتقي في اليوم التالي في الظهيرة.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Próximamente</span>
+                        <span class="syn-desc">قريباً / في الفترة القادمة</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Próximamente publicaré más resúmenes.</span>
+                        <span class="example-ar">(قريباً سأنشر المزيد من الملخصات.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== ثالثاً: التكرار والاستمرارية ==================== -->
+            <div class="section-header">
+                <span class="section-title-ar">🔄 التكرار والاستمرارية</span>
+                <span class="section-title-es">Frecuencia y Continuidad</span>
+            </div>
+
+            <!-- 1. Siempre -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">دائماً</span>
+                    <span class="main-es">Siempre</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Siempre</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Siempre busco aprender algo nuevo.</span>
+                        <span class="example-ar">(دائماً أسعى لتعلم شيء جديد.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Constantemente</span>
+                        <span class="syn-desc">باستمرار / بشكل متواصل</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Ella práctica constantemente para mejorar su nivel.</span>
+                        <span class="example-ar">(هي تمارس باستمرار لتحسين مستواها.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">En todo momento</span>
+                        <span class="syn-desc">في كل وقت / طوال الوقت</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Hay que mantener una actitud positiva en todo momento.</span>
+                        <span class="example-ar">(يجب الحفاظ على موقف إيجابي في كل وقت.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Nunca -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">أبداً / لا على الإطلاق</span>
+                    <span class="main-es">Nunca</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Nunca</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Nunca pierdo la motivación para estudiar.</span>
+                        <span class="example-ar">(أبداً لا أفقد الدافع للدراسة.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Jamás</span>
+                        <span class="syn-desc">قطعاً / مطلقاً (نفي قوي)</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Jamás olvidaré esta lección tan valiosa.</span>
+                        <span class="example-ar">(قطعاً لن أنسى هذا الدرس الثمين جداً.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">En ninguna ocasión</span>
+                        <span class="syn-desc">في أي مناسبة كانت / إطلاقاً</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">En ninguna ocasión debemos darnos por vencidos.</span>
+                        <span class="example-ar">(في أي مناسبة كانت لا يجب أن نستسلم.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- أزرار التنقل -->
+            <div class="btn-container">
+                <a href="spanish-vocabulary.html" class="back-btn">🔄 العودة لجدول المفردات</a>
+                <a href="index.html" class="back-btn back-btn-secondary">🏠 الصفحة الرئيسية</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
