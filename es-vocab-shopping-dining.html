@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WBZH2BVR73"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WBZH2BVR73');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>مفردات التسوق والمطاعم والمعاملات بالإسبانية | Shopping & Dining</title>
+    <meta name="description" content="جدول شامل لمفردات المشتريات، الملابس، الأفعال الأساسية، والكميات باللغة الإسبانية مقسم حسب المواضيع مع المعاني، المرادفات، والجمل التطبيقية.">
+    <meta name="keywords" content="كلمات اسبانية، مفردات التسوق بالإسبانية, الملابس بالإسبانية, أفعال الشراء الإسبانية, vocabulario español, تعلم الإسبانية, My Language Journal">
+    <meta name="author" content="My Language Journal">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #fff0f5, #ffe4e9);
+            font-family: 'Tajawal', 'Playfair Display', serif;
+            color: #333333;
+        }
+
+        .main-wrapper {
+            width: 95%;
+            max-width: 500px;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card-container {
+            width: 100%;
+            background-color: #ffffff;
+            border: 1.5px solid #545454;
+            border-radius: 24px;
+            padding: 22px 14px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+            text-align: center;
+            max-height: 88vh;
+            overflow-y: auto;
+            scrollbar-width: none;
+        }
+
+        .card-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        h1 {
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1.4rem;
+            color: #545454;
+            margin-top: 5px;
+            margin-bottom: 2px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1rem;
+            color: #EE69B8;
+            margin-top: 0;
+            margin-bottom: 20px;
+            direction: ltr;
+            font-weight: 600;
+        }
+
+        /* عنوان القسم */
+        .section-header {
+            background: linear-gradient(135deg, #EE69B8, #d81b60);
+            color: #ffffff;
+            padding: 10px 16px;
+            border-radius: 14px;
+            margin: 22px 0 14px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 3px 8px rgba(216, 27, 96, 0.15);
+        }
+
+        .section-title-ar {
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+
+        .section-title-es {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.95rem;
+            font-style: italic;
+            direction: ltr;
+            opacity: 0.9;
+        }
+
+        /* كارت المفردة الشامل */
+        .vocab-card {
+            background-color: #fff9fc;
+            border: 1.5px solid #f8abe4;
+            border-radius: 18px;
+            margin-bottom: 18px;
+            padding: 14px;
+            text-align: right;
+        }
+
+        .card-header-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fce4ec;
+            padding: 8px 14px;
+            border-radius: 12px;
+            margin-bottom: 14px;
+            border: 1px solid #f8abe4;
+        }
+
+        .main-ar {
+            font-weight: bold;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .main-es {
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #d81b60;
+            direction: ltr;
+        }
+
+        /* قسم المرادف والجملة الخاص به */
+        .synonym-block {
+            background: #ffffff;
+            border: 1px solid #f3c2e7;
+            padding: 10px 12px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+
+        .synonym-block:last-child {
+            margin-bottom: 0;
+        }
+
+        .syn-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
+            border-bottom: 1px dashed #ffe4e9;
+            padding-bottom: 4px;
+        }
+
+        .syn-word {
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            font-size: 0.98rem;
+            color: #8e24aa;
+            direction: ltr;
+        }
+
+        .syn-desc {
+            font-size: 0.8rem;
+            color: #666;
+            background-color: #fff0f5;
+            padding: 2px 8px;
+            border-radius: 6px;
+        }
+
+        .example-box {
+            margin-top: 6px;
+        }
+
+        .example-es {
+            font-family: 'Playfair Display', serif;
+            color: #d81b60;
+            direction: ltr;
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .example-ar {
+            color: #444;
+            font-size: 0.82rem;
+            display: block;
+            margin-top: 2px;
+        }
+
+        /* أزرار التنقل */
+        .btn-container {
+            text-align: center;
+            margin-top: 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 9px 20px;
+            background-color: #EE69B8;
+            border: 1.5px solid #545454;
+            border-radius: 20px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            transition: 0.2s;
+        }
+
+        .back-btn-secondary {
+            background-color: #FDBBE3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="card-container">
+            
+            <h1>التسوق والمطاعم والمعاملات</h1>
+            <div class="subtitle">Compras, Restaurantes y Transacciones | Vocabulario</div>
+
+            <!-- ==================== أولاً: المشتريات والملابس (Productos y Ropa) ==================== -->
+            <div class="section-header">
+                <span class="section-title-ar">🛍️ المشتريات والملابس</span>
+                <span class="section-title-es">Productos y Ropa</span>
+            </div>
+
+            <!-- 1. حقيبة / كيس -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">حقيبة / كيس</span>
+                    <span class="main-es">Bolsa</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Bolsa</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Guardo las compras en una bolsa de tela.</span>
+                        <span class="example-ar">(أضع المشتريات في كيس قماش.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Bolso</span>
+                        <span class="syn-desc">حقيبة يد / شخصية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Llevo las llaves en mi bolso.</span>
+                        <span class="example-ar">(أحمل المفاتيح في حقيبتي.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Mochila</span>
+                        <span class="syn-desc">حقيبة ظهر</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Pongo los libros en la mochila para ir a clase.</span>
+                        <span class="example-ar">(أضع الكتب في حقيبة الظهر للذهاب إلى الدرس.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. كيلوغرام -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">كيلوغرام</span>
+                    <span class="main-es">Kilo</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Kilo</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Quiero un kilo de manzanas, por favor.</span>
+                        <span class="example-ar">(أريد كيلو تفاح، من فضلك.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Kilogramo</span>
+                        <span class="syn-desc">الاسم الرسمي الكامل</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">El precio es por kilogramo de harina.</span>
+                        <span class="example-ar">(السعر هو لكل كيلوغرام من الطحين.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Peso</span>
+                        <span class="syn-desc">وزن / كتلة</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">El peso total de la fruta es de dos kilos.</span>
+                        <span class="example-ar">(الوزن الإجمالي للفاكهة هو كيلوان.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. معطف -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">معطف / سترة دافئة</span>
+                    <span class="main-es">Abrigo</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Abrigo</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">En invierno siempre llevo un abrigo caliente.</span>
+                        <span class="example-ar">(في الشتاء أحمل دائمًا معطفًا دافئًا.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Chaqueta</span>
+                        <span class="syn-desc">سترة / جاكيت</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Me pongo una chaqueta elegante para la reunión.</span>
+                        <span class="example-ar">(أرتدي سترة أنيقة للاجتماع.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Gabardina</span>
+                        <span class="syn-desc">معطف طويل / معطف مطر</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Compré una gabardina clásica para los días de lluvia.</span>
+                        <span class="example-ar">(اشتريت معطف مطر كلاسيكيًا للأيام الممطرة.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. ملابس سباحة -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">ملابس سباحة / مايوه</span>
+                    <span class="main-es">Traje de baño</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Traje de baño</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Llevo el traje de baño para ir a la playa.</span>
+                        <span class="example-ar">(أحمل ملابس السباحة للذهاب إلى الشاطئ.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Bañador</span>
+                        <span class="syn-desc">شائعة جدًا في إسبانيا</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Mi bañador nuevo es de color azul.</span>
+                        <span class="example-ar">(ملابس السباحة الجديدة الخاصة بي لونها أزرق.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Traje de natación</span>
+                        <span class="syn-desc">رسمي / رياضي</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">El atleta usa un traje de natación profesional.</span>
+                        <span class="example-ar">(الرياضي يستخدم بدلة سباحة احترافية.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== ثانياً: الأفعال الأساسية (Verbos) ==================== -->
+            <div class="section-header">
+                <span class="section-title-ar">⚙️ الأفعال الأساسية</span>
+                <span class="section-title-es">Verbos</span>
+            </div>
+
+            <!-- 5. يحتاج -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">يحتاج</span>
+                    <span class="main-es">Necesitar</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Necesitar</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Necesito comprar ingredientes para la receta.</span>
+                        <span class="example-ar">(أحتاج شراء مكونات للوصفة.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Requerir</span>
+                        <span class="syn-desc">يتطلب / يحتاج (رسمي)</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Este trabajo requiere mucha atención.</span>
+                        <span class="example-ar">(هذا العمل يتطلب الكثير من الانتباه.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Hacer falta</span>
+                        <span class="syn-desc">يلزم / ينقص (محادثات)</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Me hace falta un poco de ayuda aquí.</span>
+                        <span class="example-ar">(يلزمني القليل من المساعدة هنا.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. يريد -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">يريد / يحب</span>
+                    <span class="main-es">Querer</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Querer</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Quiero pedir un café con leche.</span>
+                        <span class="example-ar">(أريد طلب قهوة بالحليب.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Desear</span>
+                        <span class="syn-desc">يرغب / يتمنى (مهذب)</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">¿Qué desea tomar hoy?</span>
+                        <span class="example-ar">(ماذا ترغب أن تتناول اليوم؟)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Pretender</span>
+                        <span class="syn-desc">يسعى إلى / يهدف إلى</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Ella pretende mejorar su nivel de español este mes.</span>
+                        <span class="example-ar">(هي تهدف إلى تحسين مستواها في الإسبانية هذا الشهر.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. يملك -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">يملك / لديه</span>
+                    <span class="main-es">Tener</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Tener</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Tengo una cita importante esta tarde.</span>
+                        <span class="example-ar">(لدي موعد مهم هذا المساء.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Poseer</span>
+                        <span class="syn-desc">يمتلك (رسمي/أكاديمي)</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">La biblioteca posee libros muy antiguos.</span>
+                        <span class="example-ar">(المكتبة تمتلك كتبًا قديمة جدًا.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Contar con</span>
+                        <span class="syn-desc">يمتلك / يتوفر على</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">El hotel cuenta con habitaciones amplias.</span>
+                        <span class="example-ar">(الفندق يحتوي على/يتوفر على غرف واسعة.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== ثالثاً: الكميات والإضافة (Cantidad) ==================== -->
+            <div class="section-header">
+                <span class="section-title-ar">📊 الكميات والإضافة</span>
+                <span class="section-title-es">Cantidad</span>
+            </div>
+
+            <!-- 8. أكثر -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">أكثر / زيادة</span>
+                    <span class="main-es">Más</span>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Más</span>
+                        <span class="syn-desc">الكلمة الأصلية</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Quiero más agua, por favor.</span>
+                        <span class="example-ar">(أريد المزيد من الماء، من فضلك.)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Adicional</span>
+                        <span class="syn-desc">إضافي / زائد</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">¿Necesitas información adicional sobre el producto?</span>
+                        <span class="example-ar">(هل تحتاج إلى معلومات إضافية حول المنتج؟)</span>
+                    </div>
+                </div>
+
+                <div class="synonym-block">
+                    <div class="syn-header">
+                        <span class="syn-word">Extra</span>
+                        <span class="syn-desc">إضافي / ممتاز</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-es">Pedí una ración extra de pan.</span>
+                        <span class="example-ar">(طلبت حصة إضافية من الخبز.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- أزرار التنقل -->
+            <div class="btn-container">
+                <a href="spanish-vocabulary.html" class="back-btn">🔄 العودة لجدول المفردات</a>
+                <a href="index.html" class="back-btn back-btn-secondary">🏠 الصفحة الرئيسية</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
