@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WBZH2BVR73"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WBZH2BVR73');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>مفردات الحياة اليومية والروتين | Life & Routine Vocabulary</title>
+    <meta name="description" content="مفردات الحياة اليومية والروتين مقسمة حسب مستويات اللغة مع المرادفات والجمل التطبيقية.">
+    <meta name="keywords" content="English vocabulary, Life and routine, Vocabulary builder, My Language Journal">
+    <meta name="author" content="My Language Journal">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #fff0f5, #ffe4e9);
+            font-family: 'Tajawal', 'Playfair Display', serif;
+            color: #333333;
+        }
+
+        .main-wrapper {
+            width: 95%;
+            max-width: 500px;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card-container {
+            width: 100%;
+            background-color: #ffffff;
+            border: 1.5px solid #545454;
+            border-radius: 24px;
+            padding: 22px 14px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+            text-align: center;
+            max-height: 88vh;
+            overflow-y: auto;
+            scrollbar-width: none;
+        }
+
+        .card-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        h1 {
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1.4rem;
+            color: #545454;
+            margin-top: 5px;
+            margin-bottom: 2px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1rem;
+            color: #EE69B8;
+            margin-top: 0;
+            margin-bottom: 20px;
+            direction: ltr;
+            font-weight: 600;
+        }
+
+        /* عنوان القسم */
+        .section-header {
+            background: linear-gradient(135deg, #EE69B8, #d81b60);
+            color: #ffffff;
+            padding: 10px 16px;
+            border-radius: 14px;
+            margin: 22px 0 14px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 3px 8px rgba(216, 27, 96, 0.15);
+        }
+
+        .section-title-ar {
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+
+        .section-title-en {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.95rem;
+            font-style: italic;
+            direction: ltr;
+            opacity: 0.9;
+        }
+
+        /* كارت المفردة الشامل */
+        .vocab-card {
+            background-color: #fff9fc;
+            border: 1.5px solid #f8abe4;
+            border-radius: 18px;
+            margin-bottom: 18px;
+            padding: 14px;
+            text-align: right;
+        }
+
+        .card-header-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fce4ec;
+            padding: 8px 14px;
+            border-radius: 12px;
+            margin-bottom: 14px;
+            border: 1px solid #f8abe4;
+        }
+
+        .main-ar {
+            font-weight: bold;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .main-en {
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #d81b60;
+            direction: ltr;
+        }
+
+        /* بلوك المستوى والمرادف */
+        .level-block {
+            background: #ffffff;
+            border: 1px solid #f3c2e7;
+            padding: 10px 12px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+
+        .level-block:last-child {
+            margin-bottom: 0;
+        }
+
+        .level-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
+            border-bottom: 1px dashed #ffe4e9;
+            padding-bottom: 4px;
+        }
+
+        .level-word {
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            font-size: 0.98rem;
+            color: #8e24aa;
+            direction: ltr;
+        }
+
+        .level-tag {
+            font-size: 0.78rem;
+            color: #ffffff;
+            background-color: #EE69B8;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            direction: ltr;
+        }
+
+        .example-box {
+            margin-top: 6px;
+        }
+
+        .example-en {
+            font-family: 'Playfair Display', serif;
+            color: #d81b60;
+            direction: ltr;
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .example-ar {
+            color: #444;
+            font-size: 0.82rem;
+            display: block;
+            margin-top: 2px;
+        }
+
+        /* أزرار التنقل */
+        .btn-container {
+            text-align: center;
+            margin-top: 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 9px 20px;
+            background-color: #EE69B8;
+            border: 1.5px solid #545454;
+            border-radius: 20px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            transition: 0.2s;
+        }
+
+        .back-btn-secondary {
+            background-color: #FDBBE3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="card-container">
+            
+            <h1>الحياة اليومية والروتين</h1>
+            <div class="subtitle">Life & Routine | Vocabulary Builder</div>
+
+            <div class="section-header">
+                <span class="section-title-ar">🗓️ تطوير المفردات حسب المستويات</span>
+                <span class="section-title-en">A1 to C1 Progression</span>
+            </div>
+
+            <!-- 1. عادة / روتين -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">عادة / روتين</span>
+                    <span class="main-es">Routine / Habit</span>
+                </div>
+
+                <div class="level-block">
+                    <div class="level-header">
+                        <span class="level-word">Routine</span>
+                        <span class="level-tag">A1 / A2</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-en">I have a simple morning routine.</span>
+                        <span class="example-ar">(لدي روتين صباحي بسيط.)</span>
+                    </div>
+                </div>
+
+                <div class="level-block">
+                    <div class="level-header">
+                        <span class="level-word">Habit</span>
+                        <span class="level-tag">B1</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-en">Reading before bed is a good habit.</span>
+                        <span class="example-ar">(القراءة قبل النوم عادة جيدة.)</span>
+                    </div>
+                </div>
+
+                <div class="level-block">
+                    <div class="level-header">
+                        <span class="level-word">Practice / Pattern</span>
+                        <span class="level-tag">B2 / C1</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-en">It is a common practice to start the day with coffee.</span>
+                        <span class="example-ar">(من الممارسات الشائعة بدء اليوم بالقهوة.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. يجهز / يستعد -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">يستعد / يجهز</span>
+                    <span class="main-es">Ready / Prepare</span>
+                </div>
+
+                <div class="level-block">
+                    <div class="level-header">
+                        <span class="level-word">Ready</span>
+                        <span class="level-tag">A1 / A2</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-en">I am ready for school.</span>
+                        <span class="example-ar">(أنا مستعد للمدرسة.)</span>
+                    </div>
+                </div>
+
+                <div class="level-block">
+                    <div class="level-header">
+                        <span class="level-word">Prepare</span>
+                        <span class="level-tag">B1</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-en">She prepares her breakfast quickly.</span>
+                        <span class="example-ar">(هي تجهز إفطارها بسرعة.)</span>
+                    </div>
+                </div>
+
+                <div class="level-block">
+                    <div class="level-header">
+                        <span class="level-word">Equipping oneself</span>
+                        <span class="level-tag">B2 / C1</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-en">He is equipping himself with all necessary tools.</span>
+                        <span class="example-ar">(إنه يجهز/يزود نفسه بكل الأدوات اللازمة.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. جدول / خطة -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">جدول / خطة</span>
+                    <span class="main-es">Plan / Schedule</span>
+                </div>
+
+                <div class="level-block">
+                    <div class="level-header">
+                        <span class="level-word">Plan</span>
+                        <span class="level-tag">A1 / A2</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-en">What is your plan for today?</span>
+                        <span class="example-ar">(ما هي خطتك لليوم؟)</span>
+                    </div>
+                </div>
+
+                <div class="level-block">
+                    <div class="level-header">
+                        <span class="level-word">Schedule</span>
+                        <span class="level-tag">B1</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-en">I need to check my daily schedule.</span>
+                        <span class="example-ar">(أحتاج لمراجعة جدولي اليومي.)</span>
+                    </div>
+                </div>
+
+                <div class="level-block">
+                    <div class="level-header">
+                        <span class="level-word">Timetable / Agenda / Making arrangements</span>
+                        <span class="level-tag">B2 / C1</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-en">We are making arrangements according to the agenda.</span>
+                        <span class="example-ar">(نحن نقوم بالترتيبات وفقًا لجدول الأعمال.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. تعبان / مرهق -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">تعبان / مرهق</span>
+                    <span class="main-es">Tired / Exhausted</span>
+                </div>
+
+                <div class="level-block">
+                    <div class="level-header">
+                        <span class="level-word">Tired</span>
+                        <span class="level-tag">A1 / A2</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-en">I feel tired after a long day.</span>
+                        <span class="example-ar">(أشعر بالتعب بعد يوم طويل.)</span>
+                    </div>
+                </div>
+
+                <div class="level-block">
+                    <div class="level-header">
+                        <span class="level-word">Exhausted</span>
+                        <span class="level-tag">B1</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-en">She was exhausted after working all night.</span>
+                        <span class="example-ar">(كانت مرهقة جدًا بعد العمل طوال الليل.)</span>
+                    </div>
+                </div>
+
+                <div class="level-block">
+                    <div class="level-header">
+                        <span class="level-word">Drained / Fatigue</span>
+                        <span class="level-tag">B2 / C1</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-en">I feel completely drained due to chronic fatigue.</span>
+                        <span class="example-ar">(أشعر بالنفاذ والإنهاك التام بسبب الإرهاق المزمن.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. أعمال منزلية -->
+            <div class="vocab-card">
+                <div class="card-header-title">
+                    <span class="main-ar">أعمال منزلية</span>
+                    <span class="main-es">Housework / Chores</span>
+                </div>
+
+                <div class="level-block">
+                    <div class="level-header">
+                        <span class="level-word">Housework</span>
+                        <span class="level-tag">A1 / A2</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-en">I do the housework every weekend.</span>
+                        <span class="example-ar">(أقوم بالأعمال المنزلية كل عطلة نهاية أسبوع.)</span>
+                    </div>
+                </div>
+
+                <div class="level-block">
+                    <div class="level-header">
+                        <span class="level-word">Chores</span>
+                        <span class="level-tag">B1</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-en">Finishing daily chores takes a lot of time.</span>
+                        <span class="example-ar">(إنهاء المهام المنزلية اليومية يستغرق وقتًا طويلاً.)</span>
+                    </div>
+                </div>
+
+                <div class="level-block">
+                    <div class="level-header">
+                        <span class="level-word">Domestic duties / Household tasks</span>
+                        <span class="level-tag">B2 / C1</span>
+                    </div>
+                    <div class="example-box">
+                        <span class="example-en">They share the domestic duties equally.</span>
+                        <span class="example-ar">(هم يتشاركون الواجبات المنزلية بالتساوي.)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- أزرار التنقل -->
+            <div class="btn-container">
+                <a href="vocabulary.html" class="back-btn">🔄 العودة لصفحة المفردات</a>
+                <a href="index.html" class="back-btn back-btn-secondary">🏠 الصفحة الرئيسية</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
