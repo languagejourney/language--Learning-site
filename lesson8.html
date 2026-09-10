@@ -16,7 +16,7 @@
 
     <!-- تحسينات SEO لصفحة الدرس الثامن -->
     <title>الدرس الثامن: الأفعال الشاذة بالكامل (Verbos Totalmente Irregulares) | My Language Journal</title>
-    <meta name="description" content="شرح شامل للأفعال الشاذة بالكامل في اللغة الإسبانية (Ir, Ser, Haber, Tener, Venir) وتصريفاتها مع جميع الضمائر.">
+    <meta name="description" content="شرح شامل للأفعال الشاذة بالكامل في اللغة الإسبانية وتصريفاتها مع جميع الضمائر مع جدولة القواعد والتفاصيل.">
     <meta name="keywords" content="الأفعال الشاذة بالإسبانية, Verbos totalmente irregulares, قواعد الإسبانية, تعلم الإسبانية للمبتدئين, My Language Journal">
     <meta name="author" content="My Language Journal">
 
@@ -39,7 +39,7 @@
 
         .main-wrapper {
             width: 90%;
-            max-width: 420px;
+            max-width: 450px;
             padding: 20px 0;
             display: flex;
             justify-content: center;
@@ -134,6 +134,50 @@
             line-height: 1.6;
         }
 
+        /* تنسيق جدول الأفعال */
+        .table-wrapper {
+            overflow-x: auto;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            border: 1px solid #f8abe4;
+        }
+
+        .verbs-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.8rem;
+            direction: ltr;
+            text-align: center;
+        }
+
+        .verbs-table th {
+            background-color: #EE69B8;
+            color: #ffffff;
+            padding: 8px 4px;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.78rem;
+        }
+
+        .verbs-table td {
+            padding: 6px 4px;
+            border-bottom: 1px solid #ffe4e9;
+            color: #333;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .verbs-table tr:nth-child(even) {
+            background-color: #fff0f5;
+        }
+
+        .verbs-table .infinitive-cell {
+            direction: rtl;
+            font-family: 'Tajawal', sans-serif;
+            font-weight: bold;
+            color: #d81b60;
+            text-align: right;
+            padding-right: 8px;
+        }
+
         /* صفوف تصريف الضمائر مع الفعل */
         .pronoun-row {
             display: flex;
@@ -150,6 +194,7 @@
         .pronoun-text {
             color: #333;
             font-weight: bold;
+            direction: ltr;
         }
 
         .conjugated-tag {
@@ -227,159 +272,160 @@
                 <p>هذه الأفعال تتغير بشكل كامل ومباشر في جذرها ونهاياتها مع جميع الضمائر، ولا تلتزم بأي من القواعد المنتظمة، وتُحفظ كما هي لشدة أهميتها واستخدامها اليومي.</p>
             </div>
 
-            <!-- 1- فعل Ir -->
-            <div class="section-badge">1- فعل: Ir (يذهب)</div>
+            <!-- جدول التصريف الشامل للأفعال العشرة -->
+            <div class="table-wrapper">
+                <table class="verbs-table">
+                    <thead>
+                        <tr>
+                            <th>Infinitivo</th>
+                            <th>Yo</th>
+                            <th>Tú</th>
+                            <th>Él, Ella, Ud.</th>
+                            <th>Nosotros/as</th>
+                            <th>Vosotros/as</th>
+                            <th>Ellos, Ellas, Uds.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="infinitive-cell">1. Ser (يكون)</td>
+                            <td>soy</td>
+                            <td>eres</td>
+                            <td>es</td>
+                            <td>somos</td>
+                            <td>sois</td>
+                            <td>son</td>
+                        </tr>
+                        <tr>
+                            <td class="infinitive-cell">2. Estar (يكون)</td>
+                            <td>estoy</td>
+                            <td>estás</td>
+                            <td>está</td>
+                            <td>estamos</td>
+                            <td>estáis</td>
+                            <td>están</td>
+                        </tr>
+                        <tr>
+                            <td class="infinitive-cell">3. Ir (يذهب)</td>
+                            <td>voy</td>
+                            <td>vas</td>
+                            <td>va</td>
+                            <td>vamos</td>
+                            <td>vais</td>
+                            <td>van</td>
+                        </tr>
+                        <tr>
+                            <td class="infinitive-cell">4. Venir (يأتي)</td>
+                            <td>vengo</td>
+                            <td>vienes</td>
+                            <td>viene</td>
+                            <td>venimos</td>
+                            <td>venís</td>
+                            <td>vienen</td>
+                        </tr>
+                        <tr>
+                            <td class="infinitive-cell">5. Decir (يقول)</td>
+                            <td>digo</td>
+                            <td>dices</td>
+                            <td>dice</td>
+                            <td>decimos</td>
+                            <td>decís</td>
+                            <td>dicen</td>
+                        </tr>
+                        <tr>
+                            <td class="infinitive-cell">6. Oír (يسمع)</td>
+                            <td>oigo</td>
+                            <td>oyes</td>
+                            <td>oye</td>
+                            <td>oímos</td>
+                            <td>oís</td>
+                            <td>oyen</td>
+                        </tr>
+                        <tr>
+                            <td class="infinitive-cell">7. Haber (يوجد)</td>
+                            <td>Hay</td>
+                            <td colspan="5" style="color: #888; font-size: 0.75rem;">— الصيغة الثابتة للتعبير عن الوجود —</td>
+                        </tr>
+                        <tr>
+                            <td class="infinitive-cell">8. Dar (يعطي)</td>
+                            <td>doy</td>
+                            <td>das</td>
+                            <td>da</td>
+                            <td>damos</td>
+                            <td>dais</td>
+                            <td>dan</td>
+                        </tr>
+                        <tr>
+                            <td class="infinitive-cell">9. Saber (يعرف)</td>
+                            <td>sé</td>
+                            <td>sabes</td>
+                            <td>sabe</td>
+                            <td>sabemos</td>
+                            <td>sabéis</td>
+                            <td>saben</td>
+                        </tr>
+                        <tr>
+                            <td class="infinitive-cell">10. Ver (يرى)</td>
+                            <td>veo</td>
+                            <td>ves</td>
+                            <td>ve</td>
+                            <td>vemos</td>
+                            <td>veis</td>
+                            <td>ven</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- تفاصيل وشروح القواعد حسب المجموعات -->
+
+            <!-- 1- فعل Haber -->
+            <div class="section-badge">1- Haber (فعل مساعد / والتعبير عن الوجود)</div>
             <div class="rule-item">
-                <p style="margin: 4px 0 10px 0;">يتغير شكل الفعل بالكامل عند التصريف ليتحول إلى حرف الـ V:</p>
-                
-                <div class="pronoun-row">
-                    <span class="pronoun-text">1- Yo</span>
-                    <span class="conjugated-tag">voy (أنا أذهب)</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">2- Tú</span>
-                    <span class="conjugated-tag">vas (أنتَ تذهب)</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">3- Él / Ella / Usted</span>
-                    <span class="conjugated-tag">va (هو يذهب)</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">4- Nosotros / Nosotras</span>
-                    <span class="conjugated-tag">vamos (نحن نذهب)</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">5- Vosotros / Vosotras</span>
-                    <span class="conjugated-tag">vais (أنتم تذهبون)</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">6- Ellos / Ellas / Ustedes</span>
-                    <span class="conjugated-tag">van (هم يذهبون)</span>
+                <p>الشكل الأكثر استخداماً وشهرة للفعل <b>Haber</b> بمعنى (يوجد / هناك) هو الصيغة الثابتة <b>Hay</b> مع كل الضمائر والأسماء (مفرد أو جمع).</p>
+                <p style="margin-top: 6px; color: #d81b60;">مثال: <b>Hay una manzana / Hay muchas manzanas</b></p>
+                <p style="margin-top: 6px;">فلا نقول (hayes أو haces) بل نستخدم <b>Hay</b> مباشرةً.</p>
+                <p style="margin-top: 6px;">أما بقية التصريفات (he, has, ha, hemos, habéis, han) فتستخدم فقط كأفعال مساعدة لتشكيل الزمن الماضي التام (Pretérito Perfecto Compuesto). مثل: (لقد فعلتُ، لقد ذهبوا... إلخ).</p>
+
+                <div style="margin-top: 10px;">
+                    <div class="pronoun-row"><span class="pronoun-text">1. Yo</span><span class="conjugated-tag">he</span></div>
+                    <div class="pronoun-row"><span class="pronoun-text">2. Tú</span><span class="conjugated-tag">has</span></div>
+                    <div class="pronoun-row"><span class="pronoun-text">3. Él / Ella / Usted</span><span class="conjugated-tag">ha</span></div>
+                    <div class="pronoun-row"><span class="pronoun-text">4. Nosotros / Nosotras</span><span class="conjugated-tag">hemos</span></div>
+                    <div class="pronoun-row"><span class="pronoun-text">5. Vosotros / Vosotras</span><span class="conjugated-tag">habéis</span></div>
+                    <div class="pronoun-row"><span class="pronoun-text">6. Ellos / Ellas / Ustedes</span><span class="conjugated-tag">han</span></div>
                 </div>
             </div>
 
-            <!-- 2- فعل Ser -->
-            <div class="section-badge">2- فعل: Ser (يكون)</div>
+            <!-- 2- أفعال Venir, Tener, Decir -->
+            <div class="section-badge">2- Venir, Tener, Decir</div>
             <div class="rule-item">
-                <p style="margin: 4px 0 10px 0;">يكون - الهوية / الصفات الدائمة / الجنسية. من أهم أفعال الإسبانية وتتغير صيغته تماماً بدون اتباع نهايات مجموعته:</p>
-
-                <div class="pronoun-row">
-                    <span class="pronoun-text">1- Yo</span>
-                    <span class="conjugated-tag">soy (أنا أكون)</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">2- Tú</span>
-                    <span class="conjugated-tag">eres (أنتَ تكون)</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">3- Él / Ella / Usted</span>
-                    <span class="conjugated-tag">es (هو يكون)</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">4- Nosotros / Nosotras</span>
-                    <span class="conjugated-tag">somos (نحن نكون)</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">5- Vosotros / Vosotras</span>
-                    <span class="conjugated-tag">sois (أنتم تكونون)</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">6- Ellos / Ellas / Ustedes</span>
-                    <span class="conjugated-tag">son (هم يكونون)</span>
-                </div>
+                <p>أفعال جذورها متغيرة (Stem-changing verb).</p>
+                <p>حيث ينقلب حرف الـ <b>(e)</b> في أصل الفعل إلى <b>(ie)</b> مع جميع الضمائر عدا (Nosotros و Vosotros).</p>
+                <p>كما أن صيغة المتكلم المفرد (Yo) تنتهي بحرف الـ <b>g</b> لتصبح: <b>vengo, tengo, digo</b>.</p>
             </div>
 
-            <!-- 3- فعل Haber -->
-            <div class="section-badge">3- فعل: Haber (مساعد / الوجود)</div>
+            <!-- 3- فعل Oír -->
+            <div class="section-badge">3- Oír</div>
             <div class="rule-item">
-                <p style="margin: 4px 0 10px 0;">يُستخدم كفعل مساعد للتركيبات القواعدية، أو بصيغته الشائعة (Hay) للتعبير عن الوجود:</p>
-
-                <div class="pronoun-row">
-                    <span class="pronoun-text">1- Yo</span>
-                    <span class="conjugated-tag">he</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">2- Tú</span>
-                    <span class="conjugated-tag">has</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">3- Él / Ella / Usted</span>
-                    <span class="conjugated-tag">ha (تتحول إلى Hay عند التعبير عن "يوجد")</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">4- Nosotros / Nosotras</span>
-                    <span class="conjugated-tag">hemos</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">5- Vosotros / Vosotras</span>
-                    <span class="conjugated-tag">habéis</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">6- Ellos / Ellas / Ustedes</span>
-                    <span class="conjugated-tag">han</span>
-                </div>
+                <p>ينقلب حرف الـ <b>(i)</b> في أصل الفعل إلى <b>(y)</b> مع جميع الضمائر عدا (Nosotros و Vosotros).</p>
+                <p>كما أن صيغة المتكلم المفرد (Yo) تنتهي بحرف الـ <b>g</b> وتصبح <b>oigo</b>.</p>
             </div>
 
-            <!-- 4- فعل Tener -->
-            <div class="section-badge">4- فعل: Tener (يمتلك / لديه)</div>
+            <!-- 4- أفعال Dar, Estar -->
+            <div class="section-badge">4- Dar, Estar</div>
             <div class="rule-item">
-                <p style="margin: 4px 0 10px 0;">تتغير صيغة الفعل بالكامل مع معظم الضمائر، حيث يتغير جذر الكلمة مع Yo بـ go، وتتحول الـ e إلى ie مع باقي الضمائر:</p>
-
-                <div class="pronoun-row">
-                    <span class="pronoun-text">1- Yo</span>
-                    <span class="conjugated-tag">tengo (أنا أمتلك / عندي)</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">2- Tú</span>
-                    <span class="conjugated-tag">tienes (أنتَ تمتلك)</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">3- Él / Ella / Usted</span>
-                    <span class="conjugated-tag">tiene (هو / هي تمتلك)</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">4- Nosotros / Nosotras</span>
-                    <span class="conjugated-tag">tenemos (نحن نمتلك)</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">5- Vosotros / Vosotras</span>
-                    <span class="conjugated-tag">tenéis (أنتم تمتلكون)</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">6- Ellos / Ellas / Ustedes</span>
-                    <span class="conjugated-tag">tienen (هم يمتلكون)</span>
-                </div>
+                <p>تعتبر أفعال شاذة بشكل بسيط في صيغة المتكلم المفرد (Yo).</p>
+                <p>حيث ينتهي بـ <b>-oy</b> أي: <b>doy, estoy</b>.</p>
+                <p>بينما باقي الضمائر تتبع تصريف الأفعال المنتظمة التي تنتهي بـ (-ar).</p>
             </div>
 
-            <!-- 5- فعل Venir -->
-            <div class="section-badge">5- فعل: Venir (يأتي)</div>
+            <!-- 5- أفعال Saber, Ver -->
+            <div class="section-badge">5- Saber, Ver</div>
             <div class="rule-item">
-                <p style="margin: 4px 0 10px 0;">يشبه تصريف فعل Tener تماماً، حيث تتغير e إلى ie في الوسط مع شذوذ Yo بـ go:</p>
-
-                <div class="pronoun-row">
-                    <span class="pronoun-text">1- Yo</span>
-                    <span class="conjugated-tag">vengo (أنا آتي)</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">2- Tú</span>
-                    <span class="conjugated-tag">vienes (أنتَ تأتي)</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">3- Él / Ella / Usted</span>
-                    <span class="conjugated-tag">viene (هو / هي يأتي)</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">4- Nosotros / Nosotras</span>
-                    <span class="conjugated-tag">venimos (نحن نأتي)</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">5- Vosotros / Vosotras</span>
-                    <span class="conjugated-tag">venís (أنتم تأتون)</span>
-                </div>
-                <div class="pronoun-row">
-                    <span class="pronoun-text">6- Ellos / Ellas / Ustedes</span>
-                    <span class="conjugated-tag">vienen (هم يأتون)</span>
-                </div>
+                <p>تعتبر أفعال شاذة بشكل بسيط في صيغة المتكلم المفرد (Yo).</p>
+                <p><b>فعل Saber:</b> تتحول في صيغة الـ (Yo) إلى <b>sé</b> (مع نبرة فوق الـ e للتمييز عن ضمير المفعول se).</p>
+                <p><b>بينما فعل Ver:</b> تصبح في صيغة الـ (Yo) <b>veo</b> (بإضافة o مع الـ v)، بينما بقية الضمائر تتصرف بانتظام مع حذف حرف الـ e الزائد من أصل الفعل (ves, ve, vemos, veis, ven).</p>
             </div>
 
             <!-- اختبار تفاعلي وصندوق التليجرام -->
