@@ -21,7 +21,7 @@
     <meta name="author" content="My Language Journal">
 
     <!-- استدعاء الخطوط الموحدة -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     
     <style>
         body, html {
@@ -33,13 +33,13 @@
             justify-content: center;
             align-items: center;
             background: linear-gradient(135deg, #fff0f5, #ffe4e9);
-            font-family: 'Tajawal', 'Playfair Display', serif;
+            font-family: 'Tajawal', sans-serif;
             color: #333333;
         }
 
         .main-wrapper {
-            width: 90%;
-            max-width: 420px;
+            width: 95%;
+            max-width: 440px;
             padding: 20px 0;
             display: flex;
             justify-content: center;
@@ -51,7 +51,7 @@
             background-color: #ffffff;
             border: 1.5px solid #545454;
             border-radius: 24px;
-            padding: 25px 18px;
+            padding: 22px 16px;
             box-sizing: border-box;
             box-shadow: 0 4px 15px rgba(0,0,0,0.03);
             text-align: center;
@@ -67,18 +67,17 @@
         /* عنوان الدرس الرئيسي */
         h1 {
             font-family: 'Tajawal', sans-serif;
-            font-size: 1.8rem;
+            font-size: 1.7rem;
             color: #545454;
             margin-top: 5px;
-            margin-bottom: 5px;
+            margin-bottom: 4px;
             font-weight: 700;
-            line-height: 1.3;
         }
 
         .subtitle {
             font-family: 'Playfair Display', serif;
             font-style: italic;
-            font-size: 1.15rem;
+            font-size: 1.05rem;
             color: #EE69B8;
             margin-top: 0;
             margin-bottom: 20px;
@@ -91,90 +90,122 @@
             background-color: #ffffff;
             border: 1.5px solid #f6a0dd;
             border-radius: 16px;
-            padding: 14px 16px;
-            margin-bottom: 20px;
+            padding: 12px 14px;
+            margin-bottom: 16px;
             text-align: right;
-            box-shadow: 0 2px 8px rgba(238, 105, 184, 0.08);
+            box-shadow: 0 2px 8px rgba(238, 105, 184, 0.05);
         }
 
         .info-card p {
             margin: 0;
             color: #444444;
-            font-size: 0.95rem;
-            line-height: 1.7;
+            font-size: 0.92rem;
+            line-height: 1.6;
         }
 
-        /* شارات العناوين بالمستطيل الوردي */
+        /* شارات العناوين بالمستطيل الوردي الناعم */
         .section-badge {
             display: inline-block;
             background-color: #EE69B8;
             color: #ffffff;
-            padding: 8px 22px;
+            padding: 8px 20px;
             border-radius: 12px;
-            font-size: 1.05rem;
+            font-size: 1rem;
             font-weight: bold;
             border: 1.5px solid #545454;
             margin-top: 15px;
             margin-bottom: 15px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
         /* بطاقات القواعد */
         .rule-item {
-            background-color: #fff8fc;
+            background-color: #fff9fc;
+            border: 1px solid #f8abe4;
             border-right: 4px solid #EE69B8;
-            border-top: 1px solid #eee;
-            border-left: 1px solid #eee;
-            border-bottom: 1px solid #eee;
-            border-radius: 10px;
-            padding: 12px 14px;
-            margin-bottom: 14px;
+            border-radius: 14px;
+            padding: 14px;
+            margin-bottom: 16px;
             text-align: right;
-            font-size: 0.92rem;
-            line-height: 1.6;
         }
 
         .rule-title {
             color: #EE69B8;
             font-weight: bold;
-            font-size: 1rem;
+            font-size: 0.98rem;
             margin-bottom: 6px;
+            line-height: 1.4;
         }
 
-        .es-example {
+        .rule-desc {
+            margin: 4px 0 10px 0;
+            color: #555555;
+            font-size: 0.88rem;
+            line-height: 1.5;
+        }
+
+        /* ترتيب صندوق الأمثلة لراحة العين */
+        .example-box {
+            background-color: #fff0f7;
+            border: 1px solid #fce4ec;
+            border-radius: 10px;
+            padding: 8px 12px;
+            margin-bottom: 8px;
+            text-align: right;
+        }
+
+        .example-box:last-child {
+            margin-bottom: 0;
+        }
+
+        .es-text {
+            font-family: 'Playfair Display', serif;
+            color: #7a1c62;
+            font-weight: bold;
+            font-size: 0.95rem;
             direction: ltr;
             text-align: left;
-            font-family: 'Playfair Display', serif;
-            color: #d81b60;
-            font-weight: bold;
-            background-color: #ffe4e9;
-            padding: 6px 10px;
-            border-radius: 6px;
             display: block;
-            margin: 6px 0;
-            font-size: 0.92rem;
-            line-height: 1.5;
+            margin-bottom: 3px;
         }
 
-        /* صندوق الملاحظات الهامشية الدقيقة */
+        .ar-text {
+            color: #444444;
+            font-size: 0.85rem;
+            display: block;
+            direction: rtl;
+        }
+
+        /* صندوق الملاحظات الهامشية */
         .footnote-box {
-            background-color: #fff4fa;
-            border: 1px dashed #f8abe4;
-            border-radius: 8px;
-            padding: 8px 10px;
+            background-color: #ffffff;
+            border: 1px dashed #EE69B8;
+            border-radius: 10px;
+            padding: 10px;
             margin-top: 10px;
             font-size: 0.82rem;
-            color: #555;
-            line-height: 1.5;
+            color: #555555;
+            line-height: 1.6;
+            text-align: right;
         }
 
-        /* صندوق رابط PDF والتليجرام */
+        /* صندوق روابط الاختبارات و PDF */
+        .quiz-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 18px 0 10px 0;
+        }
+
         .pdf-box {
             text-align: center;
-            margin: 20px 0 10px 0;
             padding: 12px;
-            border: 1.5px dashed #F8ABE4;
+            border: 1.5px dashed #EE69B8;
             border-radius: 16px;
+            background-color: #fff0f5;
+        }
+
+        .pdf-box-alt {
+            border-color: #F8ABE4;
             background-color: #fffbfe;
         }
 
@@ -189,7 +220,7 @@
         /* أزرار العودة والتنقل */
         .btn-container {
             text-align: center;
-            margin-top: 15px;
+            margin-top: 18px;
             display: flex;
             flex-direction: column;
             gap: 8px;
@@ -203,7 +234,7 @@
             border-radius: 20px;
             color: #000000;
             text-decoration: none;
-            font-size: 0.92rem;
+            font-size: 0.9rem;
             font-weight: bold;
             box-shadow: 0 2px 5px rgba(0,0,0,0.08);
             transition: 0.2s;
@@ -238,14 +269,27 @@
 
             <div class="rule-item">
                 <div class="rule-title">1- صفات الملكية للمفرد "مالك واحد مفرد" (Un solo poseedor):</div>
-                <p style="margin: 4px 0 8px 0;">الشخص الذي يملك هو فرد واحد: أنا، أو أنتَ، أو هو.<br>
-                إذا كان الشيء الذي نملكه مفردًا (سواء كان مذكرًا أو مؤنثًا، مثل: كتاب Libro / بيت Casa)، نستخدم هذه الصفات:</p>
+                <div class="rule-desc">
+                    الشخص الذي يملك هو فرد واحد: أنا، أو أنتَ، أو هو.<br>
+                    إذا كان الشيء الذي نملكه مفردًا (مثل: كتاب Libro / بيت Casa)، نستخدم:
+                </div>
                 
-                <span class="es-example">• Mi / Mi libro (كتابي) / Mi casa (بيتي) : مثل (ـي أنا)</span>
-                <span class="es-example">• Tu / Tu libro (كتابك) / Tu casa (بيتك / بيتكِ) : مثل (ـك أنتَ / أنتِ)</span>
-                <span class="es-example">• Su / Su libro (كتابه / كتابها) / Su casa (بيته / بيتها) : مثل (ـه / ـها هو / هي / حضرتك)</span>
+                <div class="example-box">
+                    <span class="es-text">• Mi / Mi libro / Mi casa</span>
+                    <span class="ar-text">كتابي / بيتي (مثل: ـي أنا)</span>
+                </div>
 
-                <!-- تنبيهات الحركات والنبرة بالأسفل -->
+                <div class="example-box">
+                    <span class="es-text">• Tu / Tu libro / Tu casa</span>
+                    <span class="ar-text">كتابك / بيتك (مثل: ـك أنتَ / أنتِ)</span>
+                </div>
+
+                <div class="example-box">
+                    <span class="es-text">• Su / Su libro / Su casa</span>
+                    <span class="ar-text">كتابه / بيته (مثل: ـه / ـها هو / هي / حضرتك)</span>
+                </div>
+
+                <!-- تنبيهات الحركات والنبرة -->
                 <div class="footnote-box">
                     * كلمة <strong>Tu</strong> (صفة ملكية) تُكتب بدون نبرة (تيلدا) على حرف U. أما <strong>Tú</strong> (مع نبرة) فهي تعني ضمير الفاعل "أنتَ".<br>
                     * كلمة <strong>Mi</strong> (صفة ملكية) تُكتب بدون نبرة. أما <strong>Mí</strong> (مع نبرة) فهي الضمير مجرور (مثل para mí = لي).
@@ -253,20 +297,38 @@
             </div>
 
             <div class="rule-item">
-                <div class="rule-title">2- صفات الملكية للجمع "مجموعة مُلّاك / مُلّاك متعددون" (Varios poseedores):</div>
-                <p style="margin: 4px 0 8px 0;">إذا كنا نحن (مجموعة) نملك شيئًا واحدًا مفردًا، هنا الصفة تتأثر بنوع الشيء إذا كان مذكرًا أو مؤنثًا:</p>
+                <div class="rule-title">2- صفات الملكية للجمع "مجموعة مُلّاك" (Varios poseedores):</div>
+                <div class="rule-desc">إذا كنا نحن (مجموعة) نملك شيئًا واحدًا مفردًا، هنا الصفة تتأثر بنوع الشيء (مذكر أو مؤنث):</div>
                 
-                <span class="es-example">• Nuestro coche (سيارتنا) : مثل (ـنا نحن - مذكر)</span>
-                <span class="es-example">• Nuestra escuela (مدرستنا) : مثل (ـنا نحن - مؤنث)</span>
-                <span class="es-example">• Vuestro perro (كلبكم) : مثل (ـكم أنتم - مذكر)</span>
-                <span class="es-example">• Vuestra idea (فكرتكم) : مثل (ـكم أنتم - مؤنث)</span>
+                <div class="example-box">
+                    <span class="es-text">• Nuestro coche</span>
+                    <span class="ar-text">سيارتنا (مثل: ـنا نحن - مذكر)</span>
+                </div>
+
+                <div class="example-box">
+                    <span class="es-text">• Nuestra escuela</span>
+                    <span class="ar-text">مدرستنا (مثل: ـنا نحن - مؤنث)</span>
+                </div>
+
+                <div class="example-box">
+                    <span class="es-text">• Vuestro perro</span>
+                    <span class="ar-text">كلبكم (مثل: ـكم أنتم - مذكر)</span>
+                </div>
+
+                <div class="example-box">
+                    <span class="es-text">• Vuestra idea</span>
+                    <span class="ar-text">فكرتكم (مثل: ـكم أنتم - مؤنث)</span>
+                </div>
             </div>
 
             <div class="rule-item">
                 <div class="rule-title">3- صفة الملكية للغائب الجمع:</div>
-                <p style="margin: 4px 0 8px 0;">الأشخاص الذين يملكون هم مجموعة غائبة (هم، هنّ، أو حضراتكم للجمع المتحدث معه برسمية)، لكنهم جميعًا يملكون شيئًا واحدًا مفردًا:</p>
+                <div class="rule-desc">الأشخاص الذين يملكون هم مجموعة غائبة (هم، هنّ، أو حضراتكم)، لكنهم يملكون شيئًا واحدًا مفردًا:</div>
                 
-                <span class="es-example">• Su casa (بيتهم أو بيتهن) : مثل (ـه هم / هن / حضراتكم)</span>
+                <div class="example-box">
+                    <span class="es-text">• Su casa</span>
+                    <span class="ar-text">بيتهم أو بيتهن (مثل: ـه هم / هن / حضراتكم)</span>
+                </div>
             </div>
 
             <!-- صفات الملكية للجمع -->
@@ -278,40 +340,72 @@
 
             <div class="rule-item">
                 <div class="rule-title">1- مالك مفرد (لأشياء جمع):</div>
-                <p style="margin: 4px 0 8px 0;">هنا المالك شخص واحد (أنا، أنت، هو)، لكن الأشياء التي يملكها جمع:</p>
+                <div class="rule-desc">المالك شخص واحد (أنا، أنت، هو)، لكن الأشياء التي يملكها جمع:</div>
                 
-                <span class="es-example">• Mis / Mis libros (كُتُبي) / Mis casas (بيوتي) : مثل (أشياء خاصة بي)</span>
-                <span class="es-example">• Tus / Tus libros (كُتُبك) / Tus casas (بيوتك) : مثل (أشياء خاصة بك)</span>
-                <span class="es-example">• Sus / Sus libros (كُتُبه) / Sus casas (بيوتها) : مثل (أشياء خاصة به / بها)</span>
+                <div class="example-box">
+                    <span class="es-text">• Mis / Mis libros / Mis casas</span>
+                    <span class="ar-text">كُتُبي / بيوتي (أشياء خاصة بي)</span>
+                </div>
+
+                <div class="example-box">
+                    <span class="es-text">• Tus / Tus libros / Tus casas</span>
+                    <span class="ar-text">كُتُبك / بيوتك (أشياء خاصة بك)</span>
+                </div>
+
+                <div class="example-box">
+                    <span class="es-text">• Sus / Sus libros / Sus casas</span>
+                    <span class="ar-text">كُتُبه / بيوتها (أشياء خاصة به / بها)</span>
+                </div>
             </div>
 
             <div class="rule-item">
                 <div class="rule-title">2- مالك جمع (لأشياء جمع):</div>
-                <p style="margin: 4px 0 8px 0;">المالكون مجموعة (نحن، أنتم) والأشياء التي نملكها جمع أيضاً، وطبعاً نحافظ على المذكر والمؤنث:</p>
+                <div class="rule-desc">المالكون مجموعة (نحن، أنتم) والأشياء التي نملكها جمع أيضاً (نحافظ على المذكر والمؤنث):</div>
                 
-                <span class="es-example">• Nuestros coches (سياراتنا) : مثل (نحن - للجمع المذكر)</span>
-                <span class="es-example">• Nuestras escuelas (مدارسنا) : مثل (نحن - للجمع المؤنث)</span>
-                <span class="es-example">• Vuestros perros (كلابكم) : مثل (أنتم - للجمع المذكر)</span>
-                <span class="es-example">• Vuestras ideas (أفكاركم) : مثل (أنتم - للجمع المؤنث)</span>
+                <div class="example-box">
+                    <span class="es-text">• Nuestros coches</span>
+                    <span class="ar-text">سياراتنا (نحن - للجمع المذكر)</span>
+                </div>
+
+                <div class="example-box">
+                    <span class="es-text">• Nuestras escuelas</span>
+                    <span class="ar-text">مدارسنا (نحن - للجمع المؤنث)</span>
+                </div>
+
+                <div class="example-box">
+                    <span class="es-text">• Vuestros perros</span>
+                    <span class="ar-text">كلابكم (أنتم - للجمع المذكر)</span>
+                </div>
+
+                <div class="example-box">
+                    <span class="es-text">• Vuestras ideas</span>
+                    <span class="ar-text">أفكاركم (أنتم - للجمع المؤنث)</span>
+                </div>
             </div>
 
             <div class="rule-item">
                 <div class="rule-title">3- مالك غائب جمع (لأشياء جمع):</div>
-                <p style="margin: 4px 0 8px 0;">هنا المالكون هم مجموعة غائبة (هم، هن، حضراتكم) والأشياء التي يملكونها جمع:</p>
+                <div class="rule-desc">المالكون هم مجموعة غائبة (هم، هن، حضراتكم) والأشياء التي يملكونها جمع:</div>
                 
-                <span class="es-example">• Sus libros (كُتُبهم) / Sus casas (بيوتهم) : مثل (أشياء خاصة بهم / بهن)</span>
+                <div class="example-box">
+                    <span class="es-text">• Sus libros / Sus casas</span>
+                    <span class="ar-text">كُتُبهم / بيوتهم (أشياء خاصة بهم / بهن)</span>
+                </div>
             </div>
 
-            <!-- رابط الاختبار التفاعلي -->
-            <div class="pdf-box" style="border-color: #EE69B8; background-color: #fff0f5;">
-                <p style="margin:0; font-size:0.95rem; color:#444; font-weight:bold;">اختبار تفاعلي مولد بالذكاء الأصطناعي AI 📝</p>
-                <a href="https://share.gemini.google/oL4QEHU9kTde" target="_blank" style="font-size:1rem; text-decoration:underline;">اضغط هنا للبدء في الاختبار 🔗</a>
-            </div>
+            <!-- قسم الاختبارات التفاعلية -->
+            <div class="quiz-container">
+                <div class="pdf-box">
+                    <p style="margin:0; font-size:0.92rem; color:#444; font-weight:bold;">اختبار تفاعلي (الجزء الأول) 📝</p>
+                    <a href="https://share.gemini.google/jJiDdYvFfnFM" target="_blank" style="font-size:0.95rem; text-decoration:underline;">اضغط هنا للبدء في الاختبار الأول 🔗</a>
+                </div>
 
-            <!-- رابط PDF والتليجرام -->
-            <div class="pdf-box">
-                <p style="margin:0; font-size:0.9rem; color:#444;">ملف الدرس على شكل PDF تجدوه في قناتي:</p>
-                <a href="https://t.me/espanoljourney" target="_blank">📲 Espanol journey ✨</a>
+      
+                <!-- رابط PDF والتليجرام -->
+                <div class="pdf-box pdf-box-alt">
+                    <p style="margin:0; font-size:0.88rem; color:#444;">ملف الدرس على شكل PDF تجدوه في قناتي:</p>
+                    <a href="https://t.me/espanoljourney" target="_blank">📲 Espanol journey ✨</a>
+                </div>
             </div>
 
             <!-- أزرار التصفح -->
