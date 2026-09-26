@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WBZH2BVR73"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WBZH2BVR73');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- تحسينات SEO لدرس المضارع التام المستمر -->
+    <title>Present Perfect Continuous (المضارع التام المستمر) - English Grammar | My Language Journal</title>
+    <meta name="description" content="شرح شامل ومبسط لزمن المضارع التام المستمر (Present Perfect Continuous) مع القواعد، الأمثلة، واستخدامات Since و For في اللغة الإنجليزية.">
+    <meta name="keywords" content="Present Perfect Continuous, المضارع التام المستمر, قواعد الإنجليزية, English Grammar, Since and For, تعلم الإنجليزية, My Language Journal">
+    <meta name="author" content="My Language Journal">
+
+    <!-- استدعاء الخطوط الموحدة -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #fff0f5, #ffe4e9);
+            font-family: 'Tajawal', 'Playfair Display', serif;
+            color: #333333;
+        }
+
+        .main-wrapper {
+            width: 90%;
+            max-width: 420px;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* الإطار الخارجي الرئيسي */
+        .card-container {
+            width: 100%;
+            background-color: #ffffff;
+            border: 1.5px solid #545454;
+            border-radius: 24px;
+            padding: 25px 18px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            text-align: center;
+            max-height: 88vh;
+            overflow-y: auto;
+            scrollbar-width: none;
+        }
+
+        .card-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* عنوان الدرس الرئيسي */
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.7rem;
+            color: #545454;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .subtitle {
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1.15rem;
+            color: #EE69B8;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        /* شارات العناوين */
+        .section-badge {
+            display: inline-block;
+            background-color: #EE69B8;
+            color: #ffffff;
+            padding: 8px 22px;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            font-weight: bold;
+            border: 1.5px solid #545454;
+            margin-top: 15px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        /* بطاقات القواعد والملاحظات */
+        .rule-item {
+            background-color: #fff8fc;
+            border-right: 4px solid #EE69B8;
+            border-top: 1px solid #eee;
+            border-left: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            border-radius: 10px;
+            padding: 12px 14px;
+            margin-bottom: 14px;
+            text-align: right;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: #444;
+        }
+
+        .rule-item ul {
+            margin: 5px 0;
+            padding-right: 20px;
+        }
+
+        .rule-item li {
+            margin-bottom: 6px;
+        }
+
+        /* إطار القاعدة الأساسية والجمل */
+        .formula-box {
+            background-color: #ffffff;
+            border: 1.5px dashed #EE69B8;
+            border-radius: 12px;
+            padding: 10px;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #d81b60;
+            direction: ltr;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.95rem;
+            text-align: center;
+        }
+
+        .example-box {
+            background-color: #ffe4e9;
+            border-radius: 8px;
+            padding: 8px 12px;
+            margin: 6px 0;
+            color: #333;
+            direction: ltr;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.92rem;
+            font-weight: bold;
+        }
+
+        /* صفوف الفاعل مع Has / Have */
+        .pronoun-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            border: 1px solid #ffe4e9;
+            border-radius: 8px;
+            padding: 6px 12px;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+            direction: ltr;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .pronoun-text {
+            color: #333;
+            font-weight: bold;
+        }
+
+        .verb-tag {
+            background-color: #ffe4e9;
+            color: #d81b60;
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        /* الكلمات الدالة Tags */
+        .tags-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 8px;
+        }
+
+        .tag-pill {
+            background-color: #ffe4e9;
+            color: #d81b60;
+            padding: 5px 12px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            font-family: 'Playfair Display', serif;
+            direction: ltr;
+        }
+
+        /* صناديق الإجراءات والروابط */
+        .action-box {
+            text-align: center;
+            margin: 12px 0;
+            padding: 14px;
+            border: 1.5px dashed #F8ABE4;
+            border-radius: 16px;
+            background-color: #fffbfe;
+            transition: 0.2s;
+        }
+
+        .action-box a {
+            color: #EE69B8;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: inline-block;
+        }
+
+        .action-box:hover {
+            background-color: #fff0f7;
+            border-color: #EE69B8;
+        }
+
+        /* أزرار العودة والتنقل */
+        .btn-container {
+            text-align: center;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 9px 20px;
+            background-color: #EE69B8;
+            border: 1.5px solid #545454;
+            border-radius: 20px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 0.92rem;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            transition: 0.2s;
+        }
+
+        .back-btn-secondary {
+            background-color: #FDBBE3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="card-container">
+            
+            <h1>Present Perfect Continuous</h1>
+            <div class="subtitle">المضارع التام المستمر</div>
+
+            <!-- الاستخدام -->
+            <div class="section-badge">استخدامه (Uses)</div>
+            <div class="rule-item">
+                <p style="margin-bottom: 6px; font-weight: bold; color: #EE69B8;">يُستخدم هذا الزمن للتعبير عن:</p>
+                <ul>
+                    <li>حدث بدأ في <b>الماضي</b> وما زال <b>مستمرًا</b> في الحاضر وقد يستمر إلى <b>المستقبل</b>.</li>
+                    <li>التركيز على <b>مدة استمرار الفعل</b> والأثر الناتج عنه.</li>
+                </ul>
+            </div>
+
+            <!-- توزيع الفاعل مع Has / Have -->
+            <div class="section-badge">توزيع الفاعل مع (Has / Have)</div>
+            <div class="rule-item">
+                <div class="pronoun-row">
+                    <span class="pronoun-text">He / She / It / مفرد</span>
+                    <span class="verb-tag">has ('s)</span>
+                </div>
+                <div class="pronoun-row">
+                    <span class="pronoun-text">I / They / We / You / جمع</span>
+                    <span class="verb-tag">have ('ve)</span>
+                </div>
+            </div>
+
+            <!-- الإثبات -->
+            <div class="section-badge">الإثبات (Affirmative)</div>
+            <div class="rule-item">
+                <div class="formula-box">Subject + has / have + been + V-ing</div>
+                <div class="example-box">• I have been working for this company since 2020.</div>
+                <div class="example-box">• She has been training since 2005.</div>
+            </div>
+
+            <!-- النفي -->
+            <div class="section-badge">النفي (Negative)</div>
+            <div class="rule-item">
+                <div class="formula-box">Subject + hasn't / haven't + been + V-ing</div>
+                <div class="example-box">• I have not (haven't) been working for this company since 2020.</div>
+                <div class="example-box">• She has not (hasn't) been training since 2005.</div>
+            </div>
+
+            <!-- السؤال -->
+            <div class="section-badge">السؤال (Questions)</div>
+            <div class="rule-item">
+                <p style="margin: 4px 0; font-weight: bold; color: #EE69B8;">1- Yes / No Question:</p>
+                <div class="formula-box">Has / Have + Subject + been + V-ing ... ?</div>
+                <div class="example-box">• Have you been working for this company since 2020?</div>
+                <div class="example-box">• Has she been training since 2005?</div>
+
+                <p style="margin: 12px 0 4px 0; font-weight: bold; color: #EE69B8;">2- Wh- Question:</p>
+                <div class="formula-box">Wh-word + has / have + Subject + been + V-ing ... ?</div>
+                <div class="example-box">• How long have you been studying English?</div>
+            </div>
+
+            <!-- الفرق بين Since و For -->
+            <div class="section-badge">استخدام (Since & For)</div>
+            <div class="rule-item">
+                <p style="margin-bottom: 4px; font-weight: bold; color: #EE69B8;">1- Since (مُنذ):</p>
+                <p style="margin-top: 0;">تُحدد <b>نقطة بداية الزمن</b> (بداية وقوع الفعل):</p>
+                <div class="example-box">• She has been training since 2005.</div>
+
+                <p style="margin: 10px 0 4px 0; font-weight: bold; color: #EE69B8;">2- For (لمُدة):</p>
+                <p style="margin-top: 0;">تُحدد <b>الفترة الزمنية الممتدة</b> (طول المدة كلها):</p>
+                <div class="example-box">• She has been training for 20 years.</div>
+            </div>
+
+            <!-- الروابط الخارجية والفيديو -->
+            <div class="action-box">
+                <p style="margin:0 0 5px 0; color:#545454; font-weight:bold; font-size:0.9rem;">🎬 الڤيديو المُعتمد بالشرح:</p>
+                <a href="https://youtu.be/2EptvhLbLEU?si=CbVTi54a6ZGcRSaa" target="_blank">اضغط هنا للمشاهدة ✨</a>
+            </div>
+
+            <div class="action-box">
+                <p style="margin:0 0 5px 0; color:#545454; font-weight:bold; font-size:0.9rem;">🤖 اختبار تفاعلي ذكي:</p>
+                <a href="https://share.gemini.google/UNEnXj294QJ6" target="_blank">بدء الاختبار بواسطة AI 🔗</a>
+            </div>
+
+            <!-- أزرار التصفح -->
+            <div class="btn-container">
+                <a href="english-grammar.html" class="back-btn">🔄 العودة لقواعد الإنجليزية</a>
+                <a href="index.html" class="back-btn back-btn-secondary">🏠 الصفحة الرئيسية</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
