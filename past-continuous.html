@@ -31,8 +31,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(135deg, #FFF5FB, #FFF0F9);
+            /* خلفية بتدرجات الوردي الأفتح */
+            background: linear-gradient(135deg, #FFF6FB, #FFFFFF);
             font-family: 'Tajawal', sans-serif;
+            color: #333333;
         }
 
         .container {
@@ -46,9 +48,9 @@
         .content-box {
             background-color: #ffffff;
             border: 1.5px solid #545454;
-            border-radius: 18px;
-            padding: 22px 16px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-radius: 24px;
+            padding: 25px 18px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
             max-height: 85vh;
             overflow-y: auto;
             text-align: right;
@@ -59,52 +61,57 @@
             display: none;
         }
 
+        /* عنوان الدرس الرئيسي */
         h1 {
             color: #545454;
             text-align: center;
             font-family: 'Playfair Display', serif;
-            font-style: italic;
-            margin-top: 0;
+            font-style: normal;
+            margin-top: 5px;
             margin-bottom: 5px;
             font-size: 1.8rem;
+            font-weight: 700;
         }
 
         .subtitle {
             text-align: center;
-            color: #545454;
-            font-size: 0.9rem;
+            color: #F168BC;
+            font-size: 1.1rem;
             margin-bottom: 20px;
-            font-style: italic;
+            font-weight: 500;
         }
 
+        /* رؤوس الأقسام */
         .section-header {
-            background-color: #F4CFE5;
-            color: #000000;
+            background-color: #EF8BC8;
+            color: #ffffff;
             font-weight: 700;
-            font-size: 0.95rem;
-            padding: 8px 12px;
+            font-size: 0.98rem;
+            padding: 8px 14px;
             border-radius: 12px;
             border: 1.5px solid #545454;
             margin: 18px 0 10px 0;
             display: block;
             text-align: right;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
         }
 
+        /* بطاقات القواعد والملاحظات */
         .rule-box {
             background-color: #FFF5FB;
-            border: 1px dashed #F168BC;
+            border: 1.5px dashed #FDBBE3;
             border-radius: 12px;
-            padding: 10px 12px;
-            margin: 8px 0;
-            font-size: 0.9rem;
-            line-height: 1.6;
-            color: #333;
+            padding: 12px 14px;
+            margin: 10px 0;
+            font-size: 0.92rem;
+            line-height: 1.7;
+            color: #444;
         }
 
         .rule-title {
             font-weight: 700;
-            color: #d13f98;
-            margin-bottom: 4px;
+            color: #F168BC;
+            margin-bottom: 6px;
         }
 
         .en-text {
@@ -112,37 +119,57 @@
             direction: ltr;
             display: block;
             text-align: left;
-            background: #fff;
-            padding: 6px 10px;
+            background: #F4CFE5;
+            padding: 8px 12px;
             border-radius: 8px;
-            border: 1px solid #e0e0e0;
             margin-top: 6px;
             font-size: 0.92rem;
-            color: #222;
+            color: #545454;
+            font-weight: bold;
         }
 
         ul {
             margin: 6px 0;
             padding-right: 20px;
-            font-size: 0.88rem;
+            font-size: 0.9rem;
             line-height: 1.6;
+        }
+
+        code {
+            font-family: 'Playfair Display', serif;
+            direction: ltr;
+            display: block;
+            text-align: center;
+            background-color: #ffffff;
+            border: 1px dashed #FDBBE3;
+            padding: 6px;
+            border-radius: 8px;
+            margin: 6px 0;
+            font-weight: bold;
+            color: #545454;
         }
 
         /* كروت الفيديو والاختبار */
         .interactive-card {
-            border: 1.5px dashed #f49ac2;
+            border: 1.5px dashed #FDBBE3;
             border-radius: 16px;
             padding: 14px 10px;
             margin: 15px 0;
             text-align: center;
-            background-color: #ffffff;
+            background-color: #FFF0F9;
+            transition: 0.2s ease;
+        }
+
+        .interactive-card:hover {
+            background-color: #FFEBF7;
+            border-color: #F168BC;
         }
 
         .interactive-title {
             font-size: 0.95rem;
             font-weight: bold;
-            color: #333333;
-            margin-bottom: 8px;
+            color: #545454;
+            margin-bottom: 6px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -151,15 +178,16 @@
 
         .interactive-link {
             display: inline-block;
-            color: #ee60a8;
+            color: #F168BC;
             font-weight: bold;
             text-decoration: none;
-            font-size: 0.9rem;
+            font-size: 0.92rem;
             transition: opacity 0.2s ease;
         }
 
         .interactive-link:hover {
             opacity: 0.8;
+            text-decoration: underline;
         }
 
         /* أزرار العودة السفلية */
@@ -173,25 +201,30 @@
         .action-btn {
             display: block;
             width: 100%;
-            padding: 12px 15px;
-            border-radius: 18px;
+            padding: 11px 15px;
+            border-radius: 20px;
             text-decoration: none;
             font-weight: bold;
             border: 1.5px solid #545454;
             font-size: 0.95rem;
             box-sizing: border-box;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+            transition: 0.2s;
         }
 
         .btn-grammar {
-            background-color: #f168bc;
+            background-color: #F168BC;
             color: #ffffff;
         }
 
         .btn-home {
-            background-color: #fce4f3;
+            background-color: #FDBBE3;
             color: #000000;
+        }
+
+        .action-btn:hover {
+            opacity: 0.9;
         }
     </style>
 </head>
@@ -243,7 +276,7 @@
                 <div class="rule-title">أ) السؤال بأداة استفهام (Wh-question):</div>
                 <code>أداة الاستفهام + (was / were) + الفاعل + v-ing ?</code>
                 <span class="en-text">What were you doing last night at 7 PM?</span>
-                <b>الإجابة:</b>
+                <b style="display: block; margin-top: 6px;">الإجابة:</b>
                 <span class="en-text">I was eating my dinner.</span>
             </div>
 
@@ -251,7 +284,7 @@
                 <div class="rule-title">ب) السؤال بفعل مساعد (Yes / No question):</div>
                 <code>(Was / Were) + الفاعل + v-ing ?</code>
                 <span class="en-text">Were you eating dinner at 7 PM?</span>
-                <b>الإجابة:</b>
+                <b style="display: block; margin-top: 6px;">الإجابة:</b>
                 <span class="en-text">Yes, I was. / No, I wasn't.</span>
             </div>
 
