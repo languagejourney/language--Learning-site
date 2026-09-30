@@ -21,7 +21,7 @@
     <meta name="author" content="My Language Journal">
 
     <!-- استدعاء الخطوط الموحدة -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     
     <style>
         body, html {
@@ -32,8 +32,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(135deg, #fff0f5, #ffe4e9);
-            font-family: 'Tajawal', 'Playfair Display', serif;
+            /* خلفية بتدرجات الوردي الأفتح والمتناغمة */
+            background: linear-gradient(135deg, #FFF6FB, #FFFFFF);
+            font-family: 'Tajawal', sans-serif;
             color: #333333;
         }
 
@@ -66,7 +67,7 @@
 
         /* عنوان الدرس الرئيسي */
         h1 {
-            font-family: 'Tajawal', sans-serif;
+            font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
             color: #545454;
             margin-top: 5px;
@@ -76,25 +77,23 @@
         }
 
         .subtitle {
-            font-family: 'Playfair Display', serif;
-            font-style: italic;
-            font-size: 1.15rem;
-            color: #EE69B8;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1.1rem;
+            color: #F168BC;
             margin-top: 0;
             margin-bottom: 20px;
-            direction: ltr;
-            font-weight: 600;
+            font-weight: 500;
         }
 
         /* مقدمة الدرس والملاحظات */
         .info-card {
-            background-color: #ffffff;
-            border: 1.5px solid #f6a0dd;
+            background-color: #FFF5FB;
+            border: 1.5px solid #FDBBE3;
             border-radius: 16px;
             padding: 14px 16px;
             margin-bottom: 20px;
             text-align: right;
-            box-shadow: 0 2px 8px rgba(238, 105, 184, 0.08);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
         }
 
         .info-card p {
@@ -107,11 +106,11 @@
         /* شارات العناوين بالمستطيل الوردي */
         .section-badge {
             display: inline-block;
-            background-color: #EE69B8;
+            background-color: #F168BC;
             color: #ffffff;
             padding: 8px 22px;
             border-radius: 12px;
-            font-size: 1.05rem;
+            font-size: 1.02rem;
             font-weight: bold;
             border: 1.5px solid #545454;
             margin-top: 15px;
@@ -121,21 +120,22 @@
 
         /* بطاقات القواعد */
         .rule-item {
-            background-color: #fff8fc;
-            border-right: 4px solid #EE69B8;
-            border-top: 1px solid #eee;
-            border-left: 1px solid #eee;
-            border-bottom: 1px solid #eee;
+            background-color: #FFF5FB;
+            border-right: 4px solid #EF8BC8;
+            border-top: 1px solid #FFEBF7;
+            border-left: 1px solid #FFEBF7;
+            border-bottom: 1px solid #FFEBF7;
             border-radius: 10px;
             padding: 12px 14px;
             margin-bottom: 14px;
             text-align: right;
             font-size: 0.92rem;
-            line-height: 1.6;
+            line-height: 1.7;
+            color: #444444;
         }
 
         .rule-title {
-            color: #EE69B8;
+            color: #F168BC;
             font-weight: bold;
             font-size: 1rem;
             margin-bottom: 6px;
@@ -147,7 +147,7 @@
             justify-content: space-between;
             align-items: center;
             background-color: #ffffff;
-            border: 1px solid #ffe4e9;
+            border: 1px solid #FDBBE3;
             border-radius: 8px;
             padding: 6px 12px;
             margin-bottom: 6px;
@@ -160,27 +160,28 @@
         }
 
         .ending-tag {
-            background-color: #ffe4e9;
-            color: #d81b60;
+            background-color: #F4CFE5;
+            color: #545454;
             padding: 2px 10px;
             border-radius: 6px;
             font-weight: bold;
             direction: ltr;
-            font-family: 'Playfair Display', sans-serif;
+            font-family: 'Playfair Display', serif;
         }
 
         .es-example {
             direction: ltr;
             text-align: left;
             font-family: 'Playfair Display', serif;
-            color: #d81b60;
+            color: #F168BC;
             font-weight: bold;
-            background-color: #ffe4e9;
-            padding: 4px 10px;
-            border-radius: 6px;
+            background-color: #FFF0F9;
+            border: 1px solid #FDBBE3;
+            padding: 6px 12px;
+            border-radius: 8px;
             display: block;
-            margin: 4px 0;
-            font-size: 0.92rem;
+            margin: 6px 0;
+            font-size: 0.95rem;
         }
 
         /* قائمة التنسيق */
@@ -199,18 +200,25 @@
         .pdf-box {
             text-align: center;
             margin: 20px 0 10px 0;
-            padding: 12px;
-            border: 1.5px dashed #F8ABE4;
+            padding: 14px;
+            border: 1.5px dashed #FDBBE3;
             border-radius: 16px;
-            background-color: #fffbfe;
+            background-color: #FFF0F9;
+            transition: 0.2s;
+        }
+
+        .pdf-box:hover {
+            background-color: #FFEBF7;
+            border-color: #F168BC;
         }
 
         .pdf-box a {
-            color: #EE69B8;
+            color: #F168BC;
             font-weight: bold;
             text-decoration: none;
             display: inline-block;
             margin-top: 4px;
+            font-size: 0.95rem;
         }
 
         /* أزرار العودة والتنقل */
@@ -225,19 +233,24 @@
         .back-btn {
             display: inline-block;
             padding: 9px 20px;
-            background-color: #EE69B8;
+            background-color: #F168BC;
             border: 1.5px solid #545454;
             border-radius: 20px;
-            color: #000000;
+            color: #ffffff;
             text-decoration: none;
-            font-size: 0.92rem;
+            font-size: 0.95rem;
             font-weight: bold;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.06);
             transition: 0.2s;
+        }
+
+        .back-btn:hover {
+            opacity: 0.9;
         }
 
         .back-btn-secondary {
             background-color: #FDBBE3;
+            color: #545454;
         }
     </style>
 </head>
@@ -247,7 +260,7 @@
         <div class="card-container">
             
             <h1>الدرس الخامس</h1>
-            <div class="subtitle">Capítulo 5: Los Verbos Regulares</div>
+            <div class="subtitle">الأفعال المنتظمة - Los Verbos Regulares</div>
             
             <!-- المقدمة -->
             <div class="info-card">
@@ -282,7 +295,7 @@
             </div>
 
             <!-- ملاحظة ذهبية -->
-            <div class="info-card" style="border-color: #EE69B8; background-color: #fffafc;">
+            <div class="info-card" style="border-color: #FDBBE3; background-color: #FFF5FB;">
                 <p>💡 <strong>ملاحظة ذهبية (حذف الضمير):</strong><br>
                 يمكننا الاستغناء عن كتابة الضمير الشخصي لأن نهاية الفعل تدل عليه تمامًا! مثال: بدلاً من قول <strong>Yo hablo</strong>، يمكننا قول <strong>Hablo</strong> فقط، وسيفهم الجميع أنني المتحدث.</p>
             </div>
