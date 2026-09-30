@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WBZH2BVR73"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WBZH2BVR73');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,8 +20,8 @@
     <meta name="keywords" content="أدوات التعريف والتنكير بالإسبانية, Los Artículos, المذكر والمؤنث في الإسبانية, قواعد الإسبانية, تعلم الإسبانية للمبتدئين, My Language Journal">
     <meta name="author" content="My Language Journal">
 
-    <!-- استدعاء نفس الخطوط الأصلية -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Amiri:ital@1&display=swap" rel="stylesheet">
+    <!-- استدعاء الخطوط -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     
     <style>
         body, html {
@@ -22,8 +32,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(135deg, #fff0f5, #ffe4e9);
-            font-family: 'Playfair Display', serif;
+            /* خلفية بتدرجات الوردي الأفتح */
+            background: linear-gradient(135deg, #FFF6FB, #FFFFFF);
+            font-family: 'Tajawal', sans-serif;
+            color: #333333;
         }
 
         .main-wrapper {
@@ -55,33 +67,33 @@
 
         /* عنوان الدرس الرئيسي */
         h1 {
-            font-family: 'Playfair Display', cursive, serif;
+            font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
             color: #545454;
             margin-top: 5px;
             margin-bottom: 5px;
-            font-weight: 600;
+            font-weight: 700;
             line-height: 1.3;
         }
 
         .subtitle {
-            font-family: 'Playfair Display', serif;
-            font-style: italic;
-            color: #EE69B8;
-            font-size: 1.15rem;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1.1rem;
+            color: #F168BC;
             margin-top: 0;
             margin-bottom: 20px;
+            font-weight: 500;
         }
 
         /* مقدمة الدرس */
         .info-card {
-            background-color: #ffffff;
-            border: 1.5px solid #f6a0dd;
+            background-color: #FFF5FB;
+            border: 1.5px solid #FDBBE3;
             border-radius: 16px;
             padding: 14px 16px;
             margin-bottom: 20px;
             text-align: right;
-            box-shadow: 0 2px 8px rgba(238, 105, 184, 0.08);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
         }
 
         .info-card p {
@@ -91,14 +103,14 @@
             line-height: 1.7;
         }
 
-        /* شارات العناوين بالمستطيل الوردي */
+        /* شارات العناوين بالمستطيل الوردي الداكن */
         .section-badge {
             display: inline-block;
-            background-color: #EE69B8;
+            background-color: #F168BC;
             color: #ffffff;
             padding: 8px 22px;
             border-radius: 12px;
-            font-size: 1.05rem;
+            font-size: 1.02rem;
             font-weight: bold;
             border: 1.5px solid #545454;
             margin-top: 15px;
@@ -119,17 +131,17 @@
         }
 
         .custom-table th {
-            background-color: #F17FC7;
-            color: #000000;
+            background-color: #EF8BC8;
+            color: #ffffff;
             padding: 10px;
-            font-size: 0.98rem;
+            font-size: 0.95rem;
             border-bottom: 1.5px solid #545454;
             font-weight: bold;
         }
 
         .custom-table td {
             padding: 10px 8px;
-            border-bottom: 1px solid #f0f0f0;
+            border-bottom: 1px solid #ffeef7;
             font-size: 0.92rem;
             color: #333;
             text-align: center;
@@ -141,41 +153,46 @@
 
         .article-span {
             font-weight: bold;
-            color: #EE69B8;
+            color: #F168BC;
             font-size: 1.05rem;
+            font-family: 'Playfair Display', serif;
         }
 
         /* بطاقات الملاحظات والقواعد المصممة */
         .rule-item {
-            background-color: #fff8fc;
-            border-right: 4px solid #EE69B8;
-            border-top: 1px solid #eee;
-            border-left: 1px solid #eee;
-            border-bottom: 1px solid #eee;
+            background-color: #FFF5FB;
+            border-right: 4px solid #EF8BC8;
+            border-top: 1px solid #FFEBF7;
+            border-left: 1px solid #FFEBF7;
+            border-bottom: 1px solid #FFEBF7;
             border-radius: 10px;
             padding: 12px 14px;
             margin-bottom: 14px;
             text-align: right;
             font-size: 0.92rem;
-            line-height: 1.6;
+            line-height: 1.7;
+            color: #444;
         }
 
         .rule-item strong {
-            color: #EE69B8;
+            color: #F168BC;
         }
 
         .example-tag {
-            background-color: #ffe4e9;
-            padding: 2px 6px;
+            background-color: #F4CFE5;
+            padding: 3px 8px;
             border-radius: 6px;
-            color: #d81b60;
+            color: #545454;
             font-weight: bold;
+            font-family: 'Playfair Display', serif;
+            direction: ltr;
+            display: inline-block;
         }
 
         /* صندوق الفعالية والتفاعلات */
         .quiz-box {
-            background-color: #fff0f7;
-            border: 1.5px dashed #EE69B8;
+            background-color: #FFF0F9;
+            border: 1.5px dashed #FDBBE3;
             border-radius: 18px;
             padding: 16px;
             margin: 20px 0;
@@ -183,7 +200,7 @@
         }
 
         .quiz-title {
-            color: #EE69B8;
+            color: #F168BC;
             font-weight: bold;
             text-align: center;
             margin-top: 0;
@@ -201,11 +218,11 @@
             font-family: 'Playfair Display', serif;
             font-weight: bold;
             transition: 0.2s;
-            color: #000;
+            color: #333;
         }
 
         .quiz-btn:hover {
-            background-color: #EE69B8;
+            background-color: #F168BC;
             color: #ffffff;
         }
 
@@ -213,18 +230,25 @@
         .pdf-box {
             text-align: center;
             margin: 20px 0 10px 0;
-            padding: 12px;
-            border: 1.5px dashed #F8ABE4;
+            padding: 14px;
+            border: 1.5px dashed #FDBBE3;
             border-radius: 16px;
-            background-color: #fffbfe;
+            background-color: #FFF0F9;
+            transition: 0.2s;
+        }
+
+        .pdf-box:hover {
+            background-color: #FFEBF7;
+            border-color: #F168BC;
         }
 
         .pdf-box a {
-            color: #EE69B8;
+            color: #F168BC;
             font-weight: bold;
             text-decoration: none;
             display: inline-block;
             margin-top: 4px;
+            font-size: 0.95rem;
         }
 
         /* زر العودة */
@@ -232,14 +256,19 @@
             margin-top: 10px;
             display: inline-block;
             padding: 9px 24px;
-            background-color: #EE69B8;
+            background-color: #F168BC;
             border: 1.5px solid #545454;
             border-radius: 20px;
-            color: #000000;
+            color: #ffffff;
             text-decoration: none;
             font-size: 0.95rem;
             font-weight: bold;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+            transition: 0.2s;
+        }
+
+        .back-btn:hover {
+            opacity: 0.9;
         }
     </style>
 </head>
@@ -254,7 +283,7 @@
             <!-- مقدمة الدرس -->
             <div class="info-card">
                 <p>في اللغة الإسبانية، أي اسم (كتاب، سيارة، بيت...) يجب أن يكون إما <strong>مذكر أو مؤنث</strong>، ولا يوجد شيء اسمهُ "جماد حيادي".</p>
-                <hr style="border:0; border-top:1px dashed #EE69B8; margin: 8px 0;">
+                <hr style="border:0; border-top:1px dashed #FDBBE3; margin: 8px 0;">
                 <p>تنقسم الأدوات في اللغة الإسبانية حسب نوع الاسم (مذكر/مؤنث) وعدده (مفرد/جمع) إلى أدوات تعريف وأدوات تنكير.</p>
             </div>
 
@@ -343,11 +372,11 @@
             <!-- ملاحظة كلمة Agua -->
             <div class="section-badge">ملاحظة خاصة بـ (Agua)</div>
 
-            <div class="info-card" style="border-color: #EE69B8; background-color: #fffafc;">
-                <p>💧 كلمة <strong>Agua</strong> (ماء) هي كلمة مؤنثة أصلاً، لكننا نقول: <strong style="color:#EE69B8;">El agua</strong> (نضع أداة مذكر)!</p>
-                <hr style="border:0; border-top:1px dashed #EE69B8; margin: 8px 0;">
+            <div class="info-card" style="border-color: #FDBBE3; background-color: #FFF5FB;">
+                <p>💧 كلمة <strong>Agua</strong> (ماء) هي كلمة مؤنثة أصلاً، لكننا نقول: <strong style="color:#F168BC;">El agua</strong> (نضع أداة مذكر)!</p>
+                <hr style="border:0; border-top:1px dashed #FDBBE3; margin: 8px 0;">
                 <p><strong>لماذا؟</strong> لأن الكلمة تبدأ بحرف A قوي ومشدد، ولو قلنا (La agua) سينتج ثقل وصعوبة باللفظ (التقاء ألفين)، لذلك غيروا الأداة إلى <strong>El</strong> فقط في حالة المفرد لتسهيل النطق.</p>
-                <p style="margin-top: 5px;">أما في حالة الجمع ترجع لأصلها المؤنث فنقول: <strong style="color:#EE69B8;">Las aguas!</strong></p>
+                <p style="margin-top: 5px;">أما في حالة الجمع ترجع لأصلها المؤنث فنقول: <strong style="color:#F168BC;">Las aguas!</strong></p>
             </div>
 
             <!-- اختبار بسيط -->
